@@ -24,6 +24,30 @@ function auge_ftr_blog_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function auge_ftr_blog_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: blog_view_image.
+  $styles['blog_view_image'] = array(
+    'label' => 'Blog view image',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 480,
+          'height' => 300,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function auge_ftr_blog_node_info() {

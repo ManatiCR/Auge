@@ -18,17 +18,18 @@ function auge_ftr_blog_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -99,7 +100,7 @@ function auge_ftr_blog_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -151,10 +152,66 @@ function auge_ftr_blog_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-blog_post-field_post_category'
+  $field_instances['node-blog_post-field_post_category'] = array(
+    'bundle' => 'blog_post',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_post_category',
+    'label' => 'Category',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Post Category',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 2,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog Image');
   t('Body');
+  t('Category');
 
   return $field_instances;
 }
