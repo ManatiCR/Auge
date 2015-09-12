@@ -36,7 +36,7 @@ function auge_ftr_blog_image_default_styles() {
       1 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 480,
+          'width' => 432,
           'height' => 300,
         ),
         'weight' => 1,
