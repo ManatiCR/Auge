@@ -22,7 +22,7 @@ function auge_ftr_blocks_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Involúcrese';
+  $handler->display->display_options['title'] = 'Get involved';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -52,7 +52,7 @@ function auge_ftr_blocks_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'involucrese' => 'involucrese',
+    'getinvolved' => 'getinvolved',
   );
 
   /* Display: Content pane */
@@ -62,7 +62,7 @@ function auge_ftr_blocks_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block_1');
   $translatables['involucrese_view'] = array(
     t('Master'),
-    t('Involúcrese'),
+    t('Get involved'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -87,7 +87,7 @@ function auge_ftr_blocks_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Actividades';
+  $handler->display->display_options['title'] = 'Activities';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = TRUE;
@@ -180,7 +180,7 @@ function auge_ftr_blocks_views_default_views() {
   $handler->display->display_options['path'] = 'activities';
   $translatables['proximas_actividades'] = array(
     t('Master'),
-    t('Actividades'),
+    t('Activities'),
     t('Ver todas las actividades'),
     t('Apply'),
     t('Reset'),

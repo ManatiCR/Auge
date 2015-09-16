@@ -9,9 +9,9 @@
  */
 function auge_ftr_blocks_taxonomy_default_vocabularies() {
   return array(
-    'involucrese' => array(
-      'name' => 'Involucrese',
-      'machine_name' => 'involucrese',
+    'getinvolved' => array(
+      'name' => 'Get involved',
+      'machine_name' => 'getinvolved',
       'description' => 'The 4 types of engagement',
       'hierarchy' => 0,
       'module' => 'taxonomy',
