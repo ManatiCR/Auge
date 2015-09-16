@@ -12,18 +12,18 @@ function auge_ftr_blocks_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['views-blog_list-block_1'] = array(
+  $export['block-block_contacto'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'blog_list-block_1',
-    'module' => 'views',
+    'machine_name' => 'block_contacto',
+    'module' => 'block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
-        'region' => 'footer_secondcolumn',
+        'region' => 'footer_fourthcolumn',
         'status' => 1,
         'theme' => 'bartik',
         'weight' => 0,
@@ -35,61 +35,7 @@ function auge_ftr_blocks_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-involucrese_view-block_1'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'involucrese_view-block_1',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => 'footer_firstcolumn',
-        'status' => 1,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-proximas_actividades-block_1'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'proximas_actividades-block_1',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => 'footer_thirdcolumn',
-        'status' => 1,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
+    'title' => 'Contacto',
     'visibility' => 0,
   );
 
