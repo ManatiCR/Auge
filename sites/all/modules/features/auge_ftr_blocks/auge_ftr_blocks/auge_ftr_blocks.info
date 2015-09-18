@@ -69,4 +69,4 @@ features_exclude[dependencies][image] = image
 features_exclude[dependencies][options] = options
 features_exclude[dependencies][strongarm] = strongarm
 features_exclude[dependencies][taxonomy] = taxonomy
-project path = sites/all/modules/features/
+project path = sites/all/modules/features
