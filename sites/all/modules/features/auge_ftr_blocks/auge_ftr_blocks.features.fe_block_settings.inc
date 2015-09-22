@@ -116,7 +116,7 @@ function auge_ftr_blocks_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Who we are',
+    'title' => '',
     'visibility' => 0,
   );
 

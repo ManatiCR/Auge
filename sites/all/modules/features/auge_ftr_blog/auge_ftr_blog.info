@@ -1,4 +1,4 @@
-name = Auge Blog page
+name = Auge: Blog page
 description = Includes Blog element, view (pane) and page.
 core = 7.x
 package = Features
@@ -45,6 +45,10 @@ features[variable][] = menu_parent_blog_post
 features[variable][] = node_options_blog_post
 features[variable][] = node_preview_blog_post
 features[variable][] = node_submitted_blog_post
+features[variable][] = pathauto_node_blog_post_en_pattern
+features[variable][] = pathauto_node_blog_post_es_pattern
+features[variable][] = pathauto_node_blog_post_pattern
+features[variable][] = pathauto_node_blog_post_und_pattern
 features[views_view][] = blog_list
 features[views_view][] = categories
 project path = sites/all/modules/features

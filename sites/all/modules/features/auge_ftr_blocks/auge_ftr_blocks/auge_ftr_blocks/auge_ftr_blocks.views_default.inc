@@ -91,7 +91,7 @@ function auge_ftr_blocks_views_default_views() {
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = TRUE;
-  $handler->display->display_options['use_more_text'] = 'Ver todas las actividades';
+  $handler->display->display_options['use_more_text'] = 'View all';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -181,7 +181,7 @@ function auge_ftr_blocks_views_default_views() {
   $translatables['proximas_actividades'] = array(
     t('Master'),
     t('Activities'),
-    t('Ver todas las actividades'),
+    t('View all'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
