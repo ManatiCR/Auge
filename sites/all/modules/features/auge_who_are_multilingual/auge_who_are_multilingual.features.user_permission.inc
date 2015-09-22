@@ -28,5 +28,14 @@ function auge_who_are_multilingual_user_default_permissions() {
     'module' => 'conditional_fields',
   );
 
+  // Exported permission: 'administer uuid'.
+  $permissions['administer uuid'] = array(
+    'name' => 'administer uuid',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'uuid',
+  );
+
   return $permissions;
 }
