@@ -11,6 +11,7 @@ dependencies[] = menu
 dependencies[] = page_manager
 dependencies[] = panels
 dependencies[] = text
+dependencies[] = uuid
 dependencies[] = views
 dependencies[] = views_content
 features[context][] = contact_block_translation

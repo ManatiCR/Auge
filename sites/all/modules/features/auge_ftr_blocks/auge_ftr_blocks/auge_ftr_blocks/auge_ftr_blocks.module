@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Auge Footer-Sidebar blocks feature.
- */
-
-include_once 'auge_ftr_blocks.features.inc';
