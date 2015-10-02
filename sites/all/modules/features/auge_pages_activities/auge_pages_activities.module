@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Pages - Activities feature.
+ */
+
+include_once 'auge_pages_activities.features.inc';

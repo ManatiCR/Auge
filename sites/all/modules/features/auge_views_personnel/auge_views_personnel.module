@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Views - Personnel feature.
+ */
+
+include_once 'auge_views_personnel.features.inc';

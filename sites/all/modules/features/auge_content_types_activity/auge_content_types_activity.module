@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Content types - Activity feature.
+ */
+
+include_once 'auge_content_types_activity.features.inc';

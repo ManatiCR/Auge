@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Content types - Personnel feature.
+ */
+
+include_once 'auge_content_types_personnel.features.inc';

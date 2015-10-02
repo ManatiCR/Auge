@@ -1,0 +1,9 @@
+name = Auge: Menus
+core = 7.x
+package = Auge
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = main-menu
+features[menu_custom][] = menu-social-links
+project path = sites/all/modules/features

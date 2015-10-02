@@ -1,0 +1,8 @@
+name = Auge: Taxonomy - Personnel
+core = 7.x
+package = Auge
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = personnel_area
+project path = sites/all/modules/features

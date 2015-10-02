@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Content types: Project feature.
+ */
+
+include_once 'auge_content_types_project.features.inc';

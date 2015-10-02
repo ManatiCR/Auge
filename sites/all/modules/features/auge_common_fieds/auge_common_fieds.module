@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Common fieds feature.
+ */
+
+include_once 'auge_common_fieds.features.inc';

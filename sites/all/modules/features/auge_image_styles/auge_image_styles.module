@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Image styles feature.
+ */
+
+include_once 'auge_image_styles.features.inc';

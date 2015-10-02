@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Pages - Contact feature.
+ */
+
+include_once 'auge_pages_contact.features.inc';

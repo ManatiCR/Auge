@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Content types: Stages feature.
+ */
+
+include_once 'auge_content_types_stages.features.inc';

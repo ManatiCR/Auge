@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Views - Activities feature.
+ */
+
+include_once 'auge_views_activities.features.inc';

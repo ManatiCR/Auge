@@ -1,0 +1,9 @@
+name = Auge: Language settings
+core = 7.x
+package = Auge
+dependencies[] = features
+dependencies[] = locale
+features[features_api][] = api:2
+features[language][] = en
+features[language][] = es
+project path = sites/all/modules/features

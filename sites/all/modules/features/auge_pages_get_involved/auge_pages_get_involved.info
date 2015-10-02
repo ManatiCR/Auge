@@ -1,0 +1,13 @@
+name = Auge: Pages - Get involved
+description = All four get involved pages.
+core = 7.x
+package = Auge: Pages
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_pages][] = entrepreneurship
+features[page_manager_pages][] = invest
+features[page_manager_pages][] = learn
+features[page_manager_pages][] = mentor
+project path = sites/all/modules/features

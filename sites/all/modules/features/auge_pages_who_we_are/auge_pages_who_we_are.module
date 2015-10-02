@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Pages - Who we are feature.
+ */
+
+include_once 'auge_pages_who_we_are.features.inc';

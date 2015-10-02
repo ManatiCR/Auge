@@ -1,0 +1,4 @@
+name = Auge: Custom Blocks
+description = Custom block for contact information.
+core = 7.x
+package = Auge
