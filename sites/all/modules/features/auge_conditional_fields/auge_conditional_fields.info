@@ -1,0 +1,8 @@
+name = Auge: Conditional Fields
+core = 7.x
+package = Auge
+dependencies[] = conditional_fields
+features[conditional_fields][] = entityform:contact_form
+features[conditional_fields][] = node:personnel
+features[features_api][] = api:2
+project path = sites/all/modules/features

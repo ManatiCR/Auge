@@ -1,0 +1,8 @@
+name = Auge: Views - Entity forms
+core = 7.x
+package = Auge: Views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features_exclude[dependencies][entityform] = entityform
+features_exclude[dependencies][views] = views
+project path = Auge: Views

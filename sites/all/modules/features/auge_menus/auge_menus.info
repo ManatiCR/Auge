@@ -5,5 +5,6 @@ dependencies[] = features
 dependencies[] = menu
 features[features_api][] = api:2
 features[menu_custom][] = main-menu
+features[menu_custom][] = menu-get-involved
 features[menu_custom][] = menu-social-links
 project path = sites/all/modules/features

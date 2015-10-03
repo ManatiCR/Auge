@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Strongarm Killer feature.
+ */
+
+include_once 'auge_strongarm_killer.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Views - Entity forms feature.
+ */
+
+include_once 'auge_views_entity_forms.features.inc';
