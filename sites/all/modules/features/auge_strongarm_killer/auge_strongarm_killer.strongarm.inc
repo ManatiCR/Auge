@@ -108,21 +108,21 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1443821868;
+  $strongarm->value = 1444146446;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nvm9wj';
+  $strongarm->value = 'nvt40m';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1443800255;
+  $strongarm->value = 1444146415;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -565,7 +565,7 @@ function auge_strongarm_killer_strongarm() {
     'auge_content_types_activity' => array(
       'node' => '37a177ce08eb6ff0ca7f453f596582e4',
       'variable' => '0e5f2ba88e6797e7add68a346e8069af',
-      'field_instance' => '83264ddb0250080df8e91d9586213aa2',
+      'field_instance' => '6a45064dfef19ae77a0352e37d830cad',
       'dependencies' => 'b0ac15759d58ce54cf586c413b6bfa47',
     ),
     'auge_content_types_blog_post' => array(
@@ -632,7 +632,7 @@ function auge_strongarm_killer_strongarm() {
       'field_instance' => 'e049e23d46ab753c304569b45261bc27',
       'dependencies' => 'f6526c7adb21bd2cdf4375ef230e7d8b',
       'entityform_type' => '7668dbf2c0f61a2a3751a911ae21cb4c',
-      'page_manager_existing_pages' => '2856cb7ac7a2fee3b4e0a33b36e8ae40',
+      'page_manager_existing_pages' => '87d5d7c96f24cab2ffb723abf478a505',
       'page_manager_handlers' => 'b2f8d4ac32adb26348891da4ecefba4e',
     ),
     'auge_block_settings' => array(
@@ -640,8 +640,16 @@ function auge_strongarm_killer_strongarm() {
       'dependencies' => '763f39f65b966321389d7d93e845d60d',
     ),
     'auge_menus' => array(
-      'menu_custom' => 'c01ee889ff25b0bdbde21db25c62ce41',
+      'menu_custom' => 'f091a498b0126eb6a8b601a81cfe96fd',
       'dependencies' => 'ce43b2cc540f90d9ef38740c8f0b0f83',
+    ),
+    'auge_conditional_fields' => array(
+      'conditional_fields' => 'd22b70e93e517b4326b0cbbfb9c681c3',
+      'dependencies' => '1f5d7e28d5a03722012d71a13b322185',
+    ),
+    'auge_strongarm_killer' => array(
+      'variable' => 'a00a25bde082d565cf26304f0f099d10',
+      'dependencies' => 'e410ca96d90029817c7bb9c7cb1f7ea4',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -2880,6 +2888,7 @@ function auge_strongarm_killer_strongarm() {
     'blockcache_alter' => 1443800986,
     'auge_custom_blocks' => 1443803171,
     'rules_admin' => 1443811535,
+    'panels_mini' => 1444147450,
   );
   $export['module_filter_recent_modules'] = $strongarm;
 
@@ -3216,7 +3225,7 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1443818751;
+  $strongarm->value = 1444147480;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

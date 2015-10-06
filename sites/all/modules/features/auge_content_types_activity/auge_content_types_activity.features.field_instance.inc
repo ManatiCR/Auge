@@ -207,7 +207,7 @@ function auge_content_types_activity_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'no_wrapper',
     'field_name' => 'field_involucrese',
-    'label' => 'Involúcrese (categoría)',
+    'label' => 'Get involved (category)',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -238,7 +238,7 @@ function auge_content_types_activity_field_default_field_instances() {
   t('Activity date');
   t('Activity image');
   t('Body');
-  t('Involúcrese (categoría)');
+  t('Get involved (category)');
 
   return $field_instances;
 }
