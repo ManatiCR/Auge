@@ -90,6 +90,7 @@ function auge_common_fieds_field_group_info() {
       1 => 'field_email',
       2 => 'field_subject',
       3 => 'field_message',
+      4 => 'field_contacted_email',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -121,6 +122,7 @@ function auge_common_fieds_field_group_info() {
       3 => 'field_role',
       4 => 'title',
       5 => 'path',
+      6 => 'field_description',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

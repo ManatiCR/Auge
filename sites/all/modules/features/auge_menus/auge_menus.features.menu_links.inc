@@ -312,23 +312,6 @@ function auge_menus_menu_default_menu_links() {
     'weight' => 0,
     'customized' => 1,
   );
-  // Exported menu link: navigation_search:search
-  $menu_links['navigation_search:search'] = array(
-    'menu_name' => 'navigation',
-    'link_path' => 'search',
-    'router_path' => 'search',
-    'link_title' => 'Search',
-    'options' => array(
-      'identifier' => 'navigation_search:search',
-    ),
-    'module' => 'system',
-    'hidden' => 1,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 0,
-  );
 
   // Translatables
   // Included for use with string extractors like potx.
@@ -341,7 +324,6 @@ function auge_menus_menu_default_menu_links() {
   t('Invest');
   t('Learn');
   t('Mentor');
-  t('Search');
   t('Who we are');
 
   return $menu_links;

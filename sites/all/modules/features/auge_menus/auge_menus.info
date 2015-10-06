@@ -21,5 +21,4 @@ features[menu_links][] = menu-get-involved_invest:/invest
 features[menu_links][] = menu-get-involved_learn:/learn
 features[menu_links][] = menu-get-involved_mentor:/mentor
 features[menu_links][] = menu-social-links_facebook:https://www.facebook.com/
-features[menu_links][] = navigation_search:search
 project path = sites/all/modules/features

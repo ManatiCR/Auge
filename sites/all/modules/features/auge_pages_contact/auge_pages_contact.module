@@ -1,7 +1,44 @@
 <?php
 /**
- * @file
- * Code for the Auge: Pages - Contact feature.
- */
+* @file
+* Code for the Auge: Pages - Contact feature.
+*/
 
 include_once 'auge_pages_contact.features.inc';
+
+/*
+ * Implements hook form alter.
+ */
+function auge_pages_contact_form_alter(&$form, &$form_state, $form_id) {
+ if ($form_id == 'contact_form_entityform_edit_form') {
+    $form['field_contacted_email']['#access'] = FALSE;
+}
+}
+
+/**
+ *Implements hook entity presave.
+ */
+function auge_pages_contact_entity_presave($entity, $type){
+
+  $tid = $entity->field_subject[LANGUAGE_NONE][0]['tid'];
+  $term = taxonomy_term_load($tid);
+  $term_translated = i18n_taxonomy_term_get_translation($term, 'en');
+  $name = $term_translated->name;
+  if ($type == 'entityform'){
+    switch ($name){
+      //Notes: this emails have to change.
+      case 'Entrepreneurship':
+      $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
+      break;
+      case 'Learn':
+      $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
+      break;
+      case 'Invest':
+      $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
+      break;
+      case 'Mentor':
+      $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
+      break;
+    }
+  }
+}
