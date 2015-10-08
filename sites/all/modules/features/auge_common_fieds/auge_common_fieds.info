@@ -22,6 +22,7 @@ features[field_base][] = field_activity_image
 features[field_base][] = field_area
 features[field_base][] = field_blog_image
 features[field_base][] = field_contacted_email
+features[field_base][] = field_description
 features[field_base][] = field_email
 features[field_base][] = field_get_involved_category
 features[field_base][] = field_involucrese

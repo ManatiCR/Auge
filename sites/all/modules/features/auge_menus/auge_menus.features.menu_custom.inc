@@ -15,24 +15,30 @@ function auge_menus_menu_default_menu_custom() {
     'menu_name' => 'main-menu',
     'title' => 'Main menu',
     'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
+    'language' => 'und',
+    'i18n_mode' => 0,
   );
   // Exported menu: menu-get-involved.
   $menus['menu-get-involved'] = array(
     'menu_name' => 'menu-get-involved',
     'title' => 'Get involved',
     'description' => '',
+    'language' => 'und',
+    'i18n_mode' => 5,
   );
   // Exported menu: menu-social-links.
   $menus['menu-social-links'] = array(
     'menu_name' => 'menu-social-links',
-    'title' => 'Social Links',
+    'title' => 'Contact',
     'description' => '',
+    'language' => 'und',
+    'i18n_mode' => 5,
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Contact');
   t('Get involved');
   t('Main menu');
-  t('Social Links');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
 
 

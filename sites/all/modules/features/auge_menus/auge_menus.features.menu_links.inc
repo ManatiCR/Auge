@@ -26,6 +26,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -46,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: main-menu_contact:/contact
   $menu_links['main-menu_contact:/contact'] = array(
@@ -34,13 +36,13 @@ function auge_menus_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Contact',
     'options' => array(
+      'identifier' => 'main-menu_contact:/contact',
       'attributes' => array(),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'main-menu_contact:/contact',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -49,30 +51,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
-  );
-  // Exported menu link: main-menu_entrepreneurship:entrepreneurship
-  $menu_links['main-menu_entrepreneurship:entrepreneurship'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'entrepreneurship',
-    'router_path' => 'entrepreneurship',
-    'link_title' => 'Entrepreneurship',
-    'options' => array(
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_entrepreneurship:entrepreneurship',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_get-involved:',
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: main-menu_get-involved:
   $menu_links['main-menu_get-involved:'] = array(
@@ -90,23 +70,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
-  );
-  // Exported menu link: main-menu_home:<front>
-  $menu_links['main-menu_home:<front>'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'Home',
-    'options' => array(
-      'identifier' => 'main-menu_home:<front>',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: main-menu_invest:invest
   $menu_links['main-menu_invest:invest'] = array(
@@ -130,6 +95,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -47,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_get-involved:',
   );
   // Exported menu link: main-menu_learn:/learn
@@ -154,6 +121,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_get-involved:',
   );
   // Exported menu link: main-menu_mentor:mentor
@@ -178,6 +147,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_get-involved:',
   );
   // Exported menu link: main-menu_who-we-are:whoweare
@@ -196,29 +167,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -48,
     'customized' => 1,
-  );
-  // Exported menu link: menu-get-involved_entrepreneurship:/entrepreneurship
-  $menu_links['menu-get-involved_entrepreneurship:/entrepreneurship'] = array(
-    'menu_name' => 'menu-get-involved',
-    'link_path' => '/entrepreneurship',
-    'router_path' => '',
-    'link_title' => 'Entrepreneurship',
-    'options' => array(
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-      'identifier' => 'menu-get-involved_entrepreneurship:/entrepreneurship',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: menu-get-involved_invest:/invest
   $menu_links['menu-get-involved_invest:/invest'] = array(
@@ -234,6 +184,7 @@ function auge_menus_menu_default_menu_links() {
         'style' => '',
       ),
       'identifier' => 'menu-get-involved_invest:/invest',
+      'alter' => TRUE,
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -242,6 +193,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: menu-get-involved_learn:/learn
   $menu_links['menu-get-involved_learn:/learn'] = array(
@@ -257,6 +210,7 @@ function auge_menus_menu_default_menu_links() {
         'style' => '',
       ),
       'identifier' => 'menu-get-involved_learn:/learn',
+      'alter' => TRUE,
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -265,6 +219,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: menu-get-involved_mentor:/mentor
   $menu_links['menu-get-involved_mentor:/mentor'] = array(
@@ -280,6 +236,7 @@ function auge_menus_menu_default_menu_links() {
         'style' => '',
       ),
       'identifier' => 'menu-get-involved_mentor:/mentor',
+      'alter' => TRUE,
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -288,6 +245,8 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
   // Exported menu link: menu-social-links_facebook:https://www.facebook.com/
   $menu_links['menu-social-links_facebook:https://www.facebook.com/'] = array(
@@ -303,6 +262,7 @@ function auge_menus_menu_default_menu_links() {
         'style' => '',
       ),
       'identifier' => 'menu-social-links_facebook:https://www.facebook.com/',
+      'alter' => TRUE,
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -311,20 +271,46 @@ function auge_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-social-links_youtube:https://www.youtube.com/
+  $menu_links['menu-social-links_youtube:https://www.youtube.com/'] = array(
+    'menu_name' => 'menu-social-links',
+    'link_path' => 'https://www.youtube.com/',
+    'router_path' => '',
+    'link_title' => 'Youtube',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-social-links_youtube:https://www.youtube.com/',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
   t('Contact');
-  t('Entrepreneurship');
   t('Facebook');
   t('Get involved');
-  t('Home');
   t('Invest');
   t('Learn');
   t('Mentor');
   t('Who we are');
+  t('Youtube');
 
   return $menu_links;
 }

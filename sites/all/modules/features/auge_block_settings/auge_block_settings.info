@@ -1,8 +1,13 @@
 name = Auge: Block settings
 core = 7.x
 package = Auge
+dependencies[] = auge_custom_blocks
 dependencies[] = fe_block
+dependencies[] = locale
 dependencies[] = menu
+features[fe_block_settings][] = auge_custom_blocks-contact_information
+features[fe_block_settings][] = auge_custom_blocks-contact_information_spanish
+features[fe_block_settings][] = locale-language
 features[fe_block_settings][] = menu-menu-get-involved
 features[fe_block_settings][] = menu-menu-social-links
 features[fe_block_settings][] = node-recent

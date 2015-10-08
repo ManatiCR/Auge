@@ -24,4 +24,5 @@ features[field_instance][] = entityform-contact_form-field_name
 features[field_instance][] = entityform-contact_form-field_subject
 features[page_manager_existing_pages][] = contact_form_example
 features[page_manager_handlers][] = pm_existing_pages_contact_form_example__panel_context_667e5647-0592-4701-bee9-02e481c0f18b
+features[page_manager_handlers][] = pm_existing_pages_contact_form_example__panel_context_c14043ba-c684-4238-b34d-4ccb3e41f7d5
 project path = sites/all/modules/features

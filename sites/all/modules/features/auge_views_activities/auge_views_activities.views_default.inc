@@ -91,8 +91,171 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
   $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
 
-  /* Display: Sidebar activity block */
-  $handler = $view->new_display('panel_pane', 'Sidebar activity block', 'panel_pane_1');
+  /* Display: Footer block English */
+  $handler = $view->new_display('block', 'Footer block English', 'block_1');
+  $handler->display->display_options['link_url'] = '/activities';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_activity_date' => 'field_activity_date',
+    'title' => 'title',
+  );
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_activity_date' => 'left',
+    'title' => 'right',
+    'view_node' => 'right',
+  );
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Activity date */
+  $handler->display->display_options['fields']['field_activity_date']['id'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
+    'format_type' => 'sidebar_date',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'See more';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
+
+  /* Display: Footer block Spanish */
+  $handler = $view->new_display('block', 'Footer block Spanish', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Actividades';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'Ver todas las actividades';
+  $handler->display->display_options['link_url'] = '/activities';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_activity_date' => 'field_activity_date',
+    'title' => 'title',
+  );
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_activity_date' => 'left',
+    'title' => 'right',
+    'view_node' => 'right',
+  );
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Activity date */
+  $handler->display->display_options['fields']['field_activity_date']['id'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
+    'format_type' => 'sidebar_date',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'See more';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+
+  /* Display: Sidebar block English */
+  $handler = $view->new_display('panel_pane', 'Sidebar block English', 'panel_pane_1');
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['link_url'] = '/activities';
@@ -138,9 +301,53 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'See more';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Footer Block */
-  $handler = $view->new_display('block', 'Footer Block', 'block_1');
+  /* Display: Sidebar block Spanish */
+  $handler = $view->new_display('panel_pane', 'Sidebar block Spanish', 'panel_pane_7');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Actividades';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'Ver todas las actividades';
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['link_url'] = '/activities';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
@@ -184,9 +391,43 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'See more';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Content Pane Activity Full */
-  $handler = $view->new_display('panel_pane', 'Content Pane Activity Full', 'panel_pane_2');
+  /* Display: Activities full page English */
+  $handler = $view->new_display('panel_pane', 'Activities full page English', 'panel_pane_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
@@ -260,31 +501,78 @@ function auge_views_activities_views_default_views() {
     'multiple_from' => '',
     'multiple_to' => '',
   );
-  $handler->display->display_options['pane_category']['name'] = 'View Panes';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
   $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Newest activity Learn */
-  $handler = $view->new_display('panel_pane', 'Newest activity Learn', 'panel_pane_3');
+  /* Display: Activities full page Spanish */
+  $handler = $view->new_display('panel_pane', 'Activities full page Spanish', 'panel_pane_8');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View all';
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
   $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '3';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '«';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹';
+  $handler->display->display_options['pager']['options']['tags']['next'] = '›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = '»';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'field_activity_date_1',
+      'rendered' => 0,
+      'rendered_strip' => 0,
+    ),
+  );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'panels_fields';
   $handler->display->display_options['row_options']['inline'] = array(
     'field_activity_date' => 'field_activity_date',
     'title' => 'title',
-    'view_node' => 'view_node',
   );
   $handler->display->display_options['row_options']['regions'] = array(
     'field_activity_date' => 'left',
     'title' => 'right',
-    'view_node' => 'right',
   );
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -295,7 +583,7 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['fields']['field_activity_date']['label'] = '';
   $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
-    'format_type' => 'new_activity',
+    'format_type' => 'sidebar_date',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -307,13 +595,22 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'See the event';
+  /* Field: Month and year (grouping) */
+  $handler->display->display_options['fields']['field_activity_date_1']['id'] = 'field_activity_date_1';
+  $handler->display->display_options['fields']['field_activity_date_1']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date_1']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date_1']['ui_name'] = 'Month and year (grouping)';
+  $handler->display->display_options['fields']['field_activity_date_1']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_activity_date_1']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['field_activity_date_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date_1']['settings'] = array(
+    'format_type' => 'month_and_year',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -338,27 +635,18 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
   $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
   $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
-  /* Filter criterion: Content: Has taxonomy term */
-  $handler->display->display_options['filters']['tid']['id'] = 'tid';
-  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['filters']['tid']['field'] = 'tid';
-  $handler->display->display_options['filters']['tid']['value'] = array(
-    5 => '5',
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
   );
-  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
-  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
-  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
-  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
-  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-  );
-  $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Newest activity Entrepreneurship */
-  $handler = $view->new_display('panel_pane', 'Newest activity Entrepreneurship', 'panel_pane_4');
+  /* Display: Newest activity Learn English */
+  $handler = $view->new_display('panel_pane', 'Newest activity Learn English', 'panel_pane_9');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -450,9 +738,18 @@ function auge_views_activities_views_default_views() {
   );
   $handler->display->display_options['filters']['tid']['type'] = 'select';
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Newest activity Mentor */
-  $handler = $view->new_display('panel_pane', 'Newest activity Mentor', 'panel_pane_5');
+  /* Display: Newest activity Learn Spanish */
+  $handler = $view->new_display('panel_pane', 'Newest activity Learn Spanish', 'panel_pane_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -501,7 +798,7 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'See the event';
+  $handler->display->display_options['fields']['view_node']['text'] = 'Ver el evento';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -544,9 +841,18 @@ function auge_views_activities_views_default_views() {
   );
   $handler->display->display_options['filters']['tid']['type'] = 'select';
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Newest activity Invest */
-  $handler = $view->new_display('panel_pane', 'Newest activity Invest', 'panel_pane_6');
+  /* Display: Newest activity Entrepreneur English */
+  $handler = $view->new_display('panel_pane', 'Newest activity Entrepreneur English', 'panel_pane_4');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
@@ -625,7 +931,7 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    5 => '5',
+    6 => '6',
   );
   $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
   $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
@@ -638,6 +944,530 @@ function auge_views_activities_views_default_views() {
   );
   $handler->display->display_options['filters']['tid']['type'] = 'select';
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Newest activity Entrepreneur Spanish */
+  $handler = $view->new_display('panel_pane', 'Newest activity Entrepreneur Spanish', 'panel_pane_10');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_activity_date' => 'field_activity_date',
+    'title' => 'title',
+    'view_node' => 'view_node',
+  );
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_activity_date' => 'left',
+    'title' => 'right',
+    'view_node' => 'right',
+  );
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Activity date */
+  $handler->display->display_options['fields']['field_activity_date']['id'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
+    'format_type' => 'new_activity',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'Ver el evento';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    6 => '6',
+  );
+  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Newest activity Mentor English */
+  $handler = $view->new_display('panel_pane', 'Newest activity Mentor English', 'panel_pane_5');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_activity_date' => 'field_activity_date',
+    'title' => 'title',
+    'view_node' => 'view_node',
+  );
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_activity_date' => 'left',
+    'title' => 'right',
+    'view_node' => 'right',
+  );
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Activity date */
+  $handler->display->display_options['fields']['field_activity_date']['id'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
+    'format_type' => 'new_activity',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'See the event';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    7 => '7',
+  );
+  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Newest activity Mentor Spanish */
+  $handler = $view->new_display('panel_pane', 'Newest activity Mentor Spanish', 'panel_pane_11');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_activity_date' => 'field_activity_date',
+    'title' => 'title',
+    'view_node' => 'view_node',
+  );
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_activity_date' => 'left',
+    'title' => 'right',
+    'view_node' => 'right',
+  );
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Activity date */
+  $handler->display->display_options['fields']['field_activity_date']['id'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
+    'format_type' => 'new_activity',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'Ver el evento';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    7 => '7',
+  );
+  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Newest activity Invest English */
+  $handler = $view->new_display('panel_pane', 'Newest activity Invest English', 'panel_pane_6');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_activity_date' => 'field_activity_date',
+    'title' => 'title',
+    'view_node' => 'view_node',
+  );
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_activity_date' => 'left',
+    'title' => 'right',
+    'view_node' => 'right',
+  );
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Activity date */
+  $handler->display->display_options['fields']['field_activity_date']['id'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
+    'format_type' => 'new_activity',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'See the event';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    8 => '8',
+  );
+  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Newest activity Invest Spanish */
+  $handler = $view->new_display('panel_pane', 'Newest activity Invest Spanish', 'panel_pane_12');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_activity_date' => 'field_activity_date',
+    'title' => 'title',
+    'view_node' => 'view_node',
+  );
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_activity_date' => 'left',
+    'title' => 'right',
+    'view_node' => 'right',
+  );
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Activity date */
+  $handler->display->display_options['fields']['field_activity_date']['id'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
+  $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
+    'format_type' => 'new_activity',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'Ver el evento';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'activity' => 'activity',
+  );
+  /* Filter criterion: Content: Activity date (field_activity_date) */
+  $handler->display->display_options['filters']['field_activity_date_value']['id'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['table'] = 'field_data_field_activity_date';
+  $handler->display->display_options['filters']['field_activity_date_value']['field'] = 'field_activity_date_value';
+  $handler->display->display_options['filters']['field_activity_date_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_activity_date_value']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_activity_date_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_activity_date_value']['year_range'] = '-0:+3';
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['value'] = array(
+    8 => '8',
+  );
+  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Has taxonomy term';
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Activities';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $translatables['proximas_actividades'] = array(
     t('Master'),
     t('Activities'),
@@ -647,12 +1477,15 @@ function auge_views_activities_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Sidebar activity block'),
+    t('Footer block English'),
     t('more'),
     t('See more'),
-    t('View panes'),
-    t('Footer Block'),
-    t('Content Pane Activity Full'),
+    t('Footer block Spanish'),
+    t('Actividades'),
+    t('Ver todas las actividades'),
+    t('Sidebar block English'),
+    t('Sidebar block Spanish'),
+    t('Activities full page English'),
     t('Items per page'),
     t('- All -'),
     t('Offset'),
@@ -660,14 +1493,19 @@ function auge_views_activities_views_default_views() {
     t('‹'),
     t('›'),
     t('»'),
-    t('View Panes'),
-    t('Newest activity Learn'),
+    t('Activities full page Spanish'),
+    t('Newest activity Learn English'),
     t('Newest activity pane for get involved pages.'),
     t('See the event'),
     t('Has taxonomy term'),
-    t('Newest activity Entrepreneurship'),
-    t('Newest activity Mentor'),
-    t('Newest activity Invest'),
+    t('Newest activity Learn Spanish'),
+    t('Ver el evento'),
+    t('Newest activity Entrepreneur English'),
+    t('Newest activity Entrepreneur Spanish'),
+    t('Newest activity Mentor English'),
+    t('Newest activity Mentor Spanish'),
+    t('Newest activity Invest English'),
+    t('Newest activity Invest Spanish'),
   );
   $export['proximas_actividades'] = $view;
 

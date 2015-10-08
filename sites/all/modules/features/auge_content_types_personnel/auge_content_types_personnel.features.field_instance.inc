@@ -60,6 +60,59 @@ function auge_content_types_personnel_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-personnel-field_description'
+  $field_instances['node-personnel-field_description'] = array(
+    'bundle' => 'personnel',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_description',
+    'label' => 'Description',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Description',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-personnel-field_occupation'
   $field_instances['node-personnel-field_occupation'] = array(
     'bundle' => 'personnel',
@@ -232,6 +285,7 @@ function auge_content_types_personnel_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Area');
+  t('Description');
   t('Occupation');
   t('Personnel photo');
   t('Role');

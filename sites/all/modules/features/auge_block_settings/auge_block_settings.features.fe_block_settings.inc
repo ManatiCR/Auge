@@ -12,11 +12,100 @@ function auge_block_settings_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['auge_custom_blocks-contact_information'] = array(
+    'cache' => 8,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'contact_information',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'auge_custom_blocks',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => -13,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['auge_custom_blocks-contact_information_spanish'] = array(
+    'cache' => 8,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'contact_information_spanish',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'auge_custom_blocks',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => -12,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['locale-language'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'language',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'locale',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => 'header',
+        'status' => 1,
+        'theme' => 'bartik',
+        'weight' => -14,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['menu-menu-get-involved'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
     'delta' => 'menu-get-involved',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'menu',
     'node_types' => array(),
     'pages' => '',
@@ -44,6 +133,8 @@ function auge_block_settings_default_fe_block_settings() {
     'css_class' => '',
     'custom' => 0,
     'delta' => 'menu-social-links',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'menu',
     'node_types' => array(),
     'pages' => '',
@@ -62,7 +153,7 @@ function auge_block_settings_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Contact',
+    'title' => '',
     'visibility' => 0,
   );
 
@@ -71,61 +162,9 @@ function auge_block_settings_default_fe_block_settings() {
     'css_class' => '',
     'custom' => 0,
     'delta' => 'recent',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'node',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => -1,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 10,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['system-main-menu'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'main-menu',
-    'module' => 'system',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => -13,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['system-powered-by'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'powered-by',
-    'module' => 'system',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -147,11 +186,71 @@ function auge_block_settings_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['system-main-menu'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'main-menu',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => -6,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['system-powered-by'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'powered-by',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => -3,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 10,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['user-login'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
     'delta' => 'login',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'user',
     'node_types' => array(),
     'pages' => '',
@@ -179,6 +278,8 @@ function auge_block_settings_default_fe_block_settings() {
     'css_class' => '',
     'custom' => 0,
     'delta' => 'new',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'user',
     'node_types' => array(),
     'pages' => '',
@@ -188,7 +289,7 @@ function auge_block_settings_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'seven' => array(
         'region' => '',
@@ -206,6 +307,8 @@ function auge_block_settings_default_fe_block_settings() {
     'css_class' => '',
     'custom' => 0,
     'delta' => 'online',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'user',
     'node_types' => array(),
     'pages' => '',
@@ -215,7 +318,7 @@ function auge_block_settings_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'seven' => array(
         'region' => '',

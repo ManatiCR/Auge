@@ -52,7 +52,7 @@ function auge_pages_contact_default_entityform_type() {
     "paths" : { "submit" : {
         "source" : "eform\\/submit\\/contact-form",
         "alias" : "contact",
-        "language" : "und"
+        "language" : "en"
       }
     }
   }');
