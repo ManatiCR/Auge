@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Auge: Views - Get involved feature.
- */
-
-include_once 'auge_views_get_involved.features.inc';

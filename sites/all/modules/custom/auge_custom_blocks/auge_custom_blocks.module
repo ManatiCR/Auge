@@ -25,7 +25,7 @@ function auge_custom_blocks_block_configure($delta = '') {
       break;
     case 'contact_information_spanish':
       $default = array(
-        'value' => '<p>' . t('​Campus Rodrigo Facio, UCR.') . '</p>' . '<p>' . t('"Casa emprendedora María Teresa Obregón", 100 meters east and 100 north from the "Fuente de la Hispanidad", San Pedro, San José.') . '</p>' .   '<p>' . t('Phone:') . '</p>' . '<p>' . t('+506 2511-1334') . '</p>' . '<p>' . t('Contact:') . '</p>' . '<p>' . t('luisalonso@augeucr.com') . '</p>',
+        'value' => '<p>' . t('​Campus Rodrigo Facio, UCR.') . '</p>' . '<p>' . t('Casa emprendedora María Teresa Obregón, 100 metros este y 100 norte de la Fuente de la Hispanidad, San Pedro, San José.') . '</p>' .   '<p>' . t('Teléfono:') . '</p>' . '<p>' . t('+506 2511-1334') . '</p>' . '<p>' . t('Contacto:') . '</p>' . '<p>' . t('luisalonso@augeucr.com') . '</p>',
         'format' => 'manati_texto_formato',
       );
       $text_body_field_contact = variable_get('auge_ftr_blocks_text_body_contact_spanish', $default);
@@ -45,11 +45,11 @@ function auge_custom_blocks_block_configure($delta = '') {
 function auge_custom_blocks_block_info() {
   return array(
     'contact_information' => array(
-      'info' => t('Contact information'),
+      'info' => t('Contact information: English.'),
       'cache' => DRUPAL_CACHE_GLOBAL,
     ),
     'contact_information_spanish' => array(
-      'info' => t('Contact information in spanish'),
+      'info' => t('Contact information: Spanish.'),
       'cache' => DRUPAL_CACHE_GLOBAL,
     ),
   );
@@ -78,7 +78,7 @@ function auge_custom_blocks_block_view($delta = '') {
       break;
     case 'contact_information_spanish':
       $default = array(
-        'value' => '<p>' . t('​Campus Rodrigo Facio, UCR.') . '</p>' . '<p>' . t('"Casa emprendedora María Teresa Obregón", 100 meters east and 100 north from the "Fuente de la Hispanidad", San Pedro, San José.') . '</p>' .   '<p>' . t('Phone:') . '</p>' . '<p>' . t('+506 2511-1334') . '</p>' . '<p>' . t('Contact:') . '</p>' . '<p>' . t('luisalonso@augeucr.com') . '</p>',
+        'value' => '<p>' . t('​Campus Rodrigo Facio, UCR.') . '</p>' . '<p>' . t('Casa emprendedora María Teresa Obregón, 100 metros este y 100 norte de la Fuente de la Hispanidad, San Pedro, San José.') . '</p>' .   '<p>' . t('Teléfono:') . '</p>' . '<p>' . t('+506 2511-1334') . '</p>' . '<p>' . t('Contacto:') . '</p>' . '<p>' . t('luisalonso@augeucr.com') . '</p>',
         'format' => 'manati_texto_formato',
       );
       $custom_block_text = variable_get('auge_ftr_blocks_text_body_contact_spanish', $default);
@@ -86,7 +86,7 @@ function auge_custom_blocks_block_view($delta = '') {
       $block['content'] = array(
         'message' => array(
           '#type' => 'markup',
-          check_markup($custom_block_text['value'], $custom_block_text['format'] ),
+          '#markup' => check_markup($custom_block_text['value'], $custom_block_text['format'] ),
         ),
       );
       break;
