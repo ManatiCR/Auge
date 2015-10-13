@@ -22,8 +22,8 @@ function auge_pages_contact_entity_presave($entity, $type) {
       $term_translated = i18n_taxonomy_term_get_translation($term, 'en');
       $name = $term_translated->name;
       switch ($name) {
-        //Note: this emails have to change.
-        case 'Entrepreneurship':
+        //Note: these emails have to change.
+        case 'Entrepreneur':
         $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
         break;
         case 'Learn':

@@ -36,13 +36,13 @@ function auge_menus_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Contact',
     'options' => array(
-      'identifier' => 'main-menu_contact:/contact',
       'attributes' => array(),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
+      'identifier' => 'main-menu_contact:/contact',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -262,32 +262,6 @@ function auge_menus_menu_default_menu_links() {
         'style' => '',
       ),
       'identifier' => 'menu-social-links_facebook:https://www.facebook.com/',
-      'alter' => TRUE,
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: menu-social-links_youtube:https://www.youtube.com/
-  $menu_links['menu-social-links_youtube:https://www.youtube.com/'] = array(
-    'menu_name' => 'menu-social-links',
-    'link_path' => 'https://www.youtube.com/',
-    'router_path' => '',
-    'link_title' => 'Youtube',
-    'options' => array(
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-      'identifier' => 'menu-social-links_youtube:https://www.youtube.com/',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -310,7 +284,6 @@ function auge_menus_menu_default_menu_links() {
   t('Learn');
   t('Mentor');
   t('Who we are');
-  t('Youtube');
 
   return $menu_links;
 }

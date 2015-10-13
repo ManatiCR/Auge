@@ -69,6 +69,62 @@ function auge_contexts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'blog_footer_english';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'language' => array(
+      'values' => array(
+        'en' => 'en',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-blog_list-block_1' => array(
+          'module' => 'views',
+          'delta' => 'blog_list-block_1',
+          'region' => 'footer_secondcolumn',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['blog_footer_english'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'blog_footer_spanish';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'language' => array(
+      'values' => array(
+        'es' => 'es',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-blog_list-block_2' => array(
+          'module' => 'views',
+          'delta' => 'blog_list-block_2',
+          'region' => 'footer_secondcolumn',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['blog_footer_spanish'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'contact_footer_english';
   $context->description = '';
   $context->tag = '';

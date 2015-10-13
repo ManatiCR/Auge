@@ -29,16 +29,16 @@ function auge_menus_menu_default_menu_custom() {
   // Exported menu: menu-social-links.
   $menus['menu-social-links'] = array(
     'menu_name' => 'menu-social-links',
-    'title' => 'Contact',
+    'title' => 'Social Links',
     'description' => '',
     'language' => 'und',
-    'i18n_mode' => 5,
+    'i18n_mode' => 0,
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Contact');
   t('Get involved');
   t('Main menu');
+  t('Social Links');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
 
 

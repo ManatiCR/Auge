@@ -39,8 +39,8 @@ function auge_pages_contact_default_entityform_type() {
       "submission_page_title" : "",
       "submission_text" : { "value" : "", "format" : "manati_texto_formato" },
       "submission_show_submitted" : 0,
-      "submissions_view" : "entityforms",
-      "user_submissions_view" : "entityforms",
+      "submissions_view" : "default",
+      "user_submissions_view" : "default",
       "form_status" : "ENTITYFORM_OPEN",
       "roles" : { "1" : "1", "2" : "2", "3" : "3" },
       "resubmit_action" : "new",
@@ -51,8 +51,8 @@ function auge_pages_contact_default_entityform_type() {
     "rdf_mapping" : [],
     "paths" : { "submit" : {
         "source" : "eform\\/submit\\/contact-form",
-        "alias" : "contact",
-        "language" : "en"
+        "alias" : "contacto",
+        "language" : "es"
       }
     }
   }');
