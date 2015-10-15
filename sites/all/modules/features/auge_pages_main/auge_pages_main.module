@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Pages - Main feature.
+ */
+
+include_once 'auge_pages_main.features.inc';
