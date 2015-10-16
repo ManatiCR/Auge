@@ -54,6 +54,32 @@ function auge_menus_menu_default_menu_links() {
     'language' => 'und',
     'menu_links_customized' => 1,
   );
+  // Exported menu link: main-menu_entrepreneur:/entrepreneur
+  $menu_links['main-menu_entrepreneur:/entrepreneur'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => '/entrepreneur',
+    'router_path' => '',
+    'link_title' => 'Entrepreneur',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'main-menu_entrepreneur:/entrepreneur',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_get-involved:',
+  );
   // Exported menu link: main-menu_get-involved:
   $menu_links['main-menu_get-involved:'] = array(
     'menu_name' => 'main-menu',
@@ -151,6 +177,32 @@ function auge_menus_menu_default_menu_links() {
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_get-involved:',
   );
+  // Exported menu link: main-menu_projects:projects
+  $menu_links['main-menu_projects:projects'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'projects',
+    'router_path' => 'projects',
+    'link_title' => 'Projects',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'alter' => TRUE,
+      'identifier' => 'main-menu_projects:projects',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -49,
+    'customized' => 1,
+    'language' => 'en',
+    'menu_links_customized' => 1,
+  );
   // Exported menu link: main-menu_who-we-are:whoweare
   $menu_links['main-menu_who-we-are:whoweare'] = array(
     'menu_name' => 'main-menu',
@@ -166,6 +218,32 @@ function auge_menus_menu_default_menu_links() {
     'has_children' => 0,
     'expanded' => 0,
     'weight' => -48,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: menu-get-involved_entrepreneur:/entrepreneur
+  $menu_links['menu-get-involved_entrepreneur:/entrepreneur'] = array(
+    'menu_name' => 'menu-get-involved',
+    'link_path' => '/entrepreneur',
+    'router_path' => '',
+    'link_title' => 'Entrepreneur',
+    'options' => array(
+      'identifier' => 'menu-get-involved_entrepreneur:/entrepreneur',
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'alter' => TRUE,
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
     'customized' => 1,
     'language' => 'und',
     'menu_links_customized' => 1,
@@ -273,16 +351,44 @@ function auge_menus_menu_default_menu_links() {
     'language' => 'und',
     'menu_links_customized' => 1,
   );
+  // Exported menu link: menu-social-links_twitter:https://twitter.com/
+  $menu_links['menu-social-links_twitter:https://twitter.com/'] = array(
+    'menu_name' => 'menu-social-links',
+    'link_path' => 'https://twitter.com/',
+    'router_path' => '',
+    'link_title' => 'Twitter',
+    'options' => array(
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+      'identifier' => 'menu-social-links_twitter:https://twitter.com/',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+  );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
   t('Contact');
+  t('Entrepreneur');
   t('Facebook');
   t('Get involved');
   t('Invest');
   t('Learn');
   t('Mentor');
+  t('Projects');
+  t('Twitter');
   t('Who we are');
 
   return $menu_links;

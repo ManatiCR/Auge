@@ -34,6 +34,13 @@ function auge_strongarm_killer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_front_page_images';
+  $strongarm->value = 'edit-menu';
+  $export['additional_settings__active_tab_front_page_images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_personnel';
   $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_personnel'] = $strongarm;
@@ -108,21 +115,21 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'cron_last';
-  $strongarm->value = 1444771075;
+  $strongarm->value = 1445028637;
   $export['cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'nw6gwk';
+  $strongarm->value = 'nwc1df';
   $export['css_js_query_string'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ctools_last_cron';
-  $strongarm->value = 1444760235;
+  $strongarm->value = 1445016925;
   $export['ctools_last_cron'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -298,6 +305,13 @@ function auge_strongarm_killer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_front_page_images';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_front_page_images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'diff_enable_revisions_page_node_personnel';
   $strongarm->value = 1;
   $export['diff_enable_revisions_page_node_personnel'] = $strongarm;
@@ -333,6 +347,13 @@ function auge_strongarm_killer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_front_page_images';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_front_page_images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'diff_show_preview_changes_node_personnel';
   $strongarm->value = 1;
   $export['diff_show_preview_changes_node_personnel'] = $strongarm;
@@ -364,6 +385,13 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->name = 'diff_view_mode_preview_node_blog_post';
   $strongarm->value = 'full';
   $export['diff_view_mode_preview_node_blog_post'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_front_page_images';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_front_page_images'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -552,11 +580,11 @@ function auge_strongarm_killer_strongarm() {
       'user_permission' => '3885e4843b148b1cc7e5f1c6f0b68dfe',
     ),
     'auge_taxonomy_blog_category' => array(
-      'taxonomy' => '3223184d53965695ed04cfdeb73b7fd2',
+      'taxonomy' => '115aea8ed1f700639b0187e5029824fc',
       'dependencies' => '527d6d95ea1328d369bc2f6a635f9386',
     ),
     'auge_taxonomy_get_involved' => array(
-      'taxonomy' => '2906cde4f4328fe2f9a4c9fa04950225',
+      'taxonomy' => '1ad1b87e16a36295c2db5ae713d06ddc',
       'dependencies' => '527d6d95ea1328d369bc2f6a635f9386',
     ),
     'auge_taxonomy_personnel' => array(
@@ -569,7 +597,7 @@ function auge_strongarm_killer_strongarm() {
     ),
     'auge_content_types_activity' => array(
       'node' => '37a177ce08eb6ff0ca7f453f596582e4',
-      'variable' => 'd185c0a895fa422eab41fead2ada4c91',
+      'variable' => '0e5f2ba88e6797e7add68a346e8069af',
       'field_instance' => '35751fc9af0beccf05c51f8797221767',
       'dependencies' => 'b0ac15759d58ce54cf586c413b6bfa47',
     ),
@@ -603,7 +631,7 @@ function auge_strongarm_killer_strongarm() {
     ),
     'auge_views_blog' => array(
       'dependencies' => '5aa4991c233da0e9f47c4b23836e0c28',
-      'views_view' => '1287b2ef22fdd8100a10d3cfe9c30ac1',
+      'views_view' => '2085089acdc4a2f1803d5ea6716bbf92',
     ),
     'auge_views_get_involved' => array(
       'dependencies' => '5aa4991c233da0e9f47c4b23836e0c28',
@@ -619,15 +647,15 @@ function auge_strongarm_killer_strongarm() {
     ),
     'auge_pages_get_involved' => array(
       'dependencies' => 'bcc02e403dc3b4c6e526684b653d757e',
-      'page_manager_pages' => 'ae5d85609b259322e3626eae671b5b2b',
+      'page_manager_pages' => '36c7ad5e11fc58b047adbba8ef79f9b0',
     ),
     'auge_pages_activities' => array(
       'dependencies' => 'bcc02e403dc3b4c6e526684b653d757e',
-      'page_manager_pages' => '1fc81422c33f9c74b7ec25856b8f0145',
+      'page_manager_pages' => 'b8410c5862095d6ffbe76578af9653f9',
     ),
     'auge_pages_blog' => array(
       'dependencies' => 'bcc02e403dc3b4c6e526684b653d757e',
-      'page_manager_pages' => '6632bd372cfb625317c7d3e9f5cf8ea6',
+      'page_manager_pages' => '130210491fbfcb8d4ea447816e8b5e5c',
     ),
     'auge_pages_who_we_are' => array(
       'dependencies' => 'bcc02e403dc3b4c6e526684b653d757e',
@@ -636,26 +664,26 @@ function auge_strongarm_killer_strongarm() {
     'auge_pages_contact' => array(
       'field_instance' => '3fa1a04094386cb04a72cbbad3bf40e1',
       'dependencies' => 'f6526c7adb21bd2cdf4375ef230e7d8b',
-      'entityform_type' => '7668dbf2c0f61a2a3751a911ae21cb4c',
+      'entityform_type' => '74d66cf41be566cf3599402e30689e94',
       'page_manager_existing_pages' => '87d5d7c96f24cab2ffb723abf478a505',
-      'page_manager_handlers' => 'b2f8d4ac32adb26348891da4ecefba4e',
+      'page_manager_handlers' => '3649ec1d482e9aba77c92bfe43a6853f',
     ),
     'auge_block_settings' => array(
-      'fe_block_settings' => '5ad11bfea797f4a8ce5561137c1ba8f8',
+      'fe_block_settings' => '56e490a61385b6764c48345d285b9015',
       'dependencies' => 'e84c322b3d62169a1f46de5e0027d28a',
       'fe_block_boxes' => 'b7e463d78b6b4da5d725eda1aa53ba61',
     ),
     'auge_menus' => array(
       'menu_custom' => 'f521bca3bd2e3bdfe601a7c4b550392c',
       'dependencies' => 'ce43b2cc540f90d9ef38740c8f0b0f83',
-      'menu_links' => '1d56d23c7aac0f21bdaeae5e8359b2fd',
+      'menu_links' => '11a5e2d760e5ac1ac59863e76ac76b7d',
     ),
     'auge_conditional_fields' => array(
       'conditional_fields' => 'd22b70e93e517b4326b0cbbfb9c681c3',
       'dependencies' => '1f5d7e28d5a03722012d71a13b322185',
     ),
     'auge_strongarm_killer' => array(
-      'variable' => '389678c4b13f9681d454df1c41e4f6ce',
+      'variable' => '6d17575ba5926ccdf8f57188d43325e9',
       'dependencies' => 'e410ca96d90029817c7bb9c7cb1f7ea4',
     ),
     'auge_pages_projects' => array(
@@ -673,6 +701,15 @@ function auge_strongarm_killer_strongarm() {
     'auge_contexts' => array(
       'dependencies' => 'c98be01fb0b6be965e760a7d90927d55',
       'context' => 'baa2736c6b47796df8e42fd538d9f37b',
+    ),
+    'auge_pages_main' => array(
+      'dependencies' => 'bcc02e403dc3b4c6e526684b653d757e',
+      'page_manager_pages' => '15952af1937f6fede29edd2f8a6b125b',
+    ),
+    'auge_roles' => array(
+      'user_role' => '3dea9a7ef52329b0f010cee68516d76a',
+      'user_permission' => '0cbf47656d53604ee98b683790167345',
+      'dependencies' => 'c7116aa8b1866a9acc79ba7c88ce5fc9',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -745,6 +782,26 @@ function auge_strongarm_killer_strongarm() {
     ),
   );
   $export['field_bundle_settings_entityform__contact_form'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__front_page_images';
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'path' => array(
+          'weight' => '30',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_node__front_page_images'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -884,73 +941,39 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->name = 'javascript_parsed';
   $strongarm->value = array(
     0 => 'misc/drupal.js',
-    1 => 'profiles/manati/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js',
+    1 => 'misc/jquery.js',
     2 => 'misc/jquery.once.js',
     3 => 'profiles/manati/modules/contrib/devel/devel_krumo_path.js',
-    4 => 'profiles/manati/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js',
-    5 => 'profiles/manati/modules/contrib/jquery_update/replace/misc/jquery.form.min.js',
-    6 => 'misc/progress.js',
-    7 => 'profiles/manati/modules/contrib/jquery_update/js/jquery_update.js',
-    8 => 'misc/ajax.js',
-    9 => 'profiles/manati/modules/contrib/ctools/js/modal.js',
-    10 => 'sites/all/modules/contrib/panels/panels_ipe/js/panels_ipe.js',
-    11 => 'profiles/manati/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js',
-    12 => 'profiles/manati/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js',
-    13 => 'profiles/manati/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.mouse.min.js',
-    14 => 'profiles/manati/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.draggable.min.js',
-    15 => 'profiles/manati/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.droppable.min.js',
-    16 => 'profiles/manati/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.sortable.min.js',
-    17 => 'modules/contextual/contextual.js',
-    18 => 'profiles/manati/modules/contrib/views/js/base.js',
-    19 => 'profiles/manati/modules/contrib/views/js/ajax_view.js',
-    20 => 'profiles/manati/modules/contrib/admin_menu/admin_menu.js',
-    21 => 'profiles/manati/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js',
-    22 => 'profiles/manati/modules/contrib/ctools/js/dependent.js',
-    23 => 'misc/jquery.js',
-    24 => 'misc/tableheader.js',
-    25 => 'misc/jquery.cookie.js',
-    26 => 'misc/tabledrag.js',
-    27 => 'profiles/manati/modules/contrib/ctools/js/dropbutton.js',
-    28 => 'misc/machine-name.js',
-    29 => 'misc/textarea.js',
-    30 => 'misc/states.js',
-    31 => 'misc/form.js',
-    32 => 'misc/collapse.js',
-    33 => 'misc/jquery.form.js',
-    34 => 'profiles/manati/modules/contrib/views/js/ajax.js',
-    35 => 'misc/ui/jquery.ui.core.min.js',
-    36 => 'misc/ui/jquery.ui.widget.min.js',
-    37 => 'misc/ui/jquery.ui.tabs.min.js',
-    38 => 'misc/ui/jquery.ui.button.min.js',
-    39 => 'misc/ui/jquery.ui.mouse.min.js',
-    40 => 'misc/ui/jquery.ui.draggable.min.js',
-    41 => 'misc/ui/jquery.ui.position.min.js',
-    42 => 'misc/ui/jquery.ui.resizable.min.js',
-    43 => 'misc/ui/jquery.ui.dialog.min.js',
-    44 => 'profiles/manati/modules/contrib/views/js/jquery.ui.dialog.patch.js',
-    45 => 'profiles/manati/modules/contrib/ctools/js/collapsible-div.js',
-    46 => 'profiles/manati/modules/contrib/views/js/views-admin.js',
-    47 => 'misc/vertical-tabs.js',
-    48 => 'modules/field_ui/field_ui.js',
-    49 => 'sites/all/modules/contrib/field_group/field_group.field_ui.js',
-    50 => 'modules/taxonomy/taxonomy.js',
-    51 => 'public://js/wysiwyg/wysiwyg_ckeditor_ZNwd0q44WnFCY0jU4OGMxrY0YU3hMds62r7asSe15hM.js',
-    52 => 'profiles/manati/libraries/ckeditor/ckeditor.js',
-    53 => 'profiles/manati/modules/contrib/wysiwyg/editors/js/ckeditor-3.0.js',
-    54 => 'profiles/manati/modules/contrib/wysiwyg/wysiwyg.init.js',
-    55 => 'profiles/manati/modules/contrib/wysiwyg/editors/js/none.js',
-    56 => 'profiles/manati/modules/contrib/wysiwyg/wysiwyg.js',
-    57 => 'profiles/manati/modules/contrib/wysiwyg/plugins/break/break.js',
-    58 => 'modules/filter/filter.js',
-    59 => 'profiles/manati/modules/contrib/pathauto/pathauto.js',
-    60 => 'profiles/manati/modules/contrib/ds/js/ds.admin.js',
-    61 => 'profiles/manati/modules/contrib/ctools/js/auto-submit.js',
-    62 => 'misc/autocomplete.js',
-    63 => 'profiles/manati/modules/contrib/views_bulk_operations/js/views_bulk_operations.js',
-    64 => 'sites/all/modules/contrib/conditional_fields/js/conditional_fields.js',
-    65 => 'profiles/manati/modules/contrib/ctools/page_manager/js/page-list.js',
-    66 => 'profiles/manati/modules/contrib/features/features.js',
+    4 => 'public://js/wysiwyg/wysiwyg_ckeditor_ZNwd0q44WnFCY0jU4OGMxrY0YU3hMds62r7asSe15hM.js',
+    5 => 'profiles/manati/libraries/ckeditor/ckeditor.js',
+    6 => 'profiles/manati/modules/contrib/wysiwyg/editors/js/ckeditor-3.0.js',
+    7 => 'profiles/manati/modules/contrib/wysiwyg/wysiwyg.init.js',
+    8 => 'profiles/manati/modules/contrib/wysiwyg/editors/js/none.js',
+    9 => 'profiles/manati/modules/contrib/wysiwyg/wysiwyg.js',
+    10 => 'profiles/manati/modules/contrib/features/features.js',
+    11 => 'misc/tableheader.js',
+    12 => 'misc/form.js',
+    13 => 'misc/vertical-tabs.js',
+    14 => 'profiles/manati/modules/contrib/admin_menu/admin_menu.js',
+    15 => 'profiles/manati/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js',
     'refresh:es' => 'waiting',
+    16 => 'misc/collapse.js',
+    17 => 'misc/machine-name.js',
+    18 => 'misc/autocomplete.js',
+    19 => 'misc/jquery.cookie.js',
+    20 => 'misc/jquery.form.js',
+    21 => 'misc/progress.js',
+    22 => 'profiles/manati/modules/contrib/jquery_update/js/jquery_update.js',
+    23 => 'misc/ajax.js',
+    24 => 'misc/ui/jquery.ui.core.min.js',
+    25 => 'misc/ui/jquery.ui.widget.min.js',
+    26 => 'misc/ui/jquery.ui.button.min.js',
+    27 => 'misc/ui/jquery.ui.mouse.min.js',
+    28 => 'misc/ui/jquery.ui.draggable.min.js',
+    29 => 'misc/ui/jquery.ui.position.min.js',
+    30 => 'misc/ui/jquery.ui.resizable.min.js',
+    31 => 'misc/ui/jquery.ui.dialog.min.js',
+    32 => 'profiles/manati/modules/contrib/views/js/jquery.ui.dialog.patch.js',
   );
   $export['javascript_parsed'] = $strongarm;
 
@@ -1072,45 +1095,6 @@ function auge_strongarm_killer_strongarm() {
         'language' => 'es',
       ),
     ),
-    'admin_views' => array(
-      'es' => (object) array(
-        'name' => 'admin_views',
-        'project_type' => 'module',
-        'core' => '7.x',
-        'version' => '7.x-1.5',
-        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
-        'status' => '1',
-        'project' => 'admin_views',
-        'langcode' => 'es',
-        'type' => 'remote',
-        'timestamp' => 1436423801,
-        'last_checked' => 1442425402,
-        'files' => array(
-          'remote' => (object) array(
-            'project' => 'admin_views',
-            'langcode' => 'es',
-            'version' => '7.x-1.5',
-            'type' => 'remote',
-            'filename' => 'admin_views-7.x-1.5.es.po',
-            'uri' => 'http://ftp.drupal.org/files/translations/7.x/admin_views/admin_views-7.x-1.5.es.po',
-            'timestamp' => 1436423801,
-          ),
-          'local' => (object) array(
-            'project' => 'admin_views',
-            'langcode' => 'es',
-            'version' => '7.x-1.5',
-            'type' => 'local',
-            'filename' => 'admin_views-7.x-1.5.es.po',
-            'directory' => 'translations://',
-            'uri' => 'translations://admin_views-7.x-1.5.es.po',
-          ),
-        ),
-        'language' => 'es',
-        'filename' => '',
-        'fileurl' => '',
-        'uri' => '',
-      ),
-    ),
     'block_class' => array(
       'es' => (object) array(
         'name' => 'block_class',
@@ -1142,45 +1126,6 @@ function auge_strongarm_killer_strongarm() {
             'filename' => 'block_class-7.x-2.1.es.po',
             'directory' => 'translations://',
             'uri' => 'translations://block_class-7.x-2.1.es.po',
-          ),
-        ),
-        'language' => 'es',
-        'filename' => '',
-        'fileurl' => '',
-        'uri' => '',
-      ),
-    ),
-    'bundle_copy' => array(
-      'es' => (object) array(
-        'name' => 'bundle_copy',
-        'project_type' => 'module',
-        'core' => '7.x',
-        'version' => '7.x-1.1',
-        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
-        'status' => '1',
-        'project' => 'bundle_copy',
-        'langcode' => 'es',
-        'type' => 'remote',
-        'timestamp' => 1393738297,
-        'last_checked' => 1442425404,
-        'files' => array(
-          'remote' => (object) array(
-            'project' => 'bundle_copy',
-            'langcode' => 'es',
-            'version' => '7.x-1.1',
-            'type' => 'remote',
-            'filename' => 'bundle_copy-7.x-1.1.es.po',
-            'uri' => 'http://ftp.drupal.org/files/translations/7.x/bundle_copy/bundle_copy-7.x-1.1.es.po',
-            'timestamp' => 1393738297,
-          ),
-          'local' => (object) array(
-            'project' => 'bundle_copy',
-            'langcode' => 'es',
-            'version' => '7.x-1.1',
-            'type' => 'local',
-            'filename' => 'bundle_copy-7.x-1.1.es.po',
-            'directory' => 'translations://',
-            'uri' => 'translations://bundle_copy-7.x-1.1.es.po',
           ),
         ),
         'language' => 'es',
@@ -1422,44 +1367,6 @@ function auge_strongarm_killer_strongarm() {
         'uri' => '',
       ),
     ),
-    'draggableviews' => array(
-      'es' => (object) array(
-        'name' => 'draggableviews',
-        'project_type' => 'module',
-        'core' => '7.x',
-        'version' => '7.x-2.1',
-        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
-        'status' => '1',
-        'project' => 'draggableviews',
-        'langcode' => 'es',
-        'type' => '',
-        'timestamp' => 0,
-        'last_checked' => 0,
-        'files' => array(
-          'remote' => (object) array(
-            'project' => 'draggableviews',
-            'langcode' => 'es',
-            'version' => '7.x-2.1',
-            'type' => 'remote',
-            'filename' => 'draggableviews-7.x-2.1.es.po',
-            'uri' => 'http://ftp.drupal.org/files/translations/7.x/draggableviews/draggableviews-7.x-2.1.es.po',
-          ),
-          'local' => (object) array(
-            'project' => 'draggableviews',
-            'langcode' => 'es',
-            'version' => '7.x-2.1',
-            'type' => 'local',
-            'filename' => 'draggableviews-7.x-2.1.es.po',
-            'directory' => 'translations://',
-            'uri' => 'translations://draggableviews-7.x-2.1.es.po',
-          ),
-        ),
-        'language' => 'es',
-        'filename' => '',
-        'fileurl' => '',
-        'uri' => '',
-      ),
-    ),
     'drupal' => array(
       'es' => (object) array(
         'name' => 'drupal',
@@ -1497,6 +1404,41 @@ function auge_strongarm_killer_strongarm() {
         'filename' => '',
         'fileurl' => '',
         'uri' => '',
+      ),
+    ),
+    'ds' => array(
+      'es' => (object) array(
+        'name' => 'ds',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-2.10',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'ds',
+        'langcode' => 'es',
+        'type' => '',
+        'timestamp' => 0,
+        'last_checked' => 0,
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'ds',
+            'langcode' => 'es',
+            'version' => '7.x-2.10',
+            'type' => 'remote',
+            'filename' => 'ds-7.x-2.10.es.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/ds/ds-7.x-2.10.es.po',
+          ),
+          'local' => (object) array(
+            'project' => 'ds',
+            'langcode' => 'es',
+            'version' => '7.x-2.10',
+            'type' => 'local',
+            'filename' => 'ds-7.x-2.10.es.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://ds-7.x-2.10.es.po',
+          ),
+        ),
+        'language' => 'es',
       ),
     ),
     'email' => array(
@@ -1575,6 +1517,51 @@ function auge_strongarm_killer_strongarm() {
         'filename' => '',
         'fileurl' => '',
         'uri' => '',
+      ),
+    ),
+    'entityform' => array(
+      'es' => (object) array(
+        'name' => 'entityform',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-2.0-rc1',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'entityform',
+        'langcode' => 'es',
+        'type' => 'current',
+        'timestamp' => '1443829749',
+        'last_checked' => '1443829749',
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'entityform',
+            'langcode' => 'es',
+            'version' => '7.x-2.0-rc1',
+            'type' => 'remote',
+            'filename' => 'entityform-7.x-2.0-rc1.es.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/entityform/entityform-7.x-2.0-rc1.es.po',
+          ),
+          'local' => (object) array(
+            'project' => 'entityform',
+            'langcode' => 'es',
+            'version' => '7.x-2.0-rc1',
+            'type' => 'local',
+            'filename' => 'entityform-7.x-2.0-rc1.es.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://entityform-7.x-2.0-rc1.es.po',
+          ),
+          'current' => (object) array(
+            'project' => 'entityform',
+            'language' => 'es',
+            'filename' => 'entityform-7.x-2.0-rc1.es.po',
+            'version' => '7.x-2.0-rc1',
+            'uri' => 'translations://entityform-7.x-2.0-rc1.es.po',
+            'timestamp' => '1443829749',
+            'last_checked' => '1443829749',
+            'langcode' => 'es',
+            'type' => 'current',
+          ),
+        ),
       ),
     ),
     'entityreference' => array(
@@ -1686,45 +1673,6 @@ function auge_strongarm_killer_strongarm() {
             'filename' => 'features_extra-7.x-1.0.es.po',
             'directory' => 'translations://',
             'uri' => 'translations://features_extra-7.x-1.0.es.po',
-          ),
-        ),
-        'language' => 'es',
-        'filename' => '',
-        'fileurl' => '',
-        'uri' => '',
-      ),
-    ),
-    'fences' => array(
-      'es' => (object) array(
-        'name' => 'fences',
-        'project_type' => 'module',
-        'core' => '7.x',
-        'version' => '7.x-1.0',
-        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
-        'status' => '1',
-        'project' => 'fences',
-        'langcode' => 'es',
-        'type' => 'remote',
-        'timestamp' => 1434590431,
-        'last_checked' => 1442425410,
-        'files' => array(
-          'remote' => (object) array(
-            'project' => 'fences',
-            'langcode' => 'es',
-            'version' => '7.x-1.0',
-            'type' => 'remote',
-            'filename' => 'fences-7.x-1.0.es.po',
-            'uri' => 'http://ftp.drupal.org/files/translations/7.x/fences/fences-7.x-1.0.es.po',
-            'timestamp' => 1434590431,
-          ),
-          'local' => (object) array(
-            'project' => 'fences',
-            'langcode' => 'es',
-            'version' => '7.x-1.0',
-            'type' => 'local',
-            'filename' => 'fences-7.x-1.0.es.po',
-            'directory' => 'translations://',
-            'uri' => 'translations://fences-7.x-1.0.es.po',
           ),
         ),
         'language' => 'es',
@@ -2200,6 +2148,51 @@ function auge_strongarm_killer_strongarm() {
         'uri' => '',
       ),
     ),
+    'pm_existing_pages' => array(
+      'es' => (object) array(
+        'name' => 'pm_existing_pages',
+        'project_type' => 'module',
+        'core' => '7.x',
+        'version' => '7.x-1.4',
+        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
+        'status' => '1',
+        'project' => 'pm_existing_pages',
+        'langcode' => 'es',
+        'type' => 'current',
+        'timestamp' => '1443829750',
+        'last_checked' => '1443829749',
+        'files' => array(
+          'remote' => (object) array(
+            'project' => 'pm_existing_pages',
+            'langcode' => 'es',
+            'version' => '7.x-1.4',
+            'type' => 'remote',
+            'filename' => 'pm_existing_pages-7.x-1.4.es.po',
+            'uri' => 'http://ftp.drupal.org/files/translations/7.x/pm_existing_pages/pm_existing_pages-7.x-1.4.es.po',
+          ),
+          'local' => (object) array(
+            'project' => 'pm_existing_pages',
+            'langcode' => 'es',
+            'version' => '7.x-1.4',
+            'type' => 'local',
+            'filename' => 'pm_existing_pages-7.x-1.4.es.po',
+            'directory' => 'translations://',
+            'uri' => 'translations://pm_existing_pages-7.x-1.4.es.po',
+          ),
+          'current' => (object) array(
+            'project' => 'pm_existing_pages',
+            'language' => 'es',
+            'filename' => 'pm_existing_pages-7.x-1.4.es.po',
+            'version' => '7.x-1.4',
+            'uri' => 'translations://pm_existing_pages-7.x-1.4.es.po',
+            'timestamp' => '1443829750',
+            'last_checked' => '1443829749',
+            'langcode' => 'es',
+            'type' => 'current',
+          ),
+        ),
+      ),
+    ),
     'rules' => array(
       'es' => (object) array(
         'name' => 'rules',
@@ -2425,82 +2418,6 @@ function auge_strongarm_killer_strongarm() {
             'filename' => 'transliteration-7.x-3.2.es.po',
             'directory' => 'translations://',
             'uri' => 'translations://transliteration-7.x-3.2.es.po',
-          ),
-        ),
-        'language' => 'es',
-        'filename' => '',
-        'fileurl' => '',
-        'uri' => '',
-      ),
-    ),
-    'uuid' => array(
-      'es' => (object) array(
-        'name' => 'uuid',
-        'project_type' => 'module',
-        'core' => '7.x',
-        'version' => '7.x-1.0-alpha6',
-        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
-        'status' => '1',
-        'project' => 'uuid',
-        'langcode' => 'es',
-        'type' => '',
-        'timestamp' => 0,
-        'last_checked' => 0,
-        'files' => array(
-          'remote' => (object) array(
-            'project' => 'uuid',
-            'langcode' => 'es',
-            'version' => '7.x-1.0-alpha6',
-            'type' => 'remote',
-            'filename' => 'uuid-7.x-1.0-alpha6.es.po',
-            'uri' => 'http://ftp.drupal.org/files/translations/7.x/uuid/uuid-7.x-1.0-alpha6.es.po',
-          ),
-          'local' => (object) array(
-            'project' => 'uuid',
-            'langcode' => 'es',
-            'version' => '7.x-1.0-alpha6',
-            'type' => 'local',
-            'filename' => 'uuid-7.x-1.0-alpha6.es.po',
-            'directory' => 'translations://',
-            'uri' => 'translations://uuid-7.x-1.0-alpha6.es.po',
-          ),
-        ),
-        'language' => 'es',
-        'filename' => '',
-        'fileurl' => '',
-        'uri' => '',
-      ),
-    ),
-    'uuid_features' => array(
-      'es' => (object) array(
-        'name' => 'uuid_features',
-        'project_type' => 'module',
-        'core' => '7.x',
-        'version' => '7.x-1.0-alpha4',
-        'server_pattern' => 'http://ftp.drupal.org/files/translations/%core/%project/%project-%release.%language.po',
-        'status' => '1',
-        'project' => 'uuid_features',
-        'langcode' => 'es',
-        'type' => '',
-        'timestamp' => 0,
-        'last_checked' => 0,
-        'files' => array(
-          'remote' => (object) array(
-            'project' => 'uuid_features',
-            'langcode' => 'es',
-            'version' => '7.x-1.0-alpha4',
-            'type' => 'remote',
-            'filename' => 'uuid_features-7.x-1.0-alpha4.es.po',
-            'uri' => 'http://ftp.drupal.org/files/translations/7.x/uuid_features/uuid_features-7.x-1.0-alpha4.es.po',
-          ),
-          'local' => (object) array(
-            'project' => 'uuid_features',
-            'langcode' => 'es',
-            'version' => '7.x-1.0-alpha4',
-            'type' => 'local',
-            'filename' => 'uuid_features-7.x-1.0-alpha4.es.po',
-            'directory' => 'translations://',
-            'uri' => 'translations://uuid_features-7.x-1.0-alpha4.es.po',
           ),
         ),
         'language' => 'es',
@@ -2794,6 +2711,13 @@ function auge_strongarm_killer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_front_page_images';
+  $strongarm->value = '0';
+  $export['language_content_type_front_page_images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'language_count';
   $strongarm->value = 2;
   $export['language_count'] = $strongarm;
@@ -2995,6 +2919,13 @@ function auge_strongarm_killer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_front_page_images';
+  $strongarm->value = array();
+  $export['menu_options_front_page_images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_actividades';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_actividades'] = $strongarm;
@@ -3002,13 +2933,20 @@ function auge_strongarm_killer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_front_page_images';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_front_page_images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'module_filter_recent_modules';
   $strongarm->value = array(
-    'i18n_menu' => 1444172823,
-    'i18n_node' => 1444172823,
-    'i18n_taxonomy' => 1444172823,
-    'i18n_user' => 1444172895,
     'auge_contexts' => 1444765642,
+    'auge_ftr_blocks' => 1444778047,
+    'auge_who_are_multilingual' => 1444778047,
+    'auge_ftr_blog' => 1444778047,
+    'views_bulk_operations' => 1444778133,
   );
   $export['module_filter_recent_modules'] = $strongarm;
 
@@ -3030,7 +2968,7 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_cron_last';
-  $strongarm->value = '1444767419';
+  $strongarm->value = '1444842506';
   $export['node_cron_last'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -3045,6 +2983,13 @@ function auge_strongarm_killer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_front_page_images';
+  $strongarm->value = array();
+  $export['node_options_front_page_images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_page';
   $strongarm->value = array(
     0 => 'status',
@@ -3054,9 +2999,23 @@ function auge_strongarm_killer_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_front_page_images';
+  $strongarm->value = '1';
+  $export['node_preview_front_page_images'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_actividades';
   $strongarm->value = 0;
   $export['node_submitted_actividades'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_front_page_images';
+  $strongarm->value = 1;
+  $export['node_submitted_front_page_images'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -3174,6 +3133,7 @@ function auge_strongarm_killer_strongarm() {
     'invest' => TRUE,
     'learn' => TRUE,
     'mentor' => TRUE,
+    'node' => TRUE,
     'projects' => TRUE,
     'taxonomy' => TRUE,
     'user' => TRUE,
@@ -3208,6 +3168,13 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->name = 'save_continue_blog_post';
   $strongarm->value = 'Save and add fields';
   $export['save_continue_blog_post'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_continue_front_page_images';
+  $strongarm->value = 'Save and add fields';
+  $export['save_continue_front_page_images'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -3255,7 +3222,7 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'node';
+  $strongarm->value = 'home';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -3395,7 +3362,7 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
-  $strongarm->value = 'bartik';
+  $strongarm->value = 'manati';
   $export['theme_default'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -3449,7 +3416,7 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'update_last_check';
-  $strongarm->value = 1444771184;
+  $strongarm->value = 1445019254;
   $export['update_last_check'] = $strongarm;
 
   $strongarm = new stdClass();

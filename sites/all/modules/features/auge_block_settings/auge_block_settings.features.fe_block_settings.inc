@@ -416,8 +416,8 @@ function auge_block_settings_default_fe_block_settings() {
         'weight' => 0,
       ),
       'manati' => array(
-        'region' => 'header',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'manati',
         'weight' => 0,
       ),
@@ -486,8 +486,8 @@ function auge_block_settings_default_fe_block_settings() {
         'weight' => -17,
       ),
       'manati' => array(
-        'region' => 'header',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'manati',
         'weight' => -17,
       ),
@@ -521,8 +521,8 @@ function auge_block_settings_default_fe_block_settings() {
         'weight' => -14,
       ),
       'manati' => array(
-        'region' => 'header',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'manati',
         'weight' => -14,
       ),
@@ -661,8 +661,8 @@ function auge_block_settings_default_fe_block_settings() {
         'weight' => 0,
       ),
       'manati' => array(
-        'region' => 'help',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'manati',
         'weight' => 0,
       ),
@@ -696,8 +696,8 @@ function auge_block_settings_default_fe_block_settings() {
         'weight' => 0,
       ),
       'manati' => array(
-        'region' => 'content',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'manati',
         'weight' => 0,
       ),
@@ -887,49 +887,14 @@ function auge_block_settings_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['user-login'] = array(
+  $export['views-blog_list-block_1'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'login',
+    'delta' => 'blog_list-block_1',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
-    'module' => 'user',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => 'triptych_first',
-        'status' => 1,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'manati' => array(
-        'region' => 'header',
-        'status' => 1,
-        'theme' => 'manati',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => 'content',
-        'status' => 1,
-        'theme' => 'seven',
-        'weight' => 10,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['user-new'] = array(
-    'cache' => 1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'new',
-    'i18n_block_language' => array(),
-    'i18n_mode' => 0,
-    'module' => 'user',
+    'module' => 'views',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -938,13 +903,13 @@ function auge_block_settings_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'manati' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'manati',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'seven' => array(
         'region' => '',
@@ -957,14 +922,14 @@ function auge_block_settings_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['user-online'] = array(
+  $export['views-blog_list-block_2'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'online',
+    'delta' => 'blog_list-block_2',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
-    'module' => 'user',
+    'module' => 'views',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -973,13 +938,118 @@ function auge_block_settings_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
-        'weight' => 10,
+        'weight' => 0,
       ),
       'manati' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'manati',
-        'weight' => 10,
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-nodequeue_1-block'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'nodequeue_1-block',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => -1,
+      ),
+      'manati' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'manati',
+        'weight' => -1,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-proximas_actividades-block_1'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'proximas_actividades-block_1',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 5,
+      ),
+      'manati' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'manati',
+        'weight' => 5,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-proximas_actividades-block_2'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'proximas_actividades-block_2',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 6,
+      ),
+      'manati' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'manati',
+        'weight' => 6,
       ),
       'seven' => array(
         'region' => '',
