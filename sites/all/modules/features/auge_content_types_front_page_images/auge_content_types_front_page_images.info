@@ -1,0 +1,14 @@
+name = Auge: Content types - Front page images
+core = 7.x
+package = Auge: Content types
+dependencies[] = auge_strongarm_killer
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_base][] = field_main_image
+features[field_instance][] = node-front_page_images-field_main_image
+features[node][] = front_page_images
+project path = sites/all/modules/features
