@@ -135,6 +135,8 @@ input[type="submit"] {
   padding: 8px 25px;
   width: 100%;
   margin-bottom: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   @media screen and (min-width: 767) {
     input[type="submit"] {
@@ -161,4 +163,8 @@ input[type="submit"] {
 
 .webform-component {
   margin-bottom: 15px; }
+
+header {
+  background-color: #522e91; }
+
 /*# sourceMappingURL=style.css.map */
