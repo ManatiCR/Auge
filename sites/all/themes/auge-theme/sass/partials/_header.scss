@@ -1,4 +1,33 @@
 // Styles for the header
 header {
   background-color: #522e91;
+  height: 150px;
+}
+.main-menu{
+
+}
+.site-logo{
+  float:left;
+  clear: none;
+}
+.region-header{
+  clear: none;
+  float: left;
+}
+.menu{
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+}
+.header-main-menu-item{
+  display: inline;
+  float: left;
+  clear: none;
+}
+
+//Hide the expanded menu items.
+.expanded{
+  .leaf{
+    display:none;
+}
 }
