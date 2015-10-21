@@ -166,27 +166,26 @@ input[type="submit"] {
 
 header {
   background-color: #522e91;
-  height: 150px; }
-
-.site-logo {
-  float: left;
-  clear: none; }
-
-.region-header {
-  clear: none;
-  float: left; }
+  height: 100%; }
 
 .menu {
-  margin: 0px;
-  padding: 0px;
-  height: 30px; }
+  list-style-type: none; }
 
 .header-main-menu-item {
-  display: inline;
-  float: left;
-  clear: none; }
+  position: relative; }
 
-.expanded .leaf {
-  display: none; }
+.header-main-menu-subitem {
+  display: none;
+  position: relative; }
+
+.expanded:hover .header-main-menu-subitem {
+  display: block; }
+
+.header-main-menu-item a {
+  color: white;
+  font-size: 1.7rem; }
+
+.header-main-menu-item > a {
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
