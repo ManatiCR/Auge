@@ -135,8 +135,6 @@ input[type="submit"] {
   padding: 8px 25px;
   width: 100%;
   margin-bottom: 10px;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   @media screen and (min-width: 767) {
     input[type="submit"] {
@@ -164,85 +162,27 @@ input[type="submit"] {
 .webform-component {
   margin-bottom: 15px; }
 
-* {
-  box-sizing: border-box; }
-
-body {
-  font: 1em sans-serif; }
-
-.header {
-  width: 100%;
-  height: em;
-  background-color: #522e91; }
-
-body {
-  font: 1em sans-serif; }
-
-/* .fake {
-padding:20px;
-display:block;
-}*/
-.region-header {
-  background-color: #522e91; }
+header {
+  background-color: #522e91;
+  height: 100%; }
 
 .menu {
-  padding-left: 0;
-  margin: 0px; }
-
-.expanded .menu {
-  display: none;
-  left: 0px; }
-
-.show {
-  display: block; }
+  list-style-type: none; }
 
 .header-main-menu-item {
-  position: relative;
-  cursor: pointer;
-  list-style: none;
-  text-align: center; }
-  .header-main-menu-item a {
-    padding: 20px 15px;
-    display: block;
-    color: #808080;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white; }
-  .header-main-menu-item a:hover {
-    color: #eb7a50; }
+  position: relative; }
 
-.header-main-menu-subitem a {
-  text-transform: capitalize; }
+.header-main-menu-subitem {
+  display: none;
+  position: relative; }
 
-.header-main-menu-item-social {
-  display: none; }
+.expanded:hover .header-main-menu-subitem {
+  display: block; }
 
-@media (min-width: 768px) {
-  .expanded:hover .menu {
-    display: block; }
-  .expanded .menu {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    padding-left: 0px;
-    background-color: white;
-    border-top: 3px solid #eb7a50;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray; }
-  .header-main-menu-item {
-    display: inline-block;
-    margin-left: -4px;
-    vertical-align: top; }
-    .header-main-menu-item a {
-      transition-duration: .2s;
-      transition-timing-function: ease-in-out;
-      transition-property: color; }
-      .header-main-menu-item a:hover {
-        text-decoration: underline; }
-  .header-main-menu-item-social {
-    display: none; }
-  .header-main-menu-subitem a {
-    color: black; } }
+.header-main-menu-item a {
+  color: white;
+  font-size: 1.7rem; }
 
+.header-main-menu-item > a {
+  text-transform: uppercase; }
 /*# sourceMappingURL=style.css.map */

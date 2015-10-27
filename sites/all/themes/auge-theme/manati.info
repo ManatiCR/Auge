@@ -37,5 +37,13 @@ regions[closure]            = Closure
 ;-------------- C S S -------------
 stylesheets[all][] = css/style.css
 
+;-------------- F O A D -----------
+stylesheets[all][] = system.menus.css
+stylesheets[all][] = system.base.css
+stylesheets[all][] = system.messages.css
+stylesheets[all][] = system.theme.css
+
+
+
 ;-------------- J S -------------
 scripts[] = js/script.min.js

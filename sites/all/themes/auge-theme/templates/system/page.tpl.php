@@ -48,7 +48,7 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-
+    <a id="nav-toggle" href="#"><span></span></a>
   </div><!-- /header-content -->
 </header>
 

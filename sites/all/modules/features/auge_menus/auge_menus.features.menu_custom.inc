@@ -18,14 +18,6 @@ function auge_menus_menu_default_menu_custom() {
     'language' => 'und',
     'i18n_mode' => 5,
   );
-  // Exported menu: menu-get-involved.
-  $menus['menu-get-involved'] = array(
-    'menu_name' => 'menu-get-involved',
-    'title' => 'Get involved',
-    'description' => '',
-    'language' => 'und',
-    'i18n_mode' => 5,
-  );
   // Exported menu: menu-social-links.
   $menus['menu-social-links'] = array(
     'menu_name' => 'menu-social-links',
@@ -36,7 +28,6 @@ function auge_menus_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Get involved');
   t('Main menu');
   t('Social Links');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
