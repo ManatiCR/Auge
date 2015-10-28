@@ -30,7 +30,8 @@ p, li {
   font-size: 14px;
   font-size: 1.4rem;
   color: #555;
-  line-height: 1.5; }
+  line-height: 1.5;
+  list-style-type: none; }
 
 p, ul, ol, dl {
   margin: 0 0 0.5em 0; }
@@ -164,26 +165,16 @@ input[type="submit"] {
 .webform-component {
   margin-bottom: 15px; }
 
-* {
-  box-sizing: border-box; }
-
 body {
   font: 1em sans-serif; }
 
 .header {
-  width: 100%;
-  height: em;
-  background-color: #522e91; }
+  background-color: #522e91;
+  text-align: center; }
 
-body {
-  font: 1em sans-serif; }
-
-/* .fake {
-padding:20px;
-display:block;
-}*/
-.region-header {
-  background-color: #522e91; }
+.site-logo {
+  width: 300px;
+  height: auto; }
 
 .menu {
   padding-left: 0;
@@ -204,7 +195,7 @@ display:block;
   .header-main-menu-item a {
     padding: 20px 15px;
     display: block;
-    color: #808080;
+    color: #d1d1d1;
     text-transform: uppercase;
     text-decoration: none;
     color: white; }
@@ -218,6 +209,9 @@ display:block;
   display: none; }
 
 @media (min-width: 768px) {
+  .site-logo, .region-header {
+    display: inline-block;
+    vertical-align: middle; }
   .expanded:hover .menu {
     display: block; }
   .expanded .menu {
@@ -225,11 +219,12 @@ display:block;
     top: 50px;
     width: 100%;
     padding-left: 0px;
+    z-index: 100;
     background-color: white;
     border-top: 3px solid #eb7a50;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray; }
+    border-left: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1; }
   .header-main-menu-item {
     display: inline-block;
     margin-left: -4px;
@@ -243,6 +238,34 @@ display:block;
   .header-main-menu-item-social {
     display: none; }
   .header-main-menu-subitem a {
-    color: black; } }
+    color: black;
+    padding: 5px; }
+  .header-main-menu-subitem:first-child {
+    padding-top: 15px; } }
+
+.page-title {
+  margin-top: 10%;
+  font-size: 4.5rem; }
+
+.page-description p {
+  font-size: 2.7rem;
+  max-width: 480px; }
+
+.page-header-wrapper {
+  color: #2d2f33;
+  width: 80%;
+  height: auto; }
+
+.main-content {
+  padding: 0 10%; }
+
+@media screen and (min-width: 800px) {
+  .panel-col-first {
+    float: left;
+    width: 70%;
+    margin-right: 5%; }
+  .panel-col-last {
+    float: right;
+    width: 25%; } }
 
 /*# sourceMappingURL=style.css.map */

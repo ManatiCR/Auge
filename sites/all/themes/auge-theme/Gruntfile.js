@@ -123,7 +123,6 @@ module.exports = function (grunt) {
     // https://github.com/sindresorhus/load-grunt-tasks
     // grunt.loadNpmTasks('grunt-concurrent');
 
-
     // Where we tell Grunt what to do when we type "grunt" into the terminal.
     // The "default" task is what I leave running all the time. Since it is the default,
     // you can start it by simply running

@@ -1,20 +1,14 @@
-$menu-item-vertical-padding: 20px;
-$orange: rgba(235,122,80,1);
-$purple: #522e91;
+// Base colors
 body {
   font: 1em sans-serif;
 }
 .header{
-  width: 100%;
-  height: em; //Buscar como centrar.
   background-color:$purple;
+  text-align: center;
 }
-
-.region-header{
-  background-color:$purple;
-}
-.site-logo, .region-header{
-  display:inline-block;
+.site-logo{
+  width: 300px;
+  height: auto;
 }
 .menu{
   padding-left:0;
@@ -33,9 +27,9 @@ body {
   list-style:none;
   text-align:center;
   a{
-    padding: $menu-item-vertical-padding 15px;
+    padding: 20px 15px;
     display: block;
-    color:#808080;
+    color:$gray;
     text-transform:uppercase;
     text-decoration: none;
     color:white;
@@ -51,6 +45,10 @@ body {
   display:none;
 }
 @media (min-width:768px){
+  .site-logo, .region-header{
+    display:inline-block;
+    vertical-align: middle;
+  }
   .expanded{
     &:hover{
       .menu{
@@ -63,11 +61,12 @@ body {
     top: 50px;
     width:100%;
     padding-left: 0px;
+    z-index: 100;
     background-color: white;
     border-top: 3px solid $orange;
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray;
+    border-left: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    border-right: 1px solid $gray;
   }
   .header-main-menu-item{
     display:inline-block;
@@ -85,7 +84,13 @@ body {
   .header-main-menu-item-social{
     display:none;
   }
-  .header-main-menu-subitem a{
-    color: black;
-  }
-}
+  .header-main-menu-subitem{
+     a{
+     color: black;
+     padding: 5px;
+   }
+     &:first-child{
+       padding-top: 15px;
+     }
+   }
+ }
