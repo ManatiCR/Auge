@@ -172,8 +172,13 @@ body {
   background-color: #522e91;
   text-align: center; }
 
+.header-content {
+  display: inline-block;
+  vertical-align: middle; }
+
 .site-logo {
-  width: 300px;
+  width: 30%;
+  max-width: 300px;
   height: auto; }
 
 .menu {
@@ -209,7 +214,7 @@ body {
   display: none; }
 
 @media (min-width: 768px) {
-  .site-logo, .region-header {
+  .region-header {
     display: inline-block;
     vertical-align: middle; }
   .expanded:hover .menu {
@@ -243,29 +248,45 @@ body {
   .header-main-menu-subitem:first-child {
     padding-top: 15px; } }
 
+.panel-display {
+  position: relative;
+  min-width: 256px;
+  max-width: 1200px; }
+
+.panel-display-margin {
+  margin: 10%; }
+
+.page-header-wrapper {
+  color: #2d2f33;
+  width: 100%;
+  height: auto; }
+
 .page-title {
-  margin-top: 10%;
   font-size: 4.5rem; }
 
 .page-description p {
   font-size: 2.7rem;
   max-width: 480px; }
 
-.page-header-wrapper {
-  color: #2d2f33;
-  width: 80%;
-  height: auto; }
+.panel-two-col-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px; }
 
-.main-content {
-  padding: 0 10%; }
+.panel-two-col-sidebar {
+  margin: 0 auto;
+  width: 100%; }
 
-@media screen and (min-width: 800px) {
-  .panel-col-first {
+@media (min-width: 800px) {
+  .page-header-wrapper {
+    width: 70%; }
+  .panel-two-col-content {
     float: left;
     width: 70%;
     margin-right: 5%; }
-  .panel-col-last {
-    float: right;
-    width: 25%; } }
+  .panel-two-col-sidebar {
+    float: left;
+    width: 25%;
+    max-width: 320px; } }
 
 /*# sourceMappingURL=style.css.map */

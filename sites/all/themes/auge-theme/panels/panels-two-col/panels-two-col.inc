@@ -6,6 +6,7 @@ $plugin = array(
   'icon' => 'panels-two-col.png',
   'theme' => 'panels-two-col',
   'regions' => array(
+    'top' => t('Top'),
     'content' => t('Content'),
     'sidebar' => t('Sidebar'),
   ),

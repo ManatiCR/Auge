@@ -6,8 +6,13 @@ body {
   background-color:$purple;
   text-align: center;
 }
+.header-content{
+  display: inline-block;
+  vertical-align: middle;
+}
 .site-logo{
-  width: 300px;
+  width: 30%;
+  max-width: 300px;
   height: auto;
 }
 .menu{
@@ -45,7 +50,7 @@ body {
   display:none;
 }
 @media (min-width:768px){
-  .site-logo, .region-header{
+  .region-header{
     display:inline-block;
     vertical-align: middle;
   }

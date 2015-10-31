@@ -15,14 +15,15 @@
  */
 ?>
 <div class="panel-display panel-two-col-top clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>> //Cambiar
-  <div class="panel-panel panel-top panels-two-col-top-top">
+  <div class="panel-panel panel-top panel-two-col-top-top">
     <?php print $content['top']; ?>
   </div>
-  <div class="panel-panel panel-two-col-top-">
-    <div class="panel-panel panel-left panels-two-col-top">
+  <div class="panel-panel panel-two-col-top-content">
+    <div class="panel-panel panel-left panels-two-col-top-content-left">
       <?php print $content['content-left']; ?>
     </div>
-    <div class="panel-panel panel-right panels-two-col-top">
+    <div class="panel-panel panel-right panels-two-col-top-content-right">
       <?php print $content['content-right']; ?>
     </div>
+  </div>
 </div>

@@ -13,7 +13,7 @@
  */
 ?>
 <div class="panel-display panel-one-col-fullwidth clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <div class="panel-panel panel-content panels-one-col-fullwidth-content">
+  <div class="panel-panel panel-content panel-one-col-fullwidth-content">
     <?php print $content['content']; ?>
   </div>
 </div>
