@@ -1,8 +1,10 @@
 //Margin for all pages with margin.
+.main-content{
+  max-width: 1200px;
+}
 .panel-display{
   position: relative;
   min-width: 256px;
-  max-width: 1200px;
 }
 .panel-display-margin{
   margin: 10%;
@@ -15,16 +17,27 @@
 }
 .page-title{
   font-size:4.5rem;
+  display: inline-block;
+  //Bottom orange line.
+  &:after{
+    border-bottom: 5px solid $orange;
+    content: "";
+    display: block;
+    //Controls the distance with the title.
+    height: 15px;
+    width: 50px;
+    margin: 0 auto;
+  }
 }
 .page-description p{
   font-size:2.7rem;
   max-width: 480px;
+  color: inherit;
 }
 //Format for all content and sidebars of the template panels-two-col.
 .panel-two-col-content{
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
-  max-width: 600px;
 }
 .panel-two-col-sidebar{
   margin: 0 auto;
@@ -32,6 +45,12 @@
 }
 //Media query for full width
 @media (min-width: 800px){
+  .panel-display{
+    max-width: 1200px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   .page-header-wrapper{
   width: 70%;
 }
@@ -39,9 +58,10 @@
     float: left;
     width: 70%;
     margin-right:5%;
+    max-width: 700px;
   }
   .panel-two-col-sidebar{
-    float: left;
+    float: right;
     width: 25%;
     max-width: 320px;
   }

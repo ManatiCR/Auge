@@ -7,6 +7,7 @@ body {
   text-align: center;
 }
 .header-content{
+  max-width: 1200px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -34,10 +35,9 @@ body {
   a{
     padding: 20px 15px;
     display: block;
-    color:$gray;
     text-transform:uppercase;
     text-decoration: none;
-    color:white;
+    color:$gray;
   }
   a:hover{
     color:$orange;
