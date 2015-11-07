@@ -129,10 +129,6 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Team';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Broken/missing handler */
-  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
-  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -154,15 +150,17 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
   $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
   $handler->display->display_options['filters']['field_area_tid']['value'] = array(
-    9 => '9',
+    13 => '13',
   );
   $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
   $handler->display->display_options['pane_category']['name'] = 'Personnel';
   $handler->display->display_options['pane_category']['weight'] = '0';
 
-  /* Display: Content pane Consultative council */
-  $handler = $view->new_display('panel_pane', 'Content pane Consultative council', 'panel_pane_2');
+  /* Display: Content pane Board of advisors */
+  $handler = $view->new_display('panel_pane', 'Content pane Board of advisors', 'panel_pane_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Board of advisors';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -184,7 +182,7 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
   $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
   $handler->display->display_options['filters']['field_area_tid']['value'] = array(
-    10 => '10',
+    14 => '14',
   );
   $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
@@ -195,6 +193,31 @@ function auge_views_personnel_views_default_views() {
   $handler = $view->new_display('panel_pane', 'Content pane Mentors', 'panel_pane_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Mentors';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'personnel' => 'personnel',
+  );
+  /* Filter criterion: Content: Area (field_area) */
+  $handler->display->display_options['filters']['field_area_tid']['id'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
+  $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['value'] = array(
+    15 => '15',
+  );
+  $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
   $handler->display->display_options['pane_category']['name'] = 'Personnel';
   $handler->display->display_options['pane_category']['weight'] = '2';
 
@@ -223,94 +246,12 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
   $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
   $handler->display->display_options['filters']['field_area_tid']['value'] = array(
-    12 => '12',
+    16 => '16',
   );
   $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
   $handler->display->display_options['pane_category']['name'] = 'Personnel';
   $handler->display->display_options['pane_category']['weight'] = '3';
-
-  /* Display: Content pane Team */
-  $handler = $view->new_display('panel_pane', 'Content pane Team', 'panel_pane_5');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Team';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Personnel photo */
-  $handler->display->display_options['fields']['field_personnel_photo']['id'] = 'field_personnel_photo';
-  $handler->display->display_options['fields']['field_personnel_photo']['table'] = 'field_data_field_personnel_photo';
-  $handler->display->display_options['fields']['field_personnel_photo']['field'] = 'field_personnel_photo';
-  $handler->display->display_options['fields']['field_personnel_photo']['label'] = '';
-  $handler->display->display_options['fields']['field_personnel_photo']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_personnel_photo']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_personnel_photo']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_personnel_photo']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_personnel_photo']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_personnel_photo']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => '',
-  );
-  $handler->display->display_options['fields']['field_personnel_photo']['field_api_classes'] = TRUE;
-  /* Field: Content: Occupation */
-  $handler->display->display_options['fields']['field_occupation']['id'] = 'field_occupation';
-  $handler->display->display_options['fields']['field_occupation']['table'] = 'field_data_field_occupation';
-  $handler->display->display_options['fields']['field_occupation']['field'] = 'field_occupation';
-  $handler->display->display_options['fields']['field_occupation']['label'] = '';
-  $handler->display->display_options['fields']['field_occupation']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_occupation']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_occupation']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_occupation']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_occupation']['field_api_classes'] = TRUE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
-  $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
-  $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
-  $handler->display->display_options['fields']['draggableviews']['label'] = '';
-  $handler->display->display_options['fields']['draggableviews']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['weight']['id'] = 'weight';
-  $handler->display->display_options['fields']['weight']['table'] = 'draggableviews_structure';
-  $handler->display->display_options['fields']['weight']['field'] = 'weight';
-  $handler->display->display_options['fields']['weight']['label'] = '';
-  $handler->display->display_options['fields']['weight']['element_label_colon'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'personnel' => 'personnel',
-  );
-  /* Filter criterion: Content: Area (field_area) */
-  $handler->display->display_options['filters']['field_area_tid']['id'] = 'field_area_tid';
-  $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
-  $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
-  $handler->display->display_options['filters']['field_area_tid']['value'] = array(
-    9 => '9',
-  );
-  $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
-  $handler->display->display_options['pane_category']['name'] = 'Personnel';
-  $handler->display->display_options['pane_category']['weight'] = '0';
   $translatables['personnel_view'] = array(
     t('Master'),
     t('Consultative council'),
@@ -323,7 +264,8 @@ function auge_views_personnel_views_default_views() {
     t('Content pane Team'),
     t('Team'),
     t('Personnel'),
-    t('Content pane Consultative council'),
+    t('Content pane Board of advisors'),
+    t('Board of advisors'),
     t('Content pane Mentors'),
     t('Mentors'),
     t('Content pane Advisors'),

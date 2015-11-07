@@ -31,13 +31,18 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'blog-post-main-view';
   $handler->display->display_options['row_plugin'] = 'panels_fields';
   $handler->display->display_options['row_options']['inline'] = array(
-    'title' => 'title',
-    'field_blog_image' => 'field_blog_image',
+    'created' => 'created',
+    'term_node_tid' => 'term_node_tid',
   );
+  $handler->display->display_options['row_options']['layout'] = 'onecol';
   $handler->display->display_options['row_options']['regions'] = array(
+    'nid' => 'left',
     'title' => 'right',
+    'created' => 'left',
+    'term_node_tid' => 'left',
     'field_blog_image' => 'left',
     'body' => 'right',
   );
@@ -95,16 +100,22 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = '';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'blog-post-main-view';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'panels_fields';
-  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['row_options']['inline'] = array(
+    'created' => 'created',
+    'term_node_tid' => 'term_node_tid',
+  );
   $handler->display->display_options['row_options']['layout'] = 'onecol';
   $handler->display->display_options['row_options']['regions'] = array(
-    'title' => 'left',
-    'body' => 'left',
-    'field_blog_image' => 'left',
-    'term_node_tid' => 'left',
+    'nid' => 'middle',
+    'title' => 'middle',
+    'created' => 'middle',
+    'term_node_tid' => 'middle',
+    'field_blog_image' => 'middle',
+    'body' => 'middle',
   );
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -123,6 +134,7 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_class'] = 'blog-post-main-content-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: Post date */
@@ -130,7 +142,11 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_type'] = 'span';
+  $handler->display->display_options['fields']['created']['element_class'] = 'blog-post-main-content-date';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_wrapper_type'] = 'span';
+  $handler->display->display_options['fields']['created']['element_wrapper_class'] = 'blog-post-main-content-date-wrapper';
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
   $handler->display->display_options['fields']['created']['custom_date_format'] = 'F j, Y';
@@ -140,17 +156,24 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['fields']['term_node_tid']['field'] = 'term_node_tid';
   $handler->display->display_options['fields']['term_node_tid']['label'] = '';
+  $handler->display->display_options['fields']['term_node_tid']['element_type'] = 'span';
+  $handler->display->display_options['fields']['term_node_tid']['element_class'] = 'blog-post-main-content-category';
   $handler->display->display_options['fields']['term_node_tid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['term_node_tid']['element_wrapper_type'] = 'span';
+  $handler->display->display_options['fields']['term_node_tid']['element_wrapper_class'] = 'blog-post-main-content-category-wrapper';
   $handler->display->display_options['fields']['term_node_tid']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
     'blog_category' => 0,
-    'tags' => 0,
+    'getinvolved' => 0,
+    'personnel_area' => 0,
   );
   /* Field: Content: Blog Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['label'] = '';
+  $handler->display->display_options['fields']['field_blog_image']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_blog_image']['element_class'] = 'blog-post-main-content-image';
   $handler->display->display_options['fields']['field_blog_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_blog_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
@@ -165,12 +188,15 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '400';
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read more.';
   $handler->display->display_options['fields']['body']['alter']['more_link_path'] = 'node/[nid]';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['html'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['body']['element_class'] = 'blog-post-main-content-body';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['body']['element_wrapper_class'] = 'blog-post-main-content-body-wrapper';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '500',
   );
@@ -258,6 +284,7 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_class'] = 'blog-post-main-content-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: Post date */
@@ -265,6 +292,8 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_type'] = 'span';
+  $handler->display->display_options['fields']['created']['element_class'] = 'blog-post-main-content-date';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
@@ -275,17 +304,22 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['fields']['term_node_tid']['field'] = 'term_node_tid';
   $handler->display->display_options['fields']['term_node_tid']['label'] = '';
+  $handler->display->display_options['fields']['term_node_tid']['element_type'] = 'span';
+  $handler->display->display_options['fields']['term_node_tid']['element_class'] = 'blog-post-main-content-category';
   $handler->display->display_options['fields']['term_node_tid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['term_node_tid']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['term_node_tid']['vocabularies'] = array(
     'blog_category' => 0,
-    'tags' => 0,
+    'getinvolved' => 0,
+    'personnel_area' => 0,
   );
   /* Field: Content: Blog Image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['label'] = '';
+  $handler->display->display_options['fields']['field_blog_image']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_blog_image']['element_class'] = 'blog-post-main-content-image';
   $handler->display->display_options['fields']['field_blog_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_blog_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
@@ -305,6 +339,8 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['more_link_path'] = 'node/[nid]';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['html'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['body']['element_class'] = 'blog-post-main-content-body';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '500',
@@ -724,6 +760,7 @@ function auge_views_blog_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Categories';
+  $handler->display->display_options['css_class'] = 'blog-categories';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -733,6 +770,9 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'categories-sidebar-row';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'panels_fields';
   $handler->display->display_options['row_options']['inline'] = array(
     'name' => 'name',
@@ -754,6 +794,10 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['name']['label'] = '';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['element_class'] = 'blog-categories-name';
+  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['name']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['name']['element_wrapper_class'] = 'blog-categories-name-wrapper';
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
   /* Field: COUNT(Taxonomy term: Name) */
   $handler->display->display_options['fields']['name_1']['id'] = 'name_1';
@@ -761,7 +805,11 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['name_1']['field'] = 'name';
   $handler->display->display_options['fields']['name_1']['group_type'] = 'count';
   $handler->display->display_options['fields']['name_1']['label'] = '';
+  $handler->display->display_options['fields']['name_1']['element_type'] = 'span';
+  $handler->display->display_options['fields']['name_1']['element_class'] = 'blog-categories-number';
   $handler->display->display_options['fields']['name_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['name_1']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['name_1']['element_wrapper_class'] = 'blog-categories-number-wrapper';
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';

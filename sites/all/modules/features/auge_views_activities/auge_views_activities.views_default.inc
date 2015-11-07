@@ -261,13 +261,12 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['link_url'] = '/activities';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'activities-sidebar-row';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'panels_fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'field_activity_date' => 'field_activity_date',
-    'title' => 'title',
-  );
   $handler->display->display_options['row_options']['regions'] = array(
     'field_activity_date' => 'left',
     'title' => 'right',
@@ -280,9 +279,13 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['fields']['field_activity_date']['table'] = 'field_data_field_activity_date';
   $handler->display->display_options['fields']['field_activity_date']['field'] = 'field_activity_date';
   $handler->display->display_options['fields']['field_activity_date']['label'] = '';
+  $handler->display->display_options['fields']['field_activity_date']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_activity_date']['element_class'] = 'activities-sidebar-date';
   $handler->display->display_options['fields']['field_activity_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_activity_date']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_activity_date']['element_wrapper_class'] = 'activities-sidebar-date-wrapper';
   $handler->display->display_options['fields']['field_activity_date']['settings'] = array(
-    'format_type' => 'sidebar_date',
+    'format_type' => 'activities_sidebar',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -293,13 +296,23 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '30';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'span';
+  $handler->display->display_options['fields']['title']['element_class'] = 'activities-sidebar-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'span';
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'activities-sidebar-title-wrapper';
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_type'] = 'span';
+  $handler->display->display_options['fields']['view_node']['element_class'] = 'activities-sidebar-link';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'activities-sidebar-link';
   $handler->display->display_options['fields']['view_node']['text'] = 'See more';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;

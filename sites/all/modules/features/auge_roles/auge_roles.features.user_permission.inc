@@ -113,15 +113,6 @@ function auge_roles_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'admin_display_suite'.
-  $permissions['admin_display_suite'] = array(
-    'name' => 'admin_display_suite',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'ds',
-  );
-
   // Exported permission: 'administer actions'.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',

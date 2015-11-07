@@ -22,7 +22,7 @@ function auge_content_types_blog_post_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -90,7 +90,7 @@ function auge_content_types_blog_post_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'above',
@@ -161,9 +161,10 @@ function auge_content_types_blog_post_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
       ),
       'full' => array(
         'label' => 'above',

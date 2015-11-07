@@ -18,7 +18,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
   $page->path = 'whoweare';
   $page->access = array();
   $page->menu = array(
-    'type' => 'normal',
+    'type' => 'none',
     'title' => 'Who we are',
     'name' => 'main-menu',
     'weight' => '7',
@@ -48,7 +48,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     'pipeline' => 'ipe',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => '',
+    'css_id' => 'panel-whoweare',
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
@@ -70,12 +70,25 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'panels-one-col-tabs';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'text' => NULL,
+      'titles' => array(
+        'separator' => array(
+          'active' => 0,
+          'element_type' => '',
+          'show_css' => 0,
+          'element_class' => '',
+        ),
+      ),
+      'views' => NULL,
+    ),
+    'titles' => array(
+      'style' => 'semantic_panels',
     ),
   );
   $display->cache = array();
@@ -85,7 +98,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c85cdcb0-97e8-47ca-9251-bb60964451e5';
-    $pane->panel = 'middle';
+    $pane->panel = 'text';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -107,83 +120,30 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c85cdcb0-97e8-47ca-9251-bb60964451e5';
     $display->content['new-c85cdcb0-97e8-47ca-9251-bb60964451e5'] = $pane;
-    $display->panels['middle'][0] = 'new-c85cdcb0-97e8-47ca-9251-bb60964451e5';
+    $display->panels['text'][0] = 'new-c85cdcb0-97e8-47ca-9251-bb60964451e5';
     $pane = new stdClass();
-    $pane->pid = 'new-207ee171-8db2-42c5-b3df-8fedf706cd52';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'personnel_view-panel_pane_1';
+    $pane->pid = 'new-ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87';
+    $pane->panel = 'titles';
+    $pane->type = 'block';
+    $pane->subtype = 'quicktabs-personnel_tabs';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '207ee171-8db2-42c5-b3df-8fedf706cd52';
-    $display->content['new-207ee171-8db2-42c5-b3df-8fedf706cd52'] = $pane;
-    $display->panels['middle'][1] = 'new-207ee171-8db2-42c5-b3df-8fedf706cd52';
-    $pane = new stdClass();
-    $pane->pid = 'new-0d20cb70-ffc9-4c42-889f-baeea03b5a97';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'personnel_view-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = '0d20cb70-ffc9-4c42-889f-baeea03b5a97';
-    $display->content['new-0d20cb70-ffc9-4c42-889f-baeea03b5a97'] = $pane;
-    $display->panels['middle'][2] = 'new-0d20cb70-ffc9-4c42-889f-baeea03b5a97';
-    $pane = new stdClass();
-    $pane->pid = 'new-3c0be0b8-5e3b-4f44-896c-9153ffef4910';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'personnel_view-panel_pane_3';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $pane->uuid = '3c0be0b8-5e3b-4f44-896c-9153ffef4910';
-    $display->content['new-3c0be0b8-5e3b-4f44-896c-9153ffef4910'] = $pane;
-    $display->panels['middle'][3] = 'new-3c0be0b8-5e3b-4f44-896c-9153ffef4910';
-    $pane = new stdClass();
-    $pane->pid = 'new-283ce5d6-9bcd-41b8-8493-41b4b5c9aec6';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'personnel_view-panel_pane_4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $pane->uuid = '283ce5d6-9bcd-41b8-8493-41b4b5c9aec6';
-    $display->content['new-283ce5d6-9bcd-41b8-8493-41b4b5c9aec6'] = $pane;
-    $display->panels['middle'][4] = 'new-283ce5d6-9bcd-41b8-8493-41b4b5c9aec6';
+    $pane->uuid = 'ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87';
+    $display->content['new-ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87'] = $pane;
+    $display->panels['titles'][0] = 'new-ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -202,7 +162,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     'pipeline' => 'ipe',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => '',
+    'css_id' => 'panel-whoweare',
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
