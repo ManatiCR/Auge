@@ -1,3 +1,4 @@
+//Blog posts
 .blog-post-main-content-title{
   text-transform: uppercase;
   //
@@ -9,7 +10,6 @@
     }
   }
 }
-
 .blog-post-main-content-date{
   color: $gray;
 }
@@ -38,6 +38,7 @@
     color: $darkgray;
   }
 }
+
 .pager{
   li{
     display: inline-block;
@@ -45,6 +46,10 @@
     text-decoration: none;
   }
 }
+//Divider
 .blog-post-main-view{
-
+  &:after{
+    border-bottom: 1px;
+    border-color: $gray;
+  }
 }

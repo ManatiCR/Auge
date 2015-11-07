@@ -19,7 +19,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  color: #2d2f33; }
 
 img {
   width: inherit;
@@ -29,7 +30,6 @@ img {
 p, li {
   font-size: 14px;
   font-size: 1.4rem;
-  color: #2d2f33;
   line-height: 1.5;
   list-style-type: none; }
 
@@ -43,7 +43,8 @@ p {
   overflow: hidden; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #2d2f33; }
 
 a:hover {
   text-decoration: underline; }
@@ -250,18 +251,21 @@ body {
   .header-main-menu-subitem:first-child {
     padding-top: 15px; } }
 
-.main-content {
-  max-width: 1200px; }
-
 .panel-display {
   position: relative;
   min-width: 256px; }
 
 .panel-display-margin {
-  margin: 10%; }
+  width: 80%;
+  margin: 4rem auto; }
+
+.hide-it {
+  display: none; }
+
+.active {
+  display: inline; }
 
 .page-header-wrapper {
-  color: #2d2f33;
   width: 100%;
   height: auto; }
 
@@ -272,31 +276,30 @@ body {
     border-bottom: 5px solid #eb7a50;
     content: "";
     display: block;
-    height: 15px;
     width: 50px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 15px; }
 
 .page-description p {
   font-size: 2.7rem;
-  max-width: 480px;
-  color: inherit; }
+  max-width: 480px; }
 
 .panel-two-col-content {
-  margin: 0;
-  width: 100%; }
+  width: 100%;
+  clear: both; }
 
 .panel-two-col-sidebar {
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  max-width: 480px; }
 
 @media (min-width: 800px) {
   .panel-display {
-    max-width: 1200px;
-    display: inline-block;
-    vertical-align: middle; }
+    max-width: 1200px; }
   .page-header-wrapper {
     width: 70%; }
   .panel-two-col-content {
+    clear: none;
     float: left;
     width: 70%;
     margin-right: 5%;
@@ -341,5 +344,48 @@ body {
   display: inline-block;
   margin-right: 5px;
   text-decoration: none; }
+
+.blog-post-main-view:after {
+  border-bottom: 1px;
+  border-color: #d1d1d1; }
+
+.blog-categories-name {
+  float: left;
+  padding: 3px 0; }
+  .blog-categories-name a:hover {
+    color: #1ba2cc;
+    text-decoration: none; }
+
+.blog-categories-number {
+  min-width: 18px;
+  color: white;
+  background-color: #eb7a50;
+  padding: 3px;
+  float: right; }
+
+.categories-sidebar-row .panel-display {
+  border-bottom: 1px solid #d1d1d1;
+  padding: 5px 0;
+  overflow: hidden; }
+
+.categories-sidebar-wrapper {
+  margin-bottom: 30px; }
+
+.activities-sidebar-date {
+  color: white;
+  background-color: #522e91;
+  display: table-caption;
+  text-align: center;
+  padding: 3px 5px; }
+
+.activities-sidebar-row {
+  width: 100%;
+  display: inline-block; }
+
+.activities-sidebar-wrapper {
+  margin-bottom: 30px; }
+
+.node-front-page-images .field-label {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

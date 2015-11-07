@@ -12,7 +12,7 @@
 *   $content['sidebar']: The sidebar.
 */
 ?>
-<div class="panel-display panel-display-margin panel-two-col clearfix" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+<div class="panel-display panel-display-margin panel-two-col clearfix <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
     <div class="panel-panel panel-top panel-two-col-top">
       <?php print $content['top']; ?>
     </div>

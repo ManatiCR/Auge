@@ -1,0 +1,50 @@
+//Categories
+.blog-categories-name{
+  float: left;
+  padding: 3px 0;
+  a{
+    &:hover{
+      color: $lightblue;
+      text-decoration: none;
+    }
+  }
+}
+.blog-categories-number{
+  min-width: 18px;
+  color: white;
+  background-color: $orange;
+  padding: 3px;
+  float: right;
+}
+.categories-sidebar-row{
+  .panel-display{
+    border-bottom: 1px solid $gray;
+    padding: 5px 0;
+    overflow: hidden;
+  }
+}
+.categories-sidebar-wrapper{
+  margin-bottom: 30px;
+}
+//Activities
+.activities-sidebar-date{
+  color: white;
+  background-color: $purple;
+  display:table-caption;
+  text-align: center;
+  padding: 3px 5px;
+}
+.activities-sidebar-row{
+  width: 100%;
+  display: inline-block;
+}
+.activities-sidebar-wrapper{
+  margin-bottom: 30px;
+}
+//Get involved
+.getinvolved-sidebar-wrapper{
+
+}
+.sidebar-title{
+
+}

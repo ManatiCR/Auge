@@ -14,7 +14,7 @@
  *   $content['content-right']: Content on the right.
  */
 ?>
-<div class="panel-display panel-two-col-top clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>> //Cambiar
+<div class="panel-display panel-two-col-top clearfix <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>> //Cambiar
   <div class="panel-panel panel-top panel-two-col-top-top">
     <?php print $content['top']; ?>
   </div>
