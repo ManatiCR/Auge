@@ -123,6 +123,56 @@ function auge_content_types_project_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-projects-field_project_type'
+  $field_instances['node-projects-field_project_type'] = array(
+    'bundle' => 'projects',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'i18n_taxonomy',
+        'settings' => array(),
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'h3',
+    'field_name' => 'field_project_type',
+    'label' => 'Project type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Project type',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 34,
+    ),
+  );
+
   // Exported field_instance: 'node-projects-field_project_url'
   $field_instances['node-projects-field_project_url'] = array(
     'bundle' => 'projects',
@@ -198,6 +248,7 @@ function auge_content_types_project_field_default_field_instances() {
   t('Project URL');
   t('Project get involved taxonomy');
   t('Project image');
+  t('Project type');
 
   return $field_instances;
 }
