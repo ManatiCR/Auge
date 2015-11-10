@@ -34,28 +34,3 @@ function auge_pages_activities_date_format_types() {
   $format_types['activities_sidebar'] = 'Activities sidebar';
   return $format_types;
 }
-
-/**
- * Implements hook_fe_date_locale_date_format().
- */
-function auge_pages_activities_fe_date_locale_date_format() {
-  $locale_date_formats = array();
-
-  // Exported format: activities_sidebar::en
-  $locale_date_formats['activities_sidebar::en'] = array(
-    'type' => 'activities_sidebar',
-    'format' => 'd M',
-    'locales' => array(
-      0 => 'en',
-    ),
-  );
-  // Exported format: activities_sidebar::es
-  $locale_date_formats['activities_sidebar::es'] = array(
-    'type' => 'activities_sidebar',
-    'format' => 'd M',
-    'locales' => array(
-      0 => 'es',
-    ),
-  );
-  return $locale_date_formats;
-}
