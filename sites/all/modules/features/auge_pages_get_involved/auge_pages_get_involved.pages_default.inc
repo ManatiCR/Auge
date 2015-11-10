@@ -95,14 +95,54 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'Learn title',
-      'title' => '',
-      'body' => '<p>This should be in english.</p><p>You&nbsp;have the idea, and we help you developed it!</p>',
+      'title' => 'Emprender',
+      'body' => '<p>¿Ya se decidió? ¿Tiene un Producto Mínimo Viable, un plan y el equipo para echarse al agua? ¡Ingrese a nuestro proceso de incubación en comunidad!</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => 'h1',
+          'class_enable' => 1,
+          'class' => 'page-title',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'h3',
+          'class_enable' => 1,
+          'class' => 'page-description',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'page-header-wrapper',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -225,7 +265,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->uuid = '950eed80-b218-4496-98e1-948d3a95b13f';
     $display->content['new-950eed80-b218-4496-98e1-948d3a95b13f'] = $pane;
     $display->panels['middle'][5] = 'new-950eed80-b218-4496-98e1-948d3a95b13f';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
@@ -508,14 +548,54 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'Learn title',
-      'title' => '',
-      'body' => '<p>This should be in english.</p><p>You&nbsp;have the idea, and we help you developed it!</p>',
+      'title' => 'Impulsar',
+      'body' => '<p>Un emprendimiento prometedor necesita ser impulsado para desarrollar su potencial.</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => 'h1',
+          'class_enable' => 1,
+          'class' => 'page-title',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'h3',
+          'class_enable' => 1,
+          'class' => 'page-description',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'page-header-wrapper',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -638,7 +718,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->uuid = '327fd9ab-06ac-4922-b166-ab4cf9e51a22';
     $display->content['new-327fd9ab-06ac-4922-b166-ab4cf9e51a22'] = $pane;
     $display->panels['middle'][5] = 'new-327fd9ab-06ac-4922-b166-ab4cf9e51a22';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
@@ -923,14 +1003,54 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'Learn title',
-      'title' => '',
-      'body' => '<p>This should be in English.</p><p>You&nbsp;have the idea, and we help you developed it!</p>',
+      'title' => 'Aprender',
+      'body' => '<p>¿Tiene una idea? &nbsp;¡Nosotros le ayudamos a validarla y a hacerla realidad!</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => 'h1',
+          'class_enable' => 1,
+          'class' => 'page-title',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'h3',
+          'class_enable' => 1,
+          'class' => 'page-description',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'page-header-wrapper',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -948,7 +1068,9 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array();
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
@@ -1052,7 +1174,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->uuid = '3dd963fb-8e81-4b6f-ab80-318167d42ed7';
     $display->content['new-3dd963fb-8e81-4b6f-ab80-318167d42ed7'] = $pane;
     $display->panels['middle'][5] = 'new-3dd963fb-8e81-4b6f-ab80-318167d42ed7';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
@@ -1338,14 +1460,54 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'Mentor title',
-      'title' => '',
-      'body' => '<p>This should be in English.</p><p>You&nbsp;have the idea, and we help you developed it!</p>',
+      'title' => 'Acompañar',
+      'body' => '<p>Durante el proceso en AUGE, empresarios, emprendedores y académicos experimentados orientan a los equipos emprendedores.</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => 'h1',
+          'class_enable' => 1,
+          'class' => 'page-title',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => 'h3',
+          'class_enable' => 1,
+          'class' => 'page-description',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => 'div',
+          'class_enable' => 1,
+          'class' => 'page-header-wrapper',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1468,7 +1630,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->uuid = '2b43453f-86aa-4c62-b052-f970e6f7bb49';
     $display->content['new-2b43453f-86aa-4c62-b052-f970e6f7bb49'] = $pane;
     $display->panels['middle'][5] = 'new-2b43453f-86aa-4c62-b052-f970e6f7bb49';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
