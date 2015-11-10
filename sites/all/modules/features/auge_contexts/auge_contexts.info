@@ -1,7 +1,6 @@
 name = Auge: Contexts
 core = 7.x
 package = Auge
-dependencies[] = auge_custom_blocks
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = views
@@ -13,6 +12,8 @@ features[context][] = contact_footer_english
 features[context][] = contact_footer_spanish
 features[context][] = main_menu_contact_english
 features[context][] = main_menu_contact_spanish
+features[context][] = sitewide-blocks
 features[ctools][] = context:context:3
 features[features_api][] = api:2
+features_exclude[dependencies][auge_custom_blocks] = auge_custom_blocks
 project path = sites/all/modules/features
