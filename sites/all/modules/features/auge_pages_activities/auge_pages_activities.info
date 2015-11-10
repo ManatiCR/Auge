@@ -1,7 +1,6 @@
 name = Auge: Pages - Activities
 core = 7.x
 package = Auge: Pages
-dependencies[] = auge_language_settings
 dependencies[] = ctools
 dependencies[] = fe_date
 dependencies[] = features
