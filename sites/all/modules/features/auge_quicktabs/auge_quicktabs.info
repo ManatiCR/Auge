@@ -1,6 +1,6 @@
 name = Auge: Quicktabs
 core = 7.x
-package = Features
+package = Auge
 dependencies[] = ctools
 dependencies[] = fe_block
 dependencies[] = quicktabs
