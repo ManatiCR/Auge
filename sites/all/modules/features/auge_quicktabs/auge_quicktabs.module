@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Quicktabs feature.
+ */
+
+include_once 'auge_quicktabs.features.inc';
