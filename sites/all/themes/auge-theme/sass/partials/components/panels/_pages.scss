@@ -15,10 +15,7 @@
   display: inline;
 }
 //Format for all titles and descriptions.
-.page-header-wrapper{
-  width: 100%;
-  height: auto;
-}
+
 .page-title{
   font-size:4.5rem;
   display: inline-block;
@@ -39,7 +36,6 @@
 }
 //Format for all content and sidebars of the template panels-two-col.
 .panel-two-col-content{
-  //margin: 0;
   width: 100%;
   clear: both;
 }
@@ -48,23 +44,30 @@
   width: 100%;
   max-width: 480px;
 }
-//Media query for full width
-@media (min-width: 800px){
-  .panel-display{
-    max-width: 1200px;
-    //display: inline-block;
+
+.panel-display{
+  @include media($tablet) {
+    @extend %grid-width;
   }
-  .page-header-wrapper{
+}
+
+.page-header-wrapper{
+  @include media($tablet) {
     width: 70%;
   }
-  .panel-two-col-content{
-    clear: none;
+}
+
+.panel-two-col-content{
+  @include media($tablet) {
     float: left;
     width: 70%;
     margin-right:5%;
     max-width: 700px;
   }
-  .panel-two-col-sidebar{
+}
+
+.panel-two-col-sidebar{
+  @include media($tablet) {
     float: right;
     width: 25%;
     max-width: 320px;
