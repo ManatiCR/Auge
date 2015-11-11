@@ -13,15 +13,21 @@
 */
 ?>
 <div class="panel-display panel-display-margin <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+  <?php if ($content['content']):?>
   <div class="panel-panel panel-content panel-grid-width panel-content-first">
     <?php print $content['content']; ?>
   </div>
-  <div class="panel-panel panel-content panel-one-col-wide">
-    <div class="panel-grid-width">
-      <?php print $content['content_wide']; ?>
+  <?php endif; ?>
+  <?php if ($content['content_wide']):?>
+    <div class="panel-panel panel-content panel-one-col-wide">
+      <div class="panel-grid-width">
+        <?php print $content['content_wide']; ?>
+      </div>
     </div>
-  </div>
-  <div class="panel-panel panel-content panel-grid-width panel-content-last">
-    <?php print $content['content_bottom']; ?>
-  </div>
+  <?php endif; ?>
+  <?php if ($content['content_bottom']):?>
+    <div class="panel-panel panel-content panel-grid-width panel-content-last">
+      <?php print $content['content_bottom']; ?>
+    </div>
+  <?php endif; ?>
 </div>
