@@ -15,3 +15,8 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+// Content grid width limiter
+%grid-width {
+  max-width: $grid-width;
+}
