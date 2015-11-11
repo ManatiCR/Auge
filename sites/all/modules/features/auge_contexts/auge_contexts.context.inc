@@ -138,11 +138,11 @@ function auge_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'auge_custom_blocks-contact_information' => array(
-          'module' => 'auge_custom_blocks',
-          'delta' => 'contact_information',
+        'panels_mini-contact' => array(
+          'module' => 'panels_mini',
+          'delta' => 'contact',
           'region' => 'footer',
-          'weight' => '4',
+          'weight' => '5',
         ),
       ),
     ),
@@ -166,11 +166,11 @@ function auge_contexts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'auge_custom_blocks-contact_information_spanish' => array(
-          'module' => 'auge_custom_blocks',
-          'delta' => 'contact_information_spanish',
+        'panels_mini-clone_of_contact' => array(
+          'module' => 'panels_mini',
+          'delta' => 'clone_of_contact',
           'region' => 'footer',
-          'weight' => '4',
+          'weight' => '5',
         ),
       ),
     ),
