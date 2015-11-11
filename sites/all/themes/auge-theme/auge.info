@@ -44,8 +44,7 @@ stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.base.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
-
-
+stylesheets[all][] = quicktabs.css
 
 ;-------------- J S -------------
 scripts[] = js/script.min.js
