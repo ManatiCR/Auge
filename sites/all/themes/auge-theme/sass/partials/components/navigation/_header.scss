@@ -2,6 +2,12 @@
 .header{
   background-color:$purple;
   text-align: center;
+  .not-front & {
+    margin-bottom: 20px;
+    @include media($mobile-large) {
+      margin-bottom: 40px;
+    }
+  }
 }
 .header-content{
   max-width: 1200px;
