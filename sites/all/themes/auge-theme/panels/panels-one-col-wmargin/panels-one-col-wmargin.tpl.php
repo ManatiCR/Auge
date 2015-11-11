@@ -12,8 +12,8 @@
 *   $content['content']: The only panel in the layout.
 */
 ?>
-<div class="panel-display panel-display-margin panel-one-col-wmargin <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  <div class="panel-panel panel-content panel-one-col-wmargin-content panel-grid-width">
+<div class="panel-display panel-display-margin <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+  <div class="panel-panel panel-content panel-grid-width panel-content-first">
     <?php print $content['content']; ?>
   </div>
   <div class="panel-panel panel-content panel-one-col-wide">
@@ -21,7 +21,7 @@
       <?php print $content['content_wide']; ?>
     </div>
   </div>
-  <div class="panel-panel panel-content panel-one-col-wmargin-content panel-grid-width">
+  <div class="panel-panel panel-content panel-grid-width panel-content-last">
     <?php print $content['content_bottom']; ?>
   </div>
 </div>
