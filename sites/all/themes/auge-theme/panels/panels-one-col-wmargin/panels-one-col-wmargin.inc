@@ -7,5 +7,7 @@ $plugin = array(
   'theme' => 'panels-one-col-wmargin',
   'regions' => array(
     'content' => t('Content'),
+    'content_wide' => t('Content wide'),
+    'content_bottom' => t('Content'),
   ),
 );
