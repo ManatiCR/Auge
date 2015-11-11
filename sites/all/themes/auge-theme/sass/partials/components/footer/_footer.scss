@@ -1,0 +1,28 @@
+.footer {
+  background: #3E227A;
+  padding: 20px;
+  color: #fff;
+  @include media($tablet) {
+    padding: 35px 45px;
+  }
+  a {
+    color: $orange;
+  }
+  .block {
+    @include media(500px) {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: -4px;
+      width: 50%;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    @include media(785px) {
+      width: 25%;
+    }
+  }
+  .panel-col-first {
+    width: auto;
+  }
+}
