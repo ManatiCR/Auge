@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   color: $black;
+  font-family: $base-font-family;
 }
 
 img {
@@ -46,6 +47,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
   margin-top: 0;
   a{
     color: $purple;
