@@ -13,9 +13,12 @@
 
 .page-title,
 #page-title {
-  font-size:4.5rem;
+  font-size:3rem;
   display: inline-block;
   text-transform: uppercase;
+  @include media($tablet) {
+    font-size:4.5rem;
+  }
   //Bottom orange line.
   &:after{
     border-bottom: 5px solid $orange;
