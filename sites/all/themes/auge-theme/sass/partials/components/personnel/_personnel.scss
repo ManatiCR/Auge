@@ -1,0 +1,150 @@
+#quicktabs-container-personnel_tabs {
+  padding: 7%;
+}
+
+.view-personnel-view {
+  text-align: center;
+  position: relative;
+  .views-row {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+    width: 40%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative;
+    @include media(max-width 499px) {
+      &.views-row-even {
+        margin-right: 0;
+      }
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    @include media($mobile-large) {
+      width: 30%;
+      margin-right: 3%;
+    }
+    @include media($tablet) {
+      width: 16.2%;
+      margin-right: 11%;
+      margin-bottom: 7%;
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .field-personnel-photo {
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 10;
+  }
+}
+
+.personnel-hover-content {
+  background: rgba(82,46,145,.5);
+  border-radius: 100%;
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 11;
+  .personel-row:hover & {
+    display: block;
+  }
+  > .personnel-name {
+    margin-top: 35%;
+    margin-bottom: 0;
+    color: #fff;
+  }
+}
+.personnel-name {
+  font-weight: normal;
+}
+.personnel-occupation {
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+}
+.personnel-view-profile {
+  display: inline-block;
+  background-color: $orange;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  a {
+    color: #fff;
+  }
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 7px;
+    border-color: transparent transparent transparent #ffffff;
+    margin: 2px 0 0 5px;
+  }
+}
+
+.personnel-overlay {
+  display: none;
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+.personnel-overlay-close {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background-color: #1BA2CC;
+  border: solid 2px #D1D1D3;
+  border-radius: 100%;
+  top: -16px;
+  right: -16px;
+  cursor: pointer;
+}
+.personnel-modal {
+  position: absolute;
+  width: 498px;
+  height: 80%;
+  top: 7%;
+  left: 50%;
+  margin-left: -249px;
+  background: #fff;
+  border: solid 1px #d1d1d3;
+  padding: 20px;
+  border-radius: 2px;
+  .field-personnel-photo {
+    margin-bottom: 15px;
+  }
+  .personnel-name {
+    color: #2F293D;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2rem;
+    padding-bottom: 5px;
+    border-bottom: solid 1px lighten(#2F293D, 60);
+  }
+  .personnel-occupation {
+    color: #2F293D;
+    margin-bottom: 15px;
+  }
+  .field-description {
+    font-size: 1.5rem;
+    color: #5d5d5d;
+    padding: 20px;
+    text-align: left;
+  }
+}

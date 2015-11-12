@@ -1,8 +1,8 @@
 // Manatí Base Theme JS functions
 (function($) {
-})(jQuery);
+
 //Flexslider for words.
-$(document).ready(function() {
+  $(document).ready(function() {
     var frontSlider = $('.flexslider-words');
     if (frontSlider.length > 0) {
       frontSlider.addClass('flexslider');
@@ -14,6 +14,19 @@ $(document).ready(function() {
       });
     }
   });
+//Personnel modal
+  $(document).ready(function() {
+    $('.personnel-view-profile a').removeAttr('href');
+    // show person overlay
+    $('.personnel-view-profile').click(function(){
+      $(this).parent('.personnel-hover-content').siblings('.personnel-overlay').toggle();
+    });
+    // close overlay
+    $('.personnel-overlay-close').click(function(){
+      $(this).parents('.personnel-overlay').hide();
+    });
+  });
+
 //Tabs for the who we are page.
   $('.tabs').each(function(){
     // For each set of tabs, we want to keep track of
@@ -50,3 +63,5 @@ $(document).ready(function() {
       e.preventDefault();
     });
   });
+
+})(jQuery);
