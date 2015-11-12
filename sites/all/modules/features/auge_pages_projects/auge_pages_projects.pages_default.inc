@@ -192,7 +192,10 @@ function auge_pages_projects_default_page_manager_pages() {
       ),
       'style' => 'semantic_panels',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'panel-projects',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
