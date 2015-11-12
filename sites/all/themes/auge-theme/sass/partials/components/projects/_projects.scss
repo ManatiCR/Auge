@@ -1,3 +1,10 @@
+.panel-projects {
+  .pane-title {
+    padding: 30px 0;
+    font-size: 2rem;
+  }
+}
+
 .view-projects {
   text-align: center;
   position: relative;
@@ -9,6 +16,9 @@
     margin-right: 10%;
     text-align: center;
     position: relative;
+    background: #fff;
+    border-radius: 100%;
+    overflow: hidden;
     @include media(max-width 499px) {
       &.views-row-even {
         margin-right: 0;
@@ -26,8 +36,6 @@
       height: 233px;
       margin-right: 3%;
       margin-bottom: 2%;
-      background: #fff;
-      border-radius: 100%;
       &:nth-child(4n) {
         margin-right: 0;
       }
