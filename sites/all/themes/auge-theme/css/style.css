@@ -3,9 +3,7 @@
 html {
   box-sizing: border-box; }
 
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   box-sizing: inherit; }
 
 /**
@@ -589,6 +587,169 @@ input[type="submit"] {
 
 .node-front-page-images .field-main-image img {
   min-height: 280px; }
+
+#quicktabs-container-personnel_tabs {
+  padding: 7%; }
+
+.view-personnel-view {
+  text-align: center;
+  position: relative; }
+  .view-personnel-view .views-row {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+    width: 40%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative; }
+    @media screen and (max-width: 499px) {
+      .view-personnel-view .views-row.views-row-even {
+        margin-right: 0; } }
+    .view-personnel-view .views-row:first-child {
+      margin-left: 0; }
+    @media screen and (min-width: 500px) {
+      .view-personnel-view .views-row {
+        width: 30%;
+        margin-right: 3%; } }
+    @media screen and (min-width: 700px) {
+      .view-personnel-view .views-row {
+        width: 16.2%;
+        margin-right: 11%;
+        margin-bottom: 7%; }
+        .view-personnel-view .views-row:nth-child(4n) {
+          margin-right: 0; } }
+  .view-personnel-view .field-personnel-photo {
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 10; }
+
+.personnel-hover-content {
+  background: rgba(82, 46, 145, 0.5);
+  border-radius: 100%;
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 11; }
+  .personel-row:hover .personnel-hover-content {
+    display: block; }
+  .personnel-hover-content > .personnel-name {
+    margin-top: 35%;
+    margin-bottom: 0;
+    color: #fff; }
+
+.personnel-name {
+  font-weight: normal; }
+
+.personnel-occupation {
+  font-size: 1.2rem;
+  color: #fff;
+  display: block; }
+
+.personnel-view-profile {
+  display: inline-block;
+  background-color: #F58345;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  margin-top: 15px; }
+  .personnel-view-profile a {
+    color: #fff; }
+  .personnel-view-profile:after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 7px;
+    border-color: transparent transparent transparent #ffffff;
+    margin: 2px 0 0 5px; }
+
+.personnel-overlay {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15; }
+
+.personnel-overlay-close {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background-color: #1BA2CC;
+  border: solid 2px #D1D1D3;
+  border-radius: 100%;
+  top: -16px;
+  right: -16px;
+  cursor: pointer; }
+
+.personnel-modal {
+  position: absolute;
+  width: 498px;
+  height: 80%;
+  top: 7%;
+  left: 50%;
+  margin-left: -249px;
+  background: #fff;
+  border: solid 1px #d1d1d3;
+  padding: 20px;
+  border-radius: 2px; }
+  .personnel-modal .field-personnel-photo {
+    margin-bottom: 15px; }
+  .personnel-modal .personnel-name {
+    color: #2F293D;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2rem;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #c8c2d6; }
+  .personnel-modal .personnel-occupation {
+    color: #2F293D;
+    margin-bottom: 15px; }
+  .personnel-modal .field-description {
+    font-size: 1.5rem;
+    color: #5d5d5d;
+    padding: 20px;
+    text-align: left; }
+
+.view-projects {
+  text-align: center;
+  position: relative; }
+  .view-projects .views-row {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+    width: 40%;
+    margin-right: 10%;
+    text-align: center;
+    position: relative; }
+    @media screen and (max-width: 499px) {
+      .view-projects .views-row.views-row-even {
+        margin-right: 0; } }
+    .view-projects .views-row:first-child {
+      margin-left: 0; }
+    @media screen and (min-width: 500px) {
+      .view-projects .views-row {
+        width: 30%;
+        margin-right: 3%; } }
+    @media screen and (min-width: 700px) {
+      .view-projects .views-row {
+        width: 233px;
+        height: 233px;
+        margin-right: 3%;
+        margin-bottom: 2%;
+        background: #fff;
+        border-radius: 100%; }
+        .view-projects .views-row:nth-child(4n) {
+          margin-right: 0; } }
 
 .footer {
   background: #3E227A;
