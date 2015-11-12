@@ -1,10 +1,12 @@
 name = Auge: Views - Projects
 core = 7.x
 package = Auge: Views
+dependencies[] = image
 dependencies[] = views
 dependencies[] = views_content
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
+features[image][] = project_logo
 features[views_view][] = projects
 features_exclude[dependencies][ctools] = ctools
 project path = sites/all/modules/features
