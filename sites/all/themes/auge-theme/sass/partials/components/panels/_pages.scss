@@ -1,11 +1,6 @@
 //Margin for all pages with margin.
 .panel-display{
   position: relative;
-  min-width: 256px;
-}
-.panel-display-margin{
-  width: 80%;
-  margin: 4rem auto;
 }
 //To hide an element
 .hide-it{
@@ -16,7 +11,8 @@
 }
 //Format for all titles and descriptions.
 
-.page-title{
+.page-title,
+#page-title {
   font-size:4.5rem;
   display: inline-block;
   text-transform: uppercase;
@@ -31,8 +27,8 @@
     height: 15px;
   }
 }
-.page-description p{
-  font-size:2.7rem;
+.page-description p {
+  font-size:2.5rem;
   max-width: 480px;
   font-family: $base-font-family;
   line-height: 1.2;
@@ -42,21 +38,42 @@
   }
 }
 //Format for all content and sidebars of the template panels-two-col.
-.panel-two-col-content{
+.panel-two-col-content {
   width: 100%;
   clear: both;
 }
-.panel-two-col-sidebar{
+.panel-two-col-sidebar {
   margin: 0 auto;
   width: 100%;
   max-width: 480px;
 }
 
-.panel-display{
+.panel-display,
+.panel-one-col-wide {
   overflow: hidden;
+}
+
+.panel-grid-width {
   margin: 0 auto;
+  padding: 0 20px;
   @include media($tablet) {
     @extend %grid-width;
+  }
+  @include media(1100px) {
+    padding: 0;
+  }
+}
+
+.panel-content-first {
+  padding-bottom: 20px;
+  @include media($tablet) {
+    padding-bottom: 55px;
+  }
+}
+.panel-content-last {
+  padding: 20px 0;
+  @include media($tablet) {
+    padding: 55px 0 60px;
   }
 }
 
@@ -64,6 +81,10 @@
   @include media($tablet) {
     width: 70%;
   }
+}
+
+.panel-one-col-wide {
+  background: #EFEFED;
 }
 
 .panel-two-col-content{
@@ -82,3 +103,4 @@
     max-width: 320px;
   }
 }
+
