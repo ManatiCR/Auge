@@ -12,7 +12,7 @@
  *   $content['content']: The only panel in the layout.
  */
 ?>
-<div class="panel-display panel-one-col-fullwidth clearfix <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+<div class="panel-display panel-one-col-fullwidth <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <div class="panel-panel panel-content panel-one-col-fullwidth-content">
     <?php print $content['content']; ?>
   </div>

@@ -1,3 +1,5 @@
+
+
 // Base colors
 .header{
   background-color:$purple;
@@ -8,16 +10,37 @@
       margin-bottom: 40px;
     }
   }
+  @include media($tablet){
+    text-align: unset;
+  }
 }
 .header-content{
-  max-width: 1200px;
-  display: inline-block;
-  vertical-align: middle;
+  margin: 0 20px;
+  @include media(1242px){
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
 .site-logo{
-  width: 30%;
-  max-width: 300px;
-  height: auto;
+  img {
+    max-width: 210px;
+    height:auto;
+  }
+  @include media(630px) {
+    width: 20%;
+  }
+  @include media($tablet){
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.main-menu{
+  @include media($tablet){
+    display:inline-block;
+    vertical-align:middle;
+    margin-top:22px;
+    float: right;
+  }
 }
 .menu{
   padding-left:0;
@@ -50,21 +73,23 @@
   text-transform:capitalize;
 }
 .header-main-menu-item-social{
-  display:none;
+  text-indent:100%;
+  white-space: nowrap;
+  overflow: hidden;
+  //display:none;
 }
-@media (min-width:768px){
-  .region-header{
-    display:inline-block;
-    vertical-align: middle;
-  }
-  .expanded{
+//Media queries
+.expanded{
+  @include media($tablet){
     &:hover{
       .menu{
         display: block;
       }
     }
   }
-  .expanded .menu{
+}
+.expanded .menu{
+  @include media (630px){
     position: absolute;
     top: 50px;
     width:100%;
@@ -76,7 +101,9 @@
     border-bottom: 1px solid $gray;
     border-right: 1px solid $gray;
   }
-  .header-main-menu-item{
+}
+.header-main-menu-item{
+  @include media($tablet){
     display:inline-block;
     margin-left:-4px;
     vertical-align:top;
@@ -89,16 +116,27 @@
       }
     }
   }
-  .header-main-menu-item-social{
-    display:none;
+}
+.header-main-menu-subitem{
+  @include media($tablet){
+    a{
+      color: black;
+      padding: 5px;
+    }
+    &:first-child{
+      padding-top: 15px;
+    }
   }
-  .header-main-menu-subitem{
-     a{
-     color: black;
-     padding: 5px;
-   }
-     &:first-child{
-       padding-top: 15px;
-     }
-   }
- }
+}
+//Cuando se ponga los iconos...
+@include media($tablet){
+  .header-main-menu-item-social{
+    width: 32px;
+    height: 32px;
+    background: red;
+    vertical-align: middle;
+    a {
+      padding: 0;
+    }
+  }
+}
