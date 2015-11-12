@@ -35,13 +35,6 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['row_class'] = 'personel-row';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Personnel photo */
   $handler->display->display_options['fields']['field_personnel_photo']['id'] = 'field_personnel_photo';
   $handler->display->display_options['fields']['field_personnel_photo']['table'] = 'field_data_field_personnel_photo';
@@ -53,20 +46,90 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['fields']['field_personnel_photo']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_personnel_photo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_personnel_photo']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'people_picture',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_personnel_photo']['field_api_classes'] = TRUE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h3 class="personnel-name">[title]</h3>';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = '0';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h3';
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'personnel-name';
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Occupation */
   $handler->display->display_options['fields']['field_occupation']['id'] = 'field_occupation';
   $handler->display->display_options['fields']['field_occupation']['table'] = 'field_data_field_occupation';
   $handler->display->display_options['fields']['field_occupation']['field'] = 'field_occupation';
   $handler->display->display_options['fields']['field_occupation']['label'] = '';
+  $handler->display->display_options['fields']['field_occupation']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_occupation']['element_type'] = '0';
   $handler->display->display_options['fields']['field_occupation']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_occupation']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_occupation']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_occupation']['field_api_classes'] = TRUE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['element_type'] = '0';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'personnel-profile-link';
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'See profile';
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
+  $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['label'] = '';
+  $handler->display->display_options['fields']['field_description']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_description']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_description']['field_api_classes'] = TRUE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['nid']['alter']['text'] = '<h3 class="personnel-name">[title]</h3>
+<span class="personnel-occupation">[field_occupation]</span>
+<div class="personnel-view-profile">[view_node]</div>';
+  $handler->display->display_options['fields']['nid']['element_type'] = '0';
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['nid']['element_wrapper_class'] = 'personnel-hover-content';
+  $handler->display->display_options['fields']['nid']['element_default_classes'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid_1']['id'] = 'nid_1';
+  $handler->display->display_options['fields']['nid_1']['table'] = 'node';
+  $handler->display->display_options['fields']['nid_1']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid_1']['label'] = '';
+  $handler->display->display_options['fields']['nid_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['nid_1']['alter']['text'] = '<div class="personnel-overlay">
+<div class="personnel-modal">
+<span class="personnel-overlay-close">close</span>
+<div>[field_personnel_photo]</div>
+<h3 class="personnel-name">[title]</h3>
+<div class="personnel-occupation">[field_occupation]</div>
+<div class="personnel-description">[field_description]</div>
+</div>
+</div>';
+  $handler->display->display_options['fields']['nid_1']['element_type'] = '0';
+  $handler->display->display_options['fields']['nid_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid_1']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['nid_1']['element_default_classes'] = FALSE;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -228,6 +291,20 @@ function auge_views_personnel_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('<h3 class="personnel-name">[title]</h3>'),
+    t('See profile'),
+    t('<h3 class="personnel-name">[title]</h3>
+<span class="personnel-occupation">[field_occupation]</span>
+<div class="personnel-view-profile">[view_node]</div>'),
+    t('<div class="personnel-overlay">
+<div class="personnel-modal">
+<span class="personnel-overlay-close">close</span>
+<div>[field_personnel_photo]</div>
+<h3 class="personnel-name">[title]</h3>
+<div class="personnel-occupation">[field_occupation]</div>
+<div class="personnel-description">[field_description]</div>
+</div>
+</div>'),
     t('Content pane Team'),
     t('Team'),
     t('Personnel'),
