@@ -70,7 +70,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'panels-one-col-tabs';
+  $display->layout = 'panels-one-col-wmargin';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -98,7 +98,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c85cdcb0-97e8-47ca-9251-bb60964451e5';
-    $pane->panel = 'text';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -120,10 +120,10 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c85cdcb0-97e8-47ca-9251-bb60964451e5';
     $display->content['new-c85cdcb0-97e8-47ca-9251-bb60964451e5'] = $pane;
-    $display->panels['text'][0] = 'new-c85cdcb0-97e8-47ca-9251-bb60964451e5';
+    $display->panels['content'][0] = 'new-c85cdcb0-97e8-47ca-9251-bb60964451e5';
     $pane = new stdClass();
     $pane->pid = 'new-ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87';
-    $pane->panel = 'titles';
+    $pane->panel = 'content_wide';
     $pane->type = 'block';
     $pane->subtype = 'quicktabs-personnel_tabs';
     $pane->shown = TRUE;
@@ -143,7 +143,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87';
     $display->content['new-ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87'] = $pane;
-    $display->panels['titles'][0] = 'new-ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87';
+    $display->panels['content_wide'][0] = 'new-ea615227-e6ae-4ca5-97c3-f1a8d5ef1d87';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

@@ -1,6 +1,19 @@
 // Manatí Base Theme JS functions
 (function($) {
 })(jQuery);
+//Flexslider for words.
+$(document).ready(function() {
+    var frontSlider = $('.flexslider-words');
+    if (frontSlider.length > 0) {
+      frontSlider.addClass('flexslider');
+      frontSlider.flexslider({
+        slideDirection: 'vertical',
+        slideshow: true,
+        animationLoop: true,
+        animationDuration: 600,
+      });
+    }
+  });
 //Tabs for the who we are page.
   $('.tabs').each(function(){
     // For each set of tabs, we want to keep track of

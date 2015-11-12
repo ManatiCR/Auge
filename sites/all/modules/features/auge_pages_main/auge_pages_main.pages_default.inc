@@ -71,14 +71,14 @@ function auge_pages_main_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-e98afcdb-33ba-41b0-b9dc-dd8ccd401994';
+    $pane->pid = 'new-a0314d1a-3282-41c4-b311-ca2e28fd2ee2';
     $pane->panel = 'content';
     $pane->type = 'node';
     $pane->subtype = 'node';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'nid' => '376',
+      'nid' => '578',
       'links' => 0,
       'leave_node_title' => 0,
       'identifier' => '',
@@ -89,56 +89,14 @@ function auge_pages_main_default_page_manager_pages() {
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array(
-      'settings' => array(
-        'element_title' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'link_enabled' => 0,
-          'link' => array(
-            'path' => '',
-            'class_enable' => 0,
-            'class' => '',
-            'attributes' => array(),
-            'attributes_array' => array(),
-          ),
-          'attributes_array' => array(),
-        ),
-        'element_content' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'link_enabled' => 0,
-          'link' => array(
-            'path' => '',
-            'class_enable' => 0,
-            'class' => '',
-            'attributes' => array(),
-            'attributes_array' => array(),
-          ),
-          'attributes_array' => array(),
-        ),
-        'element_wrapper' => array(
-          'type' => '',
-          'class_enable' => 1,
-          'class' => 'panel-front-page-boxes panel-front-page-boxes-top',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'add_default_classes' => 1,
-      ),
-      'style' => 'semantic_panels',
-    );
+    $pane->style = array();
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'e98afcdb-33ba-41b0-b9dc-dd8ccd401994';
-    $display->content['new-e98afcdb-33ba-41b0-b9dc-dd8ccd401994'] = $pane;
-    $display->panels['content'][0] = 'new-e98afcdb-33ba-41b0-b9dc-dd8ccd401994';
+    $pane->uuid = 'a0314d1a-3282-41c4-b311-ca2e28fd2ee2';
+    $display->content['new-a0314d1a-3282-41c4-b311-ca2e28fd2ee2'] = $pane;
+    $display->panels['content'][0] = 'new-a0314d1a-3282-41c4-b311-ca2e28fd2ee2';
     $pane = new stdClass();
     $pane->pid = 'new-570ec310-58e2-4a70-bfc5-50128800ff15';
     $pane->panel = 'content';
@@ -149,7 +107,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Aprender',
-      'body' => '<p>¿Tiene una idea? &nbsp;¡Nosotros le ayudamos a validarla y a hacerla realidadl!</p><p class="front-page-button">CONOCÉ TODO LO QUE PODÉS APRENDER</p>',
+      'body' => '<p>¿Tiene una idea? &nbsp;¡Nosotros le ayudamos a validarla y a hacerla realidadl!</p><p class="front-page-button">Aprenda con AUGE</p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -214,7 +172,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Emprender',
-      'body' => '<p>¿Necesita desarrollar y probar su Producto Mínimo Viable? ¡Ingrese a nuestro proceso de incubación!</p><p>INCUBE SU PROYECTO EN AUGE</p>',
+      'body' => '<p>¿Necesita desarrollar y probar su Producto Mínimo Viable? ¡Ingrese a nuestro proceso de incubación!</p><p>Incube su emprendimiento en AUGE</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -279,7 +237,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Acompañar',
-      'body' => '<p>Durante todo el proceso en AUGE, empresarios y académicos experimentados orientan a los equipos emprendedores.</p><p>CONOZCA A NUESTRO EQUIPO DE MENTORÍA</p>',
+      'body' => '<p>Durante todo el proceso en AUGE, empresarios y académicos experimentados orientan a los equipos emprendedores.</p><p>Conozca a nuestra red de mentoría y asesoría</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -344,7 +302,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Invertir',
-      'body' => '<p>Una emprendimiento prometedor requiere merece capital para desarrollar su potencial.</p><p>INVIERTA EN LOS EMPRENDIMIENTOS AUGE</p>',
+      'body' => '<p>Una emprendimiento prometedor requiere merece capital para desarrollar su potencial.</p><p>Invierta en los emprendimientos AUGE o ayúdenos a financiar nuestras actividades</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -400,74 +358,32 @@ function auge_pages_main_default_page_manager_pages() {
     $display->content['new-154950ff-e8cb-4792-baab-573fa74dfc3c'] = $pane;
     $display->panels['content'][4] = 'new-154950ff-e8cb-4792-baab-573fa74dfc3c';
     $pane = new stdClass();
-    $pane->pid = 'new-f64f7ec3-819f-47be-919a-7b529a849a5c';
+    $pane->pid = 'new-b61defc4-8fec-4d04-b538-781dd7446cd6';
     $pane->panel = 'content';
     $pane->type = 'node';
     $pane->subtype = 'node';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'nid' => '377',
+      'nid' => '579',
       'links' => 0,
       'leave_node_title' => 0,
       'identifier' => '',
-      'build_mode' => 'full',
+      'build_mode' => 'teaser',
       'link_node_title' => 0,
       'override_title' => 1,
       'override_title_text' => '',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array(
-      'settings' => array(
-        'element_title' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => 'hide-it',
-          'attributes' => array(),
-          'link_enabled' => 0,
-          'link' => array(
-            'path' => '',
-            'class_enable' => 0,
-            'class' => '',
-            'attributes' => array(),
-            'attributes_array' => array(),
-          ),
-          'attributes_array' => array(),
-        ),
-        'element_content' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'link_enabled' => 0,
-          'link' => array(
-            'path' => '',
-            'class_enable' => 0,
-            'class' => '',
-            'attributes' => array(),
-            'attributes_array' => array(),
-          ),
-          'attributes_array' => array(),
-        ),
-        'element_wrapper' => array(
-          'type' => 'div',
-          'class_enable' => 1,
-          'class' => 'panel-front-page-boxes panel-front-page-boxes-bottom',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'add_default_classes' => 1,
-      ),
-      'style' => 'semantic_panels',
-    );
+    $pane->style = array();
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 5;
     $pane->locks = array();
-    $pane->uuid = 'f64f7ec3-819f-47be-919a-7b529a849a5c';
-    $display->content['new-f64f7ec3-819f-47be-919a-7b529a849a5c'] = $pane;
-    $display->panels['content'][5] = 'new-f64f7ec3-819f-47be-919a-7b529a849a5c';
+    $pane->uuid = 'b61defc4-8fec-4d04-b538-781dd7446cd6';
+    $display->content['new-b61defc4-8fec-4d04-b538-781dd7446cd6'] = $pane;
+    $display->panels['content'][5] = 'new-b61defc4-8fec-4d04-b538-781dd7446cd6';
     $pane = new stdClass();
     $pane->pid = 'new-c31881bd-7a22-4917-892d-fa7a300887f3';
     $pane->panel = 'content';

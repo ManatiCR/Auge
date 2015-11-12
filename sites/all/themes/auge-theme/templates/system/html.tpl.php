@@ -9,11 +9,21 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  
+
+  <!-- Flexslider -->
+  <?php
+  if (drupal_is_front_page()) {
+      ?>
+      <link rel="stylesheet" href="sites/all/libraries/flexslider.css" type="text/css">
+      <script src="sites/all/libraries/jquery.flexslider.js"></script>
+      <?php
+  }
+  ?>
+
   <!-- Typekit -->
   <script src="https://use.typekit.net/ahv5igy.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
-</head>
+  </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 

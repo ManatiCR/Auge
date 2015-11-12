@@ -73,7 +73,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'panels-one-col-wmargin';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -88,7 +88,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -150,29 +150,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c373420a-adfe-4144-8a5b-661dc64d46b5';
     $display->content['new-c373420a-adfe-4144-8a5b-661dc64d46b5'] = $pane;
-    $display->panels['middle'][0] = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
-    $pane = new stdClass();
-    $pane->pid = 'new-67283836-c6df-4e69-9ec6-48f6b2dc0582';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'proximas_actividades-panel_pane_4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '67283836-c6df-4e69-9ec6-48f6b2dc0582';
-    $display->content['new-67283836-c6df-4e69-9ec6-48f6b2dc0582'] = $pane;
-    $display->panels['middle'][1] = 'new-67283836-c6df-4e69-9ec6-48f6b2dc0582';
+    $display->panels['content'][0] = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
     $pane = new stdClass();
     $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -180,7 +161,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>Plura mihi bona sunt, inclinet, amari petere vellent. Curabitur blandit tempus ardua ridiculus sed magna. Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur blandit tempus ardua ridiculus sed magna. Cum ceteris in veneratione tui montes, nascetur mus. A communi observantia non est recedendum.</p>',
+      'body' => '<p>Una vez que se ha identificado un modelo de negocio y se han realizado pruebas con un Producto Mínimo Viable, los equipos pueden solicitar ingreso al proceso de incubación. Este proceso incluye las fases verde y roja y para ingresar, se requiere la validación resultante del proceso de aprender, o aprobar un proceso de evaluación de requisitos. Una vez que se solicita el ingreso, todos los equipos emprendedores pasan por una valoración en dos pasos, con una triada de especialistas y nuestro Consejo Consultivo en pleno.</p><p>Estos son algunos de los proyectos que se emprenden con nosotros:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -190,14 +171,33 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
     $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
-    $display->panels['middle'][2] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $display->panels['content'][1] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane = new stdClass();
+    $pane->pid = 'new-361f370b-31c7-4271-a138-137dbde42663';
+    $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'projects-panel_pane_3';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '361f370b-31c7-4271-a138-137dbde42663';
+    $display->content['new-361f370b-31c7-4271-a138-137dbde42663'] = $pane;
+    $display->panels['content'][2] = 'new-361f370b-31c7-4271-a138-137dbde42663';
     $pane = new stdClass();
     $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -219,10 +219,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
     $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
-    $display->panels['middle'][3] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
+    $display->panels['content'][3] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
     $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -245,10 +245,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['middle'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane = new stdClass();
     $pane->pid = 'new-950eed80-b218-4496-98e1-948d3a95b13f';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'views_panes';
     $pane->subtype = 'stages-panel_pane_2';
     $pane->shown = TRUE;
@@ -264,7 +264,26 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '950eed80-b218-4496-98e1-948d3a95b13f';
     $display->content['new-950eed80-b218-4496-98e1-948d3a95b13f'] = $pane;
-    $display->panels['middle'][5] = 'new-950eed80-b218-4496-98e1-948d3a95b13f';
+    $display->panels['content'][5] = 'new-950eed80-b218-4496-98e1-948d3a95b13f';
+    $pane = new stdClass();
+    $pane->pid = 'new-67283836-c6df-4e69-9ec6-48f6b2dc0582';
+    $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'proximas_actividades-panel_pane_4';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 6;
+    $pane->locks = array();
+    $pane->uuid = '67283836-c6df-4e69-9ec6-48f6b2dc0582';
+    $display->content['new-67283836-c6df-4e69-9ec6-48f6b2dc0582'] = $pane;
+    $display->panels['content'][6] = 'new-67283836-c6df-4e69-9ec6-48f6b2dc0582';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -526,12 +545,13 @@ function auge_pages_get_involved_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'panels-one-col-wmargin';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'content' => NULL,
     ),
   );
   $display->cache = array();
@@ -541,7 +561,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -603,12 +623,37 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c373420a-adfe-4144-8a5b-661dc64d46b5';
     $display->content['new-c373420a-adfe-4144-8a5b-661dc64d46b5'] = $pane;
-    $display->panels['middle'][0] = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
+    $display->panels['content'][0] = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
     $pane = new stdClass();
-    $pane->pid = 'new-dac50e2c-e561-42dc-9a80-63f07b7b15be';
-    $pane->panel = 'middle';
+    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<p>El proceso AUGE le permite a los emprendedores demostrar las bondades de su iniciativa, a partir de los resultados que van obteniendo en tanto descubren, crean, innovan y crecen. Si le interesa invertir en alguno de los proyectos y desea que facilitemos el proceso, no dude en contactarnos.</p><p>Estos son algunos de los proyectos en los que usted puede invertir:</p>',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
+    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
+    $display->panels['content'][1] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane = new stdClass();
+    $pane->pid = 'new-f7640502-0c04-4470-847d-16a7be294823';
+    $pane->panel = 'content';
     $pane->type = 'views_panes';
-    $pane->subtype = 'proximas_actividades-panel_pane_6';
+    $pane->subtype = 'projects-panel_pane_5';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -618,64 +663,14 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = 'dac50e2c-e561-42dc-9a80-63f07b7b15be';
-    $display->content['new-dac50e2c-e561-42dc-9a80-63f07b7b15be'] = $pane;
-    $display->panels['middle'][1] = 'new-dac50e2c-e561-42dc-9a80-63f07b7b15be';
-    $pane = new stdClass();
-    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Plura mihi bona sunt, inclinet, amari petere vellent. Curabitur blandit tempus ardua ridiculus sed magna. Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur blandit tempus ardua ridiculus sed magna. Cum ceteris in veneratione tui montes, nascetur mus. A communi observantia non est recedendum.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
-    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
-    $display->panels['middle'][2] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane = new stdClass();
-    $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Etiam habebis sem dicantur magna mollis euismod. Non equidem invideo, miror magis posuere velit aliquet. Non equidem invideo, miror magis posuere velit aliquet. Quam diu etiam furor iste tuus nos eludet? Magna pars studiorum, prodita quaerimus.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
-    $display->panels['middle'][3] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
+    $pane->uuid = 'f7640502-0c04-4470-847d-16a7be294823';
+    $display->content['new-f7640502-0c04-4470-847d-16a7be294823'] = $pane;
+    $display->panels['content'][2] = 'new-f7640502-0c04-4470-847d-16a7be294823';
     $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -694,14 +689,14 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['middle'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane = new stdClass();
     $pane->pid = 'new-327fd9ab-06ac-4922-b166-ab4cf9e51a22';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'views_panes';
     $pane->subtype = 'stages-panel_pane_4';
     $pane->shown = TRUE;
@@ -713,11 +708,30 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = '327fd9ab-06ac-4922-b166-ab4cf9e51a22';
     $display->content['new-327fd9ab-06ac-4922-b166-ab4cf9e51a22'] = $pane;
-    $display->panels['middle'][5] = 'new-327fd9ab-06ac-4922-b166-ab4cf9e51a22';
+    $display->panels['content'][4] = 'new-327fd9ab-06ac-4922-b166-ab4cf9e51a22';
+    $pane = new stdClass();
+    $pane->pid = 'new-dac50e2c-e561-42dc-9a80-63f07b7b15be';
+    $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'proximas_actividades-panel_pane_6';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = 'dac50e2c-e561-42dc-9a80-63f07b7b15be';
+    $display->content['new-dac50e2c-e561-42dc-9a80-63f07b7b15be'] = $pane;
+    $display->panels['content'][5] = 'new-dac50e2c-e561-42dc-9a80-63f07b7b15be';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -981,7 +995,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'panels-one-col-wmargin';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -996,7 +1010,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -1058,29 +1072,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c373420a-adfe-4144-8a5b-661dc64d46b5';
     $display->content['new-c373420a-adfe-4144-8a5b-661dc64d46b5'] = $pane;
-    $display->panels['middle'][0] = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
+    $display->panels['content'][0] = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
     $pane = new stdClass();
-    $pane->pid = 'new-98f40f9a-8e8b-4b08-b65b-f8ad41f871ee';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'proximas_actividades-panel_pane_9';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '98f40f9a-8e8b-4b08-b65b-f8ad41f871ee';
-    $display->content['new-98f40f9a-8e8b-4b08-b65b-f8ad41f871ee'] = $pane;
-    $display->panels['middle'][1] = 'new-98f40f9a-8e8b-4b08-b65b-f8ad41f871ee';
-    $pane = new stdClass();
-    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane->panel = 'middle';
+    $pane->pid = 'new-b95250c8-9aff-49a5-a3d8-546cc47fe32e';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -1088,7 +1083,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>Plura mihi bona sunt, inclinet, amari petere vellent. Curabitur blandit tempus ardua ridiculus sed magna. Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur blandit tempus ardua ridiculus sed magna. Cum ceteris in veneratione tui montes, nascetur mus. A communi observantia non est recedendum.</p>',
+      'body' => '<p>La correcta identificación del problema o necesidad que se quiere atender, es la base de todo. Las fases azul y amarilla apoyan a todas aquellas personas que tienen una propuesta de solución en mente y necesitan clarificar si ésta responde adecuadamente a lo que se pretende resolver y si es posible hacerla realidad. Para lograrlo, trabajamos con herramientas contextualizadas y efectivas.&nbsp;</p><p>La inmersión en el problema o necesidad que se quiere resolver eleva las posibilidades de éxito de cualquier emprendimiento. En nuestras fases azul y amarilla usted descubrirá la esencia del problema y definirá una solución creativa, ajustada a sus motivaciones y capacidades. También puede aprender y experimentar rápidamente en nuestros FlashLab y Sprint.</p><p>Estos son algunos de los proyectos que han aprendido con nosotros:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1098,14 +1093,33 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b95250c8-9aff-49a5-a3d8-546cc47fe32e';
+    $display->content['new-b95250c8-9aff-49a5-a3d8-546cc47fe32e'] = $pane;
+    $display->panels['content'][1] = 'new-b95250c8-9aff-49a5-a3d8-546cc47fe32e';
+    $pane = new stdClass();
+    $pane->pid = 'new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863';
+    $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'projects-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
-    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
-    $display->panels['middle'][2] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane->uuid = 'aa20a8fc-72fc-4d1b-a08a-a43d3a57c863';
+    $display->content['new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863'] = $pane;
+    $display->panels['content'][2] = 'new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863';
     $pane = new stdClass();
-    $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane->panel = 'middle';
+    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -1113,7 +1127,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>Etiam habebis sem dicantur magna mollis euismod. Non equidem invideo, miror magis posuere velit aliquet. Non equidem invideo, miror magis posuere velit aliquet. Quam diu etiam furor iste tuus nos eludet? Magna pars studiorum, prodita quaerimus.</p>',
+      'body' => '<p>Otros servicios</p><p>FlashLab:</p><p>Cursos rápidos, prácticos y experimentales diseñados para emprendedores y &nbsp;colaboradores de empresas o instituciones que quieren desarrollar emprendimientos corporativos o un spin-off. &nbsp;Los Labs son sesiones de 4 horas con un espacio para experimentar y se imparten según demanda. Si desea asistir a uno de nuestros FlashLabs, vea nuestro calendario o comuníquese con nosotros.</p><p>Sprint Auge:</p><p>Competencia de co-creación, diversa, práctica y &nbsp;enfocada que busca desarrollar conocimientos y fomentar habilidades en torno al emprendimiento y la innovación. Como base, se proponen soluciones para un reto planteado por una empresa y organización que patrocina la actividad, utilizando la metodología de Design Thinking &nbsp;como estructura.</p><p>Laboratorio de fabricación para acelerar prototipado:</p><p>La Inventoría es el proyecto con el que nace la Fundación Costa Rica Innova, organización que se incuba en AUGE con el apoyo de FUNDEVI. Mediante una alianza con sus creadores, AUGE ofrece el servicio de acelerar prototipos por medio de la colaboración de activadores del movimiento maker, además de herramientas como impresoras 3D, arduinos, cortadora láser entre otros. Leer más.</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1125,12 +1139,12 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
-    $display->panels['middle'][3] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
+    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
+    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
+    $display->panels['content'][3] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
     $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -1153,10 +1167,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['middle'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane = new stdClass();
     $pane->pid = 'new-3dd963fb-8e81-4b6f-ab80-318167d42ed7';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'views_panes';
     $pane->subtype = 'stages-panel_pane_1';
     $pane->shown = TRUE;
@@ -1173,7 +1187,26 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '3dd963fb-8e81-4b6f-ab80-318167d42ed7';
     $display->content['new-3dd963fb-8e81-4b6f-ab80-318167d42ed7'] = $pane;
-    $display->panels['middle'][5] = 'new-3dd963fb-8e81-4b6f-ab80-318167d42ed7';
+    $display->panels['content'][5] = 'new-3dd963fb-8e81-4b6f-ab80-318167d42ed7';
+    $pane = new stdClass();
+    $pane->pid = 'new-98f40f9a-8e8b-4b08-b65b-f8ad41f871ee';
+    $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'proximas_actividades-panel_pane_9';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 6;
+    $pane->locks = array();
+    $pane->uuid = '98f40f9a-8e8b-4b08-b65b-f8ad41f871ee';
+    $display->content['new-98f40f9a-8e8b-4b08-b65b-f8ad41f871ee'] = $pane;
+    $display->panels['content'][6] = 'new-98f40f9a-8e8b-4b08-b65b-f8ad41f871ee';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1438,12 +1471,13 @@ function auge_pages_get_involved_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'panels-one-col-wmargin';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'content' => NULL,
     ),
   );
   $display->cache = array();
@@ -1453,7 +1487,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -1515,12 +1549,37 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'c373420a-adfe-4144-8a5b-661dc64d46b5';
     $display->content['new-c373420a-adfe-4144-8a5b-661dc64d46b5'] = $pane;
-    $display->panels['middle'][0] = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
+    $display->panels['content'][0] = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
     $pane = new stdClass();
-    $pane->pid = 'new-b72a93a6-20e4-4699-9521-4558a9764c6b';
-    $pane->panel = 'middle';
+    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<p>¿Desea ser parte de una red de interacción, experiencias y crecimiento orientada a la innovación? Le invitamos a ser parte de nuestro equipo de asesoría y mentoría, para:</p><p>Consolidar el éxito de las iniciativas incubadas en AUGE, mediante la transferencia de conocimientos y consejos de expertos desde sus primeras etapas de desarrollo.<br>Enriquecer el proceso de toma de decisiones tanto para emprendedores como mentores, &nbsp;por medio del intercambio de conocimiento entre los miembros de la red.<br>Fortalecer en el tejido empresarial costarricense valiéndose de la filosofía de la economía colaborativa como medio para el desarrollo inclusivo y sostenible del país.</p><p>¿Le interesa contribuir? (link al formulario)<br>Estos son algunos de nuestros mentores y mentoras:<br>(escogidos)</p><p>Ver todos (lista completa de personas)</p>',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
+    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
+    $display->panels['content'][1] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane = new stdClass();
+    $pane->pid = 'new-3f0965ee-a6e0-4b53-b5c7-ea4775546c13';
+    $pane->panel = 'content';
     $pane->type = 'views_panes';
-    $pane->subtype = 'proximas_actividades-panel_pane_5';
+    $pane->subtype = 'projects-panel_pane_4';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -1530,64 +1589,14 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = 'b72a93a6-20e4-4699-9521-4558a9764c6b';
-    $display->content['new-b72a93a6-20e4-4699-9521-4558a9764c6b'] = $pane;
-    $display->panels['middle'][1] = 'new-b72a93a6-20e4-4699-9521-4558a9764c6b';
-    $pane = new stdClass();
-    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Plura mihi bona sunt, inclinet, amari petere vellent. Curabitur blandit tempus ardua ridiculus sed magna. Paullum deliquit, ponderibus modulisque suis ratio utitur. Curabitur blandit tempus ardua ridiculus sed magna. Cum ceteris in veneratione tui montes, nascetur mus. A communi observantia non est recedendum.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
-    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
-    $display->panels['middle'][2] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane = new stdClass();
-    $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane->panel = 'middle';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Etiam habebis sem dicantur magna mollis euismod. Non equidem invideo, miror magis posuere velit aliquet. Non equidem invideo, miror magis posuere velit aliquet. Quam diu etiam furor iste tuus nos eludet? Magna pars studiorum, prodita quaerimus.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
-    $display->panels['middle'][3] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
+    $pane->uuid = '3f0965ee-a6e0-4b53-b5c7-ea4775546c13';
+    $display->content['new-3f0965ee-a6e0-4b53-b5c7-ea4775546c13'] = $pane;
+    $display->panels['content'][2] = 'new-3f0965ee-a6e0-4b53-b5c7-ea4775546c13';
     $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
@@ -1606,14 +1615,14 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['middle'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane = new stdClass();
     $pane->pid = 'new-2b43453f-86aa-4c62-b052-f970e6f7bb49';
-    $pane->panel = 'middle';
+    $pane->panel = 'content';
     $pane->type = 'views_panes';
     $pane->subtype = 'stages-panel_pane_3';
     $pane->shown = TRUE;
@@ -1625,11 +1634,30 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = '2b43453f-86aa-4c62-b052-f970e6f7bb49';
     $display->content['new-2b43453f-86aa-4c62-b052-f970e6f7bb49'] = $pane;
-    $display->panels['middle'][5] = 'new-2b43453f-86aa-4c62-b052-f970e6f7bb49';
+    $display->panels['content'][4] = 'new-2b43453f-86aa-4c62-b052-f970e6f7bb49';
+    $pane = new stdClass();
+    $pane->pid = 'new-b72a93a6-20e4-4699-9521-4558a9764c6b';
+    $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'proximas_actividades-panel_pane_5';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = 'b72a93a6-20e4-4699-9521-4558a9764c6b';
+    $display->content['new-b72a93a6-20e4-4699-9521-4558a9764c6b'] = $pane;
+    $display->panels['content'][5] = 'new-b72a93a6-20e4-4699-9521-4558a9764c6b';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
   $handler->conf['display'] = $display;
