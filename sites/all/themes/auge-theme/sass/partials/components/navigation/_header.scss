@@ -1,17 +1,11 @@
-
-
 // Base colors
 .header{
   background-color:$purple;
-  text-align: center;
   .not-front & {
     margin-bottom: 20px;
     @include media($mobile-large) {
       margin-bottom: 40px;
     }
-  }
-  @include media($tablet){
-    text-align: unset;
   }
 }
 .header-content{
@@ -22,29 +16,33 @@
   }
 }
 .site-logo{
+  width: 120px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 0;
+  @include media(630px){
+    width: 160px;
+  }
   img {
-    max-width: 210px;
-    height:auto;
-  }
-  @include media(630px) {
-    width: 20%;
-  }
-  @include media($tablet){
-    display: inline-block;
-    vertical-align: middle;
+    width: 100%;
   }
 }
 .main-menu{
-  @include media($tablet){
+  @include media(680px){
     display:inline-block;
     vertical-align:middle;
-    margin-top:22px;
+    margin-top:37px;
     float: right;
   }
 }
 .menu{
   padding-left:0;
   margin:0px;
+  display: none;
+  @include media(680px){
+    display: inline-block;
+  }
 }
 .expanded .menu{
   display:none;
@@ -55,15 +53,29 @@
 }
 .header-main-menu-item {
   position:relative;
+  margin: 20px 0 0 0;
   cursor:pointer;
   list-style:none;
   text-align:center;
+  @include media(680px){
+    margin: 0;
+  }
+  @include media(680px){
+    margin: 0;
+  }
   a{
-    padding: 20px 15px;
     display: block;
     text-transform:uppercase;
     text-decoration: none;
     color:$gray;
+    @include media(630px){
+      padding: 0 15px;
+      font-size: 1.1rem;
+    }
+    @include media(756px){
+      font-size: 1.4rem;
+      margin: 0;
+    }
   }
   a:hover{
     color:$orange;
@@ -103,10 +115,10 @@
   }
 }
 .header-main-menu-item{
-  @include media($tablet){
+  @include media(680px){
     display:inline-block;
     margin-left:-4px;
-    vertical-align:top;
+    vertical-align:middle;
     a{
       transition-duration: .2s;
       transition-timing-function: ease-in-out;
@@ -129,14 +141,11 @@
   }
 }
 //Cuando se ponga los iconos...
-@include media($tablet){
-  .header-main-menu-item-social{
-    width: 32px;
-    height: 32px;
-    background: red;
-    vertical-align: middle;
-    a {
-      padding: 0;
-    }
+.header-main-menu-item-social{
+  width: 32px;
+  height: 32px;
+  background: red;
+  a {
+    padding: 0;
   }
 }
