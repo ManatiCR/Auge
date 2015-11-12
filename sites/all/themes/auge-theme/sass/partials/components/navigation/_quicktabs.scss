@@ -84,3 +84,21 @@
   }
 }
 
+// who we are tabs
+.page-whoweare {
+  .quicktabs-tabs {
+    li {
+      a {
+        background-color: #ED9377;
+      }
+      &.active {
+        a {
+          background-color: #EB7A50;
+          &:after {
+            border-color: #EB7A50 transparent transparent transparent
+          }
+        }
+      }
+    }
+  }
+}
