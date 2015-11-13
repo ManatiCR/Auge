@@ -746,7 +746,10 @@ input[type="submit"] {
   display: none; }
 
 .panel-front-page-boxes {
+  position: relative;
   padding: 30px 0; }
+  .panel-front-page-boxes:first-child {
+    margin-top: -4px; }
   .panel-front-page-boxes .pane-title {
     font-size: 4.5rem;
     margin: 0 0 0 25%; }
@@ -774,41 +777,44 @@ input[type="submit"] {
       margin-left: 5px;
       vertical-align: top;
       margin-top: 4px; }
-  .panel-front-page-boxes:hover {
-    background-color: #522e91;
-    color: white; }
-    .panel-front-page-boxes:hover p:nth-child(2) {
-      color: inherit;
-      border-color: white; }
-      .panel-front-page-boxes:hover p:nth-child(2):after {
-        border-color: transparent transparent transparent white; }
+  @media screen and (min-width: 630px) {
+    .panel-front-page-boxes:hover {
+      background-color: #522e91;
+      color: white; }
+      .panel-front-page-boxes:hover p:nth-child(2) {
+        color: inherit;
+        border-color: white; }
+        .panel-front-page-boxes:hover p:nth-child(2):after {
+          border-color: transparent transparent transparent white; } }
 
 .panel-front-page-boxes-projects h2 {
   display: inline-block;
   margin: 4% 0 4% 10%; }
 
-.node-front-page-images h2 {
-  margin: 0; }
-
-.node-front-page-images .field-front-image-title p {
-  font-size: 3.5rem;
-  position: absolute;
-  top: 3%;
-  margin: 0;
-  left: 10%; }
-  @media screen and (min-width: 700px) {
-    .node-front-page-images .field-front-image-title p {
-      font-size: 6.3rem; } }
-
-.node-front-page-images .field-front-image-subtitle {
-  font-size: 3rem;
-  position: absolute;
-  top: 9%;
-  left: 10%; }
-  @media screen and (min-width: 700px) {
-    .node-front-page-images .field-front-image-subtitle {
-      font-size: 4.4rem;
-      top: 7.3rem; } }
+.node-front-page-images {
+  position: relative; }
+  .node-front-page-images h2 {
+    margin: 0; }
+  .node-front-page-images .field-front-image-title p {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 10%;
+    margin: 0;
+    left: 10%; }
+    @media screen and (min-width: 700px) {
+      .node-front-page-images .field-front-image-title p {
+        font-size: 6.3rem; } }
+  .node-front-page-images .field-front-image-subtitle {
+    font-size: 3rem;
+    position: absolute;
+    top: 40%;
+    margin: 0;
+    left: 10%; }
+    @media screen and (min-width: 700px) {
+      .node-front-page-images .field-front-image-subtitle {
+        font-size: 4.4rem; } }
+  .node-front-page-images .field-main-image img {
+    width: 100%; }
 
 #quicktabs-container-personnel_tabs {
   padding: 7%; }
@@ -1008,6 +1014,10 @@ input[type="submit"] {
   @media screen and (min-width: 700px) {
     .main-footer {
       padding: 35px 45px; } }
+  @media screen and (min-width: 1292px) {
+    .main-footer .footer-content {
+      max-width: 1200px;
+      margin: 0 auto; } }
   .main-footer a {
     color: #F58345;
     font-size: 15px; }
