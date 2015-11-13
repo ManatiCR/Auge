@@ -38,6 +38,11 @@ html {
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
+.facebook-icon, .twitter-icon, .personnel-overlay-close {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
 .panel-grid-width, .center-wrapper {
   max-width: 1020px;
   margin: 0 auto; }
@@ -246,18 +251,12 @@ input[type="submit"] {
   margin-bottom: 15px; }
 
 .header {
-  background-color: #522e91;
-  text-align: center;
-  display: inline-block;
-  width: 100%; }
+  background-color: #522e91; }
   .not-front .header {
     margin-bottom: 20px; }
     @media screen and (min-width: 500px) {
       .not-front .header {
         margin-bottom: 40px; } }
-  @media screen and (min-width: 700px) {
-    .header {
-      text-align: unset; } }
 
 .header-content {
   margin: 0 20px; }
@@ -266,29 +265,32 @@ input[type="submit"] {
       margin: 0 auto;
       max-width: 1200px; } }
 
-.site-logo img {
-  max-width: 210px;
-  height: auto; }
+.site-logo {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 0; }
+  @media screen and (min-width: 630px) {
+    .site-logo {
+      width: 160px; } }
+  .site-logo img {
+    width: 100%; }
 
-@media screen and (min-width: 630px) {
-  .site-logo {
-    width: 20%; } }
-
-@media screen and (min-width: 700px) {
-  .site-logo {
-    display: inline-block;
-    vertical-align: middle; } }
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 680px) {
   .main-menu {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 22px;
+    margin-top: 37px;
     float: right; } }
 
 .menu {
   padding-left: 0;
-  margin: 0px; }
+  margin: 0px;
+  display: none; }
+  @media screen and (min-width: 680px) {
+    .menu {
+      display: inline-block; } }
 
 .expanded .menu {
   display: none;
@@ -299,15 +301,29 @@ input[type="submit"] {
 
 .header-main-menu-item {
   position: relative;
+  margin: 20px 0 0 0;
   cursor: pointer;
   list-style: none;
   text-align: center; }
+  @media screen and (min-width: 680px) {
+    .header-main-menu-item {
+      margin: 0; } }
+  @media screen and (min-width: 680px) {
+    .header-main-menu-item {
+      margin: 0; } }
   .header-main-menu-item a {
-    padding: 20px 15px;
     display: block;
     text-transform: uppercase;
     text-decoration: none;
     color: #d1d1d1; }
+    @media screen and (min-width: 630px) {
+      .header-main-menu-item a {
+        padding: 0 15px;
+        font-size: 1.1rem; } }
+    @media screen and (min-width: 756px) {
+      .header-main-menu-item a {
+        font-size: 1.4rem;
+        margin: 0; } }
   .header-main-menu-item a:hover {
     color: #F58345; }
 
@@ -315,9 +331,31 @@ input[type="submit"] {
   text-transform: capitalize; }
 
 .header-main-menu-item-social {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden; }
+  padding: 0;
+  width: 32px; }
+
+.facebook-icon {
+  display: block;
+  float: right;
+  background: transparent url("../images/sprite.png");
+  background-image: url("../images/sprite.svg"), none;
+  background-position: center -17px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px; }
+
+.twitter-icon {
+  display: block;
+  float: right;
+  background: transparent url("../images/sprite.png");
+  background-image: url("../images/sprite.svg"), none;
+  background-position: center 6px;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px; }
+
+.pane-menu-menu-social-links li {
+  display: inline-block; }
 
 @media screen and (min-width: 700px) {
   .expanded:hover .menu {
@@ -326,7 +364,7 @@ input[type="submit"] {
 @media screen and (min-width: 630px) {
   .expanded .menu {
     position: absolute;
-    top: 50px;
+    top: 20px;
     width: 100%;
     padding-left: 0px;
     z-index: 100;
@@ -336,11 +374,11 @@ input[type="submit"] {
     border-bottom: 1px solid #d1d1d1;
     border-right: 1px solid #d1d1d1; } }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 680px) {
   .header-main-menu-item {
     display: inline-block;
     margin-left: -4px;
-    vertical-align: top; }
+    vertical-align: middle; }
     .header-main-menu-item a {
       transition-duration: .2s;
       transition-timing-function: ease-in-out;
@@ -354,15 +392,6 @@ input[type="submit"] {
     padding: 5px; }
   .header-main-menu-subitem:first-child {
     padding-top: 15px; } }
-
-@media screen and (min-width: 700px) {
-  .header-main-menu-item-social {
-    width: 32px;
-    height: 32px;
-    background: red;
-    vertical-align: middle; }
-    .header-main-menu-item-social a {
-      padding: 0; } }
 
 .quicktabs-wrapper {
   padding-top: 55px; }
@@ -711,6 +740,10 @@ input[type="submit"] {
       .panel-front-page-boxes:hover p:nth-child(2):after {
         border-color: transparent transparent transparent white; }
 
+.panel-front-page-boxes-projects h2 {
+  display: inline-block;
+  margin: 4% 0 4% 10%; }
+
 .node-front-page-images h2 {
   margin: 0; }
 
@@ -837,12 +870,15 @@ input[type="submit"] {
   position: absolute;
   width: 34px;
   height: 34px;
-  background-color: #1BA2CC;
   border: solid 2px #D1D1D3;
   border-radius: 100%;
   top: 10px;
   right: 10px;
-  cursor: pointer; }
+  cursor: pointer;
+  background: #1BA2CC url("../images/sprite.png");
+  background-image: url("../images/sprite.svg"), none;
+  background-position: center -51px;
+  background-repeat: no-repeat; }
   @media screen and (min-width: 545px) {
     .personnel-overlay-close {
       top: -16px;
