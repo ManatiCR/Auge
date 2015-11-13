@@ -72,14 +72,54 @@ function auge_pages_contact_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => '',
+      'title' => 'Contacto',
       'body' => '<p><strong>​Campus Rodrigo Facio, UCR.</strong></p><p>"Casa emprendedora María Teresa Obregón", 100 meters east and 100 north from the "Fuente de la Hispanidad", San Pedro, San José.</p><p><strong>Phone:</strong></p><p>+506 2511-1334</p><p><strong>Contact:</strong></p><p><a href="mailto:luisalonso@augeucr.com">luisalonso@augeucr.com</a></p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => 'h1',
+          'class_enable' => 1,
+          'class' => 'page-title',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
