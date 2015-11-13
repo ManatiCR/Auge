@@ -89,7 +89,9 @@ function auge_pages_main_default_page_manager_pages() {
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
@@ -376,7 +378,9 @@ function auge_pages_main_default_page_manager_pages() {
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
-    $pane->style = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 5;
@@ -428,7 +432,7 @@ function auge_pages_main_default_page_manager_pages() {
         'element_wrapper' => array(
           'type' => '',
           'class_enable' => 1,
-          'class' => 'panel-front-page-boxes panel-front-page-boxes-projects',
+          'class' => 'panel-front-page-boxes-projects',
           'attributes' => array(),
           'attributes_array' => array(),
         ),
