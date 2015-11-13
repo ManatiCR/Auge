@@ -11,14 +11,10 @@
   <?php print $scripts; ?>
 
   <!-- Flexslider -->
-  <?php
-  if (drupal_is_front_page()) {
-      ?>
-      <link rel="stylesheet" href="sites/all/libraries/flexslider.css" type="text/css">
-      <script src="sites/all/libraries/jquery.flexslider.js"></script>
-      <?php
-  }
-  ?>
+  <?php if (drupal_is_front_page()): ?>
+      <link rel="stylesheet" href="/sites/all/libraries/flexslider/flexslider.css" type="text/css">
+      <script src="/sites/all/libraries/flexslider/jquery.flexslider.js"></script>
+  <?php endif; ?>
 
   <!-- Typekit -->
   <script src="https://use.typekit.net/ahv5igy.js"></script>
