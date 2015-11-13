@@ -79,6 +79,9 @@ function auge_pages_get_involved_default_page_manager_pages() {
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'content' => NULL,
+      'content_wide' => NULL,
+      'content_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -239,7 +242,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'settings' => NULL,
       'style' => 'default',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'register-idea-link',
+    );
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
@@ -552,6 +558,8 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'default' => NULL,
       'middle' => NULL,
       'content' => NULL,
+      'content_wide' => NULL,
+      'content_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -687,7 +695,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'settings' => NULL,
       'style' => 'default',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'register-idea-link',
+    );
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
@@ -1203,7 +1214,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'settings' => NULL,
       'style' => 'default',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'register-idea-link',
+    );
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
@@ -1481,6 +1495,8 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'default' => NULL,
       'middle' => NULL,
       'content' => NULL,
+      'content_wide' => NULL,
+      'content_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -1616,7 +1632,10 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'settings' => NULL,
       'style' => 'default',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'register-idea-link',
+    );
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
