@@ -48,7 +48,6 @@ html {
   margin: 0 auto; }
 
 .panel-front-page-boxes p:nth-child(2), .node-front-page-images .field-front-image-button {
-  display: inline-block;
   font-size: 1.6rem;
   padding-bottom: 30px;
   color: #F58345;
@@ -777,8 +776,9 @@ input[type="submit"] {
     font-size: 2.4rem;
     margin: 15px 0 0 25%; }
   .panel-front-page-boxes p:nth-child(2) {
+    display: inline-block;
     padding: 15px;
-    margin: 15px 0 0 25%; }
+    margin: 15px 20px 0 25%; }
   @media screen and (min-width: 630px) {
     .panel-front-page-boxes:hover {
       background-color: #522e91;
@@ -807,11 +807,11 @@ input[type="submit"] {
       display: inline-block;
       vertical-align: top;
       position: relative;
-      font-size: 2.9rem; }
+      font-size: 2.7rem; }
       @media screen and (min-width: 375px) {
         .node-front-page-images .field-front-image-title p {
           font-size: 3.2rem; } }
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 800px) {
         .node-front-page-images .field-front-image-title p {
           font-size: 6rem; } }
     .node-front-page-images .field-front-image-title .slideshow-companion {
@@ -846,10 +846,12 @@ input[type="submit"] {
       .node-front-page-images .field-front-image-subtitle {
         font-size: 4.4rem; } }
   .node-front-page-images .field-front-image-button {
+    display: inline-block;
     padding: 5px; }
     @media screen and (min-width: 500px) {
       .node-front-page-images .field-front-image-button {
-        padding: 15px; } }
+        padding: 15px;
+        margin-right: 20px; } }
   .node-front-page-images .field-main-image img {
     width: 100%;
     min-height: 200px; }

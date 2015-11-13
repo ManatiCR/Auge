@@ -18,9 +18,10 @@
   }
   //This has to change. To an a.
   p:nth-child(2){
+    display: inline-block;
     @extend %button;
     padding: 15px;
-    margin: 15px 0 0 25%;
+    margin: 15px 20px 0 25%;
   }
   @include media(630px){
     &:hover{
@@ -57,11 +58,11 @@
       display: inline-block;
       vertical-align: top;
       position: relative;
-      font-size: 2.9rem;
+      font-size: 2.7rem;
       @include media(375px){
         font-size: 3.2rem;
       }
-      @include media($tablet){
+      @include media(800px){
         font-size: 6rem;
       }
     }
@@ -90,21 +91,23 @@
   }
   .field-front-image-subtitle{
     font-size: 2.5rem;
+    position: absolute;
+    top: 40%;
+    margin: 0;
+    left: 10%;
     @include media(375px){
       font-size: 2.9rem;
     }
     @include media($tablet){
       font-size: 4.4rem;
     }
-    position: absolute;
-    top: 40%;
-    margin: 0;
-    left: 10%;
   }
   .field-front-image-button{
+    display: inline-block;
     padding: 5px;
     @include media($mobile-large){
       padding: 15px;
+      margin-right: 20px;
     }
     @extend %button;
   }
