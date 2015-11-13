@@ -13,7 +13,7 @@
 
 .page-title,
 #page-title {
-  font-size:3rem;
+  font-size:2.4rem;
   display: inline-block;
   text-transform: uppercase;
   @include media($tablet) {
@@ -88,6 +88,7 @@
 
 .panel-one-col-wide {
   background: #EFEFED;
+  padding: 20px 0;
 }
 
 .panel-two-col-content{
@@ -112,3 +113,49 @@
   margin: 0 auto;
 }
 
+// contact
+.page-eform-submit-contact-form {
+  .header {
+    margin-bottom: 0;
+  }
+  .main {
+    background-color: #EFEFED;
+  }
+  iframe {
+    width: 100% !important;
+    border: 0;
+  }
+}
+.center-wrapper {
+  overflow: hidden;
+  padding: 20px;
+  @extend %grid-width;
+  @include media($tablet) {
+    padding: 40px 20px 80px;
+  }
+  .inside {
+    margin: 0 !important;
+  }
+  .panel-col-first {
+    border-bottom: solid 1px #d0d0d0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    @include media($tablet) {
+      padding-right: 100px;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+  .panel-col-last {
+    @include media($tablet) {
+      margin-top: 103px;
+    }
+  }
+  @include media(max-width 699px) {
+    .panel-panel {
+      width: auto;
+      float: none;
+    }
+  }
+}
