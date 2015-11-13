@@ -159,3 +159,58 @@
     }
   }
 }
+.page-learn {
+  .view-projects {
+    padding-top: 20px;
+    .view-content {
+      padding-bottom: 20px;
+      @include media($tablet) {
+        padding-bottom: 60px;
+      }
+    }
+  }
+  .more-link {
+    border-top: solid 1px #D1D1D3;
+    padding: 20px 0;
+    text-align: right;
+    a {
+      color: #1BA2CC;
+      font-size: 16px;
+      &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: top;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3px 0 3px 6px;
+        border-color: transparent transparent transparent #1BA2CC;
+        margin-left: 5px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+
+// register my idea link
+.register-idea-link {
+  text-align: center;
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: $heading-font-family;
+    border: solid 3px #1BA2CC;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1BA2CC;
+    line-height: 1;
+    margin-bottom: 30px;
+    @include media($tablet) {
+      font-size: 18px;
+      padding: 20px 60px;
+    }
+  }
+}

@@ -23,6 +23,7 @@ function auge_views_projects_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -137,6 +138,14 @@ function auge_views_projects_views_default_views() {
 
   /* Display: Learn Projects */
   $handler = $view->new_display('panel_pane', 'Learn Projects', 'panel_pane_2');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'See all';
+  $handler->display->display_options['link_url'] = 'projects';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -282,6 +291,7 @@ function auge_views_projects_views_default_views() {
     t('Projects made:'),
     t('Projects'),
     t('Learn Projects'),
+    t('See all'),
     t('Entrepreneur Projects'),
     t('Mentor Projects'),
     t('Invest Projects'),

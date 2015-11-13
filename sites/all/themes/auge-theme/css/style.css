@@ -623,6 +623,52 @@ input[type="submit"] {
       width: auto;
       float: none; } }
 
+.page-learn .view-projects {
+  padding-top: 20px; }
+  .page-learn .view-projects .view-content {
+    padding-bottom: 20px; }
+    @media screen and (min-width: 700px) {
+      .page-learn .view-projects .view-content {
+        padding-bottom: 60px; } }
+
+.page-learn .more-link {
+  border-top: solid 1px #D1D1D3;
+  padding: 20px 0;
+  text-align: right; }
+  .page-learn .more-link a {
+    color: #1BA2CC;
+    font-size: 16px; }
+    .page-learn .more-link a:after {
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3px 0 3px 6px;
+      border-color: transparent transparent transparent #1BA2CC;
+      margin-left: 5px;
+      margin-top: 5px; }
+
+.register-idea-link {
+  text-align: center; }
+  .register-idea-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "futura-pt", Helvetica, sans-serif;
+    border: solid 3px #1BA2CC;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1BA2CC;
+    line-height: 1;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 700px) {
+      .register-idea-link a {
+        font-size: 18px;
+        padding: 20px 60px; } }
+
 .blog-post-main-content-title {
   text-transform: uppercase;
   font-size: 24px; }
