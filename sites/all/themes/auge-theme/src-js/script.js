@@ -1,7 +1,7 @@
 // Manatí Base Theme JS functions
 (function($) {
 
-//Flexslider for words.
+//Flexslider for words on front page.
 $(document).ready(function() {
     var frontSlider = $('.slideshow-frontpage');
     if (frontSlider.length) {
