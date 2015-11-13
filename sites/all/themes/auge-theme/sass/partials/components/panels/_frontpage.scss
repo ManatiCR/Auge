@@ -57,13 +57,17 @@
       display: inline-block;
       vertical-align: top;
       position: relative;
-      font-size: 3.2rem;
+      font-size: 2.9rem;
+      @include media(375px){
+        font-size: 3.2rem;
+      }
       @include media($tablet){
         font-size: 6rem;
       }
     }
     .slideshow-companion{
       color: $orange;
+      margin-bottom: 0;
     }
     .slideshow-frontpage{
       display: inline-block;
@@ -80,16 +84,22 @@
       border-color: transparent;
       color: white;
     }
+    @include media(500px){
+      margin-bottom: 30px;
+    };
   }
   .field-front-image-subtitle{
-    font-size: 2.9rem;
+    font-size: 2.5rem;
+    @include media(375px){
+      font-size: 2.9rem;
+    }
+    @include media($tablet){
+      font-size: 4.4rem;
+    }
     position: absolute;
     top: 40%;
     margin: 0;
     left: 10%;
-    @include media($tablet){
-      font-size: 4.4rem;
-    }
   }
   .field-front-image-button{
     padding: 5px;
@@ -101,6 +111,7 @@
   .field-main-image{
     img{
       width: 100%;
+      min-height: 200px;
     }
   }
 }
