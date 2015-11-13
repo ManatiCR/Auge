@@ -116,12 +116,13 @@
   position: absolute;
   width: 34px;
   height: 34px;
-  background-color: #1BA2CC;
   border: solid 2px #D1D1D3;
   border-radius: 100%;
   top: 10px;
   right: 10px;
   cursor: pointer;
+  @extend %text-hidden;
+  @include sprite(#1BA2CC, $x: center, $y: -51px);
   @include media(545px) {
     top: -16px;
     right: -16px;
