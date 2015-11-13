@@ -109,11 +109,9 @@
   </section>
 <?php endif; // end Below Content ?>
 
-<footer class="footer" role="contentinfo">
+<footer class="main-footer" role="contentinfo">
   <div class="footer-content">
-    <div class="footer">
       <?php print render($page['footer']); ?>
-    </div>
   </div>
 </footer>
 
