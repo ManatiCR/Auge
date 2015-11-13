@@ -75,6 +75,7 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['fields']['field_occupation']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_occupation']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_occupation']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_occupation']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_occupation']['field_api_classes'] = TRUE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
