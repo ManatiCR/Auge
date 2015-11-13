@@ -270,7 +270,7 @@ input[type="submit"] {
   height: auto;
   display: inline-block;
   vertical-align: middle;
-  margin: 15px 0; }
+  padding: 15px 0; }
   @media screen and (min-width: 630px) {
     .site-logo {
       width: 160px; } }
@@ -301,7 +301,7 @@ input[type="submit"] {
 
 .header-main-menu-item {
   position: relative;
-  margin: 20px 0 0 0;
+  padding: 0 15px;
   cursor: pointer;
   list-style: none;
   text-align: center; }
@@ -318,7 +318,6 @@ input[type="submit"] {
     color: #d1d1d1; }
     @media screen and (min-width: 630px) {
       .header-main-menu-item a {
-        padding: 0 15px;
         font-size: 1.1rem; } }
     @media screen and (min-width: 756px) {
       .header-main-menu-item a {
@@ -336,7 +335,6 @@ input[type="submit"] {
 
 .facebook-icon {
   display: block;
-  float: right;
   background: transparent url("../images/sprite.png");
   background-image: url("../images/sprite.svg"), none;
   background-position: center -17px;
@@ -346,7 +344,6 @@ input[type="submit"] {
 
 .twitter-icon {
   display: block;
-  float: right;
   background: transparent url("../images/sprite.png");
   background-image: url("../images/sprite.svg"), none;
   background-position: center 6px;

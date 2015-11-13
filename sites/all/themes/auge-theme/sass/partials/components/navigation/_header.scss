@@ -20,7 +20,7 @@
   height: auto;
   display: inline-block;
   vertical-align: middle;
-  margin: 15px 0;
+  padding: 15px 0;
   @include media(630px){
     width: 160px;
   }
@@ -53,7 +53,8 @@
 }
 .header-main-menu-item {
   position:relative;
-  margin: 20px 0 0 0;
+  // margin: 20px 0 0 0;
+  padding: 0 15px;
   cursor:pointer;
   list-style:none;
   text-align:center;
@@ -69,7 +70,6 @@
     text-decoration: none;
     color:$gray;
     @include media(630px){
-      padding: 0 15px;
       font-size: 1.1rem;
     }
     @include media(756px){
@@ -90,7 +90,6 @@
 }
 .facebook-icon{
   display: block;
-  float: right;
   @include sprite(transparent, $x: center, $y: -17px);
   @extend %text-hidden;
   width: 32px;
@@ -98,7 +97,6 @@
 }
 .twitter-icon{
   display: block;
-  float: right;
   @include sprite(transparent, $x: center, $y: 6px);
   @extend %text-hidden;
   width: 32px;
