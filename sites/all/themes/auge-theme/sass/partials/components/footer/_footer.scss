@@ -1,28 +1,103 @@
-.footer {
-  background: #3E227A;
-  padding: 20px;
-  color: #fff;
+.main-footer {
+  @include media($tablet) {
+    background: #43257f url(../images/footer-bg.jpg) top center no-repeat;
+  }
+  background: #43257f;
+  color: #CDBEF4;
   @include media($tablet) {
     padding: 35px 45px;
   }
   a {
     color: $orange;
+    font-size: 15px;
+    &:hover {
+      color: #CDBEF4;
+    }
   }
   .block {
+    h2 {
+      color: #fff;
+      font-size: 2rem;
+    }
+    border-bottom: solid 1px #6042A0;
+    padding: 20px;
     @include media(500px) {
       display: inline-block;
       vertical-align: top;
       margin-left: -4px;
       width: 50%;
+      border-bottom: none;
       &:first-child {
         margin-left: 0;
       }
     }
-    @include media(785px) {
+    @include media($tablet) {
+      padding: 0;
+    }
+    @include media(1000px) {
       width: 25%;
     }
   }
   .panel-col-first {
-    width: auto;
+    width: 60px;
+  }
+  .view-blog-list {
+    .panel-col-first {
+      width: 50px;
+    }
+  }
+  .panel-col-last {
+    width: 68%;
+  }
+  .views-row {
+    padding-bottom: 15px;
+  }
+  .more-link a {
+    display: inline-block;
+    vertical-align: top;
+    border: solid 2px $orange;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 0 5px 10px;
+      border-color: transparent transparent transparent $orange;
+      margin-left: 5px;
+      margin-top: 2px;
+    }
+  }
+  // menu
+  .block-menu {
+    li {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      @include media($tablet) {
+        display: block;
+        width: auto;
+      }
+    }
+  }
+  // events
+  .view-proximas-actividades {
+    .date-display-single {
+      background: #2E1565;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      text-align: center;
+      display: block;
+      padding: 10px;
+      width: 50px;
+    }
+    .views-field-view-node {
+      display: none;
+    }
   }
 }
