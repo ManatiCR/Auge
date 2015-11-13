@@ -65,19 +65,38 @@
     margin: 0;
   }
   .field-front-image-title{
+    width: 90%;
+    position: absolute;
+    top: 10%;
+    margin: 0;
+    left: 10%;
     p{
-      font-size: 3.5rem;
-      position: absolute;
-      top: 10%;
-      margin: 0;
-      left: 10%;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      font-size: 3.2rem;
       @include media($tablet){
-        font-size: 6.3rem;
+        font-size: 6rem;
       }
+    }
+    .slideshow-companion{
+      color: $orange;
+    }
+    .slideshow-frontpage{
+      display: inline-block;
+      vertical-align: top;
+      width: 87.5rem;
+      @include media(630px){
+        width: 70rem;
+      }
+      margin: -3px 0 0 4px;
+      background-color: transparent;
+      border-color: transparent;
+      color: white;
     }
   }
   .field-front-image-subtitle{
-    font-size: 3rem;
+    font-size: 2.9rem;
     position: absolute;
     top: 40%;
     margin: 0;

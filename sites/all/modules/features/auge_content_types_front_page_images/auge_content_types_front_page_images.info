@@ -1,6 +1,7 @@
 name = Auge: Content types - Front page images
 core = 7.x
 package = Auge: Content types
+dependencies[] = auge_strongarm_killer
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = field_group

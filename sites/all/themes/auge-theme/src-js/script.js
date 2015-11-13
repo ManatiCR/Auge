@@ -2,18 +2,22 @@
 (function($) {
 
 //Flexslider for words.
-  $(document).ready(function() {
-    var frontSlider = $('.flexslider-words');
-    if (frontSlider.length > 0) {
-      frontSlider.addClass('flexslider');
-      frontSlider.flexslider({
-        slideDirection: 'vertical',
-        slideshow: true,
-        animationLoop: true,
-        animationDuration: 600,
-      });
+$(document).ready(function() {
+    var frontSlider = $('.slideshow-frontpage');
+    if (frontSlider.length) {
+        frontSlider.addClass('flexslider');
+        frontSlider.flexslider({
+            slideDirection: 'vertical',
+            slideshow: true,
+            animationLoop: true,
+            animationDuration: 600,
+            slideshowSpeed: 4000,
+            controlNav: false,
+            useCCS: false,
+            animation: 'slide',
+        });
     }
-  });
+});
 //Personnel modal
   $(document).ready(function() {
     $('.personnel-view-profile a').removeAttr('href');

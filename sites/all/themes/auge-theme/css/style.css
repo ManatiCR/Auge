@@ -795,17 +795,35 @@ input[type="submit"] {
   position: relative; }
   .node-front-page-images h2 {
     margin: 0; }
-  .node-front-page-images .field-front-image-title p {
-    font-size: 3.5rem;
+  .node-front-page-images .field-front-image-title {
+    width: 90%;
     position: absolute;
     top: 10%;
     margin: 0;
     left: 10%; }
-    @media screen and (min-width: 700px) {
-      .node-front-page-images .field-front-image-title p {
-        font-size: 6.3rem; } }
+    .node-front-page-images .field-front-image-title p {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      font-size: 3.2rem; }
+      @media screen and (min-width: 700px) {
+        .node-front-page-images .field-front-image-title p {
+          font-size: 6rem; } }
+    .node-front-page-images .field-front-image-title .slideshow-companion {
+      color: #F58345; }
+    .node-front-page-images .field-front-image-title .slideshow-frontpage {
+      display: inline-block;
+      vertical-align: top;
+      width: 87.5rem;
+      margin: -3px 0 0 4px;
+      background-color: transparent;
+      border-color: transparent;
+      color: white; }
+      @media screen and (min-width: 630px) {
+        .node-front-page-images .field-front-image-title .slideshow-frontpage {
+          width: 70rem; } }
   .node-front-page-images .field-front-image-subtitle {
-    font-size: 3rem;
+    font-size: 2.9rem;
     position: absolute;
     top: 40%;
     margin: 0;
@@ -1071,10 +1089,14 @@ input[type="submit"] {
       border-color: transparent transparent transparent #F58345;
       margin-left: 5px;
       margin-top: 2px; }
+  .main-footer .block-menu .content {
+    width: 100%; }
   .main-footer .block-menu li {
-    width: 48%;
     display: inline-block;
     vertical-align: top; }
+    @media screen and (min-width: 680px) {
+      .main-footer .block-menu li {
+        width: 48%; } }
     @media screen and (min-width: 700px) {
       .main-footer .block-menu li {
         display: block;
