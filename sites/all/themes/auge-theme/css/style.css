@@ -769,8 +769,11 @@ input[type="submit"] {
   .panel-front-page-boxes:first-child {
     margin-top: -4px; }
   .panel-front-page-boxes .pane-title {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin: 0 0 0 25%; }
+    @media screen and (min-width: 380px) {
+      .panel-front-page-boxes .pane-title {
+        font-size: 4.5rem; } }
   .panel-front-page-boxes p:nth-child(1) {
     max-width: 70%;
     font-size: 2.4rem;
