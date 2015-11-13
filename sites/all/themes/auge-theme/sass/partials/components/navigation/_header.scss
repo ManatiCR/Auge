@@ -85,15 +85,29 @@
   text-transform:capitalize;
 }
 .header-main-menu-item-social{
-  a{
-    text-indent:100%;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 0;
-  }
+  padding: 0;
+  width: 32px;
+}
+.facebook-icon{
+  display: block;
+  float: right;
+  @include sprite(transparent, $x: center, $y: -17px);
+  @extend %text-hidden;
   width: 32px;
   height: 32px;
-  background: red;
+}
+.twitter-icon{
+  display: block;
+  float: right;
+  @include sprite(transparent, $x: center, $y: 6px);
+  @extend %text-hidden;
+  width: 32px;
+  height: 32px;
+}
+.pane-menu-menu-social-links{
+  li{
+    display: inline-block;
+  }
 }
 .expanded{
   @include media($tablet){

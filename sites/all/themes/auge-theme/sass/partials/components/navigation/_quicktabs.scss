@@ -18,6 +18,10 @@
   margin: 0;
 }
 .quicktabs-tabs {
+  padding: 0 20px;
+  @include media(1067px) {
+    padding: 0;
+  }
   li {
     display: inline-block;
     vertical-align: top;
@@ -33,7 +37,7 @@
       padding: 15px;
       position: relative;
       text-transform: uppercase;
-      @include media($tablet) {
+      @include media(1037px) {
         padding: 23px 80px;
       }
       &:hover {
@@ -44,7 +48,7 @@
       }
     }
     &.active {
-      @include media($tablet) {
+      @include media(1037px) {
         margin-top: -20px;
       }
       a {
@@ -63,7 +67,7 @@
           left: 50%;
           margin-left: -5px;
         }
-        @include media($tablet) {
+        @include media(1037px) {
           padding: 33px 80px;
         }
       }
@@ -87,9 +91,20 @@
 // who we are tabs
 .page-whoweare {
   .quicktabs-tabs {
+    @include media(max-width 530px) {
+      text-align: center;
+    }
     li {
       a {
-        background-color: #ED9377;
+        background-color: #ECB6A5;
+        @include media(max-width 530px) {
+          border-radius: 10px;
+          margin-bottom: 10px;
+          padding: 5px 10px;
+          &:after {
+            display: none;
+          }
+        }
       }
       &.active {
         a {
@@ -97,6 +112,21 @@
           &:after {
             border-color: #EB7A50 transparent transparent transparent
           }
+        }
+      }
+    }
+  }
+}
+
+.page-learn {
+  .quicktabs-tabs {
+    @include media(max-width 530px) {
+      text-align: center;
+    }
+    li {
+      a {
+        @include media(max-width 530px) {
+          padding: 5px 10px;
         }
       }
     }

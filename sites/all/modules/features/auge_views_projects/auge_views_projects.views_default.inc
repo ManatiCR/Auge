@@ -97,7 +97,7 @@ function auge_views_projects_views_default_views() {
   /* Display: Main Projects */
   $handler = $view->new_display('panel_pane', 'Main Projects', 'panel_pane_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Projects made';
+  $handler->display->display_options['title'] = 'Projects made:';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -279,7 +279,7 @@ function auge_views_projects_views_default_views() {
     t('Asc'),
     t('Desc'),
     t('Main Projects'),
-    t('Projects made'),
+    t('Projects made:'),
     t('Projects'),
     t('Learn Projects'),
     t('Entrepreneur Projects'),

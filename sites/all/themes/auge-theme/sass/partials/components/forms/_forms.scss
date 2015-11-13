@@ -9,6 +9,11 @@ label,
   color: #333;
   display: block;
   margin-bottom: 8px;
+  @include media($tablet) {
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+  }
 }
 
 label.option {
@@ -27,12 +32,27 @@ input[type="email"],
 input[type="password"],
 textarea {
   @include font-size(12);
-  border-radius: 3px;
-  border: solid #e1e1e1 1px;
+  border: solid #D6D6D6 1px;
   background: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   padding: 5px;
+  @include media($tablet) {
+    display: inline-block;
+    vertical-align: top;
+  }
+  &:focus {
+    border-color: $orange;
+    outline: none;
+  }
 }
+
+.form-textarea-wrapper {
+  @include media($tablet) {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -58,6 +78,9 @@ input[type="submit"] {
     margin-right: 10px;
     margin-bottom: 0;
   }
+  @include media($tablet) {
+    margin-left: 74px;
+  }
      -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
@@ -82,4 +105,25 @@ input[type="submit"] {
 .form-item textarea.error,
 .form-item select.error {
   border: 2px solid red;
+}
+
+.entityform {
+  select,
+  textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    @include media(767px) {
+      max-width: 300px;
+    }
+  }
+  a {
+    color: #1BA2CC;
+  }
+  .form-submit {
+    background: #1BA2CC;
+    border-radius: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+  }
 }

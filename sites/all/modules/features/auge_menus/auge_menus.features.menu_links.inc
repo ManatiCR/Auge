@@ -318,13 +318,17 @@ function auge_menus_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Facebook',
     'options' => array(
-      'attributes' => array(),
+      'identifier' => 'menu-social-links_facebook:https://www.facebook.com/',
+      'attributes' => array(
+        'class' => array(
+          0 => 'facebook-icon',
+        ),
+      ),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-social-links_facebook:https://www.facebook.com/',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -343,13 +347,17 @@ function auge_menus_menu_default_menu_links() {
     'router_path' => '',
     'link_title' => 'Twitter',
     'options' => array(
-      'attributes' => array(),
+      'identifier' => 'menu-social-links_twitter:https://twitter.com/',
+      'attributes' => array(
+        'class' => array(
+          0 => 'twitter-icon',
+        ),
+      ),
       'item_attributes' => array(
         'id' => '',
         'class' => '',
         'style' => '',
       ),
-      'identifier' => 'menu-social-links_twitter:https://twitter.com/',
     ),
     'module' => 'menu',
     'hidden' => 0,
