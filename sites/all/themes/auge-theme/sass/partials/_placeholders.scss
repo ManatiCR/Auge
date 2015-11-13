@@ -21,3 +21,26 @@
   max-width: $grid-width;
   margin: 0 auto;
 }
+
+// Auge button shape
+%button {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+  color: $orange;
+  padding: 15px;
+  border: 2px solid $orange;
+  border-radius: 5px;
+  &:after{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent $orange;
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+    margin-top: 4px;
+    }
+}

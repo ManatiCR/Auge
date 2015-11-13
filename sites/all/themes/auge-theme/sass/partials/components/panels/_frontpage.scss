@@ -18,26 +18,9 @@
   }
   //This has to change. To an a.
   p:nth-child(2){
-    display: inline-block;
-    font-size: 1.6rem;
-    margin: 15px 0 0 25%;
-    padding-bottom: 30px;
-    color: $orange;
+    @extend %button;
     padding: 15px;
-    border: 2px solid $orange;
-    border-radius: 5px;
-    &:after{
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 7px 0 7px 10px;
-      border-color: transparent transparent transparent $orange;
-      content: '';
-      display: inline-block;
-      margin-left: 5px;
-      vertical-align: top;
-      margin-top: 4px;
-    }
+    margin: 15px 0 0 25%;
   }
   @include media(630px){
     &:hover{
@@ -89,6 +72,9 @@
       @include media(630px){
         width: 70rem;
       }
+      p{
+        margin: 0;
+      }
       margin: -3px 0 0 4px;
       background-color: transparent;
       border-color: transparent;
@@ -105,10 +91,16 @@
       font-size: 4.4rem;
     }
   }
+  .field-front-image-button{
+    padding: 5px;
+    @include media($mobile-large){
+      padding: 15px;
+    }
+    @extend %button;
+  }
   .field-main-image{
     img{
       width: 100%;
-      // min-height: 280px;
     }
   }
 }

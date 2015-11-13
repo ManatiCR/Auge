@@ -47,6 +47,26 @@ html {
   max-width: 1020px;
   margin: 0 auto; }
 
+.panel-front-page-boxes p:nth-child(2), .node-front-page-images .field-front-image-button {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+  color: #F58345;
+  padding: 15px;
+  border: 2px solid #F58345;
+  border-radius: 5px; }
+  .panel-front-page-boxes p:nth-child(2):after, .node-front-page-images .field-front-image-button:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 10px;
+    border-color: transparent transparent transparent #F58345;
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+    margin-top: 4px; }
+
 /*
  * Rules for base elements
  */
@@ -758,25 +778,8 @@ input[type="submit"] {
     font-size: 2.4rem;
     margin: 15px 0 0 25%; }
   .panel-front-page-boxes p:nth-child(2) {
-    display: inline-block;
-    font-size: 1.6rem;
-    margin: 15px 0 0 25%;
-    padding-bottom: 30px;
-    color: #F58345;
     padding: 15px;
-    border: 2px solid #F58345;
-    border-radius: 5px; }
-    .panel-front-page-boxes p:nth-child(2):after {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 7px 0 7px 10px;
-      border-color: transparent transparent transparent #F58345;
-      content: '';
-      display: inline-block;
-      margin-left: 5px;
-      vertical-align: top;
-      margin-top: 4px; }
+    margin: 15px 0 0 25%; }
   @media screen and (min-width: 630px) {
     .panel-front-page-boxes:hover {
       background-color: #522e91;
@@ -822,6 +825,8 @@ input[type="submit"] {
       @media screen and (min-width: 630px) {
         .node-front-page-images .field-front-image-title .slideshow-frontpage {
           width: 70rem; } }
+      .node-front-page-images .field-front-image-title .slideshow-frontpage p {
+        margin: 0; }
   .node-front-page-images .field-front-image-subtitle {
     font-size: 2.9rem;
     position: absolute;
@@ -831,6 +836,11 @@ input[type="submit"] {
     @media screen and (min-width: 700px) {
       .node-front-page-images .field-front-image-subtitle {
         font-size: 4.4rem; } }
+  .node-front-page-images .field-front-image-button {
+    padding: 5px; }
+    @media screen and (min-width: 500px) {
+      .node-front-page-images .field-front-image-button {
+        padding: 15px; } }
   .node-front-page-images .field-main-image img {
     width: 100%; }
 
