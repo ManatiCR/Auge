@@ -793,7 +793,7 @@ input[type="submit"] {
 .node-front-page-images .field-front-image-title p {
   font-size: 3.5rem;
   position: absolute;
-  top: 10%;
+  top: 3%;
   margin: 0;
   left: 10%; }
   @media screen and (min-width: 700px) {
@@ -803,11 +803,12 @@ input[type="submit"] {
 .node-front-page-images .field-front-image-subtitle {
   font-size: 3rem;
   position: absolute;
-  top: 40%;
+  top: 9%;
   left: 10%; }
   @media screen and (min-width: 700px) {
     .node-front-page-images .field-front-image-subtitle {
-      font-size: 4.4rem; } }
+      font-size: 4.4rem;
+      top: 7.3rem; } }
 
 #quicktabs-container-personnel_tabs {
   padding: 7%; }

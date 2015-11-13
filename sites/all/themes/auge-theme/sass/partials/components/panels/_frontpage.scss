@@ -61,7 +61,7 @@
     p{
       font-size: 3.5rem;
       position: absolute;
-      top: 10%;
+      top: 3%;
       margin: 0;
       left: 10%;
       @include media($tablet){
@@ -72,10 +72,11 @@
   .field-front-image-subtitle{
     font-size: 3rem;
     position: absolute;
-    top: 40%;
+    top: 9%;
     left: 10%;
     @include media($tablet){
       font-size: 4.4rem;
+      top: 7.3rem;
     }
   }
   .field-main-image{
