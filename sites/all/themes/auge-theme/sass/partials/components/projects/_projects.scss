@@ -1,7 +1,21 @@
-.panel-projects {
-  .pane-title {
+.panel-front-page-boxes-projects {
+  background-color: #EFEFED;
+  .pane-content {
+    max-width: 1020px;
+    margin: 0 auto;
     padding: 30px 0;
-    font-size: 2rem;
+    @include media($tablet) {
+      padding: 60px 0 80px;
+    }
+  }
+  .pane-title {
+    padding: 20px 0 0;
+    font-size: 2.6rem;
+    @extend %grid-width;
+    font-family: $base-font-family;
+    @include media($tablet) {
+      padding: 40px 0 0;
+    }
   }
 }
 
@@ -12,23 +26,27 @@
     display: inline-block;
     vertical-align: top;
     margin-left: -4px;
-    width: 40%;
-    margin-right: 10%;
+    width: 130px;
+    height: 130px;
+    margin-right: 5%;
+    margin-bottom: 15px;
     text-align: center;
     position: relative;
     background: #fff;
     border-radius: 100%;
     overflow: hidden;
-    @include media(max-width 499px) {
-      &.views-row-even {
-        margin-right: 0;
-      }
-    }
+    
+    // vertical align with css 
+    -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+
     &:first-child {
       margin-left: 0;
     }
     @include media($mobile-large) {
-      width: 30%;
+      width: 150px;
+      height: 150px;
       margin-right: 3%;
     }
     @include media($tablet) {
@@ -36,8 +54,65 @@
       height: 233px;
       margin-right: 3%;
       margin-bottom: 2%;
+      &:hover {
+        background-color: #E6E4ED;
+      }
+    }
+    @include media(1080px) {
       &:nth-child(4n) {
         margin-right: 0;
+      }
+    }
+    // logo
+    img {
+      width: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+    .field-project-url {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      z-index: 11;
+      top: 0;
+      left: 0;
+      display: none;
+      background: rgba(82,46,145,0.8);
+      a {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 1.8rem;
+        line-height: 1;
+        font-weight: bold;
+        font-family: $heading-font-family;
+      }
+    }
+    .project-url-overlay {
+      position: absolute;
+      z-index: 12;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      a {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @extend %text-hidden;
+      }
+    }
+    // row hover
+    &:hover {
+      .field-project-url {
+        display: block;
       }
     }
   }
