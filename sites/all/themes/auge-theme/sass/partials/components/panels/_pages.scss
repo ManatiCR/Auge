@@ -31,13 +31,16 @@
   }
 }
 .page-description p {
-  font-size:2.5rem;
+  font-size:2rem;
   max-width: 480px;
   font-family: $base-font-family;
   line-height: 1.2;
   margin-bottom: 20px;
-  @include media($mobile-large) {
-    margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include media($tablet) {
+    font-size:2.5rem;
   }
 }
 //Format for all content and sidebars of the template panels-two-col.
@@ -70,7 +73,7 @@
 .panel-content-first {
   padding-bottom: 20px;
   @include media($tablet) {
-    padding-bottom: 55px;
+    padding-bottom: 75px;
   }
 }
 .panel-content-last {
@@ -89,6 +92,9 @@
 .panel-one-col-wide {
   background: #EFEFED;
   padding: 20px 0;
+  @include media($tablet) {
+    padding: 40px 0 20px;
+  }
 }
 
 .panel-two-col-content{
@@ -171,7 +177,7 @@
   }
   .more-link {
     border-top: solid 1px #D1D1D3;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: right;
     a {
       color: #1BA2CC;
@@ -211,6 +217,11 @@
     @include media($tablet) {
       font-size: 18px;
       padding: 20px 60px;
+      &:hover {
+        background-color: #1BA2CC;
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 }

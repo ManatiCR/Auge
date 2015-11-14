@@ -22,47 +22,61 @@
 .view-projects {
   text-align: center;
   position: relative;
-  .views-row {
+  // sets grid
+  .project-item {
     display: inline-block;
     vertical-align: top;
     margin-left: -4px;
     width: 130px;
-    height: 130px;
     margin-right: 5%;
     margin-bottom: 15px;
-    text-align: center;
     position: relative;
-    background: #fff;
-    border-radius: 100%;
     overflow: hidden;
-    
-    // vertical align with css 
-    -webkit-transform-style: preserve-3d;
-      -moz-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-
     &:first-child {
       margin-left: 0;
     }
     @include media($mobile-large) {
       width: 150px;
-      height: 150px;
       margin-right: 3%;
     }
     @include media($tablet) {
       width: 233px;
-      height: 233px;
       margin-right: 3%;
       margin-bottom: 2%;
-      &:hover {
-        background-color: #E6E4ED;
-      }
     }
     @include media(1080px) {
       &:nth-child(4n) {
         margin-right: 0;
       }
     }
+  }
+  .project-circle {
+    text-align: center;
+    background: #fff;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 130px;
+    position: relative;
+    
+    @include media($mobile-large) {
+      height: 150px;
+    }
+    @include media($tablet) {
+      height: 233px;
+    }
+
+    // vertical align with css 
+    -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    
+    @include media($tablet) {
+      &:hover {
+        background-color: #E6E4ED;
+      }
+    }
+    
     // logo
     img {
       width: auto;
@@ -90,6 +104,7 @@
         line-height: 1;
         font-weight: bold;
         font-family: $heading-font-family;
+        text-decoration: none;
       }
     }
     .project-url-overlay {
@@ -115,5 +130,19 @@
         display: block;
       }
     }
+  }
+}
+
+.field-project-type {
+  padding: 20px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  @include media($tablet) {
+    padding: 30px 0 15px;
+    font-size: 28px;
+  }
+  a {
+    color: $purple;
   }
 }

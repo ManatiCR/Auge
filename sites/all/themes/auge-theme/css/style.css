@@ -38,7 +38,7 @@ html {
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
-.facebook-icon, .twitter-icon, .personnel-overlay-close, .view-projects .views-row .project-url-overlay a {
+.facebook-icon, .twitter-icon, .personnel-overlay-close, .view-projects .project-circle .project-url-overlay a {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
@@ -274,7 +274,7 @@ input[type="submit"] {
     margin-bottom: 20px; }
     @media screen and (min-width: 500px) {
       .not-front .header {
-        margin-bottom: 40px; } }
+        margin-bottom: 80px; } }
 
 .header-content {
   margin: 0 20px; }
@@ -536,14 +536,16 @@ input[type="submit"] {
     height: 15px; }
 
 .page-description p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   max-width: 480px;
   font-family: "ProbaPro-Regular", Arial, sans-serif;
   line-height: 1.2;
   margin-bottom: 20px; }
-  @media screen and (min-width: 500px) {
+  .page-description p:last-child {
+    margin-bottom: 0; }
+  @media screen and (min-width: 700px) {
     .page-description p {
-      margin-bottom: 40px; } }
+      font-size: 2.5rem; } }
 
 .panel-two-col-content {
   width: 100%;
@@ -569,7 +571,7 @@ input[type="submit"] {
   padding-bottom: 20px; }
   @media screen and (min-width: 700px) {
     .panel-content-first {
-      padding-bottom: 55px; } }
+      padding-bottom: 75px; } }
 
 .panel-content-last {
   padding: 20px 0; }
@@ -584,6 +586,9 @@ input[type="submit"] {
 .panel-one-col-wide {
   background: #EFEFED;
   padding: 20px 0; }
+  @media screen and (min-width: 700px) {
+    .panel-one-col-wide {
+      padding: 40px 0 20px; } }
 
 @media screen and (min-width: 700px) {
   .panel-two-col-content {
@@ -647,7 +652,7 @@ input[type="submit"] {
 
 .page-learn .more-link {
   border-top: solid 1px #D1D1D3;
-  padding: 20px 0;
+  padding: 15px 0;
   text-align: right; }
   .page-learn .more-link a {
     color: #1BA2CC;
@@ -681,7 +686,11 @@ input[type="submit"] {
     @media screen and (min-width: 700px) {
       .register-idea-link a {
         font-size: 18px;
-        padding: 20px 60px; } }
+        padding: 20px 60px; }
+        .register-idea-link a:hover {
+          background-color: #1BA2CC;
+          color: #fff;
+          text-decoration: none; } }
 
 .view-display-id-panel_pane_4 {
   background-color: #eb7a50; }
@@ -1057,47 +1066,56 @@ input[type="submit"] {
 .view-projects {
   text-align: center;
   position: relative; }
-  .view-projects .views-row {
+  .view-projects .project-item {
     display: inline-block;
     vertical-align: top;
     margin-left: -4px;
     width: 130px;
-    height: 130px;
     margin-right: 5%;
     margin-bottom: 15px;
-    text-align: center;
     position: relative;
+    overflow: hidden; }
+    .view-projects .project-item:first-child {
+      margin-left: 0; }
+    @media screen and (min-width: 500px) {
+      .view-projects .project-item {
+        width: 150px;
+        margin-right: 3%; } }
+    @media screen and (min-width: 700px) {
+      .view-projects .project-item {
+        width: 233px;
+        margin-right: 3%;
+        margin-bottom: 2%; } }
+    @media screen and (min-width: 1080px) {
+      .view-projects .project-item:nth-child(4n) {
+        margin-right: 0; } }
+  .view-projects .project-circle {
+    text-align: center;
     background: #fff;
     border-radius: 100%;
     overflow: hidden;
+    width: 100%;
+    height: 130px;
+    position: relative;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d; }
-    .view-projects .views-row:first-child {
-      margin-left: 0; }
     @media screen and (min-width: 500px) {
-      .view-projects .views-row {
-        width: 150px;
-        height: 150px;
-        margin-right: 3%; } }
+      .view-projects .project-circle {
+        height: 150px; } }
     @media screen and (min-width: 700px) {
-      .view-projects .views-row {
-        width: 233px;
-        height: 233px;
-        margin-right: 3%;
-        margin-bottom: 2%; }
-        .view-projects .views-row:hover {
-          background-color: #E6E4ED; } }
-    @media screen and (min-width: 1080px) {
-      .view-projects .views-row:nth-child(4n) {
-        margin-right: 0; } }
-    .view-projects .views-row img {
+      .view-projects .project-circle {
+        height: 233px; } }
+    @media screen and (min-width: 700px) {
+      .view-projects .project-circle:hover {
+        background-color: #E6E4ED; } }
+    .view-projects .project-circle img {
       width: auto;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
       z-index: 10; }
-    .view-projects .views-row .field-project-url {
+    .view-projects .project-circle .field-project-url {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -1107,7 +1125,7 @@ input[type="submit"] {
       left: 0;
       display: none;
       background: rgba(82, 46, 145, 0.8); }
-      .view-projects .views-row .field-project-url a {
+      .view-projects .project-circle .field-project-url a {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -1115,23 +1133,36 @@ input[type="submit"] {
         font-size: 1.8rem;
         line-height: 1;
         font-weight: bold;
-        font-family: "futura-pt", Helvetica, sans-serif; }
-    .view-projects .views-row .project-url-overlay {
+        font-family: "futura-pt", Helvetica, sans-serif;
+        text-decoration: none; }
+    .view-projects .project-circle .project-url-overlay {
       position: absolute;
       z-index: 12;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0; }
-      .view-projects .views-row .project-url-overlay a {
+      .view-projects .project-circle .project-url-overlay a {
         position: absolute;
         display: block;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0; }
-    .view-projects .views-row:hover .field-project-url {
+    .view-projects .project-circle:hover .field-project-url {
       display: block; }
+
+.field-project-type {
+  padding: 20px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+  @media screen and (min-width: 700px) {
+    .field-project-type {
+      padding: 30px 0 15px;
+      font-size: 28px; } }
+  .field-project-type a {
+    color: #522e91; }
 
 .main-footer {
   background: #43257f;
