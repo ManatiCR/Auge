@@ -32,19 +32,24 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '12';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'project-item';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Project image */
   $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
   $handler->display->display_options['fields']['field_project_image']['table'] = 'field_data_field_project_image';
   $handler->display->display_options['fields']['field_project_image']['field'] = 'field_project_image';
   $handler->display->display_options['fields']['field_project_image']['label'] = '';
+  $handler->display->display_options['fields']['field_project_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_project_image']['element_type'] = '0';
   $handler->display->display_options['fields']['field_project_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_project_image']['element_wrapper_type'] = '0';
@@ -54,26 +59,42 @@ function auge_views_projects_views_default_views() {
     'image_style' => 'project_logo',
     'image_link' => '',
   );
-  $handler->display->display_options['fields']['field_project_image']['field_api_classes'] = TRUE;
   /* Field: Content: Project URL */
   $handler->display->display_options['fields']['field_project_url']['id'] = 'field_project_url';
   $handler->display->display_options['fields']['field_project_url']['table'] = 'field_data_field_project_url';
   $handler->display->display_options['fields']['field_project_url']['field'] = 'field_project_url';
   $handler->display->display_options['fields']['field_project_url']['label'] = '';
+  $handler->display->display_options['fields']['field_project_url']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_project_url']['element_type'] = '0';
   $handler->display->display_options['fields']['field_project_url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_project_url']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_project_url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_project_url']['click_sort_column'] = 'url';
   $handler->display->display_options['fields']['field_project_url']['field_api_classes'] = TRUE;
+  /* Field: Content: Project URL */
+  $handler->display->display_options['fields']['field_project_url_1']['id'] = 'field_project_url_1';
+  $handler->display->display_options['fields']['field_project_url_1']['table'] = 'field_data_field_project_url';
+  $handler->display->display_options['fields']['field_project_url_1']['field'] = 'field_project_url';
+  $handler->display->display_options['fields']['field_project_url_1']['label'] = '';
+  $handler->display->display_options['fields']['field_project_url_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_project_url_1']['alter']['text'] = '<div class="project-circle">
+[field_project_image]
+[field_project_url]
+<div class="project-url-overlay">[field_project_url_1]</div>
+</div>';
+  $handler->display->display_options['fields']['field_project_url_1']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_project_url_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_project_url_1']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_project_url_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_project_url_1']['click_sort_column'] = 'url';
   /* Field: Content: Project type */
   $handler->display->display_options['fields']['field_project_type']['id'] = 'field_project_type';
   $handler->display->display_options['fields']['field_project_type']['table'] = 'field_data_field_project_type';
   $handler->display->display_options['fields']['field_project_type']['field'] = 'field_project_type';
   $handler->display->display_options['fields']['field_project_type']['label'] = '';
-  $handler->display->display_options['fields']['field_project_type']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_project_type']['element_type'] = '0';
   $handler->display->display_options['fields']['field_project_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_project_type']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_project_type']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_project_type']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_project_type']['field_api_classes'] = TRUE;
   /* Sort criterion: Global: Random */
@@ -105,6 +126,7 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['fields']['field_project_image']['table'] = 'field_data_field_project_image';
   $handler->display->display_options['fields']['field_project_image']['field'] = 'field_project_image';
   $handler->display->display_options['fields']['field_project_image']['label'] = '';
+  $handler->display->display_options['fields']['field_project_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_project_image']['element_type'] = '0';
   $handler->display->display_options['fields']['field_project_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_project_image']['element_wrapper_type'] = '0';
@@ -119,6 +141,7 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['fields']['field_project_url']['table'] = 'field_data_field_project_url';
   $handler->display->display_options['fields']['field_project_url']['field'] = 'field_project_url';
   $handler->display->display_options['fields']['field_project_url']['label'] = '';
+  $handler->display->display_options['fields']['field_project_url']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_project_url']['element_type'] = '0';
   $handler->display->display_options['fields']['field_project_url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_project_url']['element_wrapper_type'] = '0';
@@ -130,8 +153,13 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['fields']['field_project_url_1']['table'] = 'field_data_field_project_url';
   $handler->display->display_options['fields']['field_project_url_1']['field'] = 'field_project_url';
   $handler->display->display_options['fields']['field_project_url_1']['label'] = '';
-  $handler->display->display_options['fields']['field_project_url_1']['element_type'] = 'div';
-  $handler->display->display_options['fields']['field_project_url_1']['element_class'] = 'project-url-overlay';
+  $handler->display->display_options['fields']['field_project_url_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_project_url_1']['alter']['text'] = '<div class="project-circle">
+[field_project_image]
+[field_project_url]
+<div class="project-url-overlay">[field_project_url_1]</div>
+</div>';
+  $handler->display->display_options['fields']['field_project_url_1']['element_type'] = '0';
   $handler->display->display_options['fields']['field_project_url_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_project_url_1']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_project_url_1']['element_default_classes'] = FALSE;
@@ -290,6 +318,11 @@ function auge_views_projects_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('<div class="project-circle">
+[field_project_image]
+[field_project_url]
+<div class="project-url-overlay">[field_project_url_1]</div>
+</div>'),
     t('Main Projects'),
     t('Projects made:'),
     t('Projects'),
