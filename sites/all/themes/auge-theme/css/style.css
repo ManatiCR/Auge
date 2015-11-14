@@ -743,6 +743,12 @@ input[type="submit"] {
   padding: 5px 0;
   overflow: hidden; }
 
+.categories-sidebar-row .center-wrapper {
+  padding: 0; }
+  .categories-sidebar-row .center-wrapper .panel-col-last {
+    margin: 0;
+    text-align: center; }
+
 .categories-sidebar-wrapper {
   margin-bottom: 30px; }
 
