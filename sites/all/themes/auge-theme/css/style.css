@@ -873,6 +873,9 @@ input[type="submit"] {
     top: 10%;
     margin: 0;
     left: 10%; }
+    @media screen and (min-width: 700px) {
+      .node-front-page-images .field-front-image-title {
+        top: 25%; } }
     .node-front-page-images .field-front-image-title p {
       position: relative;
       font-size: 2.7rem;
@@ -898,7 +901,7 @@ input[type="submit"] {
       color: white; }
       @media screen and (min-width: 630px) {
         .node-front-page-images .field-front-image-title .slideshow-frontpage {
-          width: 70rem; } }
+          width: 70%; } }
       .node-front-page-images .field-front-image-title .slideshow-frontpage p {
         margin: 0; }
     @media screen and (min-width: 500px) {
@@ -926,7 +929,8 @@ input[type="submit"] {
         margin-right: 20px; } }
   .node-front-page-images .field-main-image img {
     width: 100%;
-    min-height: 200px; }
+    min-height: 200px;
+    display: block; }
 
 #quicktabs-container-personnel_tabs {
   padding: 7%; }

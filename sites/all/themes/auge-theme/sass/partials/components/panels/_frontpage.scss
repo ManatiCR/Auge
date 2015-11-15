@@ -81,6 +81,9 @@
     top: 10%;
     margin: 0;
     left: 10%;
+    @include media($tablet) {
+      top: 25%;
+    }
     p{
       position: relative;
       font-size: 2.7rem;
@@ -103,7 +106,7 @@
       vertical-align: top;
       width: 87.5rem;
       @include media(630px){
-        width: 70rem;
+        width: 70%;
       }
       p{
         margin: 0;
@@ -145,6 +148,7 @@
     img{
       width: 100%;
       min-height: 200px;
+      display: block;
     }
   }
 }
