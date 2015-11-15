@@ -63,7 +63,7 @@ html {
     display: inline-block;
     margin-left: 5px;
     vertical-align: top;
-    margin-top: 8px; }
+    margin-top: 5px; }
 
 .node-front-page-images .field-front-image-button {
   color: #fff;
@@ -852,7 +852,8 @@ input[type="submit"] {
     display: inline-block;
     padding: 10px 15px;
     margin: 20px 20px 0 0;
-    font-size: 1.8em; }
+    font-size: 1.8em;
+    line-height: 1.2; }
   @media screen and (min-width: 630px) {
     .panel-front-page-boxes:hover {
       background-color: #522e91;
@@ -1095,10 +1096,13 @@ input[type="submit"] {
       .panel-front-page-boxes-projects .pane-content {
         padding: 60px 0 80px; } }
   .panel-front-page-boxes-projects .pane-title {
-    padding: 20px 0 0;
+    padding: 20px;
     font-size: 2.6rem;
     font-family: "ProbaPro-Regular", Arial, sans-serif; }
     @media screen and (min-width: 700px) {
+      .panel-front-page-boxes-projects .pane-title {
+        padding: 40px 20px; } }
+    @media screen and (min-width: 1020px) {
       .panel-front-page-boxes-projects .pane-title {
         padding: 40px 0 0; } }
 

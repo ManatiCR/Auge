@@ -9,11 +9,14 @@
     }
   }
   .pane-title {
-    padding: 20px 0 0;
+    padding: 20px;
     font-size: 2.6rem;
     @extend %grid-width;
     font-family: $base-font-family;
     @include media($tablet) {
+      padding: 40px 20px;
+    }
+    @include media(1020px) {
       padding: 40px 0 0;
     }
   }
