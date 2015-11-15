@@ -57,13 +57,19 @@ html {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7px 0 7px 10px;
+    border-width: 5px 0 5px 8px;
     border-color: transparent transparent transparent #F58345;
     content: '';
     display: inline-block;
     margin-left: 5px;
     vertical-align: top;
-    margin-top: 4px; }
+    margin-top: 8px; }
+
+.node-front-page-images .field-front-image-button {
+  color: #fff;
+  border: 2px solid #fff; }
+  .node-front-page-images .field-front-image-button:after {
+    border-color: transparent transparent transparent #fff; }
 
 /*
  * Rules for base elements
@@ -803,23 +809,50 @@ input[type="submit"] {
 
 .panel-front-page-boxes {
   position: relative;
-  padding: 30px 0; }
+  padding: 25px; }
   .panel-front-page-boxes:first-child {
     margin-top: -4px; }
+  @media screen and (min-width: 700px) {
+    .panel-front-page-boxes {
+      padding: 45px 0; } }
   .panel-front-page-boxes .pane-title {
-    font-size: 4rem;
-    margin: 0 0 0 25%; }
+    font-size: 3rem;
+    line-height: 1;
+    margin: 0; }
     @media screen and (min-width: 380px) {
       .panel-front-page-boxes .pane-title {
         font-size: 4.5rem; } }
+    @media screen and (min-width: 700px) {
+      .panel-front-page-boxes .pane-title {
+        margin-left: 15%;
+        font-size: 4rem; } }
+    @media screen and (min-width: 850px) {
+      .panel-front-page-boxes .pane-title {
+        margin-left: 25%; } }
+  .panel-front-page-boxes p {
+    font-family: "futura-pt", Helvetica, sans-serif; }
+  @media screen and (min-width: 700px) {
+    .panel-front-page-boxes .pane-content {
+      margin-left: 15%; } }
+  @media screen and (min-width: 850px) {
+    .panel-front-page-boxes .pane-content {
+      margin-left: 25%; } }
   .panel-front-page-boxes p:nth-child(1) {
-    max-width: 70%;
-    font-size: 2.4rem;
-    margin: 15px 0 0 25%; }
+    font-size: 1.8rem;
+    line-height: 1;
+    margin: 15px 0 0 0; }
+    @media screen and (min-width: 700px) {
+      .panel-front-page-boxes p:nth-child(1) {
+        font-size: 2.4rem;
+        max-width: 70%; } }
+    @media screen and (min-width: 960px) {
+      .panel-front-page-boxes p:nth-child(1) {
+        max-width: 65%; } }
   .panel-front-page-boxes p:nth-child(2) {
     display: inline-block;
-    padding: 15px;
-    margin: 15px 20px 0 25%; }
+    padding: 10px 15px;
+    margin: 20px 20px 0 0;
+    font-size: 1.8em; }
   @media screen and (min-width: 630px) {
     .panel-front-page-boxes:hover {
       background-color: #522e91;
@@ -841,10 +874,9 @@ input[type="submit"] {
     margin: 0;
     left: 10%; }
     .node-front-page-images .field-front-image-title p {
-      display: inline-block;
-      vertical-align: top;
       position: relative;
-      font-size: 2.7rem; }
+      font-size: 2.7rem;
+      font-family: "futura-pt", Helvetica, sans-serif; }
       @media screen and (min-width: 375px) {
         .node-front-page-images .field-front-image-title p {
           font-size: 3.2rem; } }
@@ -853,7 +885,9 @@ input[type="submit"] {
           font-size: 6rem; } }
     .node-front-page-images .field-front-image-title .slideshow-companion {
       color: #F58345;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      display: inline-block;
+      vertical-align: top; }
     .node-front-page-images .field-front-image-title .slideshow-frontpage {
       display: inline-block;
       vertical-align: top;
@@ -884,10 +918,11 @@ input[type="submit"] {
         font-size: 4.4rem; } }
   .node-front-page-images .field-front-image-button {
     display: inline-block;
-    padding: 5px; }
+    padding: 5px;
+    font-family: "futura-pt", Helvetica, sans-serif; }
     @media screen and (min-width: 500px) {
       .node-front-page-images .field-front-image-button {
-        padding: 15px;
+        padding: 10px 15px;
         margin-right: 20px; } }
   .node-front-page-images .field-main-image img {
     width: 100%;

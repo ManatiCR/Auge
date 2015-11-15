@@ -29,16 +29,24 @@
   color: $orange;
   border: 2px solid $orange;
   border-radius: 5px;
-  &:after{
+  &:after {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7px 0 7px 10px;
+    border-width: 5px 0 5px 8px;
     border-color: transparent transparent transparent $orange;
     content: '';
     display: inline-block;
     margin-left: 5px;
     vertical-align: top;
-    margin-top: 4px;
+    margin-top: 8px;
     }
+}
+
+%button-white {
+  color: #fff;
+  border: 2px solid #fff;
+  &:after {
+    border-color: transparent transparent transparent #fff;
+  }
 }
