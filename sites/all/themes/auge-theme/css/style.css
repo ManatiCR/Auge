@@ -523,6 +523,9 @@ input[type="submit"] {
 .active {
   display: inline; }
 
+.main-content .menu {
+  display: block; }
+
 .page-title,
 #page-title {
   font-size: 2.4rem;
@@ -1225,6 +1228,8 @@ input[type="submit"] {
 .main-footer {
   background: #43257f;
   color: #CDBEF4; }
+  .main-footer .menu {
+    display: block; }
   @media screen and (min-width: 700px) {
     .main-footer {
       background: #43257f url(../images/footer-bg.jpg) top center no-repeat; } }

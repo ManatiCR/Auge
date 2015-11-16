@@ -1,4 +1,8 @@
 .main-footer {
+  //Fix for issue with header
+  .menu{
+    display:block;
+  }
   @include media($tablet) {
     background: #43257f url(../images/footer-bg.jpg) top center no-repeat;
   }
