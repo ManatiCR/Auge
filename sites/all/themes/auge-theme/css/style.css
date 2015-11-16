@@ -301,6 +301,13 @@ input[type="submit"] {
   .site-logo img {
     width: 100%; }
 
+.main-menu .content {
+  text-align: center; }
+
+.main-menu .header-main-menu-item a {
+  display: inline-block;
+  vertical-align: top; }
+
 @media screen and (min-width: 680px) {
   .main-menu {
     display: inline-block;
@@ -315,26 +322,35 @@ input[type="submit"] {
   @media screen and (min-width: 680px) {
     .menu {
       display: inline-block; } }
-
-.expanded .menu {
-  display: none;
-  left: 0px; }
-
-.show {
-  display: block; }
+  .expanded .menu {
+    display: none;
+    left: 0px; }
+  .menu .footer-item-social {
+    display: inline-block; }
 
 .header-main-menu-item {
   position: relative;
-  padding: 0 15px;
+  padding: 0 12px;
   cursor: pointer;
   list-style: none;
   text-align: center; }
-  @media screen and (min-width: 680px) {
+  .header-main-menu-item .show {
+    display: block; }
+  @media screen and (min-width: 630px) {
     .header-main-menu-item {
       margin: 0; } }
   @media screen and (min-width: 680px) {
     .header-main-menu-item {
-      margin: 0; } }
+      display: inline-block;
+      margin-left: -4px;
+      vertical-align: middle;
+      padding-bottom: 20px; }
+      .header-main-menu-item a {
+        transition-duration: .2s;
+        transition-timing-function: ease-in-out;
+        transition-property: color; }
+        .header-main-menu-item a:hover {
+          text-decoration: underline; } }
   .header-main-menu-item a {
     display: block;
     text-transform: uppercase;
@@ -345,8 +361,7 @@ input[type="submit"] {
         font-size: 1.1rem; } }
     @media screen and (min-width: 756px) {
       .header-main-menu-item a {
-        font-size: 1.4rem;
-        margin: 0; } }
+        font-size: 1.4rem; } }
   .header-main-menu-item a:hover {
     color: #F58345; }
 
@@ -360,6 +375,9 @@ input[type="submit"] {
     border-radius: 16px;
     width: 32px;
     background-color: #3e227a; }
+
+.header-main-menu-item-social {
+  display: inline-block; }
 
 .facebook-icon {
   display: block;
@@ -383,14 +401,11 @@ input[type="submit"] {
   .twitter-icon:hover {
     background-color: #55acee; }
 
-.pane-menu-menu-social-links {
-  display: inline-block; }
-
 @media screen and (min-width: 700px) {
   .expanded:hover .menu {
     display: block; } }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 680px) {
   .expanded .menu {
     position: absolute;
     top: 40px;
@@ -404,19 +419,6 @@ input[type="submit"] {
     border-right: 1px solid #d1d1d1; } }
 
 @media screen and (min-width: 680px) {
-  .header-main-menu-item {
-    display: inline-block;
-    margin-left: -4px;
-    vertical-align: middle;
-    padding-bottom: 20px; }
-    .header-main-menu-item a {
-      transition-duration: .2s;
-      transition-timing-function: ease-in-out;
-      transition-property: color; }
-      .header-main-menu-item a:hover {
-        text-decoration: underline; } }
-
-@media screen and (min-width: 700px) {
   .header-main-menu-subitem a {
     color: black;
     padding: 5px; }
@@ -558,17 +560,6 @@ input[type="submit"] {
   .page-learn .quicktabs-tabs li a {
     padding: 5px 10px; } }
 
-.pager {
-  padding-left: 0;
-  margin-bottom: 20px;
-  font-family: "futura-pt", Helvetica, sans-serif; }
-
-.pager-current {
-  color: #F58345; }
-
-.pager-item {
-  padding: 0 10px; }
-
 .panel-display {
   position: relative; }
 
@@ -576,7 +567,7 @@ input[type="submit"] {
   display: none; }
 
 .active {
-  display: inline; }
+  display: inline-block; }
 
 .main-content .menu {
   display: block; }
@@ -1002,7 +993,7 @@ input[type="submit"] {
     font-size: 1.8rem;
     line-height: 1;
     margin: 15px 0 0 0; }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 680px) {
       .panel-front-page-boxes p {
         font-size: 2.4rem;
         max-width: 70%; } }
@@ -1032,12 +1023,9 @@ input[type="submit"] {
   .node-front-page-images .field-front-image-title {
     width: 90%;
     position: absolute;
-    top: 10%;
+    top: 8%;
     margin: 0;
     left: 10%; }
-    @media screen and (min-width: 700px) {
-      .node-front-page-images .field-front-image-title {
-        top: 25%; } }
     .node-front-page-images .field-front-image-title p {
       position: relative;
       font-size: 2.7rem;
@@ -1072,7 +1060,7 @@ input[type="submit"] {
   .node-front-page-images .field-front-image-subtitle {
     font-size: 2.5rem;
     position: absolute;
-    top: 40%;
+    top: 50%;
     margin: 0;
     left: 10%; }
     @media screen and (min-width: 375px) {
