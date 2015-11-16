@@ -4,7 +4,7 @@
 $(document).ready(function() {
 $('#nav-toggle').on('click', function(e) {
   $('#nav-toggle').toggleClass('on');
-  $('.header-content .menu').toggleClass('active');
+  $('.header-content .menu:first').toggleClass('active');
   e.preventDefault();
 });
 });
@@ -18,6 +18,14 @@ if (media) {
   });
 }
 });
+
+//Makes the submenu work
+$(document).ready(function() {
+  $('.expanded').on('click', function(e) {
+    $('.expanded .menu').toggleClass('show');
+  });
+});
+
 //Flexslider for words on front page.
 $(document).ready(function() {
     var frontSlider = $('.slideshow-frontpage');

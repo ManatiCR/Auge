@@ -29,6 +29,15 @@
   }
 }
 .main-menu{
+  .content{
+    text-align: center;
+  }
+  .header-main-menu-item{
+    a{
+      display: inline-block;  //Revisar,
+      vertical-align: top;
+    }
+  }
   @include media(680px){
     display:inline-block;
     vertical-align:middle;
@@ -43,26 +52,40 @@
   @include media(680px){
     display: inline-block;
   }
-}
-.expanded .menu{
-  display:none;
-  left:0px;
-}
-.show{
-  display:block;
+  .expanded &{
+    display:none;
+    left:0px;
+  }
+  //Esto no va aquí.
+  .footer-item-social{
+    display: inline-block;
+  }
 }
 .header-main-menu-item {
   position:relative;
-  // margin: 20px 0 0 0;
-  padding: 0 15px;
+  padding: 0 12px;
   cursor:pointer;
   list-style:none;
   text-align:center;
-  @include media(680px){
+  .show{
+    display: block;
+  }
+  @include media(630px){
     margin: 0;
   }
   @include media(680px){
-    margin: 0;
+    display:inline-block;
+    margin-left:-4px;
+    vertical-align:middle;
+    padding-bottom: 20px;
+    a{
+      transition-duration: .2s;
+      transition-timing-function: ease-in-out;
+      transition-property: color;
+      &:hover{
+        text-decoration:underline;
+      }
+    }
   }
   a{
     display: block;
@@ -74,7 +97,6 @@
     }
     @include media(756px){
       font-size: 1.4rem;
-      margin: 0;
     }
   }
   a:hover{
@@ -92,6 +114,9 @@
   }
   padding: 0 !important;
   margin: 0 4px 20px 4px;
+}
+.header-main-menu-item-social{
+  display: inline-block;
 }
 .facebook-icon{
   display: block;
@@ -113,10 +138,6 @@
     background-color: #55acee;
   }
 }
-.pane-menu-menu-social-links{
-  display: inline-block;
-}
-
 .expanded{
   @include media($tablet){
     &:hover{
@@ -125,39 +146,23 @@
       }
     }
   }
-}
-.expanded .menu{
-  @include media (630px){
-    position: absolute;
-    top: 40px;              //Aqui hice un cambio.
-    width:100%;
-    padding-left: 0px;
-    z-index: 100;
-    background-color: white;
-    border-top: 3px solid $orange;
-    border-left: 1px solid $gray;
-    border-bottom: 1px solid $gray;
-    border-right: 1px solid $gray;
-  }
-}
-.header-main-menu-item{
-  @include media(680px){
-    display:inline-block;
-    margin-left:-4px;
-    vertical-align:middle;
-    padding-bottom: 20px;
-    a{
-      transition-duration: .2s;
-      transition-timing-function: ease-in-out;
-      transition-property: color;
-      &:hover{
-        text-decoration:underline;
-      }
+  .menu{
+    @include media (680px){
+      position: absolute;
+      top: 40px;              //Aqui hice un cambio.
+      width:100%;
+      padding-left: 0px;
+      z-index: 100;
+      background-color: white;
+      border-top: 3px solid $orange;
+      border-left: 1px solid $gray;
+      border-bottom: 1px solid $gray;
+      border-right: 1px solid $gray;
     }
   }
 }
 .header-main-menu-subitem{
-  @include media($tablet){
+  @include media(680px){
     a{
       color: black;
       padding: 5px;
@@ -167,7 +172,6 @@
     }
   }
 }
-
 //Toggle
 .nav-toggle{
   display: block;
