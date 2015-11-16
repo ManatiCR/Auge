@@ -90,6 +90,32 @@ function auge_menus_menu_default_menu_links() {
     'language' => 'en',
     'menu_links_customized' => 1,
   );
+  // Exported menu link: main-menu_blog:blog
+  $menu_links['main-menu_blog:blog'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'blog',
+    'router_path' => 'blog',
+    'link_title' => 'Blog',
+    'options' => array(
+      'identifier' => 'main-menu_blog:blog',
+      'alter' => TRUE,
+      'attributes' => array(),
+      'item_attributes' => array(
+        'id' => '',
+        'class' => '',
+        'style' => '',
+      ),
+    ),
+    'module' => 'system',
+    'hidden' => 1,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -44,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+  );
   // Exported menu link: main-menu_contact:/contact
   $menu_links['main-menu_contact:/contact'] = array(
     'menu_name' => 'main-menu',
