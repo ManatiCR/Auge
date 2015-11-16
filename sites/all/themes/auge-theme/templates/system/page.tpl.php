@@ -44,11 +44,10 @@
             <?php print $site_slogan; ?>
           </div>
         <?php endif; ?>
-
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-    <a id="nav-toggle" href="#"><span></span></a>
+    <a class="nav-toggle" id="nav-toggle" href="#"><span></span></a>
   </div><!-- /header-content -->
 </header>
 

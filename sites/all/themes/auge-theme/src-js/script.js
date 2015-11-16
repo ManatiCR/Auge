@@ -1,6 +1,23 @@
 // Manatí Base Theme JS functions
 (function($) {
+//Toggle
+$(document).ready(function() {
+$('#nav-toggle').on('click', function(e) {
+  $('#nav-toggle').toggleClass('on');
+  $('.header-content .menu').toggleClass('active');
+  e.preventDefault();
+});
+});
 
+//"Turns off" the link on the submenu.
+$(document).ready(function() {
+var media = window.matchMedia('(max-width: 680px)');
+if (media) {
+  $('.main-menu .expanded').click(function(e) {
+    e.preventDefault();
+  });
+}
+});
 //Flexslider for words on front page.
 $(document).ready(function() {
     var frontSlider = $('.slideshow-frontpage');
