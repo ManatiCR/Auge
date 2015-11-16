@@ -12,6 +12,37 @@ function auge_quicktabs_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['quicktabs-personel_tabs_spanish'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'delta' => 'personel_tabs_spanish',
+    'i18n_block_language' => array(),
+    'module' => 'quicktabs',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'auge' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'auge',
+        'weight' => 0,
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+    ),
+  );
+
   $export['quicktabs-personnel_tabs'] = array(
     'cache' => -1,
     'css_class' => '',
