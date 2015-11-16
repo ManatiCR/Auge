@@ -84,9 +84,14 @@
 .header-main-menu-subitem a{
   text-transform:capitalize;
 }
-.header-main-menu-item-social{
-  padding: 0;
-  width: 32px;
+.header-main-menu-item-social, .footer-item-social{
+  a{
+    border-radius: 16px;
+    width: 32px;
+    background-color: #3e227a;
+  }
+  padding: 0 !important;
+  margin: 0 4px 20px 4px;
 }
 .facebook-icon{
   display: block;
@@ -94,6 +99,9 @@
   @extend %text-hidden;
   width: 32px;
   height: 32px;
+  &:hover{
+    background-color: #3e5b99;
+  }
 }
 .twitter-icon{
   display: block;
@@ -101,6 +109,9 @@
   @extend %text-hidden;
   width: 32px;
   height: 32px;
+  &:hover{
+    background-color: #55acee;
+  }
 }
 .pane-menu-menu-social-links{
   li{

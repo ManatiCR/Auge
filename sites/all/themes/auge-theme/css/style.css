@@ -353,9 +353,13 @@ input[type="submit"] {
 .header-main-menu-subitem a {
   text-transform: capitalize; }
 
-.header-main-menu-item-social {
-  padding: 0;
-  width: 32px; }
+.header-main-menu-item-social, .footer-item-social {
+  padding: 0 !important;
+  margin: 0 4px 20px 4px; }
+  .header-main-menu-item-social a, .footer-item-social a {
+    border-radius: 16px;
+    width: 32px;
+    background-color: #3e227a; }
 
 .facebook-icon {
   display: block;
@@ -365,6 +369,8 @@ input[type="submit"] {
   background-repeat: no-repeat;
   width: 32px;
   height: 32px; }
+  .facebook-icon:hover {
+    background-color: #3e5b99; }
 
 .twitter-icon {
   display: block;
@@ -374,6 +380,8 @@ input[type="submit"] {
   background-repeat: no-repeat;
   width: 32px;
   height: 32px; }
+  .twitter-icon:hover {
+    background-color: #55acee; }
 
 .pane-menu-menu-social-links li {
   display: inline-block; }
