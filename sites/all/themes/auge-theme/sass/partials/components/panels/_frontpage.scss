@@ -40,7 +40,7 @@
     font-size: 1.8rem;
     line-height: 1;
     margin: 15px 0 0 0;
-    @include media($tablet) {
+    @include media(680px) {
       font-size: 2.4rem;
       max-width: 70%;
     }
@@ -79,12 +79,9 @@
   .field-front-image-title{
     width: 90%;
     position: absolute;
-    top: 10%;
+    top: 8%;
     margin: 0;
     left: 10%;
-    @include media($tablet) {
-      top: 25%;
-    }
     p{
       position: relative;
       font-size: 2.7rem;
@@ -124,7 +121,7 @@
   .field-front-image-subtitle{
     font-size: 2.5rem;
     position: absolute;
-    top: 40%;
+    top: 50%;
     margin: 0;
     left: 10%;
     @include media(375px){
