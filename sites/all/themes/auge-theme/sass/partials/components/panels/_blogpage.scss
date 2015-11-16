@@ -15,11 +15,14 @@
 }
 .blog-post-main-content-date{
   color: $gray;
+  font-size: 1.4rem;
+  margin-right: 10px;
 }
 .blog-post-main-content-category{
   background-color: $lightblue;
   border-radius: 4px;
   padding: 4px 6px;
+  font-size: 1.4rem;
   a{
     color: white;
   }
@@ -37,6 +40,9 @@
   }
 }
 .blog-post-main-content-body{
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #D3D3D3;
   a{
     color: $darkgray;
   }
@@ -54,5 +60,12 @@
   &:after{
     border-bottom: 1px;
     border-color: $gray;
+  }
+}
+
+.panel-two-col .page-description {
+  margin-bottom: 20px;
+  @include media($tablet) {
+    margin-bottom: 60px;
   }
 }

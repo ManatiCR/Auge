@@ -62,27 +62,7 @@
   .views-row {
     padding-bottom: 15px;
   }
-  .more-link a {
-    display: inline-block;
-    vertical-align: top;
-    border: solid 2px $orange;
-    border-radius: 10px;
-    padding: 5px 10px;
-    text-transform: uppercase;
-    font-size: 12px;
-    &:after {
-      content: '';
-      display: inline-block;
-      vertical-align: top;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 5px 0 5px 10px;
-      border-color: transparent transparent transparent $orange;
-      margin-left: 5px;
-      margin-top: 2px;
-    }
-  }
+  
   // menu
   .block-menu {
     li {
@@ -97,15 +77,6 @@
   }
   // events
   .view-proximas-actividades {
-    .date-display-single {
-      background: #2E1565;
-      text-transform: uppercase;
-      font-size: 1.2rem;
-      text-align: center;
-      display: block;
-      padding: 10px;
-      width: 50px;
-    }
     .views-field-view-node {
       display: none;
     }

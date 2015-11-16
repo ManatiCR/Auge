@@ -1,3 +1,17 @@
+.panel-sidebar {
+  font-size: 1.6rem;
+  .pane-title,
+  .sidebar-title {
+    color: $purple;
+  }
+  .panel-pane {
+    margin-bottom: 30px;
+    @include media($tablet) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
 //Categories
 .blog-categories-name{
   float: left;
@@ -22,11 +36,21 @@
     padding: 5px 0;
     overflow: hidden;
   }
+  .panel-col-first {
+    width: 80%;
+    padding-right: 0;
+    float: left;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
   .center-wrapper{
     padding: 0;
     .panel-col-last{
       margin:0;
       text-align: center;
+      width: 18%;
+      float: right;
     }
   }
 }
@@ -34,24 +58,89 @@
   margin-bottom: 30px;
 }
 //Activities
-.activities-sidebar-date{
-  color: white;
-  background-color: $purple;
-  display:table-caption;
-  text-align: center;
-  padding: 3px 5px;
+
+.view-proximas-actividades {
+  .panel-col-first {
+    width: auto;
+  }
+  .panel-col-last {}
+  .date-display-single {
+    background: #2E1565;
+    color: #CDBEF4;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    width: 50px;
+  }
+  .activities-sidebar-link {
+    a {
+      color: $lightblue;
+      font-size: 1.4rem;
+      display: inline-block;
+      &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 7px;
+        border-color: transparent transparent transparent #1ba3cc;
+        margin-left: 5px;
+      }
+    }
+  }
+  .more-link a {
+    color: $orange;
+    display: inline-block;
+    vertical-align: top;
+    border: solid 2px $orange;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    &:hover {
+      text-decoration: none;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 0 5px 10px;
+      border-color: transparent transparent transparent $orange;
+      margin-left: 5px;
+      margin-top: 2px;
+    }
+  }
 }
+
 .activities-sidebar-row{
   width: 100%;
   display: inline-block;
 }
-.activities-sidebar-wrapper{
-  margin-bottom: 30px;
-}
-//Get involved
-.getinvolved-sidebar-wrapper{
 
-}
-.sidebar-title{
-
+// Get involved
+.pane-menu-menu-get-involved {
+  .menu {
+    display: block;
+    li {
+      margin-bottom: 3px;
+    }
+    a {
+      display: block;
+      color: #fff;
+      background: lighten($purple, 10);
+      padding: 5px 10px;
+      font-size: 1.6rem;
+      &:hover {
+        background: $purple;
+        text-decoration: none;
+      }
+    }
+  }
 }
