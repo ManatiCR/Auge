@@ -93,7 +93,7 @@ function auge_content_types_blog_post_field_default_field_instances() {
         'weight' => 3,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -167,7 +167,7 @@ function auge_content_types_blog_post_field_default_field_instances() {
         'weight' => 2,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
