@@ -1,0 +1,11 @@
+.pager {
+  padding-left: 0;
+  margin-bottom: 20px;
+  font-family: $heading-font-family;
+}
+.pager-current {
+  color: $orange;
+}
+.pager-item {
+  padding: 0 10px;
+}
