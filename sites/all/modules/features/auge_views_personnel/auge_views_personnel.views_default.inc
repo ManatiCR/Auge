@@ -154,37 +154,19 @@ function auge_views_personnel_views_default_views() {
   );
   $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
 
   /* Display: Content pane Team */
   $handler = $view->new_display('panel_pane', 'Content pane Team', 'panel_pane_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Team';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'personnel' => 'personnel',
-  );
-  /* Filter criterion: Content: Area (field_area) */
-  $handler->display->display_options['filters']['field_area_tid']['id'] = 'field_area_tid';
-  $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
-  $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
-  $handler->display->display_options['filters']['field_area_tid']['value'] = array(
-    13 => '13',
-  );
-  $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
   $handler->display->display_options['pane_category']['name'] = 'Personnel';
   $handler->display->display_options['pane_category']['weight'] = '0';
 
@@ -217,6 +199,13 @@ function auge_views_personnel_views_default_views() {
   );
   $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
   $handler->display->display_options['pane_category']['name'] = 'Personnel';
   $handler->display->display_options['pane_category']['weight'] = '1';
 
@@ -249,6 +238,13 @@ function auge_views_personnel_views_default_views() {
   );
   $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
   $handler->display->display_options['pane_category']['name'] = 'Personnel';
   $handler->display->display_options['pane_category']['weight'] = '2';
 
@@ -281,6 +277,170 @@ function auge_views_personnel_views_default_views() {
   );
   $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'en' => 'en',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Personnel';
+  $handler->display->display_options['pane_category']['weight'] = '3';
+
+  /* Display: Content pane Team Spanish */
+  $handler = $view->new_display('panel_pane', 'Content pane Team Spanish', 'panel_pane_5');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Team';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'personnel' => 'personnel',
+  );
+  /* Filter criterion: Content: Area (field_area) */
+  $handler->display->display_options['filters']['field_area_tid']['id'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
+  $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['value'] = array(
+    11 => '11',
+  );
+  $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Personnel';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Content pane Board of advisors Spanish */
+  $handler = $view->new_display('panel_pane', 'Content pane Board of advisors Spanish', 'panel_pane_6');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Board of advisors';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'personnel' => 'personnel',
+  );
+  /* Filter criterion: Content: Area (field_area) */
+  $handler->display->display_options['filters']['field_area_tid']['id'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
+  $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['value'] = array(
+    14 => '14',
+  );
+  $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Personnel';
+  $handler->display->display_options['pane_category']['weight'] = '1';
+
+  /* Display: Content pane Mentors Spanish */
+  $handler = $view->new_display('panel_pane', 'Content pane Mentors Spanish', 'panel_pane_7');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Mentors';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'personnel' => 'personnel',
+  );
+  /* Filter criterion: Content: Area (field_area) */
+  $handler->display->display_options['filters']['field_area_tid']['id'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
+  $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['value'] = array(
+    15 => '15',
+  );
+  $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
+  $handler->display->display_options['pane_category']['name'] = 'Personnel';
+  $handler->display->display_options['pane_category']['weight'] = '2';
+
+  /* Display: Content pane Advisors Spanish */
+  $handler = $view->new_display('panel_pane', 'Content pane Advisors Spanish', 'panel_pane_8');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Advisors';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'personnel' => 'personnel',
+  );
+  /* Filter criterion: Content: Area (field_area) */
+  $handler->display->display_options['filters']['field_area_tid']['id'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
+  $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
+  $handler->display->display_options['filters']['field_area_tid']['value'] = array(
+    16 => '16',
+  );
+  $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';
+  /* Filter criterion: Content: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    'es' => 'es',
+  );
   $handler->display->display_options['pane_category']['name'] = 'Personnel';
   $handler->display->display_options['pane_category']['weight'] = '3';
   $translatables['personnel_view'] = array(
@@ -315,6 +475,10 @@ function auge_views_personnel_views_default_views() {
     t('Mentors'),
     t('Content pane Advisors'),
     t('Advisors'),
+    t('Content pane Team Spanish'),
+    t('Content pane Board of advisors Spanish'),
+    t('Content pane Mentors Spanish'),
+    t('Content pane Advisors Spanish'),
   );
   $export['personnel_view'] = $view;
 
