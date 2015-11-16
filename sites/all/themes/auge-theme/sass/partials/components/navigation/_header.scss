@@ -107,6 +107,7 @@
     display: inline-block;
   }
 }
+
 .expanded{
   @include media($tablet){
     &:hover{
@@ -119,7 +120,7 @@
 .expanded .menu{
   @include media (630px){
     position: absolute;
-    top: 20px;
+    top: 40px;              //Aqui hice un cambio.
     width:100%;
     padding-left: 0px;
     z-index: 100;
@@ -135,6 +136,7 @@
     display:inline-block;
     margin-left:-4px;
     vertical-align:middle;
+    padding-bottom: 20px;
     a{
       transition-duration: .2s;
       transition-timing-function: ease-in-out;

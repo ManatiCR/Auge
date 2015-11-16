@@ -385,7 +385,7 @@ input[type="submit"] {
 @media screen and (min-width: 630px) {
   .expanded .menu {
     position: absolute;
-    top: 20px;
+    top: 40px;
     width: 100%;
     padding-left: 0px;
     z-index: 100;
@@ -399,7 +399,8 @@ input[type="submit"] {
   .header-main-menu-item {
     display: inline-block;
     margin-left: -4px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding-bottom: 20px; }
     .header-main-menu-item a {
       transition-duration: .2s;
       transition-timing-function: ease-in-out;
