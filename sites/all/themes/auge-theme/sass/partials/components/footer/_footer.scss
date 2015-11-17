@@ -45,7 +45,13 @@
       padding: 0;
     }
     @include media(1000px) {
-      width: 25%;
+      width: 23%;
+      margin-right: 2%;
+    }
+    .more-link {
+      border-top: none;
+      padding-top: 0;
+      text-align: left;
     }
   }
   .panel-col-first {
@@ -75,10 +81,18 @@
       }
     }
   }
+
   // events
   .view-proximas-actividades {
     .views-field-view-node {
       display: none;
     }
+  }
+}
+
+.pane-menu-menu-social-links {
+  li {
+    display: inline-block;
+    vertical-align: top;
   }
 }

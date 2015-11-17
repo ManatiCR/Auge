@@ -263,3 +263,84 @@
   }
 }
 
+// newest activity
+.panel-panel {
+  .upcoming-event {
+    background: lighten(#F96D42, 5);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    margin: 0 20px;
+    @include media(910px) {
+      max-width: 895px;
+      margin: 0 auto;
+    }
+    .panel-col-first {
+      float: none;
+      width: auto;
+      @include media($tablet) {
+        float: left;
+        margin-right: 20px;
+      }
+    }
+    .panel-col-last {
+      float: none;
+      width: auto;
+      @include media($tablet) {
+        padding-right: 170px;
+        width: 75.5%;
+        float: left;
+      }
+    }
+    .inside {
+       margin: 0;
+    }
+    .date-display-single {
+      color: #fff;
+      background: #F1542D;
+      font-size: 1.6rem;
+      width: auto;
+      text-align: left;
+      margin-bottom: 15px;
+      @include breakpoint($tablet) {
+        width: 130px;
+        margin-bottom: 0;
+      }
+    }
+    .views-field-title a {
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 15px;
+      display: block;
+      &:hover {
+        text-decoration: none;
+      }
+      @include media($tablet) {
+        margin-bottom: 0;
+        display: inline-block;
+      }
+    }
+    .views-field-view-node {
+       display: block;
+       @include media($tablet) {
+        display: inline-block;
+       }
+       a {
+        @extend %button;
+        @extend %button-white;
+        padding-bottom: 0;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        display: block;
+        @include media($tablet) {
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          margin-top: -22px;
+          right: 10px;
+        }
+      }
+    }
+  }
+}
