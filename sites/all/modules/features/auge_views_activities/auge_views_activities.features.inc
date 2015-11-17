@@ -29,9 +29,7 @@ function auge_views_activities_fe_date_locale_date_format() {
   // Exported format: activities_sidebar::en
   $locale_date_formats['activities_sidebar::en'] = array(
     'type' => 'activities_sidebar',
-    'format' => array(
-      'blog_post_date' => 'F j, Y',
-    ),
+    'format' => 'Array',
     'locales' => array(
       0 => 'en',
     ),
@@ -39,9 +37,7 @@ function auge_views_activities_fe_date_locale_date_format() {
   // Exported format: activities_sidebar::es
   $locale_date_formats['activities_sidebar::es'] = array(
     'type' => 'activities_sidebar',
-    'format' => array(
-      'blog_post_date' => 'F j, Y',
-    ),
+    'format' => 'Array',
     'locales' => array(
       0 => 'es',
     ),

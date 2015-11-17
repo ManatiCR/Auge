@@ -661,6 +661,8 @@ function auge_views_activities_views_default_views() {
   /* Display: Newest activity Learn English */
   $handler = $view->new_display('panel_pane', 'Newest activity Learn English', 'panel_pane_9');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -764,6 +766,8 @@ function auge_views_activities_views_default_views() {
   /* Display: Newest activity Learn Spanish */
   $handler = $view->new_display('panel_pane', 'Newest activity Learn Spanish', 'panel_pane_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -867,6 +871,8 @@ function auge_views_activities_views_default_views() {
   /* Display: Newest activity Entrepreneur English */
   $handler = $view->new_display('panel_pane', 'Newest activity Entrepreneur English', 'panel_pane_4');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -970,6 +976,8 @@ function auge_views_activities_views_default_views() {
   /* Display: Newest activity Entrepreneur Spanish */
   $handler = $view->new_display('panel_pane', 'Newest activity Entrepreneur Spanish', 'panel_pane_10');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -1073,6 +1081,8 @@ function auge_views_activities_views_default_views() {
   /* Display: Newest activity Mentor English */
   $handler = $view->new_display('panel_pane', 'Newest activity Mentor English', 'panel_pane_5');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -1176,6 +1186,8 @@ function auge_views_activities_views_default_views() {
   /* Display: Newest activity Mentor Spanish */
   $handler = $view->new_display('panel_pane', 'Newest activity Mentor Spanish', 'panel_pane_11');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -1279,6 +1291,8 @@ function auge_views_activities_views_default_views() {
   /* Display: Newest activity Invest English */
   $handler = $view->new_display('panel_pane', 'Newest activity Invest English', 'panel_pane_6');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -1382,6 +1396,8 @@ function auge_views_activities_views_default_views() {
   /* Display: Newest activity Invest Spanish */
   $handler = $view->new_display('panel_pane', 'Newest activity Invest Spanish', 'panel_pane_12');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
