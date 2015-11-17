@@ -12,16 +12,20 @@
 *   $content['sidebar']: The sidebar.
 */
 ?>
-<div class="panel-display panel-display-margin panel-two-col panel-grid-width <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-    <div class="panel-panel panel-top panel-two-col-top">
-      <?php print $content['top']; ?>
-    </div>
+<div class="panel-display panel-display-margin panel-two-col <?php if (!empty($css_id)): print $css_id; endif; ?>>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+      <div class="panel-panel panel-top panel-two-col-top">
+        <div class="panel-grid-width">
+        <?php print $content['top']; ?>
+        </div>
+      </div>
     <div class="panel-panel panel-top panel-two-col-content-wrapper">
-    <div class="panel-panel panel-content panel-two-col-content">
-      <?php print $content['content']; ?>
-    </div>
-    <div class="panel-panel panel-sidebar panel-two-col-sidebar">
-      <?php print $content['sidebar']; ?>
-    </div>
+      <div class="panel-grid-width">
+        <div class="panel-panel panel-content panel-two-col-content">
+          <?php print $content['content']; ?>
+        </div>
+        <div class="panel-panel panel-sidebar panel-two-col-sidebar">
+          <?php print $content['sidebar']; ?>
+        </div>
+      </div>
   </div>
 </div>

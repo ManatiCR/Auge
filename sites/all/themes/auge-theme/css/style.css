@@ -829,6 +829,14 @@ input[type="submit"] {
 .blog-page {
   padding-bottom: 110px !important; }
 
+.page-blog .panel-two-col-content-wrapper {
+  background: #f7f7f7;
+  overflow: hidden;
+  padding: 20px 0; }
+  @media screen and (min-width: 700px) {
+    .page-blog .panel-two-col-content-wrapper {
+      padding: 60px 0; } }
+
 .blog-post-main-content-title {
   text-transform: uppercase;
   font-size: 24px; }
