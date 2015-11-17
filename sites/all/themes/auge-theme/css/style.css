@@ -356,7 +356,9 @@ input[type="submit"] {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
-    color: #d1d1d1; }
+    color: #d1d1d1;
+    font-size: 2rem;
+    padding: 5px 0; }
     @media screen and (min-width: 630px) {
       .header-main-menu-item a {
         font-size: 1.1rem; } }
@@ -366,16 +368,23 @@ input[type="submit"] {
   .header-main-menu-item a:hover {
     color: #F58345; }
 
+.header-main-menu-subitem.last {
+  margin-bottom: 10px; }
+
 .header-main-menu-subitem a {
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  color: #F58345; }
 
 .header-main-menu-item-social, .footer-item-social {
   padding: 0 !important;
-  margin: 0 4px 20px 4px; }
+  margin: 10px 4px 20px 4px; }
   .header-main-menu-item-social a, .footer-item-social a {
     border-radius: 16px;
     width: 32px;
     background-color: #3e227a; }
+  @media screen and (min-width: 630px) {
+    .header-main-menu-item-social, .footer-item-social {
+      margin: 0 4px 20px 4px; } }
 
 .header-main-menu-item-social {
   display: inline-block; }
@@ -829,6 +838,16 @@ input[type="submit"] {
 .blog-page {
   padding-bottom: 110px !important; }
 
+.page-blog .panel-two-col-content-wrapper,
+.page-activities .panel-two-col-content-wrapper {
+  background: #f7f7f7;
+  overflow: hidden;
+  padding: 20px 0; }
+  @media screen and (min-width: 700px) {
+    .page-blog .panel-two-col-content-wrapper,
+    .page-activities .panel-two-col-content-wrapper {
+      padding: 60px 0; } }
+
 .blog-post-main-content-title {
   text-transform: uppercase;
   font-size: 24px; }
@@ -895,6 +914,23 @@ input[type="submit"] {
     .panel-node-blog .pane-node .field-post-category a {
       color: white; }
 
+.upcoming-events-page h3 {
+  font-size: 2.4rem;
+  color: #522e91;
+  border-bottom: solid 2px #522e91;
+  padding-bottom: 10px;
+  margin-bottom: 15px; }
+
+.upcoming-events-page .views-field-title {
+  font-size: 1.8rem;
+  line-height: 1.2; }
+
+.upcoming-events-page .panel-col-last {
+  width: 80%; }
+
+.upcoming-events-page .views-row {
+  margin-bottom: 20px; }
+
 .panel-sidebar {
   font-size: 1.6rem; }
   .panel-sidebar .pane-title,
@@ -905,6 +941,28 @@ input[type="submit"] {
     @media screen and (min-width: 700px) {
       .panel-sidebar .panel-pane {
         margin-bottom: 60px; } }
+  .panel-sidebar .view-blog-list .panel-col-first {
+    width: 50px; }
+  .panel-sidebar .view-blog-list .panel-col-last {
+    width: 68%; }
+  .panel-sidebar .view-blog-list .views-row {
+    padding-bottom: 15px; }
+  .panel-sidebar .view-blog-list .views-field-title {
+    font-size: 1.6rem; }
+  .panel-sidebar .view-blog-list .views-field-body a {
+    color: #1ba2cc;
+    font-size: 1.4rem;
+    display: inline-block; }
+    .panel-sidebar .view-blog-list .views-field-body a:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4px 0 4px 7px;
+      border-color: transparent transparent transparent #1ba3cc;
+      margin-left: 5px; }
 
 .blog-categories-name {
   float: left;

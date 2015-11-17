@@ -2,6 +2,17 @@
 .blog-page{
   padding-bottom: 110px !important;
 }
+.page-blog,
+.page-activities {
+  .panel-two-col-content-wrapper {
+    background: #f7f7f7;
+    overflow: hidden;
+    padding: 20px 0;
+    @include media($tablet) {
+      padding: 60px 0;
+    }
+  }
+}
 .blog-post-main-content-title{
   text-transform: uppercase;
   //

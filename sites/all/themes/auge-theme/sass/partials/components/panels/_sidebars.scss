@@ -10,6 +10,39 @@
       margin-bottom: 60px;
     }
   }
+  // blog list
+  .view-blog-list {
+    .panel-col-first {
+      width: 50px;
+    }
+    .panel-col-last {
+      width: 68%;
+    }
+    .views-row {
+      padding-bottom: 15px;
+    }
+    .views-field-title {
+      font-size: 1.6rem;
+    }
+    .views-field-body {
+      a {
+        color: $lightblue;
+        font-size: 1.4rem;
+        display: inline-block;
+        &:after {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 4px 0 4px 7px;
+          border-color: transparent transparent transparent #1ba3cc;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
 }
 
 //Categories
