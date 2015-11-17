@@ -79,6 +79,9 @@ function auge_pages_get_involved_default_page_manager_pages() {
     'style_settings' => array(
       'default' => NULL,
       'middle' => NULL,
+      'content' => NULL,
+      'content_wide' => NULL,
+      'content_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -196,31 +199,6 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-361f370b-31c7-4271-a138-137dbde42663'] = $pane;
     $display->panels['content'][2] = 'new-361f370b-31c7-4271-a138-137dbde42663';
     $pane = new stdClass();
-    $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane->panel = 'content';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Etiam habebis sem dicantur magna mollis euismod. Non equidem invideo, miror magis posuere velit aliquet. Non equidem invideo, miror magis posuere velit aliquet. Quam diu etiam furor iste tuus nos eludet? Magna pars studiorum, prodita quaerimus.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
-    $display->panels['content'][3] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane->panel = 'content';
     $pane->type = 'custom';
@@ -244,11 +222,36 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'css_class' => 'register-idea-link',
     );
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['content'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $pane = new stdClass();
+    $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<p>Etiam habebis sem dicantur magna mollis euismod. Non equidem invideo, miror magis posuere velit aliquet. Non equidem invideo, miror magis posuere velit aliquet. Quam diu etiam furor iste tuus nos eludet? Magna pars studiorum, prodita quaerimus.</p>',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
+    $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
+    $display->panels['content'][4] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
     $pane = new stdClass();
     $pane->pid = 'new-950eed80-b218-4496-98e1-948d3a95b13f';
     $pane->panel = 'content';
@@ -453,31 +456,6 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-361f370b-31c7-4271-a138-137dbde42663'] = $pane;
     $display->panels['content'][2] = 'new-361f370b-31c7-4271-a138-137dbde42663';
     $pane = new stdClass();
-    $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane->panel = 'content';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Etiam habebis sem dicantur magna mollis euismod. Non equidem invideo, miror magis posuere velit aliquet. Non equidem invideo, miror magis posuere velit aliquet. Quam diu etiam furor iste tuus nos eludet? Magna pars studiorum, prodita quaerimus.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
-    $display->panels['content'][3] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane->panel = 'content';
     $pane->type = 'custom';
@@ -501,11 +479,36 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'css_class' => 'register-idea-link',
     );
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['content'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $pane = new stdClass();
+    $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<p>Etiam habebis sem dicantur magna mollis euismod. Non equidem invideo, miror magis posuere velit aliquet. Non equidem invideo, miror magis posuere velit aliquet. Quam diu etiam furor iste tuus nos eludet? Magna pars studiorum, prodita quaerimus.</p>',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
+    $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
+    $display->panels['content'][4] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
     $pane = new stdClass();
     $pane->pid = 'new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
     $pane->panel = 'content';
@@ -770,6 +773,31 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
     $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane = new stdClass();
+    $pane->pid = 'new-44b1e53c-4e41-4bc5-8bc3-ec1db8ed39b6';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '44b1e53c-4e41-4bc5-8bc3-ec1db8ed39b6';
+    $display->content['new-44b1e53c-4e41-4bc5-8bc3-ec1db8ed39b6'] = $pane;
+    $display->panels['content'][4] = 'new-44b1e53c-4e41-4bc5-8bc3-ec1db8ed39b6';
+    $pane = new stdClass();
     $pane->pid = 'new-327fd9ab-06ac-4922-b166-ab4cf9e51a22';
     $pane->panel = 'content';
     $pane->type = 'views_panes';
@@ -783,11 +811,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 5;
     $pane->locks = array();
     $pane->uuid = '327fd9ab-06ac-4922-b166-ab4cf9e51a22';
     $display->content['new-327fd9ab-06ac-4922-b166-ab4cf9e51a22'] = $pane;
-    $display->panels['content'][4] = 'new-327fd9ab-06ac-4922-b166-ab4cf9e51a22';
+    $display->panels['content'][5] = 'new-327fd9ab-06ac-4922-b166-ab4cf9e51a22';
     $pane = new stdClass();
     $pane->pid = 'new-dac50e2c-e561-42dc-9a80-63f07b7b15be';
     $pane->panel = 'content';
@@ -802,11 +830,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 6;
     $pane->locks = array();
     $pane->uuid = 'dac50e2c-e561-42dc-9a80-63f07b7b15be';
     $display->content['new-dac50e2c-e561-42dc-9a80-63f07b7b15be'] = $pane;
-    $display->panels['content'][5] = 'new-dac50e2c-e561-42dc-9a80-63f07b7b15be';
+    $display->panels['content'][6] = 'new-dac50e2c-e561-42dc-9a80-63f07b7b15be';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1002,6 +1030,31 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
     $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane = new stdClass();
+    $pane->pid = 'new-9da39fbf-7648-4dcf-b933-cdf9dee6d7bf';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '9da39fbf-7648-4dcf-b933-cdf9dee6d7bf';
+    $display->content['new-9da39fbf-7648-4dcf-b933-cdf9dee6d7bf'] = $pane;
+    $display->panels['content'][4] = 'new-9da39fbf-7648-4dcf-b933-cdf9dee6d7bf';
+    $pane = new stdClass();
     $pane->pid = 'new-df22c0ab-8c54-4c5d-91f1-1f22e2b15298';
     $pane->panel = 'content';
     $pane->type = 'views_panes';
@@ -1015,11 +1068,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 5;
     $pane->locks = array();
     $pane->uuid = 'df22c0ab-8c54-4c5d-91f1-1f22e2b15298';
     $display->content['new-df22c0ab-8c54-4c5d-91f1-1f22e2b15298'] = $pane;
-    $display->panels['content'][4] = 'new-df22c0ab-8c54-4c5d-91f1-1f22e2b15298';
+    $display->panels['content'][5] = 'new-df22c0ab-8c54-4c5d-91f1-1f22e2b15298';
     $pane = new stdClass();
     $pane->pid = 'new-14aa5c1d-9ffa-4f10-8007-2a0161bc238b';
     $pane->panel = 'content';
@@ -1034,11 +1087,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 6;
     $pane->locks = array();
     $pane->uuid = '14aa5c1d-9ffa-4f10-8007-2a0161bc238b';
     $display->content['new-14aa5c1d-9ffa-4f10-8007-2a0161bc238b'] = $pane;
-    $display->panels['content'][5] = 'new-14aa5c1d-9ffa-4f10-8007-2a0161bc238b';
+    $display->panels['content'][6] = 'new-14aa5c1d-9ffa-4f10-8007-2a0161bc238b';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -1236,31 +1289,6 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863'] = $pane;
     $display->panels['content'][2] = 'new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863';
     $pane = new stdClass();
-    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane->panel = 'content';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Otros servicios</p><p>FlashLab:</p><p>Cursos rápidos, prácticos y experimentales diseñados para emprendedores y &nbsp;colaboradores de empresas o instituciones que quieren desarrollar emprendimientos corporativos o un spin-off. &nbsp;Los Labs son sesiones de 4 horas con un espacio para experimentar y se imparten según demanda. Si desea asistir a uno de nuestros FlashLabs, vea nuestro calendario o comuníquese con nosotros.</p><p>Sprint Auge:</p><p>Competencia de co-creación, diversa, práctica y &nbsp;enfocada que busca desarrollar conocimientos y fomentar habilidades en torno al emprendimiento y la innovación. Como base, se proponen soluciones para un reto planteado por una empresa y organización que patrocina la actividad, utilizando la metodología de Design Thinking &nbsp;como estructura.</p><p>Laboratorio de fabricación para acelerar prototipado:</p><p>La Inventoría es el proyecto con el que nace la Fundación Costa Rica Innova, organización que se incuba en AUGE con el apoyo de FUNDEVI. Mediante una alianza con sus creadores, AUGE ofrece el servicio de acelerar prototipos por medio de la colaboración de activadores del movimiento maker, además de herramientas como impresoras 3D, arduinos, cortadora láser entre otros. Leer más.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
-    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
-    $display->panels['content'][3] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane->panel = 'content';
     $pane->type = 'custom';
@@ -1320,11 +1348,36 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['content'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $pane = new stdClass();
+    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<p>Otros servicios</p><p>FlashLab:</p><p>Cursos rápidos, prácticos y experimentales diseñados para emprendedores y &nbsp;colaboradores de empresas o instituciones que quieren desarrollar emprendimientos corporativos o un spin-off. &nbsp;Los Labs son sesiones de 4 horas con un espacio para experimentar y se imparten según demanda. Si desea asistir a uno de nuestros FlashLabs, vea nuestro calendario o comuníquese con nosotros.</p><p>Sprint Auge:</p><p>Competencia de co-creación, diversa, práctica y &nbsp;enfocada que busca desarrollar conocimientos y fomentar habilidades en torno al emprendimiento y la innovación. Como base, se proponen soluciones para un reto planteado por una empresa y organización que patrocina la actividad, utilizando la metodología de Design Thinking &nbsp;como estructura.</p><p>Laboratorio de fabricación para acelerar prototipado:</p><p>La Inventoría es el proyecto con el que nace la Fundación Costa Rica Innova, organización que se incuba en AUGE con el apoyo de FUNDEVI. Mediante una alianza con sus creadores, AUGE ofrece el servicio de acelerar prototipos por medio de la colaboración de activadores del movimiento maker, además de herramientas como impresoras 3D, arduinos, cortadora láser entre otros. Leer más.</p>',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
+    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
+    $display->panels['content'][4] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
     $pane = new stdClass();
     $pane->pid = 'new-3dd963fb-8e81-4b6f-ab80-318167d42ed7';
     $pane->panel = 'content';
@@ -1530,31 +1583,6 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863'] = $pane;
     $display->panels['content'][2] = 'new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863';
     $pane = new stdClass();
-    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane->panel = 'content';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Otros servicios</p><p>FlashLab:</p><p>Cursos rápidos, prácticos y experimentales diseñados para emprendedores y &nbsp;colaboradores de empresas o instituciones que quieren desarrollar emprendimientos corporativos o un spin-off. &nbsp;Los Labs son sesiones de 4 horas con un espacio para experimentar y se imparten según demanda. Si desea asistir a uno de nuestros FlashLabs, vea nuestro calendario o comuníquese con nosotros.</p><p>Sprint Auge:</p><p>Competencia de co-creación, diversa, práctica y &nbsp;enfocada que busca desarrollar conocimientos y fomentar habilidades en torno al emprendimiento y la innovación. Como base, se proponen soluciones para un reto planteado por una empresa y organización que patrocina la actividad, utilizando la metodología de Design Thinking &nbsp;como estructura.</p><p>Laboratorio de fabricación para acelerar prototipado:</p><p>La Inventoría es el proyecto con el que nace la Fundación Costa Rica Innova, organización que se incuba en AUGE con el apoyo de FUNDEVI. Mediante una alianza con sus creadores, AUGE ofrece el servicio de acelerar prototipos por medio de la colaboración de activadores del movimiento maker, además de herramientas como impresoras 3D, arduinos, cortadora láser entre otros. Leer más.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 3;
-    $pane->locks = array();
-    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
-    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
-    $display->panels['content'][3] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane->panel = 'content';
     $pane->type = 'custom';
@@ -1578,11 +1606,36 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'css_class' => 'register-idea-link',
     );
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['content'][4] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $pane = new stdClass();
+    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<p>Otros servicios</p><p>FlashLab:</p><p>Cursos rápidos, prácticos y experimentales diseñados para emprendedores y &nbsp;colaboradores de empresas o instituciones que quieren desarrollar emprendimientos corporativos o un spin-off. &nbsp;Los Labs son sesiones de 4 horas con un espacio para experimentar y se imparten según demanda. Si desea asistir a uno de nuestros FlashLabs, vea nuestro calendario o comuníquese con nosotros.</p><p>Sprint Auge:</p><p>Competencia de co-creación, diversa, práctica y &nbsp;enfocada que busca desarrollar conocimientos y fomentar habilidades en torno al emprendimiento y la innovación. Como base, se proponen soluciones para un reto planteado por una empresa y organización que patrocina la actividad, utilizando la metodología de Design Thinking &nbsp;como estructura.</p><p>Laboratorio de fabricación para acelerar prototipado:</p><p>La Inventoría es el proyecto con el que nace la Fundación Costa Rica Innova, organización que se incuba en AUGE con el apoyo de FUNDEVI. Mediante una alianza con sus creadores, AUGE ofrece el servicio de acelerar prototipos por medio de la colaboración de activadores del movimiento maker, además de herramientas como impresoras 3D, arduinos, cortadora láser entre otros. Leer más.</p>',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
+    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
+    $display->panels['content'][4] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
     $pane = new stdClass();
     $pane->pid = 'new-b810fa0c-9ff7-48c7-81b8-5269ee6dd833';
     $pane->panel = 'content';
@@ -1699,6 +1752,8 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'default' => NULL,
       'middle' => NULL,
       'content' => NULL,
+      'content_wide' => NULL,
+      'content_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -1845,6 +1900,31 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
     $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane = new stdClass();
+    $pane->pid = 'new-8bbc8692-ef04-422e-84bd-4974b0c6e3a1';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '8bbc8692-ef04-422e-84bd-4974b0c6e3a1';
+    $display->content['new-8bbc8692-ef04-422e-84bd-4974b0c6e3a1'] = $pane;
+    $display->panels['content'][4] = 'new-8bbc8692-ef04-422e-84bd-4974b0c6e3a1';
+    $pane = new stdClass();
     $pane->pid = 'new-2b43453f-86aa-4c62-b052-f970e6f7bb49';
     $pane->panel = 'content';
     $pane->type = 'views_panes';
@@ -1858,11 +1938,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 5;
     $pane->locks = array();
     $pane->uuid = '2b43453f-86aa-4c62-b052-f970e6f7bb49';
     $display->content['new-2b43453f-86aa-4c62-b052-f970e6f7bb49'] = $pane;
-    $display->panels['content'][4] = 'new-2b43453f-86aa-4c62-b052-f970e6f7bb49';
+    $display->panels['content'][5] = 'new-2b43453f-86aa-4c62-b052-f970e6f7bb49';
     $pane = new stdClass();
     $pane->pid = 'new-b72a93a6-20e4-4699-9521-4558a9764c6b';
     $pane->panel = 'content';
@@ -1877,11 +1957,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 6;
     $pane->locks = array();
     $pane->uuid = 'b72a93a6-20e4-4699-9521-4558a9764c6b';
     $display->content['new-b72a93a6-20e4-4699-9521-4558a9764c6b'] = $pane;
-    $display->panels['content'][5] = 'new-b72a93a6-20e4-4699-9521-4558a9764c6b';
+    $display->panels['content'][6] = 'new-b72a93a6-20e4-4699-9521-4558a9764c6b';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
   $handler->conf['display'] = $display;
@@ -2077,6 +2157,31 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
     $display->panels['content'][3] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane = new stdClass();
+    $pane->pid = 'new-7db68eb3-9e04-46e7-b574-003b590244dc';
+    $pane->panel = 'content';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'manati_texto_formato',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '7db68eb3-9e04-46e7-b574-003b590244dc';
+    $display->content['new-7db68eb3-9e04-46e7-b574-003b590244dc'] = $pane;
+    $display->panels['content'][4] = 'new-7db68eb3-9e04-46e7-b574-003b590244dc';
+    $pane = new stdClass();
     $pane->pid = 'new-54a7ccad-b308-4b23-a319-d3b4497211ed';
     $pane->panel = 'content';
     $pane->type = 'views_panes';
@@ -2090,11 +2195,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 5;
     $pane->locks = array();
     $pane->uuid = '54a7ccad-b308-4b23-a319-d3b4497211ed';
     $display->content['new-54a7ccad-b308-4b23-a319-d3b4497211ed'] = $pane;
-    $display->panels['content'][4] = 'new-54a7ccad-b308-4b23-a319-d3b4497211ed';
+    $display->panels['content'][5] = 'new-54a7ccad-b308-4b23-a319-d3b4497211ed';
     $pane = new stdClass();
     $pane->pid = 'new-71cbd775-e8d7-44fa-919c-1b675a78cf8b';
     $pane->panel = 'content';
@@ -2109,11 +2214,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 6;
     $pane->locks = array();
     $pane->uuid = '71cbd775-e8d7-44fa-919c-1b675a78cf8b';
     $display->content['new-71cbd775-e8d7-44fa-919c-1b675a78cf8b'] = $pane;
-    $display->panels['content'][5] = 'new-71cbd775-e8d7-44fa-919c-1b675a78cf8b';
+    $display->panels['content'][6] = 'new-71cbd775-e8d7-44fa-919c-1b675a78cf8b';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
   $handler->conf['display'] = $display;
