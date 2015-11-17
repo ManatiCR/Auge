@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Pages - Nodes feature.
+ */
+
+include_once 'auge_pages_nodes.features.inc';
