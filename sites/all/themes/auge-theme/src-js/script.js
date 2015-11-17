@@ -10,15 +10,18 @@ $('#nav-toggle').on('click', function(e) {
 });
 
 //"Turns off" the link on the submenu.
-$(document).ready(function() {
-if (window.matchMedia('min-width: 680px')) {}
-else{
-  $('.main-menu .expanded').click(function(e) {
-    e.preventDefault();
-  });
+function WidthChange(mq) {
+	if (mq.matches) {
+    $('.main-menu .expanded').click(function(e) {
+      e.preventDefault();
+    });	}
+	else {}
 }
-});
-
+if (matchMedia) {
+	var mq = window.matchMedia('(max-width: 680px)');
+	mq.addListener(WidthChange);
+	new WidthChange(mq);
+}
 
 //Makes the submenu work
 if (window.matchMedia('max-width: 680px')) {
