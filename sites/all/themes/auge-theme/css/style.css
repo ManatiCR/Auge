@@ -356,7 +356,9 @@ input[type="submit"] {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
-    color: #d1d1d1; }
+    color: #d1d1d1;
+    font-size: 2rem;
+    padding: 5px 0; }
     @media screen and (min-width: 630px) {
       .header-main-menu-item a {
         font-size: 1.1rem; } }
@@ -366,16 +368,23 @@ input[type="submit"] {
   .header-main-menu-item a:hover {
     color: #F58345; }
 
+.header-main-menu-subitem.last {
+  margin-bottom: 10px; }
+
 .header-main-menu-subitem a {
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  color: #F58345; }
 
 .header-main-menu-item-social, .footer-item-social {
   padding: 0 !important;
-  margin: 0 4px 20px 4px; }
+  margin: 10px 4px 20px 4px; }
   .header-main-menu-item-social a, .footer-item-social a {
     border-radius: 16px;
     width: 32px;
     background-color: #3e227a; }
+  @media screen and (min-width: 630px) {
+    .header-main-menu-item-social, .footer-item-social {
+      margin: 0 4px 20px 4px; } }
 
 .header-main-menu-item-social {
   display: inline-block; }
