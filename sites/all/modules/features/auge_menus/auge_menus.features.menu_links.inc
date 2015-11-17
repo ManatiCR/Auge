@@ -17,14 +17,14 @@ function auge_menus_menu_default_menu_links() {
     'router_path' => 'mentor',
     'link_title' => 'Acompañar',
     'options' => array(
+      'alter' => TRUE,
+      'identifier' => 'main-menu_acompaar:mentor',
       'attributes' => array(),
       'item_attributes' => array(
         'id' => '',
         'class' => 'header-main-menu-subitem',
         'style' => '',
       ),
-      'alter' => TRUE,
-      'identifier' => 'main-menu_acompaar:mentor',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -254,6 +254,26 @@ function auge_menus_menu_default_menu_links() {
     'language' => 'und',
     'menu_links_customized' => 1,
   );
+  // Exported menu link: main-menu_get-involved:
+  $menu_links['main-menu_get-involved:'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => '',
+    'router_path' => '',
+    'link_title' => 'Get involved',
+    'options' => array(
+      'identifier' => 'main-menu_get-involved:',
+      'alter' => TRUE,
+    ),
+    'module' => 'system',
+    'hidden' => 1,
+    'external' => 0,
+    'has_children' => 1,
+    'expanded' => 0,
+    'weight' => -45,
+    'customized' => 1,
+    'language' => 'und',
+    'menu_links_customized' => 1,
+  );
   // Exported menu link: main-menu_get-involved:/
   $menu_links['main-menu_get-involved:/'] = array(
     'menu_name' => 'main-menu',
@@ -355,7 +375,7 @@ function auge_menus_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 1,
     'expanded' => 1,
-    'weight' => -42,
+    'weight' => -43,
     'customized' => 1,
     'language' => 'es',
     'menu_links_customized' => 1,
@@ -461,7 +481,7 @@ function auge_menus_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -41,
+    'weight' => -42,
     'customized' => 1,
     'language' => 'es',
     'menu_links_customized' => 1,
@@ -547,6 +567,26 @@ function auge_menus_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
     'language' => 'en',
+    'menu_links_customized' => 1,
+  );
+  // Exported menu link: main-menu_who-we-are:whoweare
+  $menu_links['main-menu_who-we-are:whoweare'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'whoweare',
+    'router_path' => 'whoweare',
+    'link_title' => 'Who we are',
+    'options' => array(
+      'identifier' => 'main-menu_who-we-are:whoweare',
+      'alter' => TRUE,
+    ),
+    'module' => 'system',
+    'hidden' => 1,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -41,
+    'customized' => 1,
+    'language' => 'und',
     'menu_links_customized' => 1,
   );
   // Exported menu link: menu-social-links_facebook:https://www.facebook.com/

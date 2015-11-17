@@ -242,12 +242,15 @@ function auge_pages_projects_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'flexible';
+  $display->layout = 'panels-one-col-wmargin';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
       'center' => NULL,
+      'content' => NULL,
+      'content_wide' => NULL,
+      'content_bottom' => NULL,
     ),
   );
   $display->cache = array();
@@ -257,21 +260,61 @@ function auge_pages_projects_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-2ed97582-2404-4aef-ba09-e4be475310e4';
-    $pane->panel = 'center';
+    $pane->panel = 'content';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Esto debe estar en español.</p><p>This are some of the projects that have grown with&nbsp;</p>',
+      'title' => 'Projects',
+      'body' => '<p>Esto va en español</p><p>This are some of the projects that have grown with&nbsp;</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => 'h1',
+          'class_enable' => 1,
+          'class' => 'page-title',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -279,35 +322,10 @@ function auge_pages_projects_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = '2ed97582-2404-4aef-ba09-e4be475310e4';
     $display->content['new-2ed97582-2404-4aef-ba09-e4be475310e4'] = $pane;
-    $display->panels['center'][0] = 'new-2ed97582-2404-4aef-ba09-e4be475310e4';
-    $pane = new stdClass();
-    $pane->pid = 'new-24784c6d-d8f4-4f82-87cb-5a3aa991a1fe';
-    $pane->panel = 'center';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Projects made:</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '24784c6d-d8f4-4f82-87cb-5a3aa991a1fe';
-    $display->content['new-24784c6d-d8f4-4f82-87cb-5a3aa991a1fe'] = $pane;
-    $display->panels['center'][1] = 'new-24784c6d-d8f4-4f82-87cb-5a3aa991a1fe';
+    $display->panels['content'][0] = 'new-2ed97582-2404-4aef-ba09-e4be475310e4';
     $pane = new stdClass();
     $pane->pid = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
-    $pane->panel = 'center';
+    $pane->panel = 'content_wide';
     $pane->type = 'views_panes';
     $pane->subtype = 'projects-panel_pane_1';
     $pane->shown = TRUE;
@@ -319,12 +337,12 @@ function auge_pages_projects_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = '42d2564e-0522-4175-9359-5fd62c1ab326';
     $display->content['new-42d2564e-0522-4175-9359-5fd62c1ab326'] = $pane;
-    $display->panels['center'][2] = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
-  $display->hide_title = PANELS_TITLE_FIXED;
+    $display->panels['content_wide'][0] = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

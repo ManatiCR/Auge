@@ -30,7 +30,7 @@ function auge_contexts_default_panels_mini() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Contact';
+  $display->title = 'Contacto';
   $display->uuid = 'ea378fcb-609e-4068-b8d0-735e697ccdb3';
   $display->content = array();
   $display->panels = array();

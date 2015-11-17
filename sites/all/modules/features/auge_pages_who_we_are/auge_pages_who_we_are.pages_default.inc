@@ -239,7 +239,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '¿Quienes somos?';
+  $display->title = '';
   $display->uuid = 'ab227898-1bfe-4566-83e8-43052f501418';
   $display->content = array();
   $display->panels = array();
@@ -252,14 +252,54 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => '',
+      'title' => '¿Quienes somos?',
       'body' => '<p>Esta debe ser la pag en español.</p><p>Somos la Agencia Universitaria para la Gestión del Emprendimento de la Universidad de Costa Rica. Nacimos en noviembre del 2012 como una Unidad especializada en la creación y aceleración de empresas y entidades intensivas en conocimiento, adscrita a la Vicerrectoría de Investigación, operando con el apoyo financiero y logístico de FUNDEVI En nuestra comunidad emprendedora, brindamos capacitación, promovemos el emprendimiento dentro de la Universidad, e impulsamos proyectos innovadores y organizaciones dinámicas para contribuir con el desarrollo inclusivo y sostenible. Buscamos ser el elemento dinamizador del ecosistema de emprendimiento e innovación de Costa Rica y la Región. Nos comprometemos a elevar las posibilidades de éxito de emprendimientos por oportunidad, que sean creativos, dinámicos y sostenibles y lo hacemos, mediante una gestión práctica e innovadora, fundamentada en la colaboración, el acompañamiento y las alianzas.</p><p>Misión</p><p>Somos una comunidad emprendedora que incuba proyectos innovadores e impulsa organizaciones dinámicas para contribuir con un desarrollo inclusivo y sostenible.</p><p>Visión</p><p>Ser el elemento dinamizador del ecosistema de emprendimiento e innovación de Costa Rica y la región.</p><p>Valores</p><p>Nos apasionamos con enfoque. Sistematizamos para aprender del proceso. Construimos equipo para potenciar capacidades. Somos flexibles e impulsamos el cambio. Colaboramos para crecer.</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
+      'settings' => array(
+        'element_title' => array(
+          'type' => 'h1',
+          'class_enable' => 1,
+          'class' => 'page-title',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_content' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'link_enabled' => 0,
+          'link' => array(
+            'path' => '',
+            'class_enable' => 0,
+            'class' => '',
+            'attributes' => array(),
+            'attributes_array' => array(),
+          ),
+          'attributes_array' => array(),
+        ),
+        'element_wrapper' => array(
+          'type' => '',
+          'class_enable' => 0,
+          'class' => '',
+          'attributes' => array(),
+          'attributes_array' => array(),
+        ),
+        'add_default_classes' => 1,
+      ),
+      'style' => 'semantic_panels',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -291,7 +331,7 @@ function auge_pages_who_we_are_default_page_manager_pages() {
     $pane->uuid = '2e4a01c0-098e-4974-bab4-e6d60a607e63';
     $display->content['new-2e4a01c0-098e-4974-bab4-e6d60a607e63'] = $pane;
     $display->panels['content_wide'][0] = 'new-2e4a01c0-098e-4974-bab4-e6d60a607e63';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
