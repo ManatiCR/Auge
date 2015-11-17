@@ -59,7 +59,8 @@
   }
   @include media(630px){
     &:hover{
-      background-color: $purple;
+      background: $purple url(../images/front-hover-bg.png) center no-repeat;
+      background-size: cover;
       color: white;
       a{
         color: inherit;

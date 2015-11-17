@@ -1123,7 +1123,8 @@ input[type="submit"] {
     line-height: 1; }
   @media screen and (min-width: 630px) {
     .panel-front-page-boxes:hover {
-      background-color: #522e91;
+      background: #522e91 url(../images/front-hover-bg.png) center no-repeat;
+      background-size: cover;
       color: white; }
       .panel-front-page-boxes:hover a {
         color: inherit;
