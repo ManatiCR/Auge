@@ -1,0 +1,19 @@
+.upcoming-events-page {
+  h3 {
+    font-size: 2.4rem;
+    color: $purple;
+    border-bottom: solid 2px $purple;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  .views-field-title {
+    font-size: 1.8rem;
+    line-height: 1.2
+  }
+  .panel-col-last {
+    width: 80%;
+  }
+  .views-row {
+    margin-bottom: 20px;
+  }
+}
