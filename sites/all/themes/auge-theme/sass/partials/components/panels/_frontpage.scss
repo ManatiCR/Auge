@@ -48,7 +48,6 @@
       max-width: 65%;
     }
   }
-  //This has to change. To an a.
   a{
     display: inline-block;
     @extend %button;
@@ -58,17 +57,18 @@
     line-height: 1;
   }
   @include media(630px){
-    &:hover{
-      background: $purple url(../images/front-hover-bg.png) center no-repeat;
-      background-size: cover;
-      color: white;
-      a{
-        color: inherit;
-        border-color: white;
-        &:after{
-          border-color: transparent transparent transparent white;
-        }
-      }
+
+  }
+}
+.background-change{
+  background: $purple url(../images/front-hover-bg.png) center no-repeat;
+  background-size: cover;
+  color: white;
+  a{
+    color: inherit;
+    border-color: white;
+    &:after{
+      border-color: transparent transparent transparent white;
     }
   }
 }

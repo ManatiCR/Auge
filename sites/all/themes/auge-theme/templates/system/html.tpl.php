@@ -14,6 +14,7 @@
   <?php if (drupal_is_front_page()): ?>
       <link rel="stylesheet" href="/sites/all/libraries/flexslider/flexslider.css" type="text/css">
       <script src="/sites/all/libraries/flexslider/jquery.flexslider.js"></script>
+      <script src="/sites/all/libraries/waypoints/jquery.waypoints.min.js"></script>
   <?php endif; ?>
 
   <!-- Typekit -->

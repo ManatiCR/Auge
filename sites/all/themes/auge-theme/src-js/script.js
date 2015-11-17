@@ -10,6 +10,8 @@ $('#nav-toggle').on('click', function(e) {
 });
 
 //"Turns off" the link on the submenu.
+
+//Function to prevent the clicking.
 function WidthChange(mq) {
 	if (mq.matches) {
     $('.main-menu .expanded').click(function(e) {
@@ -17,11 +19,61 @@ function WidthChange(mq) {
     });	}
 	else {}
 }
+//Actual listener to prevent it.
 if (matchMedia) {
 	var mq = window.matchMedia('(max-width: 680px)');
 	mq.addListener(WidthChange);
 	new WidthChange(mq);
 }
+
+// Waypoints for frontpage
+
+$(document).ready(function() {
+var $frontboxentre = $('.panel-front-page-boxes-entrepreneur');
+var $frontboxlearn = $('.panel-front-page-boxes-learn');
+var $frontboxmentor = $('.panel-front-page-boxes-mentor');
+var $frontboxinvest = $('.panel-front-page-boxes-invest');
+
+//1
+$($frontboxentre).waypoint(function(direction) {
+  if (direction==='down'){
+    $frontboxentre.addClass('background-change');
+  }
+  else{
+    $frontboxentre.removeClass('background-change');
+  }
+}, { offset: '20%' });
+
+//2
+$($frontboxlearn).waypoint(function(direction) {
+  if (direction==='down'){
+    $frontboxlearn.addClass('background-change');
+  }
+  else{
+    $frontboxlearn.removeClass('background-change');
+  }
+}, { offset: '20%' });
+
+//3
+$($frontboxmentor).waypoint(function(direction) {
+  if (direction==='down'){
+    $frontboxmentor.addClass('background-change');
+  }
+  else{
+    $frontboxmentor.removeClass('background-change');
+  }
+}, { offset: '20%' });
+
+//4
+$($frontboxinvest).waypoint(function(direction) {
+  if (direction==='down'){
+    $frontboxinvest.addClass('background-change');
+  }
+  else{
+    $frontboxinvest.removeClass('background-change');
+  }
+}, { offset: '20%' });
+});
 
 //Makes the submenu work
 if (window.matchMedia('max-width: 680px')) {
