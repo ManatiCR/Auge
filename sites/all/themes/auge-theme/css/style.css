@@ -758,29 +758,6 @@ input[type="submit"] {
           color: #fff;
           text-decoration: none; } }
 
-.view-display-id-panel_pane_4 {
-  background-color: #eb7a50;
-  border-radius: 7px; }
-  .view-display-id-panel_pane_4 span, .view-display-id-panel_pane_4 a {
-    color: white;
-    font-size: 1.8rem; }
-  .view-display-id-panel_pane_4 .panel-col {
-    padding: 30px; }
-  .view-display-id-panel_pane_4 .views-field-field-activity-date {
-    display: inline-block;
-    width: 115px;
-    background-color: #e26640; }
-    .view-display-id-panel_pane_4 .views-field-field-activity-date .date-display-single {
-      display: inline-block;
-      padding: 5px; }
-  .view-display-id-panel_pane_4 .views-field-title {
-    display: inline-block;
-    vertical-align: middle; }
-  .view-display-id-panel_pane_4 .views-field-view-node {
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 7px; }
-
 .panel-panel .upcoming-event {
   background: #fa805b;
   color: #fff;
