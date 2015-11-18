@@ -88,6 +88,7 @@
           $frontboxmentorimage.removeClass('change-opacity');
         }
       }, { offset: '-5%' });
+
       //4
       var $frontboxinvest = $('.panel-front-page-boxes-invest');
       var $frontboxinvestimage = $('.panel-front-page-boxes-invest-image');
@@ -101,12 +102,13 @@
           $frontboxinvestimage.removeClass('change-opacity');
         }
       }, { offset: '20%' });
+
       $($frontboxinvest).waypoint(function(direction) {
         if (direction==='down'){
           $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
           $frontboxinvestimage.removeClass('change-opacity');
         }
-      }, { offset: '20%' });
+      }, { offset: '-5%' });
     });
 
     //Makes the submenu work
