@@ -73,7 +73,7 @@ $($frontboxmentor).waypoint(function(direction) {
 
 //4
 var $frontboxinvest = $('.panel-front-page-boxes-invest');
-var $frontboxinvestimage = $('panel-front-page-boxes-invest-image');
+var $frontboxinvestimage = $('.panel-front-page-boxes-invest-image');
 $($frontboxinvest).waypoint(function(direction) {
   if (direction==='down'){
     $frontboxinvest.addClass('panel-front-page-boxes-proximity');
