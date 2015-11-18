@@ -317,9 +317,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Invertir',
-      'body' => '<p>Una emprendimiento prometedor requiere merece capital para desarrollar su potencial.</p>
-<a href="/en/invest">Invierta en los emprendimientos AUGE o ayúdenos a financiar nuestras actividades</a>
-<div class="panel-front-page-boxes-invest-image"></div>',
+      'body' => '<p>Una emprendimiento prometedor requiere merece capital para desarrollar su potencial.</p><a href="/en/invest">Invierta en los emprendimientos AUGE o ayúdenos a financiar nuestras actividades</a><div class="panel-front-page-boxes-invest-image"></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -618,7 +616,7 @@ function auge_pages_main_default_page_manager_pages() {
       'admin_title' => '',
       'title' => 'Emprender',
       'body' => '<p>¿Necesita desarrollar y probar su Producto Mínimo Viable? ¡Ingrese a nuestro proceso de incubación!</p><a href="/es/emprender">Incube su emprendimiento en AUGE</a><div class="panel-front-page-boxes-entrepreneur-image"></div>',
-      'format' => 'manati_texto_formato',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
@@ -683,7 +681,7 @@ function auge_pages_main_default_page_manager_pages() {
       'admin_title' => '',
       'title' => 'Acompañar',
       'body' => '<p>Durante todo el proceso en AUGE, empresarios y académicos experimentados orientan a los equipos emprendedores.</p><a href="/es/acompanar">Conozca a nuestra red de mentoría y asesoría</a><div class="panel-front-page-boxes-mentor-image"></div>',
-      'format' => 'manati_texto_formato',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
@@ -747,8 +745,10 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Invertir',
-      'body' => '<p>Una emprendimiento prometedor requiere merece capital para desarrollar su potencial.</p><a href="/es/invertir">Invierta en los emprendimientos AUGE o ayúdenos a financiar nuestras actividades</a><div class="panel-front-page-boxes-invest-image"></div>',
-      'format' => 'manati_texto_formato',
+      'body' => '<p>Una emprendimiento prometedor requiere merece capital para desarrollar su potencial.</p>
+<a href="/es/invertir">Invierta en los emprendimientos AUGE o ayúdenos a financiar nuestras actividades</a>
+<div class="panel-front-page-boxes-invest-image"></div>',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();

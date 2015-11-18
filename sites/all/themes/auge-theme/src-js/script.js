@@ -41,7 +41,7 @@
           $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
           $frontboxlearnimage.removeClass('change-opacity');
         }
-      }, { offset: '25%' });
+      }, { offset: '30%' });
       $($frontboxlearn).waypoint(function(direction) {
         if (direction==='down'){
           $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
@@ -61,7 +61,7 @@
           $frontboxentre.removeClass('panel-front-page-boxes-proximity');
           $frontboxentreimage.removeClass('change-opacity');
         }
-      }, { offset: '20%' });
+      }, { offset: '30%' });
       $($frontboxentre).waypoint(function(direction) {
         if (direction==='down'){
           $frontboxentre.removeClass('panel-front-page-boxes-proximity');
@@ -81,7 +81,7 @@
           $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
           $frontboxmentorimage.removeClass('change-opacity');
         }
-      }, { offset: '20%' });
+      }, { offset: '30%' });
       $($frontboxmentor).waypoint(function(direction) {
         if (direction==='down'){
           $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
@@ -101,7 +101,7 @@
           $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
           $frontboxinvestimage.removeClass('change-opacity');
         }
-      }, { offset: '20%' });
+      }, { offset: '30%' });
 
       $($frontboxinvest).waypoint(function(direction) {
         if (direction==='down'){
