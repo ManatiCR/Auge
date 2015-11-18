@@ -67,10 +67,26 @@ html {
     margin-top: 5px; }
 
 .panel-panel .upcoming-event .views-field-view-node a, .node-front-page-images .field-front-image-button {
-  color: #fff;
   border: 2px solid #fff; }
   .panel-panel .upcoming-event .views-field-view-node a:after, .node-front-page-images .field-front-image-button:after {
     border-color: transparent transparent transparent #fff; }
+
+.panel-front-page-boxes-learn-image, .panel-front-page-boxes-entrepreneur-image, .panel-front-page-boxes-mentor-image, .panel-front-page-boxes-invest-image {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -100; }
+
+.panel-front-page-boxes-proximity {
+  color: #fff; }
+  .panel-front-page-boxes-proximity a {
+    color: inherit;
+    border-color: white; }
+    .panel-front-page-boxes-proximity a:after {
+      border-color: transparent transparent transparent white; }
 
 /*
  * Rules for base elements
@@ -1076,6 +1092,7 @@ input[type="submit"] {
 
 .panel-front-page-boxes {
   position: relative;
+  transition: 0.7s;
   padding: 25px; }
   .panel-front-page-boxes:first-child {
     margin-top: -4px; }
@@ -1121,16 +1138,29 @@ input[type="submit"] {
     margin: 20px 20px 0 0;
     font-size: 1.8rem;
     line-height: 1; }
-  @media screen and (min-width: 630px) {
-    .panel-front-page-boxes:hover {
-      background: #522e91 url(../images/front-hover-bg.png) center no-repeat;
-      background-size: cover;
-      color: white; }
-      .panel-front-page-boxes:hover a {
-        color: inherit;
-        border-color: white; }
-        .panel-front-page-boxes:hover a:after {
-          border-color: transparent transparent transparent white; } }
+
+.change-opacity {
+  opacity: 1 !important; }
+
+.panel-front-page-boxes-learn-image {
+  transition: 0.5s ease-in-out;
+  background: #522e91 url(../images/front-hover-bg1.png) center no-repeat;
+  opacity: 0; }
+
+.panel-front-page-boxes-entrepreneur-image {
+  transition: 0.5s ease-in-out;
+  background: #522e91 url(../images/front-hover-bg2.jpg) center no-repeat;
+  opacity: 0; }
+
+.panel-front-page-boxes-mentor-image {
+  transition: 0.5s ease-in-out;
+  background: #522e91 url(../images/front-hover-bg3.jpg) center no-repeat;
+  opacity: 0; }
+
+.panel-front-page-boxes-invest-image {
+  transition: 0.5s ease-in-out;
+  background: #522e91 url(../images/front-hover-bg4.jpg) center no-repeat;
+  opacity: 0; }
 
 .node-front-page-images {
   position: relative; }

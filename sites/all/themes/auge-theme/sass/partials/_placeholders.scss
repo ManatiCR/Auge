@@ -45,9 +45,28 @@
 }
 
 %button-white {
-  color: #fff;
   border: 2px solid #fff;
   &:after {
     border-color: transparent transparent transparent #fff;
+  }
+}
+
+%change-on-background{
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+}
+%change-on-text{
+  color: #fff;
+  a{
+    color: inherit;
+    border-color: white;
+    &:after{
+      border-color: transparent transparent transparent white;
+    }
   }
 }

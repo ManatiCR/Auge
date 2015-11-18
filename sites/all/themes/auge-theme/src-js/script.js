@@ -29,48 +29,59 @@ if (matchMedia) {
 // Waypoints for frontpage
 
 $(document).ready(function() {
-var $frontboxentre = $('.panel-front-page-boxes-entrepreneur');
-var $frontboxlearn = $('.panel-front-page-boxes-learn');
-var $frontboxmentor = $('.panel-front-page-boxes-mentor');
-var $frontboxinvest = $('.panel-front-page-boxes-invest');
-
 //1
-$($frontboxentre).waypoint(function(direction) {
+var $frontboxlearn = $('.panel-front-page-boxes-learn');
+var $frontboxlearnimage = $('.panel-front-page-boxes-learn-image');
+$($frontboxlearn).waypoint(function(direction) {
   if (direction==='down'){
-    $frontboxentre.addClass('background-change');
+    $frontboxlearn.addClass('panel-front-page-boxes-proximity');
+    $frontboxlearnimage.addClass('change-opacity');
   }
   else{
-    $frontboxentre.removeClass('background-change');
+    $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+    $frontboxlearnimage.removeClass('change-opacity');
   }
 }, { offset: '20%' });
 
 //2
-$($frontboxlearn).waypoint(function(direction) {
+var $frontboxentre = $('.panel-front-page-boxes-entrepreneur');
+var $frontboxentreimage = $('.panel-front-page-boxes-entrepreneur-image');
+$($frontboxentre).waypoint(function(direction) {
   if (direction==='down'){
-    $frontboxlearn.addClass('background-change');
+    $frontboxentre.addClass('panel-front-page-boxes-proximity');
+    $frontboxentreimage.addClass('change-opacity');
   }
   else{
-    $frontboxlearn.removeClass('background-change');
+    $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+    $frontboxentreimage.removeClass('change-opacity');
   }
 }, { offset: '20%' });
 
 //3
+var $frontboxmentor = $('.panel-front-page-boxes-mentor');
+var $frontboxmentorimage = $('.panel-front-page-boxes-mentor-image');
 $($frontboxmentor).waypoint(function(direction) {
   if (direction==='down'){
-    $frontboxmentor.addClass('background-change');
+    $frontboxmentor.addClass('panel-front-page-boxes-proximity');
+    $frontboxmentorimage.addClass('change-opacity');
   }
   else{
-    $frontboxmentor.removeClass('background-change');
+    $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+    $frontboxmentorimage.removeClass('change-opacity');
   }
 }, { offset: '20%' });
 
 //4
+var $frontboxinvest = $('.panel-front-page-boxes-invest');
+var $frontboxinvestimage = $('panel-front-page-boxes-invest-image');
 $($frontboxinvest).waypoint(function(direction) {
   if (direction==='down'){
-    $frontboxinvest.addClass('background-change');
+    $frontboxinvest.addClass('panel-front-page-boxes-proximity');
+    $frontboxinvestimage.addClass('change-opacity');
   }
   else{
-    $frontboxinvest.removeClass('background-change');
+    $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+    $frontboxinvestimage.removeClass('change-opacity');
   }
 }, { offset: '20%' });
 });
