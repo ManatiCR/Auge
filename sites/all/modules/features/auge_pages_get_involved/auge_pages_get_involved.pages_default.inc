@@ -468,8 +468,8 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'buttons' => NULL,
-      'custom_page_title_pattern' => 'Emprender',
-      'form_build_id' => 'form-tzJeZLaJ2E3lsqap6pIqoEvkcbczE4uafKPHLaQ5qlw',
+      'custom_page_title_pattern' => 'Emprender | Auge',
+      'form_build_id' => 'form-pnSkXBB26KAQKCoZCJPS64geh1u5rbCO09h7Ry1GAnA',
       'form_token' => 'dWAZYIJYSyah0F52cDXNd7xmZg_7tn9XM1bmmuAhH04',
       'form_id' => 'panels_custom_title_tag_edit_form',
     );
