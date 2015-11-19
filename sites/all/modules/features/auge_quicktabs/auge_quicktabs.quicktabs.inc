@@ -35,22 +35,6 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
       'weight' => '-99',
       'type' => 'view',
     ),
-    2 => array(
-      'vid' => 'personnel_view',
-      'display' => 'panel_pane_7',
-      'args' => '',
-      'title' => 'Mentors',
-      'weight' => '-98',
-      'type' => 'view',
-    ),
-    3 => array(
-      'vid' => 'personnel_view',
-      'display' => 'panel_pane_8',
-      'args' => '',
-      'title' => 'Advisors',
-      'weight' => '-97',
-      'type' => 'view',
-    ),
   );
   $quicktabs->renderer = 'quicktabs';
   $quicktabs->style = 'nostyle';
@@ -58,9 +42,7 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Advisors');
   t('Board of advisors');
-  t('Mentors');
   t('Personel Tabs Spanish');
   t('Team');
 

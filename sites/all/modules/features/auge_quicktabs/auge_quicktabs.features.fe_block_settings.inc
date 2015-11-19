@@ -15,8 +15,10 @@ function auge_quicktabs_default_fe_block_settings() {
   $export['quicktabs-personel_tabs_spanish'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'personel_tabs_spanish',
     'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'quicktabs',
     'node_types' => array(),
     'pages' => '',
@@ -41,6 +43,8 @@ function auge_quicktabs_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['quicktabs-personnel_tabs'] = array(
