@@ -33,8 +33,14 @@
       var $frontboxlearn = $('.panel-front-page-boxes-learn');
       var $frontboxlearnimage = $('.panel-front-page-boxes-learn-image');
       $($frontboxlearn).waypoint(function(direction) {
+        if (direction==='down'){
           $frontboxlearn.addClass('panel-front-page-boxes-proximity');
           $frontboxlearnimage.addClass('change-opacity');
+        }
+        else{
+          $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+          $frontboxlearnimage.removeClass('change-opacity');
+        }
       }, { offset: '30%' });
 
       $($frontboxlearn).waypoint(function(direction) {
@@ -47,20 +53,19 @@
           $frontboxlearnimage.addClass('change-opacity');
         }
       }, { offset: '-5%' });
-
-      $($frontboxlearn).waypoint(function(direction) {
-        // if (direction==='down'){
-          $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
-          $frontboxlearnimage.removeClass('change-opacity');
-        // }
-      }, { offset: '50%' });
 
       //2
       var $frontboxentre = $('.panel-front-page-boxes-entrepreneur');
       var $frontboxentreimage = $('.panel-front-page-boxes-entrepreneur-image');
       $($frontboxentre).waypoint(function(direction) {
+        if (direction==='down'){
           $frontboxentre.addClass('panel-front-page-boxes-proximity');
           $frontboxentreimage.addClass('change-opacity');
+        }
+        else{
+          $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+          $frontboxentreimage.removeClass('change-opacity');
+        }
       }, { offset: '30%' });
 
       $($frontboxentre).waypoint(function(direction) {
@@ -73,18 +78,19 @@
           $frontboxentreimage.addClass('change-opacity');
         }
       }, { offset: '-5%' });
-
-      $($frontboxentre).waypoint(function(direction) {
-          $frontboxentre.removeClass('panel-front-page-boxes-proximity');
-          $frontboxentreimage.removeClass('change-opacity');
-      }, { offset: '50%' });
 
       //3
       var $frontboxmentor = $('.panel-front-page-boxes-mentor');
       var $frontboxmentorimage = $('.panel-front-page-boxes-mentor-image');
       $($frontboxmentor).waypoint(function(direction) {
+        if (direction==='down'){
           $frontboxmentor.addClass('panel-front-page-boxes-proximity');
           $frontboxmentorimage.addClass('change-opacity');
+        }
+        else{
+          $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+          $frontboxmentorimage.removeClass('change-opacity');
+        }
       }, { offset: '30%' });
 
       $($frontboxmentor).waypoint(function(direction) {
@@ -97,11 +103,6 @@
           $frontboxmentorimage.addClass('change-opacity');
         }
       }, { offset: '-5%' });
-
-      $($frontboxmentor).waypoint(function(direction) {
-          $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
-          $frontboxmentorimage.removeClass('change-opacity');
-      }, { offset: '50%' });
 
       //4
       var $frontboxinvest = $('.panel-front-page-boxes-invest');
@@ -123,9 +124,11 @@
       }, { offset: '-5%' });
 
       $($frontboxinvest).waypoint(function(direction) {
+        if (direction==='up'){
           $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
           $frontboxinvestimage.removeClass('change-opacity');
-      }, { offset: '50%' });
+        }
+      }, { offset: '30%' });
     });
 
     //Makes the submenu work
