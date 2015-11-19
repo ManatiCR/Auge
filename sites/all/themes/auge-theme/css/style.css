@@ -1144,7 +1144,7 @@ input[type="submit"] {
 
 .panel-front-page-boxes-learn-image {
   transition: 0.5s ease-in-out;
-  background: #522e91 url(../images/front-hover-bg1.png) center no-repeat;
+  background: #522e91 url(../images/front-hover-bg4.jpg) center no-repeat;
   opacity: 0; }
 
 .panel-front-page-boxes-entrepreneur-image {
@@ -1159,7 +1159,7 @@ input[type="submit"] {
 
 .panel-front-page-boxes-invest-image {
   transition: 0.5s ease-in-out;
-  background: #522e91 url(../images/front-hover-bg4.jpg) center no-repeat;
+  background: #522e91 url(../images/front-hover-bg1.png) center no-repeat;
   opacity: 0; }
 
 .node-front-page-images {

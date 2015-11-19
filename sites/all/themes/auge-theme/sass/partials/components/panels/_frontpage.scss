@@ -64,9 +64,10 @@
 .change-opacity{
     opacity: 1 !important;
 }
+//Image order was changed as per Carolina.
 .panel-front-page-boxes-learn-image{
   transition: 0.5s ease-in-out;
-  background: $purple url(../images/front-hover-bg1.png) center no-repeat;
+  background: $purple url(../images/front-hover-bg4.jpg) center no-repeat;
   @extend %change-on-background;
   opacity: 0;
 }
@@ -84,7 +85,7 @@
 }
 .panel-front-page-boxes-invest-image{
   transition: 0.5s ease-in-out;
-  background: $purple url(../images/front-hover-bg4.jpg) center no-repeat;
+  background: $purple url(../images/front-hover-bg1.png) center no-repeat;
   @extend %change-on-background;
   opacity: 0;
 }
