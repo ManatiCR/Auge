@@ -58,8 +58,9 @@ function auge_common_fieds_field_group_info() {
       0 => 'body',
       1 => 'field_blog_image',
       2 => 'field_post_category',
-      3 => 'title',
-      4 => 'path',
+      3 => 'field_text_image',
+      4 => 'title',
+      5 => 'path',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

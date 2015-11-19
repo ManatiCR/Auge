@@ -72,7 +72,7 @@ function auge_content_types_blog_post_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -80,7 +80,7 @@ function auge_content_types_blog_post_field_default_field_instances() {
   $field_instances['node-blog_post-field_blog_image'] = array(
     'bundle' => 'blog_post',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This is the main image of this post.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -114,6 +114,7 @@ function auge_content_types_blog_post_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'div',
     'field_name' => 'field_blog_image',
     'label' => 'Blog Image',
     'required' => 0,
@@ -144,6 +145,24 @@ function auge_content_types_blog_post_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => 0,
+        'insert_class' => '',
+        'insert_default' => 'auto',
+        'insert_styles' => array(
+          'auto' => 'auto',
+          'icon_link' => 0,
+          'image' => 0,
+          'image_blog_image_footer' => 0,
+          'image_blog_view_image' => 0,
+          'image_large' => 0,
+          'image_medium' => 0,
+          'image_people_picture' => 0,
+          'image_project_logo' => 0,
+          'image_thumbnail' => 0,
+          'link' => 0,
+        ),
+        'insert_width' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -208,11 +227,103 @@ function auge_content_types_blog_post_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-blog_post-field_text_image'
+  $field_instances['node-blog_post-field_text_image'] = array(
+    'bundle' => 'blog_post',
+    'deleted' => 0,
+    'description' => 'This field is meant to insert pictures inside the text, just in case that is needed.
+This is NOT the main image of the post.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 5,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_text_image',
+    'label' => 'Text image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '1280x800',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Text image',
+        ),
+        'status' => 0,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'insert' => 1,
+        'insert_absolute' => 0,
+        'insert_class' => '',
+        'insert_default' => 'image_blog_view_image',
+        'insert_styles' => array(
+          'auto' => 0,
+          'icon_link' => 0,
+          'image' => 0,
+          'image_blog_image_footer' => 0,
+          'image_blog_view_image' => 'image_blog_view_image',
+          'image_large' => 0,
+          'image_medium' => 0,
+          'image_people_picture' => 0,
+          'image_project_logo' => 0,
+          'image_thumbnail' => 0,
+          'link' => 0,
+        ),
+        'insert_width' => '',
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog Image');
   t('Body');
   t('Category');
+  t('Text image');
+  t('This field is meant to insert pictures inside the text, just in case that is needed.
+This is NOT the main image of the post.');
+  t('This is the main image of this post.');
 
   return $field_instances;
 }
