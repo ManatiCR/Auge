@@ -369,6 +369,31 @@ function auge_pages_blog_default_page_manager_pages() {
     $display->content['new-a7071731-9db5-468f-9bf0-b0ac1ce4a107'] = $pane;
     $display->panels['sidebar'][2] = 'new-a7071731-9db5-468f-9bf0-b0ac1ce4a107';
     $pane = new stdClass();
+    $pane->pid = 'new-7e2f3337-f6d8-4518-a54c-aad054507855';
+    $pane->panel = 'top';
+    $pane->type = 'custom_title_tag';
+    $pane->subtype = 'custom_title_tag';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'buttons' => NULL,
+      'custom_page_title_pattern' => 'Blog | Auge',
+      'form_build_id' => 'form-RZR0DFyDD3kXXAD9yrI7MJJSd0E6Hj1ns_6vrXPi2MI',
+      'form_token' => 'dWAZYIJYSyah0F52cDXNd7xmZg_7tn9XM1bmmuAhH04',
+      'form_id' => 'panels_custom_title_tag_edit_form',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '7e2f3337-f6d8-4518-a54c-aad054507855';
+    $display->content['new-7e2f3337-f6d8-4518-a54c-aad054507855'] = $pane;
+    $display->panels['top'][0] = 'new-7e2f3337-f6d8-4518-a54c-aad054507855';
+    $pane = new stdClass();
     $pane->pid = 'new-afa2764b-4eee-4650-9a1f-596f5a95b06d';
     $pane->panel = 'top';
     $pane->type = 'custom';
@@ -428,11 +453,11 @@ function auge_pages_blog_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = 'afa2764b-4eee-4650-9a1f-596f5a95b06d';
     $display->content['new-afa2764b-4eee-4650-9a1f-596f5a95b06d'] = $pane;
-    $display->panels['top'][0] = 'new-afa2764b-4eee-4650-9a1f-596f5a95b06d';
+    $display->panels['top'][1] = 'new-afa2764b-4eee-4650-9a1f-596f5a95b06d';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -573,6 +598,31 @@ function auge_pages_blog_default_page_manager_pages() {
     $display->content['new-cdf6f14b-d4c8-4dd7-be65-7c6786d38c2f'] = $pane;
     $display->panels['sidebar'][2] = 'new-cdf6f14b-d4c8-4dd7-be65-7c6786d38c2f';
     $pane = new stdClass();
+    $pane->pid = 'new-537d8d2c-51cd-4fde-aa68-fd872fd354df';
+    $pane->panel = 'top';
+    $pane->type = 'custom_title_tag';
+    $pane->subtype = 'custom_title_tag';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'buttons' => NULL,
+      'custom_page_title_pattern' => 'Blog | Auge',
+      'form_build_id' => 'form-7EAthX63_EAb9TllwgPi2-TOUbP6SdrnFC_0BuO441c',
+      'form_token' => 'dWAZYIJYSyah0F52cDXNd7xmZg_7tn9XM1bmmuAhH04',
+      'form_id' => 'panels_custom_title_tag_edit_form',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '537d8d2c-51cd-4fde-aa68-fd872fd354df';
+    $display->content['new-537d8d2c-51cd-4fde-aa68-fd872fd354df'] = $pane;
+    $display->panels['top'][0] = 'new-537d8d2c-51cd-4fde-aa68-fd872fd354df';
+    $pane = new stdClass();
     $pane->pid = 'new-afa2764b-4eee-4650-9a1f-596f5a95b06d';
     $pane->panel = 'top';
     $pane->type = 'custom';
@@ -632,11 +682,11 @@ function auge_pages_blog_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = 'afa2764b-4eee-4650-9a1f-596f5a95b06d';
     $display->content['new-afa2764b-4eee-4650-9a1f-596f5a95b06d'] = $pane;
-    $display->panels['top'][0] = 'new-afa2764b-4eee-4650-9a1f-596f5a95b06d';
+    $display->panels['top'][1] = 'new-afa2764b-4eee-4650-9a1f-596f5a95b06d';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

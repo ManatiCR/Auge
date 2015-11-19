@@ -141,6 +141,31 @@ function auge_pages_projects_default_page_manager_pages() {
     $display->content['new-2ed97582-2404-4aef-ba09-e4be475310e4'] = $pane;
     $display->panels['content'][0] = 'new-2ed97582-2404-4aef-ba09-e4be475310e4';
     $pane = new stdClass();
+    $pane->pid = 'new-6c4bdf83-3d58-48bf-9bcb-b29fadffdff6';
+    $pane->panel = 'content';
+    $pane->type = 'custom_title_tag';
+    $pane->subtype = 'custom_title_tag';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'buttons' => NULL,
+      'custom_page_title_pattern' => 'Projects | Auge',
+      'form_build_id' => 'form-jen1pIT_FbNBG4rfMKAJ5pWdBO84oLebwEgYqRzm4VE',
+      'form_token' => 'dWAZYIJYSyah0F52cDXNd7xmZg_7tn9XM1bmmuAhH04',
+      'form_id' => 'panels_custom_title_tag_edit_form',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '6c4bdf83-3d58-48bf-9bcb-b29fadffdff6';
+    $display->content['new-6c4bdf83-3d58-48bf-9bcb-b29fadffdff6'] = $pane;
+    $display->panels['content'][1] = 'new-6c4bdf83-3d58-48bf-9bcb-b29fadffdff6';
+    $pane = new stdClass();
     $pane->pid = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
     $pane->panel = 'content_wide';
     $pane->type = 'views_panes';
@@ -323,6 +348,31 @@ function auge_pages_projects_default_page_manager_pages() {
     $pane->uuid = '2ed97582-2404-4aef-ba09-e4be475310e4';
     $display->content['new-2ed97582-2404-4aef-ba09-e4be475310e4'] = $pane;
     $display->panels['content'][0] = 'new-2ed97582-2404-4aef-ba09-e4be475310e4';
+    $pane = new stdClass();
+    $pane->pid = 'new-f9ad5223-535c-4eb3-83e8-9e76f0c906c1';
+    $pane->panel = 'content';
+    $pane->type = 'custom_title_tag';
+    $pane->subtype = 'custom_title_tag';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'buttons' => NULL,
+      'custom_page_title_pattern' => 'Proyectos | Auge',
+      'form_build_id' => 'form-s2CsAW7ARns1V4zYvWeJhpkcp4K9qqGxxA1d5j9t7DY',
+      'form_token' => 'dWAZYIJYSyah0F52cDXNd7xmZg_7tn9XM1bmmuAhH04',
+      'form_id' => 'panels_custom_title_tag_edit_form',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'f9ad5223-535c-4eb3-83e8-9e76f0c906c1';
+    $display->content['new-f9ad5223-535c-4eb3-83e8-9e76f0c906c1'] = $pane;
+    $display->panels['content'][1] = 'new-f9ad5223-535c-4eb3-83e8-9e76f0c906c1';
     $pane = new stdClass();
     $pane->pid = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
     $pane->panel = 'content_wide';
