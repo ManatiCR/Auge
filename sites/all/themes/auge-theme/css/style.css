@@ -1187,8 +1187,8 @@ input[type="submit"] {
 
 .node-front-page-images {
   position: relative; }
-  .panels-ipe-sort-container .panels-ipe-portlet-wrapper:first-child .node-front-page-images p {
-    color: #F58345; }
+  .node-front-page-images:first-child {
+    color: white; }
   .node-front-page-images h2 {
     margin: 0; }
   .node-front-page-images .field-front-image-title {
@@ -1229,7 +1229,7 @@ input[type="submit"] {
       .node-front-page-images .field-front-image-title {
         margin-bottom: 30px; } }
   .node-front-page-images .field-front-image-subtitle {
-    color: #F58345;
+    color: white;
     font-size: 2.5rem;
     position: absolute;
     top: 50%;

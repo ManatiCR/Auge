@@ -91,9 +91,12 @@
 }
 .node-front-page-images{
   position: relative;
+  &:first-child{
+    color: white;
+  }
   .panels-ipe-sort-container .panels-ipe-portlet-wrapper:first-child &{
       p{
-        color: $orange;
+        // color: $orange;
       }
   }
   h2{
@@ -142,7 +145,7 @@
     };
   }
   .field-front-image-subtitle{
-    color: $orange;
+    color: white;
     font-size: 2.5rem;
     position: absolute;
     top: 50%;
