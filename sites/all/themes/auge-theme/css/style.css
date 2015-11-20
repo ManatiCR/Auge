@@ -934,11 +934,11 @@ input[type="submit"] {
     content: '';
     border-bottom: 1px solid #d1d1d1; }
 
-.panel-node-blog .panels-ipe-portlet-marker:nth-child(2) {
+.panel-node-blog .panels-ipe-portlet-marker:nth-child(2), .panel-node-blog .panels-ipe-portlet-marker:nth-child(3) {
   display: inline-block; }
 
-.panel-node-blog .panels-ipe-portlet-marker:nth-child(3) {
-  display: inline-block; }
+.panel-node-blog .field-blog-image img {
+  padding: 20px 0; }
 
 .panel-node-blog {
   padding-bottom: 110px; }
