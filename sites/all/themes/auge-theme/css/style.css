@@ -597,6 +597,17 @@ input[type="submit"] {
 .pager-item {
   padding: 0 10px; }
 
+.breadcrumb {
+  font-size: 1.4rem;
+  text-transform: uppercase; }
+  .breadcrumb a, .breadcrumb span {
+    color: #522e91; }
+  .breadcrumb:after {
+    margin: 30px 0;
+    display: block;
+    content: '';
+    border-bottom: 1px solid #d1d1d1; }
+
 .panel-display {
   position: relative; }
 
@@ -854,45 +865,43 @@ input[type="submit"] {
 .blog-page {
   padding-bottom: 110px !important; }
 
-.page-blog .panel-two-col-content-wrapper,
-.page-activities .panel-two-col-content-wrapper {
+.page-blog .panel-two-col-content-wrapper, .page-activities .panel-two-col-content-wrapper {
   background: #f7f7f7;
   overflow: hidden;
   padding: 20px 0; }
   @media screen and (min-width: 700px) {
-    .page-blog .panel-two-col-content-wrapper,
-    .page-activities .panel-two-col-content-wrapper {
+    .page-blog .panel-two-col-content-wrapper, .page-activities .panel-two-col-content-wrapper {
       padding: 60px 0; } }
 
-.blog-post-main-content-title {
+.blog-post-main-content-title, .panel-node-activity .activity-main-content-title {
   text-transform: uppercase;
   font-size: 24px; }
-  .blog-post-main-content-title a {
+  .blog-post-main-content-title a, .panel-node-activity .activity-main-content-title a {
     color: #522e91; }
-    .blog-post-main-content-title a:active {
+    .blog-post-main-content-title a:active, .panel-node-activity .activity-main-content-title a:active {
       color: #F58345; }
 
-.blog-post-main-content-date {
+.blog-post-main-content-date, .panel-node-activity .activity-main-content-date {
   color: #d1d1d1;
   font-size: 1.4rem;
   margin-right: 10px; }
 
-.blog-post-main-content-category {
+.blog-post-main-content-category, .panel-node-activity .activity-main-content-category {
   background-color: #1ba2cc;
   border-radius: 4px;
   padding: 4px 6px;
   font-size: 1.4rem; }
-  .blog-post-main-content-category a {
+  .blog-post-main-content-category a, .panel-node-activity .activity-main-content-category a {
     color: white; }
 
-.blog-post-main-content-image {
+.blog-post-main-content-image, .panel-node-activity .activity-main-content-image {
   margin-top: 10px; }
-  .blog-post-main-content-image a {
+  .blog-post-main-content-image a, .panel-node-activity .activity-main-content-image a {
     display: block;
     width: 100%;
     height: auto;
     max-width: 700px; }
-    .blog-post-main-content-image a img {
+    .blog-post-main-content-image a img, .panel-node-activity .activity-main-content-image a img {
       max-height: 400px; }
 
 .blog-post-main-content-body {
@@ -923,23 +932,6 @@ input[type="submit"] {
   width: 100%;
   height: auto; }
 
-.panel-node-blog .breadcrumb {
-  font-size: 1.4rem;
-  text-transform: uppercase; }
-  .panel-node-blog .breadcrumb a, .panel-node-blog .breadcrumb span {
-    color: #522e91; }
-  .panel-node-blog .breadcrumb:after {
-    margin: 30px 0;
-    display: block;
-    content: '';
-    border-bottom: 1px solid #d1d1d1; }
-
-.panel-node-blog .panels-ipe-portlet-marker:nth-child(2), .panel-node-blog .panels-ipe-portlet-marker:nth-child(3) {
-  display: inline-block; }
-
-.panel-node-blog .field-blog-image img {
-  padding: 20px 0; }
-
 .panel-node-blog {
   padding-bottom: 110px; }
   .panel-node-blog .pane-node .pane-title {
@@ -952,6 +944,10 @@ input[type="submit"] {
     padding: 4px 6px; }
     .panel-node-blog .pane-node .field-post-category a {
       color: white; }
+  .panel-node-blog .panels-ipe-portlet-marker:nth-child(2), .panel-node-blog .panels-ipe-portlet-marker:nth-child(3) {
+    display: inline-block; }
+  .panel-node-blog .field-blog-image img {
+    padding: 20px 0; }
 
 .upcoming-events-page h3 {
   font-size: 2.4rem;
@@ -969,6 +965,12 @@ input[type="submit"] {
 
 .upcoming-events-page .views-row {
   margin-bottom: 20px; }
+
+.panel-node-activity .activity-main-content-category {
+  color: white; }
+
+.panel-node-activity .panels-ipe-portlet-marker:nth-child(2), .panel-node-activity .panels-ipe-portlet-marker:nth-child(3) {
+  display: inline-block; }
 
 .panel-sidebar {
   font-size: 1.6rem; }
