@@ -917,6 +917,29 @@ input[type="submit"] {
     .panel-two-col .page-description {
       margin-bottom: 60px; } }
 
+.field-blog-image img {
+  max-height: 400px;
+  max-width: 700px;
+  width: 100%;
+  height: auto; }
+
+.panel-node-blog .breadcrumb {
+  font-size: 1.4rem;
+  text-transform: uppercase; }
+  .panel-node-blog .breadcrumb a, .panel-node-blog .breadcrumb span {
+    color: #522e91; }
+  .panel-node-blog .breadcrumb:after {
+    margin: 30px 0;
+    display: block;
+    content: '';
+    border-bottom: 1px solid #d1d1d1; }
+
+.panel-node-blog .panels-ipe-portlet-marker:nth-child(2) {
+  display: inline-block; }
+
+.panel-node-blog .panels-ipe-portlet-marker:nth-child(3) {
+  display: inline-block; }
+
 .panel-node-blog {
   padding-bottom: 110px; }
   .panel-node-blog .pane-node .pane-title {
