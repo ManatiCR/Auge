@@ -1,0 +1,29 @@
+.panel-node-activity{
+  .activity-main-content-title{
+    @extend .blog-post-main-content-title;
+  }
+  //Date
+  .activity-main-content-date{
+    @extend .blog-post-main-content-date;
+  }
+  .activity-main-content-date-wrapper{
+  @extend .blog-post-main-content-date-;
+  }
+  //Category
+  .activity-main-content-category{
+    @extend .blog-post-main-content-category;
+    color: white;
+  }
+  .activity-main-content-category-wrapper{
+    @extend .blog-post-main-content-category-wrapper;
+  }
+  //Make the last two fields inline.
+  .panels-ipe-portlet-marker{
+    &:nth-child(2), &:nth-child(3){
+      display: inline-block;
+    }
+  }
+  .activity-main-content-image{
+    @extend .blog-post-main-content-image;
+  }
+}

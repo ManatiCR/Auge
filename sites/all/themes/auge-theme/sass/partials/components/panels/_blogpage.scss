@@ -2,8 +2,7 @@
 .blog-page{
   padding-bottom: 110px !important;
 }
-.page-blog,
-.page-activities {
+.page-blog, .page-activities {
   .panel-two-col-content-wrapper {
     background: #f7f7f7;
     overflow: hidden;
@@ -87,38 +86,5 @@
     max-width: 700px;
     width: 100%;
     height: auto;
-  }
-}
-.node-blog-category{
-
-}
-.node-blog-date{
-
-}
-//Blog nodes
-.panel-node-blog{
-  .breadcrumb{
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    a, span{
-      color: #522e91;
-    }
-    &:after{
-      margin: 30px 0;
-      display: block;
-      content: '';
-      border-bottom: 1px solid $gray;
-    }
-  }
-  .panels-ipe-portlet-marker{
-    &:nth-child(2), &:nth-child(3){
-      display: inline-block;
-    }
-
-  }
-  .field-blog-image{
-    img{
-      padding: 20px 0;
-    }
   }
 }
