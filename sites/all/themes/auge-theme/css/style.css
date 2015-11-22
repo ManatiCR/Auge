@@ -862,6 +862,11 @@ input[type="submit"] {
           margin-top: -22px;
           right: 10px; } }
 
+.page-user .main {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto 110px; }
+
 .blog-page {
   padding-bottom: 110px !important; }
 
