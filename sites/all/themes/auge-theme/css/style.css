@@ -312,7 +312,7 @@ input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
   padding: 15px 0; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 690px) {
     .site-logo {
       width: 160px; } }
   .site-logo img {
@@ -325,7 +325,7 @@ input[type="submit"] {
   display: inline-block;
   vertical-align: top; }
 
-@media screen and (min-width: 681px) {
+@media screen and (min-width: 690px) {
   .main-menu {
     display: inline-block;
     vertical-align: middle;
@@ -336,7 +336,7 @@ input[type="submit"] {
   padding-left: 0;
   margin: 0px;
   display: none; }
-  @media screen and (min-width: 681px) {
+  @media screen and (min-width: 690px) {
     .menu {
       display: inline-block; } }
   .expanded .menu {
@@ -353,10 +353,10 @@ input[type="submit"] {
   text-align: center; }
   .header-main-menu-item .show {
     display: block; }
-  @media screen and (min-width: 681px) {
+  @media screen and (min-width: 690px) {
     .header-main-menu-item {
       margin: 0; } }
-  @media screen and (min-width: 681px) {
+  @media screen and (min-width: 690px) {
     .header-main-menu-item {
       display: inline-block;
       margin-left: -4px;
@@ -375,9 +375,9 @@ input[type="submit"] {
     color: #d1d1d1;
     font-size: 2rem;
     padding: 5px 0; }
-    @media screen and (min-width: 681px) {
+    @media screen and (min-width: 690px) {
       .header-main-menu-item a {
-        font-size: 1.1rem; } }
+        font-size: 1rem; } }
     @media screen and (min-width: 800px) {
       .header-main-menu-item a {
         font-size: 1.4rem; } }
@@ -398,7 +398,7 @@ input[type="submit"] {
     border-radius: 16px;
     width: 32px;
     background-color: #3e227a; }
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: 690px) {
     .header-main-menu-item-social, .footer-item-social {
       margin: 0 4px 20px 4px; } }
 
@@ -433,7 +433,7 @@ input[type="submit"] {
     .expanded:hover .menu {
       display: block; } }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
   .expanded .menu {
     position: absolute;
     top: 40px;
@@ -446,7 +446,7 @@ input[type="submit"] {
     border-bottom: 1px solid #d1d1d1;
     border-right: 1px solid #d1d1d1; } }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
   .header-main-menu-subitem a {
     color: black;
     padding: 5px; }
