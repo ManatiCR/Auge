@@ -9,21 +9,21 @@ html {
 /**
  * @license
  * MyFonts Webfont Build ID 3123749, 2015-11-11T11:29:58-0500
- * 
+ *
  * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
+ * Agreement(s) entered into by the website owner. All other parties are
  * explicitly restricted from using the Licensed Webfonts(s).
- * 
+ *
  * You may obtain a valid license at the URLs below.
- * 
+ *
  * Webfont: ProbaPro-Regular by Mint Type
  * URL: http://www.myfonts.com/fonts/konstantynov/proba-pro/regular/
  * Copyright: Copyright (c) 2014 by Andriy Konstantynov. All rights reserved.
  * Licensed pageviews: 10,000
- * 
- * 
+ *
+ *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=3123749
- * 
+ *
  * © 2015 MyFonts Inc
 */
 /* @import must be at top of file, otherwise CSS will not work */
@@ -312,7 +312,7 @@ input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
   padding: 15px 0; }
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: 800px) {
     .site-logo {
       width: 160px; } }
   .site-logo img {
@@ -325,7 +325,7 @@ input[type="submit"] {
   display: inline-block;
   vertical-align: top; }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 681px) {
   .main-menu {
     display: inline-block;
     vertical-align: middle;
@@ -336,7 +336,7 @@ input[type="submit"] {
   padding-left: 0;
   margin: 0px;
   display: none; }
-  @media screen and (min-width: 680px) {
+  @media screen and (min-width: 681px) {
     .menu {
       display: inline-block; } }
   .expanded .menu {
@@ -353,10 +353,10 @@ input[type="submit"] {
   text-align: center; }
   .header-main-menu-item .show {
     display: block; }
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: 681px) {
     .header-main-menu-item {
       margin: 0; } }
-  @media screen and (min-width: 680px) {
+  @media screen and (min-width: 681px) {
     .header-main-menu-item {
       display: inline-block;
       margin-left: -4px;
@@ -375,10 +375,10 @@ input[type="submit"] {
     color: #d1d1d1;
     font-size: 2rem;
     padding: 5px 0; }
-    @media screen and (min-width: 630px) {
+    @media screen and (min-width: 681px) {
       .header-main-menu-item a {
         font-size: 1.1rem; } }
-    @media screen and (min-width: 756px) {
+    @media screen and (min-width: 800px) {
       .header-main-menu-item a {
         font-size: 1.4rem; } }
   .header-main-menu-item a:hover {
@@ -428,8 +428,10 @@ input[type="submit"] {
     background-color: #55acee; }
 
 @media screen and (min-width: 700px) {
-  .expanded:hover .menu {
-    display: block; } }
+  .expanded {
+    min-width: 80px; }
+    .expanded:hover .menu {
+      display: block; } }
 
 @media screen and (min-width: 680px) {
   .expanded .menu {
