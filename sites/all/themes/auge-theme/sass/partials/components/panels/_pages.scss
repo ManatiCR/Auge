@@ -303,7 +303,7 @@
       width: auto;
       text-align: left;
       margin-bottom: 15px;
-      @include breakpoint($tablet) {
+      @include media($tablet) {
         width: 130px;
         margin-bottom: 0;
       }
@@ -344,10 +344,13 @@
     }
   }
 }
-.page-user, .page-taxonomy-term{
+.page-user{
   .main{
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto 110px;
+      @extend .panel-grid-width;
   }
+  // .main{
+  //   width: 80%;
+  //   max-width: 1200px;
+  //   margin: 0 auto 110px;
+  // }
 }

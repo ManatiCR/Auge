@@ -43,7 +43,7 @@ html {
   white-space: nowrap;
   overflow: hidden; }
 
-.panel-grid-width, .center-wrapper, .panel-front-page-boxes-projects .pane-title {
+.panel-grid-width, .page-user .main, .center-wrapper, .panel-front-page-boxes-projects .pane-title {
   max-width: 1020px;
   margin: 0 auto; }
 
@@ -664,11 +664,11 @@ input[type="submit"] {
 .panel-one-col-wide {
   overflow: hidden; }
 
-.panel-grid-width {
+.panel-grid-width, .page-user .main {
   margin: 0 auto;
   padding: 0 20px; }
   @media screen and (min-width: 1100px) {
-    .panel-grid-width {
+    .panel-grid-width, .page-user .main {
       padding: 0; } }
 
 .panel-content-first {
@@ -863,11 +863,6 @@ input[type="submit"] {
           top: 50%;
           margin-top: -22px;
           right: 10px; } }
-
-.page-user .main, .page-taxonomy-term .main {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto 110px; }
 
 .blog-page {
   padding-bottom: 110px !important; }
