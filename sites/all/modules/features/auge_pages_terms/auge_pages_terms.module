@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Pages - Terms feature.
+ */
+
+include_once 'auge_pages_terms.features.inc';
