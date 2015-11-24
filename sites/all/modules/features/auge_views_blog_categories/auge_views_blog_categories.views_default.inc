@@ -42,6 +42,10 @@ function auge_views_blog_categories_views_default_views() {
   $handler->display->display_options['row_options']['regions'] = array(
     'title' => 'middle',
   );
+  /* No results behavior: Global: Unfiltered text */
+  $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -126,6 +130,15 @@ function auge_views_blog_categories_views_default_views() {
 
   /* Display: Blog taxonomies Spanish */
   $handler = $view->new_display('panel_pane', 'Blog taxonomies Spanish', 'panel_pane_1');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Unfiltered text */
+  $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['label'] = 'Sin resultados';
+  $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area_text_custom']['content'] = 'La categoría buscada no posee resultados en este momento. Gracias por su comprensión.';
+  $handler->display->display_options['empty']['area_text_custom']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -165,6 +178,14 @@ function auge_views_blog_categories_views_default_views() {
 
   /* Display: Blog taxonomies English */
   $handler = $view->new_display('panel_pane', 'Blog taxonomies English', 'panel_pane_2');
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Unfiltered text */
+  $handler->display->display_options['empty']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['empty']['area_text_custom']['label'] = 'No results';
+  $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area_text_custom']['content'] = 'The blog category you were looking for does not have any post. Thanks for your understanding. ';
   $handler->display->display_options['pane_category']['name'] = 'Taxonomies';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
@@ -195,8 +216,12 @@ function auge_views_blog_categories_views_default_views() {
     t('last »'),
     t('All'),
     t('Blog taxonomies Spanish'),
+    t('Sin resultados'),
+    t('La categoría buscada no posee resultados en este momento. Gracias por su comprensión.'),
     t('Taxonomies'),
     t('Blog taxonomies English'),
+    t('No results'),
+    t('The blog category you were looking for does not have any post. Thanks for your understanding. '),
   );
   $export['taxonomies_blog'] = $view;
 
