@@ -171,7 +171,7 @@ function auge_pages_terms_default_page_manager_handlers() {
     'pipeline' => 'ipe',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => 'taxonomy-terms',
+    'css_id' => 'taxonomy-terms panel-grid-width',
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
