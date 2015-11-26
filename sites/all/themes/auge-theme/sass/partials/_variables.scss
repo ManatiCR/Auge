@@ -10,21 +10,21 @@ $sprite-image: "../images/sprite";
 /**
  * @license
  * MyFonts Webfont Build ID 3123749, 2015-11-11T11:29:58-0500
- * 
+ *
  * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
+ * Agreement(s) entered into by the website owner. All other parties are
  * explicitly restricted from using the Licensed Webfonts(s).
- * 
+ *
  * You may obtain a valid license at the URLs below.
- * 
+ *
  * Webfont: ProbaPro-Regular by Mint Type
  * URL: http://www.myfonts.com/fonts/konstantynov/proba-pro/regular/
  * Copyright: Copyright (c) 2014 by Andriy Konstantynov. All rights reserved.
  * Licensed pageviews: 10,000
- * 
- * 
+ *
+ *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=3123749
- * 
+ *
  * © 2015 MyFonts Inc
 */
 /* @import must be at top of file, otherwise CSS will not work */
@@ -55,6 +55,8 @@ $grid-colums: 13;
 $desktop: 1000px;
 $tablet: 700px;
 $mobile-large: 500px;
+$first-breakpoint: 690px;
+$second-breakpoint: 800px;
 
 // Layout variables
 $grid-width: 1020px;

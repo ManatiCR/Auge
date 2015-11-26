@@ -21,7 +21,7 @@
   display: inline-block;
   vertical-align: middle;
   padding: 15px 0;
-  @include media(630px){
+  @include media($first-breakpoint){
     width: 160px;
   }
   img {
@@ -34,11 +34,11 @@
   }
   .header-main-menu-item{
     a{
-      display: inline-block;  //Revisar,
+      display: inline-block;
       vertical-align: top;
     }
   }
-  @include media(680px){
+  @include media($first-breakpoint){
     display:inline-block;
     vertical-align:middle;
     margin-top:37px;
@@ -49,7 +49,7 @@
   padding-left:0;
   margin:0px;
   display: none;
-  @include media(680px){
+  @include media($first-breakpoint){
     display: inline-block;
   }
   .expanded &{
@@ -70,10 +70,10 @@
   .show{
     display: block;
   }
-  @include media(630px){
+  @include media($first-breakpoint){
     margin: 0;
   }
-  @include media(680px) {
+  @include media($first-breakpoint) {
     display:inline-block;
     margin-left:-4px;
     vertical-align:middle;
@@ -94,10 +94,10 @@
     color:$gray;
     font-size: 2rem;
     padding: 5px 0;
-    @include media(630px) {
-      font-size: 1.1rem;
+    @include media($first-breakpoint) {
+      font-size: 1rem;
     }
-    @include media(756px) {
+    @include media($second-breakpoint) {
       font-size: 1.4rem;
     }
   }
@@ -122,7 +122,7 @@
   }
   padding: 0 !important;
   margin: 10px 4px 20px 4px;
-  @include media(630px) {
+  @include media($first-breakpoint) {
     margin: 0 4px 20px 4px;
   }
 }
@@ -151,6 +151,7 @@
 }
 .expanded{
   @include media($tablet){
+    min-width: 80px;
     &:hover{
       .menu{
         display: block;
@@ -158,9 +159,9 @@
     }
   }
   .menu{
-    @include media (680px){
+    @include media ($second-breakpoint){
       position: absolute;
-      top: 40px;              //Aqui hice un cambio.
+      top: 40px;
       width:100%;
       padding-left: 0px;
       z-index: 100;
@@ -173,7 +174,7 @@
   }
 }
 .header-main-menu-subitem{
-  @include media(680px){
+  @include media($second-breakpoint){
     a{
       color: black;
       padding: 5px;

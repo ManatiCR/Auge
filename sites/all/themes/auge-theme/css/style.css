@@ -9,21 +9,21 @@ html {
 /**
  * @license
  * MyFonts Webfont Build ID 3123749, 2015-11-11T11:29:58-0500
- * 
+ *
  * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
+ * Agreement(s) entered into by the website owner. All other parties are
  * explicitly restricted from using the Licensed Webfonts(s).
- * 
+ *
  * You may obtain a valid license at the URLs below.
- * 
+ *
  * Webfont: ProbaPro-Regular by Mint Type
  * URL: http://www.myfonts.com/fonts/konstantynov/proba-pro/regular/
  * Copyright: Copyright (c) 2014 by Andriy Konstantynov. All rights reserved.
  * Licensed pageviews: 10,000
- * 
- * 
+ *
+ *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=3123749
- * 
+ *
  * © 2015 MyFonts Inc
 */
 /* @import must be at top of file, otherwise CSS will not work */
@@ -43,7 +43,7 @@ html {
   white-space: nowrap;
   overflow: hidden; }
 
-.panel-grid-width, .center-wrapper, .panel-front-page-boxes-projects .pane-title {
+.panel-grid-width, .page-user .main, .center-wrapper, .panel-front-page-boxes-projects .pane-title {
   max-width: 1020px;
   margin: 0 auto; }
 
@@ -312,7 +312,7 @@ input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
   padding: 15px 0; }
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: 690px) {
     .site-logo {
       width: 160px; } }
   .site-logo img {
@@ -325,7 +325,7 @@ input[type="submit"] {
   display: inline-block;
   vertical-align: top; }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .main-menu {
     display: inline-block;
     vertical-align: middle;
@@ -336,7 +336,7 @@ input[type="submit"] {
   padding-left: 0;
   margin: 0px;
   display: none; }
-  @media screen and (min-width: 680px) {
+  @media screen and (min-width: 690px) {
     .menu {
       display: inline-block; } }
   .expanded .menu {
@@ -353,10 +353,10 @@ input[type="submit"] {
   text-align: center; }
   .header-main-menu-item .show {
     display: block; }
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: 690px) {
     .header-main-menu-item {
       margin: 0; } }
-  @media screen and (min-width: 680px) {
+  @media screen and (min-width: 690px) {
     .header-main-menu-item {
       display: inline-block;
       margin-left: -4px;
@@ -375,10 +375,10 @@ input[type="submit"] {
     color: #d1d1d1;
     font-size: 2rem;
     padding: 5px 0; }
-    @media screen and (min-width: 630px) {
+    @media screen and (min-width: 690px) {
       .header-main-menu-item a {
-        font-size: 1.1rem; } }
-    @media screen and (min-width: 756px) {
+        font-size: 1rem; } }
+    @media screen and (min-width: 800px) {
       .header-main-menu-item a {
         font-size: 1.4rem; } }
   .header-main-menu-item a:hover {
@@ -398,7 +398,7 @@ input[type="submit"] {
     border-radius: 16px;
     width: 32px;
     background-color: #3e227a; }
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: 690px) {
     .header-main-menu-item-social, .footer-item-social {
       margin: 0 4px 20px 4px; } }
 
@@ -428,10 +428,12 @@ input[type="submit"] {
     background-color: #55acee; }
 
 @media screen and (min-width: 700px) {
-  .expanded:hover .menu {
-    display: block; } }
+  .expanded {
+    min-width: 80px; }
+    .expanded:hover .menu {
+      display: block; } }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
   .expanded .menu {
     position: absolute;
     top: 40px;
@@ -444,7 +446,7 @@ input[type="submit"] {
     border-bottom: 1px solid #d1d1d1;
     border-right: 1px solid #d1d1d1; } }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
   .header-main-menu-subitem a {
     color: black;
     padding: 5px; }
@@ -662,11 +664,11 @@ input[type="submit"] {
 .panel-one-col-wide {
   overflow: hidden; }
 
-.panel-grid-width {
+.panel-grid-width, .page-user .main {
   margin: 0 auto;
   padding: 0 20px; }
   @media screen and (min-width: 1100px) {
-    .panel-grid-width {
+    .panel-grid-width, .page-user .main {
       padding: 0; } }
 
 .panel-content-first {
