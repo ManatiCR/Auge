@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Auge: Pages 404 403 feature.
+ */
+
+include_once 'auge_pages_404_403.features.inc';
