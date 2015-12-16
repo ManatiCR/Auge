@@ -485,31 +485,6 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-788d65e3-ad78-4096-89b7-41635adeda5e'] = $pane;
     $display->panels['content'][2] = 'new-788d65e3-ad78-4096-89b7-41635adeda5e';
     $pane = new stdClass();
-    $pane->pid = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane->panel = 'content_bottom';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p>Etiam habebis sem dicantur magna mollis euismod. Non equidem invideo, miror magis posuere velit aliquet. Non equidem invideo, miror magis posuere velit aliquet. Quam diu etiam furor iste tuus nos eludet? Magna pars studiorum, prodita quaerimus.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $display->content['new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22'] = $pane;
-    $display->panels['content_bottom'][0] = 'new-3ef6b268-7bd9-4d0c-8d7a-5b426fefec22';
-    $pane = new stdClass();
     $pane->pid = 'new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
     $pane->panel = 'content_bottom';
     $pane->type = 'views_panes';
@@ -523,11 +498,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = '8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
     $display->content['new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145'] = $pane;
-    $display->panels['content_bottom'][1] = 'new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
+    $display->panels['content_bottom'][0] = 'new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
     $pane = new stdClass();
     $pane->pid = 'new-cb1f9810-d02a-4d0b-8dcb-2fee953cca33';
     $pane->panel = 'content_bottom';
@@ -542,11 +517,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = 'cb1f9810-d02a-4d0b-8dcb-2fee953cca33';
     $display->content['new-cb1f9810-d02a-4d0b-8dcb-2fee953cca33'] = $pane;
-    $display->panels['content_bottom'][2] = 'new-cb1f9810-d02a-4d0b-8dcb-2fee953cca33';
+    $display->panels['content_bottom'][1] = 'new-cb1f9810-d02a-4d0b-8dcb-2fee953cca33';
     $pane = new stdClass();
     $pane->pid = 'new-361f370b-31c7-4271-a138-137dbde42663';
     $pane->panel = 'content_wide';
@@ -1037,7 +1012,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>El proceso AUGE le permite a los emprendedores demostrar las bondades de su iniciativa, a partir de los resultados que van obteniendo en tanto descubren, crean, innovan y crecen. Si le interesa invertir en alguno de los proyectos y desea que facilitemos el proceso, no dude en contactarnos.</p><p>Estos son algunos de los proyectos en los que usted puede invertir:</p>',
+      'body' => '<p>La generación de una cultura de emprendimiento es clave para el desarrollo económico y social de los países y en nuestro proceso de incubación en comunidad, hemos logrado generar las condiciones para elevar las posibilidades de éxito de emprendimientos por oportunidad que sean creativos, dinámicos y sostenibles. Usted puede ser parte de estos resultados:</p><ul><li>Apoyando financieramente nuestras actividades, mediante nuestro fondo colaborativo.</li><li>Invirtiendo directamente en alguno de los proyectos que incubamos.</li></ul><p>&nbsp;</p><p>Estos son algunos de los proyectos que usted puede apoyar:</p><p>&nbsp;</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1667,7 +1642,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>La correcta identificación del problema o necesidad que se quiere atender, es la base de todo. Las fases azul y amarilla apoyan a todas aquellas personas que tienen una propuesta de solución en mente y necesitan clarificar si ésta responde adecuadamente a lo que se pretende resolver y si es posible hacerla realidad. Para lograrlo, trabajamos con herramientas contextualizadas y efectivas.&nbsp;</p><p>La inmersión en el problema o necesidad que se quiere resolver eleva las posibilidades de éxito de cualquier emprendimiento. En nuestras fases azul y amarilla usted descubrirá la esencia del problema y definirá una solución creativa, ajustada a sus motivaciones y capacidades. También puede aprender y experimentar rápidamente en nuestros FlashLab y Sprint.</p><p>Estos son algunos de los proyectos que han aprendido con nosotros:</p>',
+      'body' => '<p>La inmersión en el problema o necesidad que se quiere resolver eleva las posibilidades de éxito de cualquier emprendimiento. En nuestras fases azul y amarilla usted descubrirá la esencia del problema y definirá una solución creativa, ajustada a sus motivaciones y capacidades. También puede aprender y experimentar rápidamente en nuestros FlashLab y Sprint.</p><p>Estos son algunos de los proyectos que han aprendido con nosotros:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1717,7 +1692,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>Otros servicios</p><p>FlashLab:</p><p>Cursos rápidos, prácticos y experimentales diseñados para emprendedores y &nbsp;colaboradores de empresas o instituciones que quieren desarrollar emprendimientos corporativos o un spin-off. &nbsp;Los Labs son sesiones de 4 horas con un espacio para experimentar y se imparten según demanda. Si desea asistir a uno de nuestros FlashLabs, vea nuestro calendario o comuníquese con nosotros.</p><p>Sprint Auge:</p><p>Competencia de co-creación, diversa, práctica y &nbsp;enfocada que busca desarrollar conocimientos y fomentar habilidades en torno al emprendimiento y la innovación. Como base, se proponen soluciones para un reto planteado por una empresa y organización que patrocina la actividad, utilizando la metodología de Design Thinking &nbsp;como estructura.</p><p>Laboratorio de fabricación para acelerar prototipado:</p><p>La Inventoría es el proyecto con el que nace la Fundación Costa Rica Innova, organización que se incuba en AUGE con el apoyo de FUNDEVI. Mediante una alianza con sus creadores, AUGE ofrece el servicio de acelerar prototipos por medio de la colaboración de activadores del movimiento maker, además de herramientas como impresoras 3D, arduinos, cortadora láser entre otros. Leer más.</p>',
+      'body' => '<p><strong>Otros servicios</strong></p><p><strong>FlashLab:</strong></p><p>Cursos rápidos, prácticos y experimentales diseñados para emprendedores y &nbsp;colaboradores de empresas o instituciones que quieren desarrollar emprendimientos corporativos o un spin-off. &nbsp;Los Labs son sesiones de 4 horas con un espacio para experimentar y se imparten según demanda. Si desea asistir a uno de nuestros FlashLabs, vea nuestro calendario o comuníquese con nosotros.</p><p>&nbsp;</p><p><strong>Sprint Auge:</strong></p><p>Competencia de co-creación, diversa, práctica y &nbsp;enfocada que busca desarrollar conocimientos y fomentar habilidades en torno al emprendimiento y la innovación. Como base, se proponen soluciones para un reto planteado por una empresa y organización que patrocina la actividad, utilizando la metodología de Design Thinking &nbsp;como estructura.</p><p>&nbsp;</p><p><strong>Laboratorio de fabricación para acelerar prototipado:</strong></p><p><em>La Inventoría</em> es el proyecto con el que nace la Fundación Costa Rica Innova, organización que se incuba en AUGE con el apoyo de FUNDEVI. Mediante una alianza con sus creadores, AUGE ofrece el servicio de acelerar prototipos por medio de la colaboración de activadores del movimiento maker, además de herramientas como impresoras 3D, arduinos, cortadora láser entre otros. <a target="_blank" href="https://www.facebook.com/inventoria/?fref=ts">Leer más</a>.</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -2195,7 +2170,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Mentor title',
       'title' => 'Acompañar',
-      'body' => '<p>Durante el proceso en AUGE, empresarios, emprendedores y académicos experimentados orientan a los equipos emprendedores.</p>',
+      'body' => '<p>Durante el proceso en AUGE, experimentadas personas empresarias, emprendedoras y del sector académico&nbsp;orientan a los equipos emprendedores.</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -2260,7 +2235,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>¿Desea ser parte de una red de interacción, experiencias y crecimiento orientada a la innovación? Le invitamos a ser parte de nuestro equipo de asesoría y mentoría, para:</p><p>Consolidar el éxito de las iniciativas incubadas en AUGE, mediante la transferencia de conocimientos y consejos de expertos desde sus primeras etapas de desarrollo.<br>Enriquecer el proceso de toma de decisiones tanto para emprendedores como mentores, &nbsp;por medio del intercambio de conocimiento entre los miembros de la red.<br>Fortalecer en el tejido empresarial costarricense valiéndose de la filosofía de la economía colaborativa como medio para el desarrollo inclusivo y sostenible del país.</p><p>¿Le interesa contribuir? (link al formulario)<br>Estos son algunos de nuestros mentores y mentoras:<br>(escogidos)</p><p>Ver todos (lista completa de personas)</p>',
+      'body' => '<p>¿Desea ser parte de una red de interacción, experiencias y crecimiento orientada a la innovación? Le invitamos a ser parte de nuestro equipo Warp, para:</p><p>Consolidar el éxito de las iniciativas incubadas en AUGE, mediante la transferencia de conocimientos y consejos de expertos desde sus primeras etapas de desarrollo.<br>Enriquecer el proceso de toma de decisiones tanto para emprendedores como mentores, &nbsp;por medio del intercambio de conocimiento entre los miembros de la red.<br>Fortalecer en el tejido empresarial costarricense valiéndose de la filosofía de la economía colaborativa como medio para el desarrollo inclusivo y sostenible del país.</p><p>¿Le interesa contribuir? (link al formulario)<br>Estos son algunos de nuestros mentores y mentoras:</p><p>Ver todos (lista completa de personas)</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );

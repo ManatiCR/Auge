@@ -615,7 +615,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Emprender',
-      'body' => '<p>¿Necesita desarrollar y probar su Producto Mínimo Viable? ¡Ingrese a nuestro proceso de incubación!</p><a href="/es/emprender">Incube su emprendimiento en AUGE</a><div class="panel-front-page-boxes-entrepreneur-image"></div>',
+      'body' => '<p>¿Ya se decidió?  ¿Tiene un Producto Mínimo Viable, un plan y el equipo para echarse al agua? ¡Ingrese a nuestro proceso de incubación en comunidad!</p><a href="/es/emprender">Incube su emprendimiento en AUGE</a><div class="panel-front-page-boxes-entrepreneur-image"></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -744,8 +744,8 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => 'Invertir',
-      'body' => '<p>Una emprendimiento prometedor requiere merece capital para desarrollar su potencial.</p>
+      'title' => 'Impulsar',
+      'body' => '<p>Una emprendimiento prometedor necesita ser impulsado para desarrollar su potencial.</p>
 <a href="/es/invertir">Invierta en los emprendimientos AUGE o ayúdenos a financiar nuestras actividades</a>
 <div class="panel-front-page-boxes-invest-image"></div>',
       'format' => 'full_html',

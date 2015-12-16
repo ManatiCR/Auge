@@ -18,11 +18,11 @@ function auge_content_types_activity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'full' => array(
         'label' => 'inline',
@@ -68,7 +68,7 @@ function auge_content_types_activity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
           'format_type' => 'long',
@@ -78,7 +78,7 @@ function auge_content_types_activity_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 3,
+        'weight' => 0,
       ),
       'full' => array(
         'label' => 'above',
@@ -147,7 +147,7 @@ function auge_content_types_activity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -205,6 +205,16 @@ function auge_content_types_activity_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => FALSE,
+        'insert_class' => '',
+        'insert_default' => array(
+          0 => 'auto',
+        ),
+        'insert_styles' => array(
+          0 => 'auto',
+        ),
+        'insert_width' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -221,7 +231,7 @@ function auge_content_types_activity_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',

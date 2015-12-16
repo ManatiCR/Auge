@@ -219,6 +219,16 @@ function auge_content_types_front_page_images_field_default_field_instances() {
     'widget' => array(
       'module' => 'image',
       'settings' => array(
+        'insert' => 0,
+        'insert_absolute' => FALSE,
+        'insert_class' => '',
+        'insert_default' => array(
+          0 => 'auto',
+        ),
+        'insert_styles' => array(
+          0 => 'auto',
+        ),
+        'insert_width' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),

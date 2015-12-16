@@ -59,7 +59,7 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
   $quicktabs->tabs = array(
     0 => array(
       'vid' => 'personnel_view',
-      'display' => 'panel_pane_1',
+      'display' => 'panel_pane_5',
       'args' => '',
       'title' => 'Team',
       'weight' => '-100',
@@ -67,7 +67,7 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
     ),
     1 => array(
       'vid' => 'personnel_view',
-      'display' => 'panel_pane_2',
+      'display' => 'panel_pane_6',
       'args' => '',
       'title' => 'Board of advisors',
       'weight' => '-99',
@@ -75,7 +75,7 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
     ),
     2 => array(
       'vid' => 'personnel_view',
-      'display' => 'panel_pane_3',
+      'display' => 'panel_pane_7',
       'args' => '',
       'title' => 'Mentors',
       'weight' => '-98',
@@ -83,7 +83,7 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
     ),
     3 => array(
       'vid' => 'personnel_view',
-      'display' => 'panel_pane_4',
+      'display' => 'panel_pane_8',
       'args' => '',
       'title' => 'Advisors',
       'weight' => '-97',

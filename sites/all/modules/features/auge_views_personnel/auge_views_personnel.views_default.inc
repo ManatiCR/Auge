@@ -313,7 +313,7 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['filters']['field_area_tid']['table'] = 'field_data_field_area';
   $handler->display->display_options['filters']['field_area_tid']['field'] = 'field_area_tid';
   $handler->display->display_options['filters']['field_area_tid']['value'] = array(
-    11 => '11',
+    13 => '13',
   );
   $handler->display->display_options['filters']['field_area_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_area_tid']['vocabulary'] = 'personnel_area';

@@ -35,7 +35,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'es',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_involcrese:/',
+    'parent_identifier' => 'main-menu_nase:/',
   );
   // Exported menu link: main-menu_aprender:/aprender
   $menu_links['main-menu_aprender:/aprender'] = array(
@@ -62,7 +62,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'es',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_involcrese:/',
+    'parent_identifier' => 'main-menu_nase:/',
   );
   // Exported menu link: main-menu_blog:/blog
   $menu_links['main-menu_blog:/blog'] = array(
@@ -193,7 +193,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'es',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_involcrese:/',
+    'parent_identifier' => 'main-menu_nase:/',
   );
   // Exported menu link: main-menu_entrepreneur:/entrepreneur
   $menu_links['main-menu_entrepreneur:/entrepreneur'] = array(
@@ -300,33 +300,6 @@ function auge_menus_menu_default_menu_links() {
     'language' => 'en',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: main-menu_invertir:/invertir
-  $menu_links['main-menu_invertir:/invertir'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '/invertir',
-    'router_path' => '',
-    'link_title' => 'Invertir',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => 'header-main-menu-subitem',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_invertir:/invertir',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-    'language' => 'es',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_involcrese:/',
-  );
   // Exported menu link: main-menu_invest:invest
   $menu_links['main-menu_invest:invest'] = array(
     'menu_name' => 'main-menu',
@@ -353,32 +326,6 @@ function auge_menus_menu_default_menu_links() {
     'language' => 'en',
     'menu_links_customized' => 1,
     'parent_identifier' => 'main-menu_get-involved:/',
-  );
-  // Exported menu link: main-menu_involcrese:/
-  $menu_links['main-menu_involcrese:/'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '/',
-    'router_path' => '',
-    'link_title' => 'Involúcrese',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => 'header-main-menu-item',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_involcrese:/',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 1,
-    'weight' => -43,
-    'customized' => 1,
-    'language' => 'es',
-    'menu_links_customized' => 1,
   );
   // Exported menu link: main-menu_learn:/learn
   $menu_links['main-menu_learn:/learn'] = array(
@@ -659,9 +606,7 @@ function auge_menus_menu_default_menu_links() {
   t('Entrepreneur');
   t('Facebook');
   t('Get involved');
-  t('Invertir');
   t('Invest');
-  t('Involúcrese');
   t('Learn');
   t('Mentor');
   t('Projects');

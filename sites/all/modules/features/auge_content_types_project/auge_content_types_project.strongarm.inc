@@ -24,9 +24,6 @@ function auge_content_types_project_strongarm() {
         'path' => array(
           'weight' => '30',
         ),
-        'language' => array(
-          'weight' => '0',
-        ),
       ),
       'display' => array(),
     ),

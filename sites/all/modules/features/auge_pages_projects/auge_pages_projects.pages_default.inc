@@ -292,8 +292,8 @@ function auge_pages_projects_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => 'Projects',
-      'body' => '<p>Esto va en español</p><p>This are some of the projects that have grown with&nbsp;</p>',
+      'title' => 'Proyectos',
+      'body' => '<p>Estos son algunos de los proyectos y empresas que apoyamos:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );

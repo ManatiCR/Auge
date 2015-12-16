@@ -100,6 +100,31 @@ function auge_pages_404_403_default_page_manager_pages() {
     $pane->uuid = '4d3ea151-553a-46bb-bba0-c9302e3bddf6';
     $display->content['new-4d3ea151-553a-46bb-bba0-c9302e3bddf6'] = $pane;
     $display->panels['content'][0] = 'new-4d3ea151-553a-46bb-bba0-c9302e3bddf6';
+    $pane = new stdClass();
+    $pane->pid = 'new-44e0154a-efe5-4e14-8e0b-7dae4af7d83a';
+    $pane->panel = 'content';
+    $pane->type = 'custom_title_tag';
+    $pane->subtype = 'custom_title_tag';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'buttons' => NULL,
+      'custom_page_title_pattern' => '404 | Auge',
+      'form_build_id' => 'form-FD4c_EljuIdNsHOjNEhlNoLJJWXwY8-Ht6FqoZ6pKdA',
+      'form_token' => 'KHXJQSKhGjZTmWmHqkehHEMYjFT1B80qknX0-kIcsNA',
+      'form_id' => 'panels_custom_title_tag_edit_form',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '44e0154a-efe5-4e14-8e0b-7dae4af7d83a';
+    $display->content['new-44e0154a-efe5-4e14-8e0b-7dae4af7d83a'] = $pane;
+    $display->panels['content'][1] = 'new-44e0154a-efe5-4e14-8e0b-7dae4af7d83a';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-4d3ea151-553a-46bb-bba0-c9302e3bddf6';
   $handler->conf['display'] = $display;

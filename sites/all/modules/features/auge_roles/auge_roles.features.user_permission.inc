@@ -15,6 +15,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'access administration menu',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'admin_menu',
   );
@@ -24,6 +25,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'system',
   );
@@ -194,6 +196,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'administer dependencies',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'conditional_fields',
   );
@@ -602,6 +605,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete any entityform',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'entityform',
   );
@@ -775,6 +779,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit any entityform',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'entityform',
   );
@@ -1128,6 +1133,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'use panels locks',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'panels',
   );
