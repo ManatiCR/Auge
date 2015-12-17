@@ -565,20 +565,22 @@ input[type="submit"] {
   .page-whoweare .quicktabs-tabs {
     text-align: center; } }
 
-.page-whoweare .quicktabs-tabs li a {
-  background-color: #ECB6A5; }
-  @media screen and (max-width: 530px) {
-    .page-whoweare .quicktabs-tabs li a {
-      border-radius: 10px;
-      margin-bottom: 10px;
-      padding: 5px 10px; }
-      .page-whoweare .quicktabs-tabs li a:after {
-        display: none; } }
-
-.page-whoweare .quicktabs-tabs li.active a {
-  background-color: #EB7A50; }
-  .page-whoweare .quicktabs-tabs li.active a:after {
-    border-color: #EB7A50 transparent transparent transparent; }
+.page-whoweare .quicktabs-tabs li {
+  text-align: center; }
+  .page-whoweare .quicktabs-tabs li a {
+    min-width: 170px;
+    background-color: #ECB6A5; }
+    @media screen and (max-width: 530px) {
+      .page-whoweare .quicktabs-tabs li a {
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding: 5px 10px; }
+        .page-whoweare .quicktabs-tabs li a:after {
+          display: none; } }
+  .page-whoweare .quicktabs-tabs li.active a {
+    background-color: #EB7A50; }
+    .page-whoweare .quicktabs-tabs li.active a:after {
+      border-color: #EB7A50 transparent transparent transparent; }
 
 @media screen and (max-width: 530px) {
   .page-learn .quicktabs-tabs {

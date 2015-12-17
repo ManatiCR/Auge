@@ -95,7 +95,9 @@
       text-align: center;
     }
     li {
+      text-align: center;
       a {
+        min-width: 170px;
         background-color: #ECB6A5;
         @include media(max-width 530px) {
           border-radius: 10px;
