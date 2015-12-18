@@ -22,11 +22,11 @@
       margin-left: 0;
     }
     @include media($mobile-large) {
-      width: 30%;
+      width: auto;
       margin-right: 3%;
     }
     @include media($tablet) {
-      width: 16.2%;
+      width: auto;
       margin-right: 11%;
       margin-bottom: 7%;
       &:nth-child(4n) {

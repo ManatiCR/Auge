@@ -1290,11 +1290,11 @@ h4 {
       margin-left: 0; }
     @media screen and (min-width: 500px) {
       .view-personnel-view .views-row {
-        width: 30%;
+        width: auto;
         margin-right: 3%; } }
     @media screen and (min-width: 700px) {
       .view-personnel-view .views-row {
-        width: 16.2%;
+        width: auto;
         margin-right: 11%;
         margin-bottom: 7%; }
         .view-personnel-view .views-row:nth-child(4n) {
