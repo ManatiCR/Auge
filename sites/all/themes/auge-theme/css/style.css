@@ -959,6 +959,8 @@ h4 {
       color: white; }
   .panel-node-blog .panels-ipe-portlet-marker:nth-child(2), .panel-node-blog .panels-ipe-portlet-marker:nth-child(3) {
     display: inline-block; }
+  .panel-node-blog .panels-ipe-portlet-marker:nth-child(5) {
+    padding-top: 20px; }
   .panel-node-blog .field-blog-image img {
     padding: 20px 0; }
 
@@ -984,6 +986,9 @@ h4 {
 
 .panel-node-activity .panels-ipe-portlet-marker:nth-child(2), .panel-node-activity .panels-ipe-portlet-marker:nth-child(3) {
   display: inline-block; }
+
+.panel-node-activity .panels-ipe-portlet-marker:nth-child(5) {
+  padding-top: 20px; }
 
 .panel-sidebar {
   font-size: 1.6rem; }

@@ -22,6 +22,9 @@
     &:nth-child(2), &:nth-child(3){
       display: inline-block;
     }
+    &:nth-child(5){
+      padding-top: 20px;
+    }
   }
   .activity-main-content-image{
     @extend .blog-post-main-content-image;
