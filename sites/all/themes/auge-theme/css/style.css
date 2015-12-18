@@ -1301,9 +1301,7 @@ h4 {
       .view-personnel-view .views-row {
         width: auto;
         margin-right: 11%;
-        margin-bottom: 7%; }
-        .view-personnel-view .views-row:nth-child(4n) {
-          margin-right: 0; } }
+        margin-bottom: 7%; } }
   .view-personnel-view .field-personnel-photo {
     border-radius: 100%;
     overflow: hidden;
