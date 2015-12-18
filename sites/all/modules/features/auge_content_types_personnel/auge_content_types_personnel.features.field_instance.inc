@@ -171,7 +171,7 @@ function auge_content_types_personnel_field_default_field_instances() {
     'bundle' => 'personnel',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Aquí va la URL de la cuenta de LinkedIn de la persona. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -207,7 +207,7 @@ function auge_content_types_personnel_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'rel_remove' => 'default',
-      'title' => 'optional',
+      'title' => 'value',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 255,
       'title_value' => 'LinkedIn',
@@ -314,7 +314,7 @@ function auge_content_types_personnel_field_default_field_instances() {
     'bundle' => 'personnel',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Aquí va la URL de la cuenta de Twitter de la persona. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -434,6 +434,8 @@ function auge_content_types_personnel_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Aquí va la URL de la cuenta de LinkedIn de la persona. ');
+  t('Aquí va la URL de la cuenta de Twitter de la persona. ');
   t('Area');
   t('Description');
   t('Occupation');
