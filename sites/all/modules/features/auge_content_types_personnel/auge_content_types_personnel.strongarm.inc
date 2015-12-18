@@ -24,6 +24,15 @@ function auge_content_types_personnel_strongarm() {
         'path' => array(
           'weight' => '2',
         ),
+        'language' => array(
+          'weight' => '0',
+        ),
+        'metatags' => array(
+          'weight' => '40',
+        ),
+        'rabbit_hole' => array(
+          'weight' => '0',
+        ),
       ),
       'display' => array(),
     ),
