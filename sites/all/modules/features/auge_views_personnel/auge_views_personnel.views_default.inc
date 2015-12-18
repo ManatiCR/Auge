@@ -98,6 +98,30 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_description']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_description']['field_api_classes'] = TRUE;
+  /* Field: Content: Personnel twitter */
+  $handler->display->display_options['fields']['field_personnel_twitter']['id'] = 'field_personnel_twitter';
+  $handler->display->display_options['fields']['field_personnel_twitter']['table'] = 'field_data_field_personnel_twitter';
+  $handler->display->display_options['fields']['field_personnel_twitter']['field'] = 'field_personnel_twitter';
+  $handler->display->display_options['fields']['field_personnel_twitter']['label'] = '';
+  $handler->display->display_options['fields']['field_personnel_twitter']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_personnel_twitter']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_personnel_twitter']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_personnel_twitter']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_personnel_twitter']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_personnel_twitter']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_personnel_twitter']['field_api_classes'] = TRUE;
+  /* Field: Content: Personnel LinkedIn */
+  $handler->display->display_options['fields']['field_personnel_linkedin']['id'] = 'field_personnel_linkedin';
+  $handler->display->display_options['fields']['field_personnel_linkedin']['table'] = 'field_data_field_personnel_linkedin';
+  $handler->display->display_options['fields']['field_personnel_linkedin']['field'] = 'field_personnel_linkedin';
+  $handler->display->display_options['fields']['field_personnel_linkedin']['label'] = '';
+  $handler->display->display_options['fields']['field_personnel_linkedin']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_personnel_linkedin']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_personnel_linkedin']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_personnel_linkedin']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_personnel_linkedin']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_personnel_linkedin']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_personnel_linkedin']['field_api_classes'] = TRUE;
   /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
@@ -124,6 +148,8 @@ function auge_views_personnel_views_default_views() {
 <div>[field_personnel_photo]</div>
 <h3 class="personnel-name">[title]</h3>
 <div class="personnel-occupation">[field_occupation]</div>
+<div class="personnel-twitter">[field_personnel_twitter]</div>
+<div class="personnel-linkedin">[field_personnel_linkedin]</div>
 <div class="personnel-description">[field_description]</div>
 </div>
 </div>';
@@ -463,6 +489,8 @@ function auge_views_personnel_views_default_views() {
 <div>[field_personnel_photo]</div>
 <h3 class="personnel-name">[title]</h3>
 <div class="personnel-occupation">[field_occupation]</div>
+<div class="personnel-twitter">[field_personnel_twitter]</div>
+<div class="personnel-linkedin">[field_personnel_linkedin]</div>
 <div class="personnel-description">[field_description]</div>
 </div>
 </div>'),
