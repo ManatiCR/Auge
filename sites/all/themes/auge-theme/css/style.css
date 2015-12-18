@@ -505,7 +505,7 @@ input[type="submit"] {
   padding: 0 20px; }
   @media screen and (min-width: 1067px) {
     .quicktabs-tabs {
-      padding: 0; } }
+      margin-top: 20px; } }
   .quicktabs-tabs li {
     display: inline-block;
     vertical-align: top;
@@ -515,6 +515,7 @@ input[type="submit"] {
     float: none; }
     .quicktabs-tabs li a {
       border-radius: 6px 6px 0 0;
+      box-shadow: inset #ECECEC 0 0 10px 2px;
       background: #d1d1d1;
       color: #fff;
       display: inline-block;
@@ -523,7 +524,7 @@ input[type="submit"] {
       text-transform: uppercase; }
       @media screen and (min-width: 1037px) {
         .quicktabs-tabs li a {
-          padding: 23px 80px; } }
+          padding-bottom: 33px; } }
       .quicktabs-tabs li a:hover {
         text-decoration: none; }
       .quicktabs-tabs li a:focus {
@@ -541,14 +542,15 @@ input[type="submit"] {
         height: 0;
         border-style: solid;
         border-width: 12px 10px 0 10px;
-        border-color: #333 transparent transparent transparent;
+        border-color: #ECECEC transparent transparent transparent;
         position: absolute;
         bottom: -12px;
         left: 50%;
         margin-left: -5px; }
       @media screen and (min-width: 1037px) {
         .quicktabs-tabs li.active a {
-          padding: 33px 80px; } }
+          padding-top: 33px;
+          padding-bottom: 33px; } }
 
 .quicktabs_main {
   background: #f7f7f7;
@@ -578,9 +580,10 @@ input[type="submit"] {
         .page-whoweare .quicktabs-tabs li a:after {
           display: none; } }
   .page-whoweare .quicktabs-tabs li.active a {
-    background-color: #EB7A50; }
+    background-color: #EB7A50;
+    box-shadow: inset #FF7A50 0 0 10px; }
     .page-whoweare .quicktabs-tabs li.active a:after {
-      border-color: #EB7A50 transparent transparent transparent; }
+      border-color: #FF7A50 transparent transparent transparent; }
 
 @media screen and (max-width: 530px) {
   .page-learn .quicktabs-tabs {

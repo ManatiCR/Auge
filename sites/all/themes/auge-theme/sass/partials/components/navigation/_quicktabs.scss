@@ -20,7 +20,8 @@
 .quicktabs-tabs {
   padding: 0 20px;
   @include media(1067px) {
-    padding: 0;
+    margin-top:20px; //Test
+    // padding: 0;
   }
   li {
     display: inline-block;
@@ -31,6 +32,7 @@
     float: none;
     a {
       border-radius: 6px 6px 0 0;
+      box-shadow: inset #ECECEC 0 0 10px 2px;
       background: #d1d1d1;
       color: #fff;
       display: inline-block;
@@ -38,7 +40,7 @@
       position: relative;
       text-transform: uppercase;
       @include media(1037px) {
-        padding: 23px 80px;
+        padding-bottom: 33px;
       }
       &:hover {
         text-decoration: none;
@@ -61,14 +63,15 @@
           height: 0;
           border-style: solid;
           border-width: 12px 10px 0 10px;
-          border-color: $tab-active-default transparent transparent transparent;
+          border-color: #ECECEC transparent transparent transparent;
           position: absolute;
           bottom: -12px;
           left: 50%;
           margin-left: -5px;
         }
         @include media(1037px) {
-          padding: 33px 80px;
+          padding-top: 33px;
+          padding-bottom: 33px;
         }
       }
     }
@@ -111,15 +114,15 @@
       &.active {
         a {
           background-color: #EB7A50;
+          box-shadow: inset #FF7A50 0 0 10px;
           &:after {
-            border-color: #EB7A50 transparent transparent transparent
+            border-color: #FF7A50 transparent transparent transparent;
           }
         }
       }
     }
   }
 }
-
 .page-learn {
   .quicktabs-tabs {
     @include media(max-width 530px) {
