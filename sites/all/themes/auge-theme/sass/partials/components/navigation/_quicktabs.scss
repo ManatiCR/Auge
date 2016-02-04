@@ -20,8 +20,7 @@
 .quicktabs-tabs {
   padding: 0 20px;
   @include media(1067px) {
-    margin-top:20px; //Test
-    // padding: 0;
+    margin-top:20px;
   }
   li {
     display: inline-block;
@@ -32,7 +31,7 @@
     float: none;
     a {
       border-radius: 6px 6px 0 0;
-      box-shadow: inset #ECECEC 0 0 10px 2px;
+      // box-shadow: inset #ECECEC 0 0 10px 2px;
       background: #d1d1d1;
       color: #fff;
       display: inline-block;
@@ -54,7 +53,7 @@
         margin-top: -20px;
       }
       a {
-        background: $tab-active-default;
+        // background: $tab-active-default;
         color: #fff;
         &:after {
           content: '';
@@ -63,7 +62,7 @@
           height: 0;
           border-style: solid;
           border-width: 12px 10px 0 10px;
-          border-color: #ECECEC transparent transparent transparent;
+          border-color: #d1d1d1 transparent transparent transparent;
           position: absolute;
           bottom: -12px;
           left: 50%;
@@ -72,6 +71,26 @@
         @include media(1037px) {
           padding-top: 33px;
           padding-bottom: 33px;
+        }
+      }
+    }
+  }
+}
+.page-entrepreneur {
+    .quicktabs-tabs {
+    .first {
+      a {
+        background-color: #3c912e;
+        &:after{
+          border-color: #3c912e transparent transparent transparent;
+        }
+      }
+    }
+    .last {
+      a {
+        background-color: #bd021c;
+        &:after{
+          border-color: #bd021c transparent transparent transparent;
         }
       }
     }
@@ -87,7 +106,7 @@
   }
   .panel-one-col-wide & {
     background: #fff;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    // box-shadow: 0 2px 2px rgba(0,0,0,0.2);
   }
 }
 
@@ -114,7 +133,7 @@
       &.active {
         a {
           background-color: #EB7A50;
-          box-shadow: inset #FF7A50 0 0 10px;
+          // box-shadow: inset #FF7A50 0 0 10px;
           &:after {
             border-color: #FF7A50 transparent transparent transparent;
           }
@@ -132,6 +151,22 @@
       a {
         @include media(max-width 530px) {
           padding: 5px 10px;
+        }
+      }
+    }
+    .first {
+      a {
+        background-color: #1874CD;
+        &:after{
+          border-color: #1874CD transparent transparent transparent;
+        }
+      }
+    }
+    .last {
+      a {
+        background-color: #EEC900;
+        &:after{
+          border-color: #EEC900 transparent transparent transparent;
         }
       }
     }

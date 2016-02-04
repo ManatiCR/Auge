@@ -166,4 +166,23 @@
     padding: 20px;
     text-align: left;
   }
+  .personnel-social-link{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 3px;
+    display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+.personnel-linkedin-link{
+  background: transparent url("../images/lkin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+}
+.personnel-twitter, .personnel-linkedin{
+  display: inline-block;
+  padding: 10px;
 }

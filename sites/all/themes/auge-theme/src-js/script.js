@@ -111,84 +111,148 @@
           //1
           var $frontboxlearn = $('.panel-front-page-boxes-learn');
           var $frontboxlearnimage = $('.panel-front-page-boxes-learn-image');
-          $($frontboxlearn).waypoint(function(direction) {
-            if (direction==='down'){
-              $frontboxlearn.addClass('panel-front-page-boxes-proximity');
-              $frontboxlearnimage.addClass('change-opacity');
-            }
-            else{
-              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
-              $frontboxlearnimage.removeClass('change-opacity');
-            }
-          }, { offset: '30%' });
-
-          $($frontboxlearn).waypoint(function(direction) {
-            if (direction==='down'){
-              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
-              $frontboxlearnimage.removeClass('change-opacity');
-            }
-            else{
-              $frontboxlearn.addClass('panel-front-page-boxes-proximity');
-              $frontboxlearnimage.addClass('change-opacity');
-            }
-          }, { offset: '-5%' });
-
           //2
           var $frontboxentre = $('.panel-front-page-boxes-entrepreneur');
           var $frontboxentreimage = $('.panel-front-page-boxes-entrepreneur-image');
-          $($frontboxentre).waypoint(function(direction) {
-            if (direction==='down'){
-              $frontboxentre.addClass('panel-front-page-boxes-proximity');
-              $frontboxentreimage.addClass('change-opacity');
-            }
-            else{
-              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
-              $frontboxentreimage.removeClass('change-opacity');
-            }
-          }, { offset: '30%' });
-
-          $($frontboxentre).waypoint(function(direction) {
-            if (direction==='down'){
-              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
-              $frontboxentreimage.removeClass('change-opacity');
-            }
-            else{
-              $frontboxentre.addClass('panel-front-page-boxes-proximity');
-              $frontboxentreimage.addClass('change-opacity');
-            }
-          }, { offset: '-5%' });
-
           //3
           var $frontboxmentor = $('.panel-front-page-boxes-mentor');
           var $frontboxmentorimage = $('.panel-front-page-boxes-mentor-image');
-          $($frontboxmentor).waypoint(function(direction) {
-            if (direction==='down'){
-              $frontboxmentor.addClass('panel-front-page-boxes-proximity');
-              $frontboxmentorimage.addClass('change-opacity');
-            }
-            else{
-              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
-              $frontboxmentorimage.removeClass('change-opacity');
-            }
-          }, { offset: '30%' });
-
-          $($frontboxmentor).waypoint(function(direction) {
-            if (direction==='down'){
-              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
-              $frontboxmentorimage.removeClass('change-opacity');
-            }
-            else{
-              $frontboxmentor.addClass('panel-front-page-boxes-proximity');
-              $frontboxmentorimage.addClass('change-opacity');
-            }
-          }, { offset: '-5%' });
-
           //4
           var $frontboxinvest = $('.panel-front-page-boxes-invest');
           var $frontboxinvestimage = $('.panel-front-page-boxes-invest-image');
+
+          $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+          $frontboxlearnimage.removeClass('change-opacity');
+          $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+          $frontboxentreimage.removeClass('change-opacity');
+          $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+          $frontboxmentorimage.removeClass('change-opacity');
+          $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+          $frontboxinvestimage.removeClass('change-opacity');
+
+          //1st box
+          $($frontboxlearn).waypoint(function(direction) {
+            if (direction==='down'){
+              $frontboxlearn.addClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.addClass('change-opacity');
+              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.removeClass('change-opacity');
+              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.removeClass('change-opacity');
+              $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+              $frontboxinvestimage.removeClass('change-opacity');
+
+            }
+            else{
+              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.removeClass('change-opacity');
+            }
+          }, { offset: '30%' });
+
+          $($frontboxlearn).waypoint(function(direction) {
+            if (direction==='down'){
+              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.removeClass('change-opacity');
+            }
+            else{
+              $frontboxlearn.addClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.addClass('change-opacity');
+              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.removeClass('change-opacity');
+              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.removeClass('change-opacity');
+              $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+              $frontboxinvestimage.removeClass('change-opacity');
+            }
+          }, { offset: '-5px' });
+
+          //2nd box
+          $($frontboxentre).waypoint(function(direction) {
+            if (direction==='down'){
+              $frontboxentre.addClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.addClass('change-opacity');
+              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.removeClass('change-opacity');
+              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.removeClass('change-opacity');
+              $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+              $frontboxinvestimage.removeClass('change-opacity');
+            }
+            else{
+              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.removeClass('change-opacity');
+            }
+          }, { offset: '30%' });
+
+          $($frontboxentre).waypoint(function(direction) {
+            if (direction==='down'){
+              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.removeClass('change-opacity');
+            }
+            else{
+              $frontboxentre.addClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.addClass('change-opacity');
+              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.removeClass('change-opacity');
+              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.removeClass('change-opacity');
+              $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+              $frontboxinvestimage.removeClass('change-opacity');
+            }
+          }, { offset: '-5px' });
+
+          //3rd box
+          $($frontboxmentor).waypoint(function(direction) {
+            if (direction==='down'){
+              $frontboxmentor.addClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.addClass('change-opacity');
+              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.removeClass('change-opacity');
+              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.removeClass('change-opacity');
+              $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+              $frontboxinvestimage.removeClass('change-opacity');
+            }
+            else{
+              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.removeClass('change-opacity');
+            }
+          }, { offset: '30%' });
+
+          $($frontboxmentor).waypoint(function(direction) {
+            if (direction==='down'){
+              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.removeClass('change-opacity');
+            }
+            else{
+              $frontboxmentor.addClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.addClass('change-opacity');
+              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.removeClass('change-opacity');
+              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.removeClass('change-opacity');
+              $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+              $frontboxinvestimage.removeClass('change-opacity');
+            }
+          }, { offset: '-5px' });
+
+          //4th box
+
           $($frontboxinvest).waypoint(function(direction) {
+            if (direction==='down'){
               $frontboxinvest.addClass('panel-front-page-boxes-proximity');
               $frontboxinvestimage.addClass('change-opacity');
+              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.removeClass('change-opacity');
+              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.removeClass('change-opacity');
+              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.removeClass('change-opacity');
+            }
+            else{
+              $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
+              $frontboxinvestimage.removeClass('change-opacity');
+            }
           }, { offset: '30%' });
 
           $($frontboxinvest).waypoint(function(direction) {
@@ -199,14 +263,13 @@
             else{
               $frontboxinvest.addClass('panel-front-page-boxes-proximity');
               $frontboxinvestimage.addClass('change-opacity');
+              $frontboxlearn.removeClass('panel-front-page-boxes-proximity');
+              $frontboxlearnimage.removeClass('change-opacity');
+              $frontboxentre.removeClass('panel-front-page-boxes-proximity');
+              $frontboxentreimage.removeClass('change-opacity');
+              $frontboxmentor.removeClass('panel-front-page-boxes-proximity');
+              $frontboxmentorimage.removeClass('change-opacity');
             }
-          }, { offset: '-5%' });
-
-          $($frontboxinvest).waypoint(function(direction) {
-            if (direction==='up'){
-              $frontboxinvest.removeClass('panel-front-page-boxes-proximity');
-              $frontboxinvestimage.removeClass('change-opacity');
-            }
-          }, { offset: '30%' });
+          }, { offset: '-5px' });
         });
   })(jQuery);
