@@ -423,12 +423,15 @@ input[type="submit"] {
   display: block;
   background: transparent url("../images/sprite.png");
   background-image: url("../images/sprite.svg"), none;
-  background-position: center 6px;
+  background-position: center 5px;
   background-repeat: no-repeat;
   width: 32px;
   height: 32px; }
   .twitter-icon:hover {
     background-color: #55acee; }
+
+.main-footer .facebook-icon, .main-footer .twitter-icon {
+  border-radius: 16px; }
 
 @media screen and (min-width: 700px) {
   .expanded {
@@ -526,7 +529,7 @@ input[type="submit"] {
       text-transform: uppercase; }
       @media screen and (min-width: 1037px) {
         .quicktabs-tabs li a {
-          padding-bottom: 33px; } }
+          bottom: -16px; } }
       .quicktabs-tabs li a:hover {
         text-decoration: none; }
       .quicktabs-tabs li a:focus {
@@ -551,7 +554,8 @@ input[type="submit"] {
       @media screen and (min-width: 1037px) {
         .quicktabs-tabs li.active a {
           padding-top: 33px;
-          padding-bottom: 33px; } }
+          padding-bottom: 33px;
+          bottom: 0px; } }
 
 .page-entrepreneur .quicktabs-tabs .first a {
   background-color: #3c912e; }
@@ -592,7 +596,7 @@ input[type="submit"] {
   .page-whoweare .quicktabs-tabs li.active a {
     background-color: #EB7A50; }
     .page-whoweare .quicktabs-tabs li.active a:after {
-      border-color: #FF7A50 transparent transparent transparent; }
+      border-color: #EB7A50 transparent; }
 
 @media screen and (max-width: 530px) {
   .page-learn .quicktabs-tabs {
@@ -664,17 +668,18 @@ input[type="submit"] {
     margin: 0 auto;
     height: 15px; }
 
-.page-description p {
-  font-size: 2rem;
-  max-width: 480px;
-  font-family: "ProbaPro-Regular", Arial, sans-serif;
-  line-height: 1.2;
-  margin-bottom: 20px; }
-  .page-description p:last-child {
-    margin-bottom: 0; }
-  @media screen and (min-width: 700px) {
-    .page-description p {
-      font-size: 2.5rem; } }
+.page-description {
+  margin-bottom: 30px; }
+  .page-description p {
+    font-size: 2rem;
+    max-width: 480px;
+    font-family: "ProbaPro-Regular", Arial, sans-serif;
+    line-height: 1.2; }
+    .page-description p:last-child {
+      margin-bottom: 0; }
+    @media screen and (min-width: 700px) {
+      .page-description p {
+        font-size: 2.5rem; } }
 
 h4 {
   font-size: 1.6rem; }
@@ -750,7 +755,8 @@ h4 {
 .page-eform-submit-contact-form .header-icons {
   background-color: rgba(0, 0, 0, 0.4);
   display: inline-block;
-  margin-left: 12px; }
+  margin-right: 12px;
+  border-radius: 16px; }
 
 .center-wrapper {
   overflow: hidden;
@@ -777,6 +783,10 @@ h4 {
     .center-wrapper .panel-panel {
       width: auto;
       float: none; } }
+
+@media screen and (min-width: 700px) {
+  .page-eform-submit-contact-form .panel-col-last {
+    margin-top: 29px; } }
 
 .page-learn .view-projects {
   padding-top: 20px; }
@@ -898,6 +908,9 @@ h4 {
 
 .page-user .main {
   padding-bottom: 110px; }
+
+.panel-sidebar li, .main-footer li, .header li {
+  list-style-type: none; }
 
 .blog-page {
   padding-bottom: 110px !important; }

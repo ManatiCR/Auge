@@ -141,12 +141,17 @@
 }
 .twitter-icon{
   display: block;
-  @include sprite(transparent, $x: center, $y: 6px);
+  @include sprite(transparent, $x: center, $y: 5px);
   @extend %text-hidden;
   width: 32px;
   height: 32px;
   &:hover{
     background-color: #55acee;
+  }
+}
+.main-footer{
+  .facebook-icon, .twitter-icon{
+    border-radius: 16px;
   }
 }
 .expanded{

@@ -31,7 +31,6 @@
     float: none;
     a {
       border-radius: 6px 6px 0 0;
-      // box-shadow: inset #ECECEC 0 0 10px 2px;
       background: #d1d1d1;
       color: #fff;
       display: inline-block;
@@ -39,7 +38,7 @@
       position: relative;
       text-transform: uppercase;
       @include media(1037px) {
-        padding-bottom: 33px;
+        bottom: -16px;
       }
       &:hover {
         text-decoration: none;
@@ -71,6 +70,7 @@
         @include media(1037px) {
           padding-top: 33px;
           padding-bottom: 33px;
+          bottom: 0px;
         }
       }
     }
@@ -133,9 +133,8 @@
       &.active {
         a {
           background-color: #EB7A50;
-          // box-shadow: inset #FF7A50 0 0 10px;
           &:after {
-            border-color: #FF7A50 transparent transparent transparent;
+            border-color: #EB7A50 transparent;
           }
         }
       }
