@@ -139,11 +139,13 @@ h4{
     width: 100% !important;
     border: 0;
   }
-  .header-icons{
-    background-color: rgba(0,0,0,0.4);
-    display: inline-block;
-    margin-right: 12px;
-    border-radius: 16px;
+  .center-wrapper{
+    .header-icons{
+      background-color: rgba(0,0,0,0.4);
+      display: inline-block;
+      margin-right: 12px;
+      border-radius: 16px;
+    }
   }
 }
 .center-wrapper {

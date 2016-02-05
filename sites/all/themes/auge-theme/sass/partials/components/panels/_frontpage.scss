@@ -98,13 +98,17 @@
     margin: 0;
   }
   .field-front-image-title{
-    width: 90%;
     position: absolute;
-    top: 8%;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
     margin: 0;
-    left: 10%;
     p{
-      position: relative;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       font-size: 2.7rem;
       font-family: $heading-font-family;
       @include media(375px){
@@ -112,6 +116,9 @@
       }
       @include media(800px){
         font-size: 6rem;
+      }
+      a{
+        background-color: rgba(0,0,0,0.4);
       }
     }
     .slideshow-companion{
@@ -157,7 +164,7 @@
     display: inline-block;
     padding: 5px;
     font-family: $heading-font-family;
-    @include media($mobile-large){
+    @include media($mobile-large) {
       padding: 10px 15px;
       margin-right: 20px;
     }
