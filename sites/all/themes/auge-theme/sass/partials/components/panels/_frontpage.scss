@@ -3,7 +3,7 @@
 }
 .panel-front-page-boxes{
   position: relative;
-  transition: 0.7s;
+  transition: 0.4s;
   &:first-child{
     margin-top: -4px;
   }
@@ -50,12 +50,19 @@
     }
   }
   a{
+    transition: 0.4s;
     display: inline-block;
     @extend %button;
     padding: 10px 15px;
     margin: 20px 20px 0 0;
     font-size: 1.8rem;
     line-height: 1;
+    &:hover{
+      text-decoration: none;
+      background-color: $orange;
+      border-color: $orange;
+      color: white;
+    }
   }
 }
 .panel-front-page-boxes-proximity{
@@ -105,10 +112,6 @@
     right: 0%;
     margin: 0;
     p{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       font-size: 2.7rem;
       font-family: $heading-font-family;
       @include media(375px){
@@ -116,9 +119,6 @@
       }
       @include media(800px){
         font-size: 6rem;
-      }
-      a{
-        background-color: rgba(0,0,0,0.4);
       }
     }
     .slideshow-companion{
@@ -164,12 +164,17 @@
     display: inline-block;
     padding: 5px;
     font-family: $heading-font-family;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
     @include media($mobile-large) {
       padding: 10px 15px;
       margin-right: 20px;
     }
     @extend %button;
     @extend %button-white;
+    &:after{
+      margin-top: 8px;
+    }
   }
   .field-main-image{
     img{
@@ -177,5 +182,20 @@
       min-height: 200px;
       display: block;
     }
+  }
+}
+.front-page-bottom{
+  p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.front-page-top{
+  p{
+    position: absolute;
+    top: 20%;
+    left: 10%;
   }
 }

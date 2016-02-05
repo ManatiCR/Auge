@@ -88,3 +88,13 @@
     height: auto;
   }
 }
+//Terms
+.page-taxonomy-term{
+  .main-content{
+    
+    max-width: 1020px;
+    @include media(1041px){
+      margin: 0 auto;
+    }
+  }
+}

@@ -982,6 +982,12 @@ h4 {
   width: 100%;
   height: auto; }
 
+.page-taxonomy-term .main-content {
+  max-width: 1020px; }
+  @media screen and (min-width: 1041px) {
+    .page-taxonomy-term .main-content {
+      margin: 0 auto; } }
+
 .panel-node-blog {
   padding-bottom: 110px; }
   .panel-node-blog .pane-node .pane-title {
@@ -1172,7 +1178,7 @@ h4 {
 
 .panel-front-page-boxes {
   position: relative;
-  transition: 0.7s;
+  transition: 0.4s;
   padding: 25px; }
   .panel-front-page-boxes:first-child {
     margin-top: -4px; }
@@ -1213,11 +1219,17 @@ h4 {
       .panel-front-page-boxes p {
         max-width: 65%; } }
   .panel-front-page-boxes a {
+    transition: 0.4s;
     display: inline-block;
     padding: 10px 15px;
     margin: 20px 20px 0 0;
     font-size: 1.8rem;
     line-height: 1; }
+    .panel-front-page-boxes a:hover {
+      text-decoration: none;
+      background-color: #F58345;
+      border-color: #F58345;
+      color: white; }
 
 .change-opacity {
   opacity: 1 !important; }
@@ -1256,10 +1268,6 @@ h4 {
     right: 0%;
     margin: 0; }
     .node-front-page-images .field-front-image-title p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       font-size: 2.7rem;
       font-family: "futura-pt", Helvetica, sans-serif; }
       @media screen and (min-width: 375px) {
@@ -1268,8 +1276,6 @@ h4 {
       @media screen and (min-width: 800px) {
         .node-front-page-images .field-front-image-title p {
           font-size: 6rem; } }
-      .node-front-page-images .field-front-image-title p a {
-        background-color: rgba(0, 0, 0, 0.4); }
     .node-front-page-images .field-front-image-title .slideshow-companion {
       color: #F58345;
       margin-bottom: 0;
@@ -1307,15 +1313,30 @@ h4 {
   .node-front-page-images .field-front-image-button {
     display: inline-block;
     padding: 5px;
-    font-family: "futura-pt", Helvetica, sans-serif; }
+    font-family: "futura-pt", Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white; }
     @media screen and (min-width: 500px) {
       .node-front-page-images .field-front-image-button {
         padding: 10px 15px;
         margin-right: 20px; } }
+    .node-front-page-images .field-front-image-button:after {
+      margin-top: 8px; }
   .node-front-page-images .field-main-image img {
     width: 100%;
     min-height: 200px;
     display: block; }
+
+.front-page-bottom p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.front-page-top p {
+  position: absolute;
+  top: 20%;
+  left: 10%; }
 
 #quicktabs-container-personnel_tabs {
   padding: 7%; }
