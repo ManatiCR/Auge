@@ -603,14 +603,14 @@ input[type="submit"] {
     padding: 5px 10px; } }
 
 .page-learn .quicktabs-tabs .first a {
-  background-color: #1874CD; }
+  background-color: #2e3c91; }
   .page-learn .quicktabs-tabs .first a:after {
-    border-color: #1874CD transparent transparent transparent; }
+    border-color: #2e3c91 transparent transparent transparent; }
 
 .page-learn .quicktabs-tabs .last a {
-  background-color: #EEC900; }
+  background-color: #fcdb0f; }
   .page-learn .quicktabs-tabs .last a:after {
-    border-color: #EEC900 transparent transparent transparent; }
+    border-color: #fcdb0f transparent transparent transparent; }
 
 .pager {
   padding-left: 0;
@@ -746,6 +746,11 @@ h4 {
 .page-eform-submit-contact-form iframe {
   width: 100% !important;
   border: 0; }
+
+.page-eform-submit-contact-form .header-icons {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  margin-left: 12px; }
 
 .center-wrapper {
   overflow: hidden;

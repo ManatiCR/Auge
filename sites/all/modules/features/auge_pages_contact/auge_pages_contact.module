@@ -22,18 +22,41 @@ function auge_pages_contact_entity_presave($entity, $type) {
       $term_translated = i18n_taxonomy_term_get_translation($term, 'en');
       $name = $term_translated->name;
       switch ($name) {
-        //Note: these emails have to change.
         case 'Entrepreneur':
-        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'carolina@augeucr.com';
         break;
         case 'Learn':
-        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'anajavier@augeucr.com';
         break;
         case 'Invest':
-        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'david.ramirez@augeucr.com';
         break;
         case 'Mentor':
-        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'edgar@estudiomanati.com';
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'carolina@augeucr.com';
+        break;
+        case 'General information':
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'info@augeucr.com';
+        break;
+        case 'Services':
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'allison@augeucr.com';
+        break;
+        case 'Emprender':
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'carolina@augeucr.com';
+        break;
+        case 'Aprender':
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'anajavier@augeucr.com';
+        break;
+        case 'Impulsar':
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'david.ramirez@augeucr.com';
+        break;
+        case 'Acompañar':
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'carolina@augeucr.com';
+        break;
+        case 'Información general':
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'info@augeucr.com';
+        break;
+        case 'Servicios':
+        $entity->field_contacted_email[LANGUAGE_NONE][0]['email'] = 'allison@augeucr.com';
         break;
       }
     }
