@@ -818,6 +818,7 @@ h4 {
 .register-idea-link {
   text-align: center; }
   .register-idea-link a {
+    transition: 0.3s;
     display: inline-block;
     padding: 10px 20px;
     font-family: "futura-pt", Helvetica, sans-serif;
