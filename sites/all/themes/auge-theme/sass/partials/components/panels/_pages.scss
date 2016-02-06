@@ -20,12 +20,13 @@
   font-size:2.4rem;
   display: inline-block;
   text-transform: uppercase;
+  color: $purple;
   @include media($tablet) {
     font-size:4.5rem;
   }
   //Bottom orange line.
   &:after{
-    border-bottom: 5px solid $orange;
+    border-bottom: 4px solid $orange;
     content: "";
     display: block;
     width: 50px;
@@ -36,7 +37,10 @@
 }
 .page-description {
   margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
   p {
+    color: #a0a0a0;
     font-size:2rem;
     max-width: 480px;
     font-family: $base-font-family;
