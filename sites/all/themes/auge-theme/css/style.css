@@ -324,7 +324,7 @@ input[type="submit"] {
 .main-menu .content {
   text-align: center; }
 
-.main-menu .header-main-menu-item a {
+.main-menu .header-main-menu-item a, .main-menu .header-main-menu-item span {
   display: inline-block;
   vertical-align: top; }
 
@@ -365,13 +365,13 @@ input[type="submit"] {
       margin-left: -4px;
       vertical-align: middle;
       padding-bottom: 20px; }
-      .header-main-menu-item a {
+      .header-main-menu-item a, .header-main-menu-item span {
         transition-duration: .2s;
         transition-timing-function: ease-in-out;
         transition-property: color; }
-        .header-main-menu-item a:hover {
+        .header-main-menu-item a:hover, .header-main-menu-item span:hover {
           text-decoration: underline; } }
-  .header-main-menu-item a {
+  .header-main-menu-item a, .header-main-menu-item span {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
@@ -379,12 +379,12 @@ input[type="submit"] {
     font-size: 2rem;
     padding: 5px 0; }
     @media screen and (min-width: 690px) {
-      .header-main-menu-item a {
+      .header-main-menu-item a, .header-main-menu-item span {
         font-size: 1rem; } }
     @media screen and (min-width: 800px) {
-      .header-main-menu-item a {
+      .header-main-menu-item a, .header-main-menu-item span {
         font-size: 1.4rem; } }
-  .header-main-menu-item a:hover {
+  .header-main-menu-item a:hover, .header-main-menu-item span:hover {
     color: #F58345; }
 
 .header-main-menu-subitem.last {
