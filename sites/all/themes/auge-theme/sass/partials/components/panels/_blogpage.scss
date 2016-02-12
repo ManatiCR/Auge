@@ -91,10 +91,16 @@
 //Terms
 .page-taxonomy-term{
   .main-content{
+    margin-bottom: 110px;
     padding: 0 20px;
     max-width: 1020px;
     @include media(1061px) {
-      margin: 0 auto;
+      margin: 0 auto 110px auto;
     }
+  }
+}
+.pane-node-field-post-category{
+  .pane-title{
+    display: none;
   }
 }
