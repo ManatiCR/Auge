@@ -21,7 +21,7 @@ function auge_conditional_fields_conditional_fields_default_fields() {
       'grouping' => 'AND',
       'effect' => 'fill',
       'effect_options' => array(
-        'value' => 'edgar@estudiomanati.com',
+        'value' => 'info@augeucr.com',
         'reset' => 1,
       ),
       'element_view' => array(
