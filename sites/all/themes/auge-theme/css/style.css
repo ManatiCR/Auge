@@ -602,9 +602,13 @@ input[type="submit"] {
   .page-learn .quicktabs-tabs {
     text-align: center; } }
 
-@media screen and (max-width: 530px) {
-  .page-learn .quicktabs-tabs li a {
-    padding: 5px 10px; } }
+.page-learn .quicktabs-tabs li a {
+  background-color: #fcdb0f; }
+  .page-learn .quicktabs-tabs li a:after {
+    border-color: #fcdb0f transparent transparent transparent; }
+  @media screen and (max-width: 530px) {
+    .page-learn .quicktabs-tabs li a {
+      padding: 5px 10px; } }
 
 .page-learn .quicktabs-tabs .first a {
   background-color: #2e3c91; }
@@ -612,9 +616,9 @@ input[type="submit"] {
     border-color: #2e3c91 transparent transparent transparent; }
 
 .page-learn .quicktabs-tabs .last a {
-  background-color: #fcdb0f; }
+  background-color: #EB7A50; }
   .page-learn .quicktabs-tabs .last a:after {
-    border-color: #fcdb0f transparent transparent transparent; }
+    border-color: #EB7A50 transparent transparent transparent; }
 
 .pager {
   padding-left: 0;

@@ -148,6 +148,11 @@
     }
     li {
       a {
+        background-color: #fcdb0f;
+
+        &:after{
+          border-color: #fcdb0f transparent transparent transparent;
+        }
         @include media(max-width 530px) {
           padding: 5px 10px;
         }
@@ -163,9 +168,9 @@
     }
     .last {
       a {
-        background-color: #fcdb0f;
+        background-color: #EB7A50;
         &:after{
-          border-color: #fcdb0f transparent transparent transparent;
+          border-color: #EB7A50 transparent transparent transparent;
         }
       }
     }
