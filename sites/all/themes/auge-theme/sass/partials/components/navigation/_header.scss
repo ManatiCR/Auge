@@ -149,8 +149,19 @@
     background-color: #55acee;
   }
 }
+.linkedin-icon{
+  display: block;
+  @extend %text-hidden;
+  width: 32px;
+  height: 32px;
+  background: transparent url('../images/lkin.png');
+  background-repeat: no-repeat;
+  &:hover{
+    background-color: #007AB6;
+  }
+}
 .main-footer{
-  .facebook-icon, .twitter-icon{
+  .facebook-icon, .twitter-icon, .linkedin-icon{
     border-radius: 16px;
   }
 }
@@ -179,7 +190,7 @@
   }
 }
 .header-main-menu-subitem{
-  @include media($second-breakpoint){
+  @include media($second-breakpoint) {
     a{
       color: black;
       padding: 5px;
