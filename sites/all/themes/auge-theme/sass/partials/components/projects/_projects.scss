@@ -5,7 +5,7 @@
     margin: 0 auto;
     padding: 30px 0;
     @include media($tablet) {
-      padding: 60px 0 80px;
+      padding: 60px 0 40px;
     }
   }
   .pane-title {
@@ -147,5 +147,32 @@
   }
   a {
     color: $purple;
+  }
+}
+
+.front-page-more-projects {
+  text-align: center;
+  background-color: #EFEFED;
+  padding: 0 0 40px;
+  a {
+    @extend %button;
+    transition: 0.4s;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    @include font-size(22);
+    &:after {
+      margin-top: 12px;
+      transition: 0.4s;
+    }
+    &:hover{
+      text-decoration: none;
+      background-color: $orange;
+      border-color: $orange;
+      color: white;
+      &:after {
+        border-color: transparent transparent transparent white;
+      }
+    }
   }
 }

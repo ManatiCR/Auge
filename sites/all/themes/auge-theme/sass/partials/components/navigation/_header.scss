@@ -36,6 +36,9 @@
     a, span{
       display: inline-block;
       vertical-align: top;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   @include media($first-breakpoint){
