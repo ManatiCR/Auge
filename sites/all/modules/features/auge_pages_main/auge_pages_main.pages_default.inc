@@ -498,7 +498,7 @@ function auge_pages_main_default_page_manager_pages() {
           'active' => 1,
           'element_type' => 'div',
           'show_css' => 1,
-          'element_class' => 'baby-pandas-bitches',
+          'element_class' => '',
         ),
       ),
     ),
@@ -533,7 +533,10 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'front-page-top',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -615,7 +618,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Emprender',
-      'body' => '<p>¿Ya se decidió?  ¿Tiene un Producto Mínimo Viable, un plan y el equipo para echarse al agua? ¡Ingrese a nuestro proceso de incubación en comunidad!</p><a href="/es/emprender">Incube su emprendimiento en AUGE</a><div class="panel-front-page-boxes-entrepreneur-image"></div>',
+      'body' => '<p>¿Decidió dedicarse a su emprendimiento? ¿Tiene un producto o servicio validado y el equipo para gestionar una Empresa Mínima Viable? ¡Ingrese a nuestro proceso de incubación en comunidad!</p><a href="/es/emprender">Incube su emprendimiento en AUGE</a><div class="panel-front-page-boxes-entrepreneur-image"></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -680,7 +683,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Acompañar',
-      'body' => '<p>Durante todo el proceso en AUGE, empresarios y académicos experimentados orientan a los equipos emprendedores.</p><a href="/es/acompanar">Conozca a nuestra red de mentoría y asesoría</a><div class="panel-front-page-boxes-mentor-image"></div>',
+      'body' => '<p>Durante todo el proceso en AUGE, personas emprendedoras, empresarias y académicas orientan a los equipos emprendedores.</p><a href="/es/acompanar">Conozca a nuestra red Warp</a><div class="panel-front-page-boxes-mentor-image"></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -746,7 +749,7 @@ function auge_pages_main_default_page_manager_pages() {
       'admin_title' => '',
       'title' => 'Impulsar',
       'body' => '<p>Una emprendimiento prometedor necesita ser impulsado para desarrollar su potencial.</p>
-<a href="/es/invertir">Invierta en los emprendimientos AUGE o ayúdenos a financiar nuestras actividades</a>
+<a href="/es/impulsar">Aporte a nuestro Fondo Propulsa o financie nuestras actividades</a>
 <div class="panel-front-page-boxes-invest-image"></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
@@ -824,7 +827,10 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'front-page-bottom',
+    );
     $pane->extras = array();
     $pane->position = 5;
     $pane->locks = array();
