@@ -39,6 +39,9 @@
     overflow: hidden;
     display: inline-block;
     z-index: 10;
+    img {
+      display: block;
+    }
   }
 }
 
@@ -87,6 +90,7 @@
   }
   a {
     color: #fff;
+    text-decoration: none;
   }
   &:after {
     content: '';
@@ -123,10 +127,10 @@
   cursor: pointer;
   @extend %text-hidden;
   @include sprite(#1BA2CC, $x: center, $y: -51px);
-  @include media(545px) {
-    top: -16px;
-    right: -16px;
-  }
+  // @include media(545px) {
+  //   top: -16px;
+  //   right: -16px;
+  // }
 }
 .personnel-modal {
   position: absolute;
@@ -143,7 +147,7 @@
     margin-left: -249px;
     top: 7%;
     left: 50%;
-    overflow-y: visible;
+    // overflow-y: visible;
   }
   .field-personnel-photo {
     margin-bottom: 15px;

@@ -127,3 +127,15 @@ input[type="submit"] {
     color: #fff;
   }
 }
+
+// contact
+.entitytype-contact_form-form {
+  label {
+    @include media($tablet) {
+      width: 155px;
+    }
+  }
+  input[type="submit"] {
+    margin-left: 158px;
+  }
+}
