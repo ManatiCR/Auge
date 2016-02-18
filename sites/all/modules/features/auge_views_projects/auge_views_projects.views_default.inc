@@ -119,7 +119,14 @@ function auge_views_projects_views_default_views() {
   /* Display: Main Projects */
   $handler = $view->new_display('panel_pane', 'Main Projects', 'panel_pane_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Projects made:';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'Más empresas';
+  $handler->display->display_options['link_url'] = 'es/proyectos';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Project image */
   $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
@@ -324,7 +331,7 @@ function auge_views_projects_views_default_views() {
 <div class="project-url-overlay">[field_project_url_1]</div>
 </div>'),
     t('Main Projects'),
-    t('Projects made:'),
+    t('Más empresas'),
     t('Projects'),
     t('Learn Projects'),
     t('See all'),
