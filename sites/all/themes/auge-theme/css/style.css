@@ -47,14 +47,14 @@ html {
   max-width: 1020px;
   margin: 0 auto; }
 
-.panel-panel .upcoming-event .views-field-view-node a, .panel-front-page-boxes a, .node-front-page-images .field-front-image-button, .view-projects .more-link a {
+.panel-panel .upcoming-event .views-field-view-node a, .panel-front-page-boxes a, .node-front-page-images .field-front-image-button, .page-home .view-projects .more-link a {
   font-size: 1.6rem;
   padding-bottom: 30px;
   color: #F58345;
   border: 2px solid #F58345;
   border-radius: 5px;
   text-decoration: none; }
-  .panel-panel .upcoming-event .views-field-view-node a:after, .panel-front-page-boxes a:after, .node-front-page-images .field-front-image-button:after, .view-projects .more-link a:after {
+  .panel-panel .upcoming-event .views-field-view-node a:after, .panel-front-page-boxes a:after, .node-front-page-images .field-front-image-button:after, .page-home .view-projects .more-link a:after {
     width: 0;
     height: 0;
     border-style: solid;
@@ -842,7 +842,8 @@ h4 {
       margin-top: 5px; }
 
 .register-idea-link {
-  text-align: center; }
+  text-align: center;
+  padding-top: 20px; }
   .register-idea-link a {
     transition: 0.3s;
     display: inline-block;
@@ -1585,6 +1586,8 @@ h4 {
     @media screen and (min-width: 1080px) {
       .view-projects .project-item:nth-child(4n) {
         margin-right: 0; } }
+    .view-projects .project-item.views-row-last {
+      margin-right: 0; }
   .view-projects .project-circle {
     text-align: center;
     background: #fff;
@@ -1660,26 +1663,26 @@ h4 {
   .field-project-type a {
     color: #522e91; }
 
-.view-projects .more-link {
+.page-home .view-projects .more-link {
   text-align: center;
   background-color: #EFEFED;
   padding: 40px 0 40px; }
-  .view-projects .more-link a {
+  .page-home .view-projects .more-link a {
     transition: 0.4s;
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 22px;
     font-size: 2.2rem; }
-    .view-projects .more-link a:after {
+    .page-home .view-projects .more-link a:after {
       margin-top: 12px;
       transition: 0.4s; }
-    .view-projects .more-link a:hover {
+    .page-home .view-projects .more-link a:hover {
       text-decoration: none;
       background-color: #F58345;
       border-color: #F58345;
       color: white; }
-      .view-projects .more-link a:hover:after {
+      .page-home .view-projects .more-link a:hover:after {
         border-color: transparent transparent transparent white; }
 
 .main-footer {

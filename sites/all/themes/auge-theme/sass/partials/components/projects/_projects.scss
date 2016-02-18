@@ -57,6 +57,9 @@
         margin-right: 0;
       }
     }
+    &.views-row-last {
+      margin-right: 0;
+    }
   }
   .project-circle {
     text-align: center;
@@ -155,7 +158,8 @@
   }
 }
 
-.view-projects .more-link {
+// home more link
+.page-home .view-projects .more-link {
   text-align: center;
   background-color: #EFEFED;
   padding: 40px 0 40px;
