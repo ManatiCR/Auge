@@ -1663,7 +1663,7 @@ h4 {
 .view-projects .more-link {
   text-align: center;
   background-color: #EFEFED;
-  padding: 0 0 40px; }
+  padding: 40px 0 40px; }
   .view-projects .more-link a {
     transition: 0.4s;
     display: inline-block;
