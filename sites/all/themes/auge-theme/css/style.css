@@ -47,14 +47,14 @@ html {
   max-width: 1020px;
   margin: 0 auto; }
 
-.panel-panel .upcoming-event .views-field-view-node a, .panel-front-page-boxes a, .node-front-page-images .field-front-image-button, .front-page-more-projects a {
+.panel-panel .upcoming-event .views-field-view-node a, .panel-front-page-boxes a, .node-front-page-images .field-front-image-button, .view-projects .more-link a {
   font-size: 1.6rem;
   padding-bottom: 30px;
   color: #F58345;
   border: 2px solid #F58345;
   border-radius: 5px;
   text-decoration: none; }
-  .panel-panel .upcoming-event .views-field-view-node a:after, .panel-front-page-boxes a:after, .node-front-page-images .field-front-image-button:after, .front-page-more-projects a:after {
+  .panel-panel .upcoming-event .views-field-view-node a:after, .panel-front-page-boxes a:after, .node-front-page-images .field-front-image-button:after, .view-projects .more-link a:after {
     width: 0;
     height: 0;
     border-style: solid;
@@ -1560,6 +1560,8 @@ h4 {
 .view-projects {
   text-align: center;
   position: relative; }
+  .panel-front-page .view-projects .view-content {
+    margin-bottom: 40px; }
   .view-projects .project-item {
     display: inline-block;
     vertical-align: top;
@@ -1658,26 +1660,26 @@ h4 {
   .field-project-type a {
     color: #522e91; }
 
-.front-page-more-projects {
+.view-projects .more-link {
   text-align: center;
   background-color: #EFEFED;
   padding: 0 0 40px; }
-  .front-page-more-projects a {
+  .view-projects .more-link a {
     transition: 0.4s;
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
     font-size: 22px;
     font-size: 2.2rem; }
-    .front-page-more-projects a:after {
+    .view-projects .more-link a:after {
       margin-top: 12px;
       transition: 0.4s; }
-    .front-page-more-projects a:hover {
+    .view-projects .more-link a:hover {
       text-decoration: none;
       background-color: #F58345;
       border-color: #F58345;
       color: white; }
-      .front-page-more-projects a:hover:after {
+      .view-projects .more-link a:hover:after {
         border-color: transparent transparent transparent white; }
 
 .main-footer {
@@ -1730,6 +1732,9 @@ h4 {
     width: 60px; }
   .main-footer .view-blog-list .panel-col-first {
     width: 50px; }
+  .main-footer .view-blog-list .views-field-field-blog-image {
+    float: left;
+    margin: 0 10px 10px 0; }
   .main-footer .panel-col-last {
     width: 68%; }
   .main-footer .views-row {

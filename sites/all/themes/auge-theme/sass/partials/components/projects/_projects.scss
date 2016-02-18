@@ -26,6 +26,11 @@
   text-align: center;
   position: relative;
   // sets grid
+  .panel-front-page & {
+    .view-content {
+        margin-bottom: 40px;
+      }
+    }
   .project-item {
     display: inline-block;
     vertical-align: top;
@@ -150,7 +155,7 @@
   }
 }
 
-.front-page-more-projects {
+.view-projects .more-link {
   text-align: center;
   background-color: #EFEFED;
   padding: 0 0 40px;
