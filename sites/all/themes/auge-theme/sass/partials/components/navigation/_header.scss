@@ -239,7 +239,7 @@
   &.on span:after{
     transform: rotate(-45deg) translate(7px, -8px);
   }
-  @include media(680px){
+  @include media($first-breakpoint){
     display: none;
   }
 }
