@@ -1055,6 +1055,22 @@ h4 {
 .upcoming-events-page .views-row {
   margin-bottom: 20px; }
 
+.panel-node-activity .activities-power-link {
+  display: block;
+  margin-bottom: 20px;
+  color: #522E91; }
+  .panel-node-activity .activities-power-link:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 8px 5px 0;
+    border-color: transparent #522E91 transparent transparent;
+    content: '';
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: top;
+    margin-top: 5px; }
+
 .panel-node-activity .activity-main-content-category {
   color: white; }
 
