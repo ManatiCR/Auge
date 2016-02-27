@@ -14,7 +14,7 @@ function auge_pages_projects_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_projects';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-i18n';
   $export['additional_settings__active_tab_projects'] = $strongarm;
 
   $strongarm = new stdClass();

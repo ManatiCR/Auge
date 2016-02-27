@@ -28,9 +28,9 @@ function auge_block_settings_default_fe_block_boxes() {
 
   $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Contact information block (spanish)';
-  $fe_block_boxes->format = 'manati_texto_formato';
+  $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'block_contacto';
-  $fe_block_boxes->body = '<p><strong>SEDE CENTRAL UCR</strong></p><p>Casa emprendedora María Teresa Obregón, 100 metros este y 100 norte de la Fuente de la Hispanidad, San Pedro, San José.</p><p><strong>Teléfono:</strong></p><p>+506 2511-1334</p><p><strong>Contacto principal:</strong></p><p>luisalonso@augeucr.com</p>';
+  $fe_block_boxes->body = '<p><strong>SEDE CENTRAL UCR</strong></p><p>Casa emprendedora María Teresa Obregón, 100 metros este y 100 norte de la Fuente de la Hispanidad, San Pedro, San José.</p><p><strong>Teléfono:</strong></p><p>+506 2511-1334</p><a href="/contacto">Contáctenos</a>';
 
   $export['block_contacto'] = $fe_block_boxes;
 

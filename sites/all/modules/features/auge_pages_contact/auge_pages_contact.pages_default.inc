@@ -269,8 +269,10 @@ function auge_pages_contact_default_page_manager_handlers() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p><strong>​Campus Rodrigo Facio, UCR.</strong></p><p>Casa emprendedora María Teresa Obregón, 100 metros este y 100 norte de la Fuente de la Hispanidad, San Pedro, San José.</p><p><strong>Teléfono:</strong></p><p>+506 2511-1334</p><p><strong>Contactenos:</strong></p><p><a href="mailto:luisalonso@augeucr.com">luisalonso@augeucr.com</a></p>',
-      'format' => 'manati_texto_formato',
+      'body' => '<p><strong>​Campus Rodrigo Facio, UCR.</strong></p><p>Casa emprendedora María Teresa Obregón, 100 metros este y 125 norte de la Fuente de la Hispanidad, San Pedro de Montes de Oca, San José.</p><p><strong>Teléfono:</strong></p><p>+506 2511-1334</p><p><strong>Contactenos:</strong></p><p><a href="mailto:luisalonso@augeucr.com">info@augeucr.com</a></p><p>&nbsp;</p>
+
+<a href="https://www.facebook.com/augeucr" class="facebook-icon header-facebook-icon header-icons">Facebook</a><a href="https://twitter.com/augeucr" class="twitter-icon header-icons">Twitter</a><a href="https://www.linkedin.com/company/10397558" class="linkedin-icon header-icons">LinkedIn</a>',
+      'format' => 'full_html',
       'substitute' => TRUE,
     );
     $pane->cache = array();
@@ -317,9 +319,18 @@ function auge_pages_contact_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'mlpanels' => array(
+        'und' => array(
+          'admin_title' => '',
+          'title' => '',
+          'body' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9980972587323!2d-84.05623558520637!3d9.934115492896357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3814bdd8863%3A0x5dd54906ccb903dd!2sCasa+Emprendedora+Mar%C3%ADa+Teresa+Obreg%C3%B3n!5e0!3m2!1ses!2scr!4v1453757697651" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
+          'format' => 'full_html',
+          'substitute' => TRUE,
+        ),
+      ),
       'admin_title' => '',
       'title' => '',
-      'body' => '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d868.2108627400402!2d-84.05403399934785!3d9.934084786659676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scr!4v1442440079667" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>',
+      'body' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9980972587323!2d-84.05623558520637!3d9.934115492896357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3814bdd8863%3A0x5dd54906ccb903dd!2sCasa+Emprendedora+Mar%C3%ADa+Teresa+Obreg%C3%B3n!5e0!3m2!1ses!2scr!4v1453757697651" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -342,10 +353,19 @@ function auge_pages_contact_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'mlpanels' => array(
+        'und' => array(
+          'buttons' => NULL,
+          'custom_page_title_pattern' => 'Contacto | Auge',
+          'form_build_id' => 'form-Z6UEsO3pXCEvD_XLK6PAZGqPN_s-YV4F0WvzZvSZoWM',
+          'form_token' => '5Ev2Nq2FiI4W-zDuZRLjt9J-JigmgejXorCZznagfPw',
+          'form_id' => 'panels_custom_title_tag_edit_form',
+        ),
+      ),
       'buttons' => NULL,
-      'custom_page_title_pattern' => 'Contact | Auge',
-      'form_build_id' => 'form-f0ovb3EyrqW-aADa6PdT7PnydP_lnytwHWKebgz-oHA',
-      'form_token' => 'dWAZYIJYSyah0F52cDXNd7xmZg_7tn9XM1bmmuAhH04',
+      'custom_page_title_pattern' => 'Contacto | Auge',
+      'form_build_id' => 'form-Z6UEsO3pXCEvD_XLK6PAZGqPN_s-YV4F0WvzZvSZoWM',
+      'form_token' => '5Ev2Nq2FiI4W-zDuZRLjt9J-JigmgejXorCZznagfPw',
       'form_id' => 'panels_custom_title_tag_edit_form',
     );
     $pane->cache = array();

@@ -338,7 +338,7 @@ function auge_content_types_personnel_field_default_field_instances() {
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
-        'class' => 'personnel-twitter-link personnel-social-link',
+        'class' => 'personnel-twitter-link personnel-social-link  twitter-icon',
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => 'nofollow',

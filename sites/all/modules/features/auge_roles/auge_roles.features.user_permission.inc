@@ -346,6 +346,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'administer pathauto',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'pathauto',
   );

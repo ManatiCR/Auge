@@ -53,6 +53,14 @@ function auge_pages_terms_default_page_manager_handlers() {
     'style_settings' => array(
       'default' => NULL,
       'top' => NULL,
+      'sidebar' => array(
+        'separator' => array(
+          'active' => 0,
+          'element_type' => '',
+          'show_css' => 0,
+          'element_class' => '',
+        ),
+      ),
       'content' => array(
         'separator' => array(
           'active' => 0,
@@ -61,9 +69,11 @@ function auge_pages_terms_default_page_manager_handlers() {
           'element_class' => '',
         ),
       ),
-      'sidebar' => NULL,
     ),
     'content' => array(
+      'style' => 'semantic_panels',
+    ),
+    'sidebar' => array(
       'style' => 'semantic_panels',
     ),
   );

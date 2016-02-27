@@ -15,7 +15,7 @@ function auge_pages_projects_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Projects';
   $page->admin_description = '';
-  $page->path = 'projects';
+  $page->path = 'ventures';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -166,69 +166,26 @@ function auge_pages_projects_default_page_manager_pages() {
     $display->content['new-6c4bdf83-3d58-48bf-9bcb-b29fadffdff6'] = $pane;
     $display->panels['content'][1] = 'new-6c4bdf83-3d58-48bf-9bcb-b29fadffdff6';
     $pane = new stdClass();
-    $pane->pid = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
+    $pane->pid = 'new-cb0634db-d457-4c17-a905-9190aadcb4be';
     $pane->panel = 'content_wide';
     $pane->type = 'views_panes';
-    $pane->subtype = 'projects-panel_pane_1';
+    $pane->subtype = 'projects-panel_pane_6';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
     $pane->cache = array();
     $pane->style = array(
-      'settings' => array(
-        'element_title' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => 'page-title',
-          'attributes' => array(),
-          'link_enabled' => 0,
-          'link' => array(
-            'path' => '',
-            'class_enable' => 0,
-            'class' => '',
-            'attributes' => array(),
-            'attributes_array' => array(),
-          ),
-          'attributes_array' => array(),
-        ),
-        'element_content' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'link_enabled' => 0,
-          'link' => array(
-            'path' => '',
-            'class_enable' => 0,
-            'class' => '',
-            'attributes' => array(),
-            'attributes_array' => array(),
-          ),
-          'attributes_array' => array(),
-        ),
-        'element_wrapper' => array(
-          'type' => '',
-          'class_enable' => 0,
-          'class' => '',
-          'attributes' => array(),
-          'attributes_array' => array(),
-        ),
-        'add_default_classes' => 1,
-      ),
-      'style' => 'semantic_panels',
+      'settings' => NULL,
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'panel-projects',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '42d2564e-0522-4175-9359-5fd62c1ab326';
-    $display->content['new-42d2564e-0522-4175-9359-5fd62c1ab326'] = $pane;
-    $display->panels['content_wide'][0] = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
+    $pane->uuid = 'cb0634db-d457-4c17-a905-9190aadcb4be';
+    $display->content['new-cb0634db-d457-4c17-a905-9190aadcb4be'] = $pane;
+    $display->panels['content_wide'][0] = 'new-cb0634db-d457-4c17-a905-9190aadcb4be';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $handler = new stdClass();
@@ -240,7 +197,7 @@ function auge_pages_projects_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = 1;
   $handler->conf = array(
-    'title' => 'Proyectos',
+    'title' => 'Emprendimientos',
     'no_blocks' => 0,
     'pipeline' => 'ipe',
     'body_classes_to_remove' => '',
@@ -292,8 +249,8 @@ function auge_pages_projects_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => 'Proyectos',
-      'body' => '<p>Estos son algunos de los proyectos y empresas que apoyamos:</p>',
+      'title' => 'Emprendimientos',
+      'body' => '<p>Estas son algunos de los emprendimientos que incubamos:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -358,8 +315,8 @@ function auge_pages_projects_default_page_manager_pages() {
     $pane->configuration = array(
       'buttons' => NULL,
       'custom_page_title_pattern' => 'Proyectos | Auge',
-      'form_build_id' => 'form-s2CsAW7ARns1V4zYvWeJhpkcp4K9qqGxxA1d5j9t7DY',
-      'form_token' => 'dWAZYIJYSyah0F52cDXNd7xmZg_7tn9XM1bmmuAhH04',
+      'form_build_id' => 'form-ZHc8ycaOFDmf-v23D7Q6leiAwqSrSA9cjNiCBSj0j00',
+      'form_token' => '5l-6dgRkIOgk0DQZA9ubA4ippuyoseUVz-b31XpCw0w',
       'form_id' => 'panels_custom_title_tag_edit_form',
     );
     $pane->cache = array();
@@ -374,10 +331,10 @@ function auge_pages_projects_default_page_manager_pages() {
     $display->content['new-f9ad5223-535c-4eb3-83e8-9e76f0c906c1'] = $pane;
     $display->panels['content'][1] = 'new-f9ad5223-535c-4eb3-83e8-9e76f0c906c1';
     $pane = new stdClass();
-    $pane->pid = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
+    $pane->pid = 'new-f169a14f-8180-4bf2-ae8c-cf37a0368f9e';
     $pane->panel = 'content_wide';
     $pane->type = 'views_panes';
-    $pane->subtype = 'projects-panel_pane_1';
+    $pane->subtype = 'projects-panel_pane_6';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -389,11 +346,11 @@ function auge_pages_projects_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '42d2564e-0522-4175-9359-5fd62c1ab326';
-    $display->content['new-42d2564e-0522-4175-9359-5fd62c1ab326'] = $pane;
-    $display->panels['content_wide'][0] = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
+    $pane->uuid = 'f169a14f-8180-4bf2-ae8c-cf37a0368f9e';
+    $display->content['new-f169a14f-8180-4bf2-ae8c-cf37a0368f9e'] = $pane;
+    $display->panels['content_wide'][0] = 'new-f169a14f-8180-4bf2-ae8c-cf37a0368f9e';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-42d2564e-0522-4175-9359-5fd62c1ab326';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['projects'] = $page;

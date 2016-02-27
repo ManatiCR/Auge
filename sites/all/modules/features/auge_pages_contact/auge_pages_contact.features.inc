@@ -42,9 +42,9 @@ function auge_pages_contact_default_entityform_type() {
       "submissions_view" : "default",
       "user_submissions_view" : "default",
       "form_status" : "ENTITYFORM_OPEN",
-      "roles" : { "1" : "1", "2" : "2", "3" : "3" },
+      "roles" : { "1" : "1", "2" : "2", "3" : "3", "4" : "4" },
       "resubmit_action" : "new",
-      "redirect_path" : "",
+      "redirect_path" : "\\/gracias",
       "instruction_pre" : { "value" : "", "format" : "manati_texto_formato" }
     },
     "weight" : "0",

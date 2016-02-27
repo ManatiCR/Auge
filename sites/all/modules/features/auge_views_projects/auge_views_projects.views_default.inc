@@ -126,7 +126,7 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'Más empresas';
-  $handler->display->display_options['link_url'] = 'es/proyectos';
+  $handler->display->display_options['link_url'] = 'proyectos';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Project image */
   $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
@@ -218,6 +218,14 @@ function auge_views_projects_views_default_views() {
 
   /* Display: Entrepreneur Projects */
   $handler = $view->new_display('panel_pane', 'Entrepreneur Projects', 'panel_pane_3');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'Ver todos';
+  $handler->display->display_options['link_url'] = 'proyectos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -252,6 +260,13 @@ function auge_views_projects_views_default_views() {
 
   /* Display: Mentor Projects */
   $handler = $view->new_display('panel_pane', 'Mentor Projects', 'panel_pane_4');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'Ver todos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -286,6 +301,14 @@ function auge_views_projects_views_default_views() {
 
   /* Display: Invest Projects */
   $handler = $view->new_display('panel_pane', 'Invest Projects', 'panel_pane_5');
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'Ver todos';
+  $handler->display->display_options['link_url'] = 'proyectos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -306,15 +329,66 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'projects' => 'projects',
   );
-  /* Filter criterion: Content: Has taxonomy term */
-  $handler->display->display_options['filters']['tid']['id'] = 'tid';
-  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['filters']['tid']['field'] = 'tid';
-  $handler->display->display_options['filters']['tid']['value'] = array(
-    12 => '12',
+  $handler->display->display_options['pane_category']['name'] = 'Projects';
+  $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Main Projects Section */
+  $handler = $view->new_display('panel_pane', 'Main Projects Section', 'panel_pane_6');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'Más empresas';
+  $handler->display->display_options['link_url'] = 'es/proyectos';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Project image */
+  $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['table'] = 'field_data_field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['field'] = 'field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['label'] = '';
+  $handler->display->display_options['fields']['field_project_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_project_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_project_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_project_image']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_project_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_project_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_project_image']['settings'] = array(
+    'image_style' => 'project_logo',
+    'image_link' => '',
   );
-  $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'getinvolved';
+  /* Field: Content: Project URL */
+  $handler->display->display_options['fields']['field_project_url']['id'] = 'field_project_url';
+  $handler->display->display_options['fields']['field_project_url']['table'] = 'field_data_field_project_url';
+  $handler->display->display_options['fields']['field_project_url']['field'] = 'field_project_url';
+  $handler->display->display_options['fields']['field_project_url']['label'] = '';
+  $handler->display->display_options['fields']['field_project_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_project_url']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_project_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_project_url']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_project_url']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_project_url']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_project_url']['field_api_classes'] = TRUE;
+  /* Field: Content: Project URL */
+  $handler->display->display_options['fields']['field_project_url_1']['id'] = 'field_project_url_1';
+  $handler->display->display_options['fields']['field_project_url_1']['table'] = 'field_data_field_project_url';
+  $handler->display->display_options['fields']['field_project_url_1']['field'] = 'field_project_url';
+  $handler->display->display_options['fields']['field_project_url_1']['label'] = '';
+  $handler->display->display_options['fields']['field_project_url_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_project_url_1']['alter']['text'] = '<div class="project-circle">
+[field_project_image]
+[field_project_url]
+<div class="project-url-overlay">[field_project_url_1]</div>
+</div>';
+  $handler->display->display_options['fields']['field_project_url_1']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_project_url_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_project_url_1']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_project_url_1']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_project_url_1']['click_sort_column'] = 'url';
   $handler->display->display_options['pane_category']['name'] = 'Projects';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $translatables['projects'] = array(
@@ -336,8 +410,10 @@ function auge_views_projects_views_default_views() {
     t('Learn Projects'),
     t('See all'),
     t('Entrepreneur Projects'),
+    t('Ver todos'),
     t('Mentor Projects'),
     t('Invest Projects'),
+    t('Main Projects Section'),
   );
   $export['projects'] = $view;
 

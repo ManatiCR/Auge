@@ -379,7 +379,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Learn title',
       'title' => 'Emprender',
-      'body' => '<p>¿Ya se decidió? ¿Tiene un Producto Mínimo Viable, un plan y el equipo para echarse al agua? ¡Ingrese a nuestro proceso de incubación en comunidad!</p>',
+      'body' => '<p>¿Decidió&nbsp;dedicarse a su emprendimiento? ¿Tiene un producto o servicio validado y el equipo para gestionar una Empresa Mínima Viable?&nbsp;¡Ingrese a nuestro proceso de incubación en comunidad!</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -444,7 +444,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>Una vez que se ha identificado un modelo de negocio y se han realizado pruebas con un Producto Mínimo Viable, los equipos pueden solicitar ingreso al proceso de incubación. Este proceso incluye las fases verde y roja y para ingresar, se requiere la validación resultante del proceso de aprender, o aprobar un proceso de evaluación de requisitos. Una vez que se solicita el ingreso, todos los equipos emprendedores pasan por una valoración en dos pasos, con una triada de especialistas y nuestro Consejo Consultivo en pleno.</p><p>Estos son algunos de los proyectos que se emprenden con nosotros:</p>',
+      'body' => '<p>Una vez que se ha identificado un modelo de negocio y se han realizado pruebas con un Producto Mínimo Viable, los equipos pueden solicitar ingreso al proceso de incubación. Este proceso incluye las fases verde y roja y para ingresar, se requiere la validación resultante del proceso de aprender, o aprobar un proceso de evaluación de requisitos. Una vez que se solicita el ingreso, todos los equipos emprendedores pasan por una valoración en dos pasos, con un taller diagnóstico y una triada de especialistas.</p><p>Estos son algunos de los emprendimientos que incubamos:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -469,8 +469,8 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'buttons' => NULL,
       'custom_page_title_pattern' => 'Emprender | Auge',
-      'form_build_id' => 'form-pnSkXBB26KAQKCoZCJPS64geh1u5rbCO09h7Ry1GAnA',
-      'form_token' => 'dWAZYIJYSyah0F52cDXNd7xmZg_7tn9XM1bmmuAhH04',
+      'form_build_id' => 'form-4dYahWJPkNzLJfM1Sd2sjy_aJWXiOkB7NXTKCZHP7jc',
+      'form_token' => '5l-6dgRkIOgk0DQZA9ubA4ippuyoseUVz-b31XpCw0w',
       'form_id' => 'panels_custom_title_tag_edit_form',
     );
     $pane->cache = array();
@@ -486,7 +486,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->panels['content'][2] = 'new-788d65e3-ad78-4096-89b7-41635adeda5e';
     $pane = new stdClass();
     $pane->pid = 'new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
-    $pane->panel = 'content_bottom';
+    $pane->panel = 'content';
     $pane->type = 'views_panes';
     $pane->subtype = 'stages-panel_pane_6';
     $pane->shown = TRUE;
@@ -498,11 +498,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = '8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
     $display->content['new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145'] = $pane;
-    $display->panels['content_bottom'][0] = 'new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
+    $display->panels['content'][3] = 'new-8ba5f4d2-b30b-4d0d-a3a8-46e786644145';
     $pane = new stdClass();
     $pane->pid = 'new-cb1f9810-d02a-4d0b-8dcb-2fee953cca33';
     $pane->panel = 'content_bottom';
@@ -517,11 +517,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'cb1f9810-d02a-4d0b-8dcb-2fee953cca33';
     $display->content['new-cb1f9810-d02a-4d0b-8dcb-2fee953cca33'] = $pane;
-    $display->panels['content_bottom'][1] = 'new-cb1f9810-d02a-4d0b-8dcb-2fee953cca33';
+    $display->panels['content_bottom'][0] = 'new-cb1f9810-d02a-4d0b-8dcb-2fee953cca33';
     $pane = new stdClass();
     $pane->pid = 'new-361f370b-31c7-4271-a138-137dbde42663';
     $pane->panel = 'content_wide';
@@ -549,9 +549,18 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'mlpanels' => array(
+        'und' => array(
+          'admin_title' => '',
+          'title' => '',
+          'body' => '<a href="/contacto">Cuéntenos de su emprendimiento</a>',
+          'format' => 'full_html',
+          'substitute' => TRUE,
+        ),
+      ),
       'admin_title' => '',
       'title' => '',
-      'body' => '<a href=#>Register my idea</a>',
+      'body' => '<a href="/contacto">Cuéntenos de su emprendimiento</a>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -1012,7 +1021,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>La generación de una cultura de emprendimiento es clave para el desarrollo económico y social de los países y en nuestro proceso de incubación en comunidad, hemos logrado generar las condiciones para elevar las posibilidades de éxito de emprendimientos por oportunidad que sean creativos, dinámicos y sostenibles. Usted puede ser parte de estos resultados:</p><ul><li>Apoyando financieramente nuestras actividades, mediante nuestro fondo colaborativo.</li><li>Invirtiendo directamente en alguno de los proyectos que incubamos.</li></ul><p>&nbsp;</p><p>Estos son algunos de los proyectos que usted puede apoyar:</p><p>&nbsp;</p>',
+      'body' => '<p>La generación de una cultura de emprendimiento es clave para el desarrollo económico y social de los países y en nuestro proceso de incubación en comunidad, hemos logrado generar las condiciones para elevar las posibilidades de éxito de emprendimientos por oportunidad que sean creativos, dinámicos y sostenibles. Usted puede ser parte de estos resultados:</p><ul><li>Apoyando financieramente nuestras actividades, mediante nuestro fondo colaborativo.</li><li>Invirtiendo directamente en alguno de los proyectos que incubamos.</li></ul><p>&nbsp;</p><p>Estos son algunos de los emprendimientos&nbsp;que usted puede apoyar:</p><p>&nbsp;</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1142,9 +1151,18 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'mlpanels' => array(
+        'und' => array(
+          'admin_title' => '',
+          'title' => '',
+          'body' => '<a href="/contacto">Contáctenos para impulsar</a>',
+          'format' => 'full_html',
+          'substitute' => TRUE,
+        ),
+      ),
       'admin_title' => '',
       'title' => '',
-      'body' => '<a href=#>Register my idea</a>',
+      'body' => '<a href="/contacto">Contáctenos para impulsar</a>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -1642,7 +1660,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>La inmersión en el problema o necesidad que se quiere resolver eleva las posibilidades de éxito de cualquier emprendimiento. En nuestras fases azul y amarilla usted descubrirá la esencia del problema y definirá una solución creativa, ajustada a sus motivaciones y capacidades. También puede aprender y experimentar rápidamente en nuestros FlashLab y Sprint.</p><p>Estos son algunos de los proyectos que han aprendido con nosotros:</p>',
+      'body' => '<p>La inmersión en el problema o necesidad que se quiere resolver eleva las posibilidades de éxito de cualquier emprendimiento. En nuestras fases azul y amarilla usted descubrirá la esencia del problema y definirá una solución creativa, ajustada a sus motivaciones y capacidades. También puede aprender y experimentar rápidamente en nuestros FlashLab y Sprint.</p><p>Estas son las fases y servicios de la etapa de aprendizaje:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1658,8 +1676,27 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $display->content['new-b95250c8-9aff-49a5-a3d8-546cc47fe32e'] = $pane;
     $display->panels['content'][1] = 'new-b95250c8-9aff-49a5-a3d8-546cc47fe32e';
     $pane = new stdClass();
-    $pane->pid = 'new-a91fea8f-5226-48a0-a158-9d0c94695b96';
+    $pane->pid = 'new-b810fa0c-9ff7-48c7-81b8-5269ee6dd833';
     $pane->panel = 'content';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'stages-panel_pane_5';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = 'b810fa0c-9ff7-48c7-81b8-5269ee6dd833';
+    $display->content['new-b810fa0c-9ff7-48c7-81b8-5269ee6dd833'] = $pane;
+    $display->panels['content'][2] = 'new-b810fa0c-9ff7-48c7-81b8-5269ee6dd833';
+    $pane = new stdClass();
+    $pane->pid = 'new-a91fea8f-5226-48a0-a158-9d0c94695b96';
+    $pane->panel = 'content_bottom';
     $pane->type = 'custom_title_tag';
     $pane->subtype = 'custom_title_tag';
     $pane->shown = TRUE;
@@ -1677,55 +1714,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'a91fea8f-5226-48a0-a158-9d0c94695b96';
     $display->content['new-a91fea8f-5226-48a0-a158-9d0c94695b96'] = $pane;
-    $display->panels['content'][2] = 'new-a91fea8f-5226-48a0-a158-9d0c94695b96';
-    $pane = new stdClass();
-    $pane->pid = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane->panel = 'content_bottom';
-    $pane->type = 'custom';
-    $pane->subtype = 'custom';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'admin_title' => '',
-      'title' => '',
-      'body' => '<p><strong>Otros servicios</strong></p><p><strong>FlashLab:</strong></p><p>Cursos rápidos, prácticos y experimentales diseñados para emprendedores y &nbsp;colaboradores de empresas o instituciones que quieren desarrollar emprendimientos corporativos o un spin-off. &nbsp;Los Labs son sesiones de 4 horas con un espacio para experimentar y se imparten según demanda. Si desea asistir a uno de nuestros FlashLabs, vea nuestro calendario o comuníquese con nosotros.</p><p>&nbsp;</p><p><strong>Sprint Auge:</strong></p><p>Competencia de co-creación, diversa, práctica y &nbsp;enfocada que busca desarrollar conocimientos y fomentar habilidades en torno al emprendimiento y la innovación. Como base, se proponen soluciones para un reto planteado por una empresa y organización que patrocina la actividad, utilizando la metodología de Design Thinking &nbsp;como estructura.</p><p>&nbsp;</p><p><strong>Laboratorio de fabricación para acelerar prototipado:</strong></p><p><em>La Inventoría</em> es el proyecto con el que nace la Fundación Costa Rica Innova, organización que se incuba en AUGE con el apoyo de FUNDEVI. Mediante una alianza con sus creadores, AUGE ofrece el servicio de acelerar prototipos por medio de la colaboración de activadores del movimiento maker, además de herramientas como impresoras 3D, arduinos, cortadora láser entre otros. <a target="_blank" href="https://www.facebook.com/inventoria/?fref=ts">Leer más</a>.</p>',
-      'format' => 'manati_texto_formato',
-      'substitute' => TRUE,
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '6e211677-d73b-434c-a067-83d6f9fe5522';
-    $display->content['new-6e211677-d73b-434c-a067-83d6f9fe5522'] = $pane;
-    $display->panels['content_bottom'][0] = 'new-6e211677-d73b-434c-a067-83d6f9fe5522';
-    $pane = new stdClass();
-    $pane->pid = 'new-b810fa0c-9ff7-48c7-81b8-5269ee6dd833';
-    $pane->panel = 'content_bottom';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'stages-panel_pane_5';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = 'b810fa0c-9ff7-48c7-81b8-5269ee6dd833';
-    $display->content['new-b810fa0c-9ff7-48c7-81b8-5269ee6dd833'] = $pane;
-    $display->panels['content_bottom'][1] = 'new-b810fa0c-9ff7-48c7-81b8-5269ee6dd833';
+    $display->panels['content_bottom'][0] = 'new-a91fea8f-5226-48a0-a158-9d0c94695b96';
     $pane = new stdClass();
     $pane->pid = 'new-a56e6d41-a4e0-4f52-9cdb-124955b07871';
     $pane->panel = 'content_bottom';
@@ -1740,30 +1733,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = 'a56e6d41-a4e0-4f52-9cdb-124955b07871';
     $display->content['new-a56e6d41-a4e0-4f52-9cdb-124955b07871'] = $pane;
-    $display->panels['content_bottom'][2] = 'new-a56e6d41-a4e0-4f52-9cdb-124955b07871';
-    $pane = new stdClass();
-    $pane->pid = 'new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863';
-    $pane->panel = 'content_wide';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'projects-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'aa20a8fc-72fc-4d1b-a08a-a43d3a57c863';
-    $display->content['new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863'] = $pane;
-    $display->panels['content_wide'][0] = 'new-aa20a8fc-72fc-4d1b-a08a-a43d3a57c863';
+    $display->panels['content_bottom'][1] = 'new-a56e6d41-a4e0-4f52-9cdb-124955b07871';
     $pane = new stdClass();
     $pane->pid = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
     $pane->panel = 'content_wide';
@@ -1772,9 +1746,18 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'mlpanels' => array(
+        'und' => array(
+          'admin_title' => '',
+          'title' => '',
+          'body' => '<a href="/contacto">Cuéntenos de su emprendimiento</a>',
+          'format' => 'full_html',
+          'substitute' => TRUE,
+        ),
+      ),
       'admin_title' => '',
       'title' => '',
-      'body' => '<a href=#>Register my idea</a>',
+      'body' => '<a href="/contacto">Cuéntenos de su emprendimiento</a>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -1788,11 +1771,11 @@ function auge_pages_get_involved_default_page_manager_pages() {
       'css_class' => 'register-idea-link',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'a2719e64-c746-4d77-9532-7b332a01cc7e';
     $display->content['new-a2719e64-c746-4d77-9532-7b332a01cc7e'] = $pane;
-    $display->panels['content_wide'][1] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
+    $display->panels['content_wide'][0] = 'new-a2719e64-c746-4d77-9532-7b332a01cc7e';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -2235,7 +2218,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>¿Desea ser parte de una red de interacción, experiencias y crecimiento orientada a la innovación? Le invitamos a ser parte de nuestro equipo Warp, para:</p><p>Consolidar el éxito de las iniciativas incubadas en AUGE, mediante la transferencia de conocimientos y consejos de expertos desde sus primeras etapas de desarrollo.<br>Enriquecer el proceso de toma de decisiones tanto para emprendedores como mentores, &nbsp;por medio del intercambio de conocimiento entre los miembros de la red.<br>Fortalecer en el tejido empresarial costarricense valiéndose de la filosofía de la economía colaborativa como medio para el desarrollo inclusivo y sostenible del país.</p><p>¿Le interesa contribuir? (link al formulario)<br>Estos son algunos de nuestros mentores y mentoras:</p><p>Ver todos (lista completa de personas)</p>',
+      'body' => '<p>¿Desea ser parte de una red de interacción, experiencias y crecimiento orientada a la innovación? Le invitamos a ser parte de nuestro equipo Warp, para:</p><ul><li>Consolidar el éxito de las iniciativas incubadas en AUGE, mediante la transferencia de conocimientos y consejos de expertos desde sus primeras etapas de desarrollo.</li><li>Enriquecer el proceso de toma de decisiones tanto para emprendedores como mentores, &nbsp;por medio del intercambio de conocimiento entre los miembros de la red.</li><li>Fortalecer en el tejido empresarial costarricense valiéndose de la filosofía de la economía colaborativa como medio para el desarrollo inclusivo y sostenible del país.</li></ul><p>¿Le interesa contribuir? Por favor complete el formulario y pronto nos comunicaremos con usted:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -2365,9 +2348,18 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'mlpanels' => array(
+        'und' => array(
+          'admin_title' => '',
+          'title' => '',
+          'body' => '<a href="/contacto">Solicite ingreso a la red Warp</a>',
+          'format' => 'full_html',
+          'substitute' => TRUE,
+        ),
+      ),
       'admin_title' => '',
       'title' => '',
-      'body' => '<a href=#>Register my idea</a>',
+      'body' => '<a href="/contacto">Solicite ingreso a la red Warp</a>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );

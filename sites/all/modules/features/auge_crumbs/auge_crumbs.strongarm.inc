@@ -90,8 +90,8 @@ function auge_crumbs_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'crumbs_weights';
   $strongarm->value = array(
-    'crumbs.entityParent.node.blog_post' => 1,
-    'crumbs.entityParent.node.activity' => 2,
+    'crumbs.entityParent.node.activity' => 1,
+    'crumbs.entityParent.node.blog_post' => 2,
     'menu.link_title.main-menu' => 3,
     'taxonomy.termReference.*' => 4,
     '*' => FALSE,

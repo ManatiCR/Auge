@@ -355,7 +355,7 @@ function auge_pages_activities_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Actividades',
-      'body' => '<p>Eventos, capacitaciones, fechas importantes.</p>',
+      'body' => '<p>Acompáñenos en nuestros eventos y capacitaciones abiertas al público</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );

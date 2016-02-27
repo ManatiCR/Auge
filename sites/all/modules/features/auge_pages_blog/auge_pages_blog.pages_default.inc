@@ -632,7 +632,7 @@ function auge_pages_blog_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Blog Title',
       'title' => 'Blog',
-      'body' => '<p>Useful information about what we do, learn and achieve.&nbsp;</p>',
+      'body' => '<p>Información útil de lo que hacemos y logramos.&nbsp;</p>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );

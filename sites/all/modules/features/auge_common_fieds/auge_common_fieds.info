@@ -44,6 +44,7 @@ features[field_group][] = group_blog_post|node|blog_post|form
 features[field_group][] = group_contact_form|entityform|contact_form|default
 features[field_group][] = group_personnel|node|personnel|form
 features[field_group][] = group_stages|node|stages|form
+features[taxonomy][] = contact_form_addresses
 features_exclude[taxonomy][blog_category] = blog_category
 features_exclude[taxonomy][getinvolved] = getinvolved
 features_exclude[taxonomy][personnel_area] = personnel_area

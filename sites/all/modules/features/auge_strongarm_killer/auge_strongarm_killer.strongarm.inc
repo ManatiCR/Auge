@@ -21,7 +21,7 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_activity';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-i18n';
   $export['additional_settings__active_tab_activity'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -35,14 +35,14 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_personnel';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-i18n';
   $export['additional_settings__active_tab_personnel'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_stages';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-i18n';
   $export['additional_settings__active_tab_stages'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -272,21 +272,21 @@ function auge_strongarm_killer_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_activity_pattern';
-  $strongarm->value = '';
+  $strongarm->value = '[node:content-type:i18n-name]/[node:title]';
   $export['pathauto_node_activity_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_pattern';
-  $strongarm->value = 'content/[node:title]';
+  $strongarm->value = '[node:title]';
   $export['pathauto_node_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_taxonomy_term_pattern';
-  $strongarm->value = '[term:vocabulary]/[term:name]';
+  $strongarm->value = '[term:i18n-vocabulary]/[term:i18n-name]';
   $export['pathauto_taxonomy_term_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -370,15 +370,14 @@ function auge_strongarm_killer_strongarm() {
     'toggle_node_user_picture' => 1,
     'toggle_comment_user_picture' => 1,
     'toggle_comment_user_verification' => 1,
-    'toggle_favicon' => 0,
+    'toggle_favicon' => 1,
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 0,
     'default_logo' => 0,
     'logo_path' => 'sites/all/themes/auge-theme/logo.png',
     'logo_upload' => '',
     'default_favicon' => 0,
-    'favicon_path' => '',
-    'favicon_upload' => '',
+    'favicon_path' => 'public://favicon.png',
     'jquery_update_jquery_version' => '',
     'magic_css_excludes' => 'system/*.css',
     'magic_footer_js' => 0,
@@ -388,6 +387,7 @@ function auge_strongarm_killer_strongarm() {
     'magic_rebuild_registry' => 0,
     'magic_viewport_indicator' => 1,
     'magic_modernizr_debug' => FALSE,
+    'favicon_mimetype' => 'image/png',
   );
   $export['theme_auge_settings'] = $strongarm;
 

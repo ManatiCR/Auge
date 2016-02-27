@@ -86,7 +86,7 @@ function auge_pages_contact_field_default_field_instances() {
     'entity_type' => 'entityform',
     'fences_wrapper' => 'div',
     'field_name' => 'field_email',
-    'label' => 'Email',
+    'label' => 'Su correo electrónico:',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -138,7 +138,7 @@ function auge_pages_contact_field_default_field_instances() {
     'entity_type' => 'entityform',
     'fences_wrapper' => 'div',
     'field_name' => 'field_message',
-    'label' => 'Message',
+    'label' => 'Su mensaje:',
     'required' => 1,
     'settings' => array(
       'text_processing' => 0,
@@ -191,7 +191,7 @@ function auge_pages_contact_field_default_field_instances() {
     'entity_type' => 'entityform',
     'fences_wrapper' => 'div',
     'field_name' => 'field_name',
-    'label' => 'Name',
+    'label' => 'Su nombre:',
     'required' => 1,
     'settings' => array(
       'text_processing' => 0,
@@ -244,7 +244,7 @@ function auge_pages_contact_field_default_field_instances() {
     'entity_type' => 'entityform',
     'fences_wrapper' => 'div',
     'field_name' => 'field_subject',
-    'label' => 'Subject',
+    'label' => 'Asunto:',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -272,11 +272,11 @@ function auge_pages_contact_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Asunto:');
   t('Contacted email');
-  t('Email');
-  t('Message');
-  t('Name');
-  t('Subject');
+  t('Su correo electrónico:');
+  t('Su mensaje:');
+  t('Su nombre:');
 
   return $field_instances;
 }

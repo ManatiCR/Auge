@@ -23,7 +23,7 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
       'vid' => 'personnel_view',
       'display' => 'panel_pane_5',
       'args' => '',
-      'title' => 'Team',
+      'title' => 'Equipo',
       'weight' => '-100',
       'type' => 'view',
     ),
@@ -31,8 +31,16 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
       'vid' => 'personnel_view',
       'display' => 'panel_pane_6',
       'args' => '',
-      'title' => 'Board of advisors',
+      'title' => 'Consejo consultivo',
       'weight' => '-99',
+      'type' => 'view',
+    ),
+    2 => array(
+      'vid' => 'satellite_companies',
+      'display' => 'panel_pane_5',
+      'args' => '',
+      'title' => 'Empresas satélite',
+      'weight' => '-98',
       'type' => 'view',
     ),
   );
@@ -42,9 +50,10 @@ function auge_quicktabs_quicktabs_default_quicktabs() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Board of advisors');
+  t('Consejo consultivo');
+  t('Empresas satélite');
+  t('Equipo');
   t('Personel Tabs Spanish');
-  t('Team');
 
   $export['personel_tabs_spanish'] = $quicktabs;
 

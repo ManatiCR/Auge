@@ -35,7 +35,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'es',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nase:/',
+    'parent_identifier' => 'main-menu_nase:<nolink>',
   );
   // Exported menu link: main-menu_aprender:/aprender
   $menu_links['main-menu_aprender:/aprender'] = array(
@@ -62,7 +62,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'es',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nase:/',
+    'parent_identifier' => 'main-menu_nase:<nolink>',
   );
   // Exported menu link: main-menu_blog:/blog
   $menu_links['main-menu_blog:/blog'] = array(
@@ -193,7 +193,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'es',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nase:/',
+    'parent_identifier' => 'main-menu_nase:<nolink>',
   );
   // Exported menu link: main-menu_entrepreneur:/entrepreneur
   $menu_links['main-menu_entrepreneur:/entrepreneur'] = array(
@@ -220,39 +220,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'en',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_get-involved:/',
-  );
-  // Exported menu link: main-menu_facebook:https://www.facebook.com/
-  $menu_links['main-menu_facebook:https://www.facebook.com/'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'https://www.facebook.com/',
-    'router_path' => '',
-    'link_title' => 'Facebook',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(
-        'class' => array(
-          0 => 'facebook-icon',
-          1 => 'header-facebook-icon',
-          2 => 'header-icons',
-        ),
-      ),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => ' header-main-menu-item-social header-main-menu-item',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_facebook:https://www.facebook.com/',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -37,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_get-involved:<nolink>',
   );
   // Exported menu link: main-menu_get-involved:
   $menu_links['main-menu_get-involved:'] = array(
@@ -272,32 +240,6 @@ function auge_menus_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
     'language' => 'und',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: main-menu_get-involved:/
-  $menu_links['main-menu_get-involved:/'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '/',
-    'router_path' => '',
-    'link_title' => 'Get involved',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => 'header-main-menu-item',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_get-involved:/',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 1,
-    'expanded' => 1,
-    'weight' => -50,
-    'customized' => 1,
-    'language' => 'en',
     'menu_links_customized' => 1,
   );
   // Exported menu link: main-menu_invest:invest
@@ -325,7 +267,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'en',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_get-involved:/',
+    'parent_identifier' => 'main-menu_get-involved:<nolink>',
   );
   // Exported menu link: main-menu_learn:/learn
   $menu_links['main-menu_learn:/learn'] = array(
@@ -352,7 +294,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'en',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_get-involved:/',
+    'parent_identifier' => 'main-menu_get-involved:<nolink>',
   );
   // Exported menu link: main-menu_mentor:mentor
   $menu_links['main-menu_mentor:mentor'] = array(
@@ -379,116 +321,7 @@ function auge_menus_menu_default_menu_links() {
     'customized' => 1,
     'language' => 'en',
     'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_get-involved:/',
-  );
-  // Exported menu link: main-menu_projects:projects
-  $menu_links['main-menu_projects:projects'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'projects',
-    'router_path' => 'projects',
-    'link_title' => 'Projects',
-    'options' => array(
-      'alter' => TRUE,
-      'identifier' => 'main-menu_projects:projects',
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => 'header-main-menu-item',
-        'style' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'language' => 'en',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: main-menu_proyectos:projects
-  $menu_links['main-menu_proyectos:projects'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'projects',
-    'router_path' => 'projects',
-    'link_title' => 'Proyectos',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => 'header-main-menu-item',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_proyectos:projects',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -42,
-    'customized' => 1,
-    'language' => 'es',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: main-menu_quienes-somos:/whoweare
-  $menu_links['main-menu_quienes-somos:/whoweare'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '/whoweare',
-    'router_path' => '',
-    'link_title' => 'Quienes somos',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => 'header-main-menu-item',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_quienes-somos:/whoweare',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -40,
-    'customized' => 1,
-    'language' => 'es',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: main-menu_twitter:https://twitter.com/
-  $menu_links['main-menu_twitter:https://twitter.com/'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'https://twitter.com/',
-    'router_path' => '',
-    'link_title' => 'Twitter',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(
-        'class' => array(
-          0 => 'twitter-icon',
-          1 => 'header-icon',
-        ),
-      ),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => ' header-main-menu-item-social header-main-menu-item',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_twitter:https://twitter.com/',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -36,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
+    'parent_identifier' => 'main-menu_get-involved:<nolink>',
   );
   // Exported menu link: main-menu_who-we-are:/whoweare
   $menu_links['main-menu_who-we-are:/whoweare'] = array(
@@ -536,64 +369,6 @@ function auge_menus_menu_default_menu_links() {
     'language' => 'und',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: menu-social-links_facebook:https://www.facebook.com/
-  $menu_links['menu-social-links_facebook:https://www.facebook.com/'] = array(
-    'menu_name' => 'menu-social-links',
-    'link_path' => 'https://www.facebook.com/',
-    'router_path' => '',
-    'link_title' => 'Facebook',
-    'options' => array(
-      'identifier' => 'menu-social-links_facebook:https://www.facebook.com/',
-      'attributes' => array(
-        'class' => array(
-          0 => 'facebook-icon',
-        ),
-      ),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
-  );
-  // Exported menu link: menu-social-links_twitter:https://twitter.com/
-  $menu_links['menu-social-links_twitter:https://twitter.com/'] = array(
-    'menu_name' => 'menu-social-links',
-    'link_path' => 'https://twitter.com/',
-    'router_path' => '',
-    'link_title' => 'Twitter',
-    'options' => array(
-      'identifier' => 'menu-social-links_twitter:https://twitter.com/',
-      'attributes' => array(
-        'class' => array(
-          0 => 'twitter-icon',
-        ),
-      ),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => '',
-        'style' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-    'language' => 'und',
-    'menu_links_customized' => 1,
-  );
 
   // Translatables
   // Included for use with string extractors like potx.
@@ -604,15 +379,10 @@ function auge_menus_menu_default_menu_links() {
   t('Contacto');
   t('Emprender');
   t('Entrepreneur');
-  t('Facebook');
   t('Get involved');
   t('Invest');
   t('Learn');
   t('Mentor');
-  t('Projects');
-  t('Proyectos');
-  t('Quienes somos');
-  t('Twitter');
   t('Who we are');
 
   return $menu_links;

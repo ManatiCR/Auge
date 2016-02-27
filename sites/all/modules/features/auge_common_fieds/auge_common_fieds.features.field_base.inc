@@ -487,7 +487,7 @@ function auge_common_fieds_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         0 => array(
-          'vocabulary' => 'getinvolved',
+          'vocabulary' => 'contact_form_addresses',
           'parent' => 0,
         ),
       ),

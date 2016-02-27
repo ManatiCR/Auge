@@ -130,7 +130,7 @@ function auge_views_personnel_views_default_views() {
   $handler->display->display_options['fields']['nid']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['nid']['alter']['text'] = '<h3 class="personnel-name">[title]</h3>
 <span class="personnel-occupation">[field_occupation]</span>
-<div class="personnel-view-profile">[view_node]</div>';
+<div class="personnel-view-profile"><a>Ver perfil</a></div>';
   $handler->display->display_options['fields']['nid']['element_type'] = '0';
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nid']['element_wrapper_type'] = 'div';
@@ -482,7 +482,7 @@ function auge_views_personnel_views_default_views() {
     t('See profile'),
     t('<h3 class="personnel-name">[title]</h3>
 <span class="personnel-occupation">[field_occupation]</span>
-<div class="personnel-view-profile">[view_node]</div>'),
+<div class="personnel-view-profile"><a>Ver perfil</a></div>'),
     t('<div class="personnel-overlay">
 <div class="personnel-modal">
 <span class="personnel-overlay-close">close</span>
