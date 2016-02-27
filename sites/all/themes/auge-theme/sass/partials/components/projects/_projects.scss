@@ -69,7 +69,7 @@
     width: 100%;
     height: 130px;
     position: relative;
-    
+
     @include media($mobile-large) {
       height: 150px;
     }
@@ -77,17 +77,17 @@
       height: 233px;
     }
 
-    // vertical align with css 
+    // vertical align with css
     -webkit-transform-style: preserve-3d;
       -moz-transform-style: preserve-3d;
       transform-style: preserve-3d;
-    
+
     @include media($tablet) {
       &:hover {
         background-color: #E6E4ED;
       }
     }
-    
+
     // logo
     img {
       width: auto;
@@ -181,6 +181,25 @@
       color: white;
       &:after {
         border-color: transparent transparent transparent white;
+      }
+    }
+  }
+}
+
+.page-entrepreneur, .page-invest, .page-mentor{
+  .view-projects{
+    .view-content{
+      border-bottom: 1px solid #d3d3d3;
+      padding-bottom: 20px;
+    }
+    .more-link{
+      a{
+        color: #522E91;
+        margin-top: 20px;
+        display: block;
+        text-align: end;
+        font-size: 14px;
+        @include triangle(#522E91);
       }
     }
   }

@@ -17,3 +17,17 @@
   background-position: $x $y;
   background-repeat: no-repeat;
 }
+@mixin triangle($color) {
+  &:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent $color;
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+    margin-top: 5px;
+    }
+}
