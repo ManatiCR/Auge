@@ -85,7 +85,7 @@ h4{
 .panel-content-first {
   padding-bottom: 20px;
   @include media($tablet) {
-    padding-bottom: 75px;
+    padding-bottom: 55px;
   }
 }
 .panel-content-last {
@@ -235,19 +235,19 @@ h4{
     display: inline-block;
     padding: 10px 20px;
     font-family: $heading-font-family;
-    border: solid 3px #1BA2CC;
+    border: solid 3px #522E91;
     border-radius: 7px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #1BA2CC;
+    color: #522E91;
     line-height: 1;
     margin-bottom: 15px;
     @include media($tablet) {
       font-size: 18px;
       padding: 20px 60px;
       &:hover {
-        background-color: #1BA2CC;
+        background-color: #522E91;
         color: #fff;
         text-decoration: none;
       }
@@ -349,12 +349,14 @@ h4{
     }
     .views-field-view-node {
       display: block;
+      color: #fff;
       @include media($tablet) {
         display: inline-block;
       }
       a {
         @extend %button;
         @extend %button-white;
+        color: #fff;
         padding-bottom: 0;
         padding: 10px 15px;
         text-transform: uppercase;

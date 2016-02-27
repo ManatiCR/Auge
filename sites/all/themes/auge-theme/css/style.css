@@ -322,7 +322,7 @@ input[type="submit"] {
   display: inline-block;
   vertical-align: middle;
   padding: 15px 0; }
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 752px) {
     .site-logo {
       width: 160px; } }
   .site-logo img {
@@ -337,7 +337,7 @@ input[type="submit"] {
   .main-menu .header-main-menu-item a:hover, .main-menu .header-main-menu-item span:hover {
     text-decoration: none; }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 752px) {
   .main-menu {
     display: inline-block;
     vertical-align: middle;
@@ -348,7 +348,7 @@ input[type="submit"] {
   padding-left: 0;
   margin: 0px;
   display: none; }
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 752px) {
     .menu {
       display: inline-block; } }
   .expanded .menu {
@@ -365,10 +365,10 @@ input[type="submit"] {
   text-align: center; }
   .header-main-menu-item .show {
     display: block; }
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 752px) {
     .header-main-menu-item {
       margin: 0; } }
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 752px) {
     .header-main-menu-item {
       display: inline-block;
       margin-left: -4px;
@@ -387,10 +387,10 @@ input[type="submit"] {
     color: #d1d1d1;
     font-size: 2rem;
     padding: 5px 0; }
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 752px) {
       .header-main-menu-item a, .header-main-menu-item span {
         font-size: 1rem; } }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 850px) {
       .header-main-menu-item a, .header-main-menu-item span {
         font-size: 1.4rem; } }
   .header-main-menu-item a:hover, .header-main-menu-item span:hover {
@@ -410,7 +410,7 @@ input[type="submit"] {
     border-radius: 16px;
     width: 32px;
     background-color: #3e227a; }
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 752px) {
     .header-main-menu-item-social, .footer-item-social {
       margin: 0 4px 20px 4px; } }
 
@@ -457,7 +457,7 @@ input[type="submit"] {
     .expanded:hover .menu {
       display: block; } }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .expanded .menu {
     position: absolute;
     top: 40px;
@@ -470,7 +470,7 @@ input[type="submit"] {
     border-bottom: 1px solid #d1d1d1;
     border-right: 1px solid #d1d1d1; } }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .header-main-menu-subitem a {
     color: black;
     padding: 5px; }
@@ -587,11 +587,7 @@ input[type="submit"] {
 
 .quicktabs_main {
   background: #f7f7f7;
-  padding: 30px;
-  margin-bottom: 20px; }
-  @media screen and (min-width: 720px) {
-    .quicktabs_main {
-      margin-bottom: 145px; } }
+  padding: 30px; }
   .panel-one-col-wide .quicktabs_main {
     background: #fff; }
 
@@ -733,7 +729,7 @@ h4 {
   padding-bottom: 20px; }
   @media screen and (min-width: 720px) {
     .panel-content-first {
-      padding-bottom: 75px; } }
+      padding-bottom: 55px; } }
 
 .panel-content-last {
   padding: 20px 0; }
@@ -849,12 +845,12 @@ h4 {
     display: inline-block;
     padding: 10px 20px;
     font-family: "futura-pt", Helvetica, sans-serif;
-    border: solid 3px #1BA2CC;
+    border: solid 3px #522E91;
     border-radius: 7px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #1BA2CC;
+    color: #522E91;
     line-height: 1;
     margin-bottom: 15px; }
     @media screen and (min-width: 720px) {
@@ -862,7 +858,7 @@ h4 {
         font-size: 18px;
         padding: 20px 60px; }
         .register-idea-link a:hover {
-          background-color: #1BA2CC;
+          background-color: #522E91;
           color: #fff;
           text-decoration: none; } }
 
@@ -917,11 +913,13 @@ h4 {
         margin-bottom: 0;
         display: inline-block; } }
   .panel-panel .upcoming-event .views-field-view-node {
-    display: block; }
+    display: block;
+    color: #fff; }
     @media screen and (min-width: 720px) {
       .panel-panel .upcoming-event .views-field-view-node {
         display: inline-block; } }
     .panel-panel .upcoming-event .views-field-view-node a {
+      color: #fff;
       padding-bottom: 0;
       padding: 10px 15px;
       text-transform: uppercase;
