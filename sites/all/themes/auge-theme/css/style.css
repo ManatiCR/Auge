@@ -892,7 +892,7 @@ h4 {
     margin: 0; }
   .panel-panel .upcoming-event .date-display-single {
     color: #fff;
-    background: #F1542D;
+    background: #522E91;
     font-size: 1.6rem;
     width: auto;
     text-align: left;
@@ -1202,6 +1202,13 @@ h4 {
     margin-left: 5px;
     margin-top: 2px; }
 
+.view-all-activities {
+  margin-bottom: 40px; }
+  .view-all-activities .views-row {
+    margin-bottom: 20px; }
+  .view-all-activities .date-display-single {
+    background: #522E91 !important; }
+
 .activities-sidebar-row {
   width: 100%;
   display: inline-block; }
@@ -1384,6 +1391,9 @@ h4 {
   position: absolute;
   top: 20%;
   left: 10%; }
+
+.flexslider {
+  border: 0 !important; }
 
 #quicktabs-container-personnel_tabs {
   padding: 7%; }
