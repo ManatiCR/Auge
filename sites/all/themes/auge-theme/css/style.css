@@ -1038,6 +1038,10 @@ h4 {
   .panel-node-blog .field-blog-image img {
     padding: 20px 0; }
 
+.blog-post-main-content-category-wrapper{
+  display: inline-block !important;
+}
+
 .upcoming-events-page h3 {
   font-size: 2.4rem;
   color: #522e91;
