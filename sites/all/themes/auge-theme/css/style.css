@@ -43,7 +43,7 @@ html {
   white-space: nowrap;
   overflow: hidden; }
 
-.panel-grid-width, .page-user .main, .center-wrapper, .panel-front-page-boxes-projects .pane-title {
+.center-wrapper, .panel-front-page-boxes-projects .pane-title {
   max-width: 1020px;
   margin: 0 auto; }
 
@@ -500,11 +500,9 @@ input[type="submit"] {
   .nav-toggle.on span {
     background-color: transparent; }
   .nav-toggle.on span:before {
-    -webkit-transform: rotate(45deg) translate(5px, 5px);
-            transform: rotate(45deg) translate(5px, 5px); }
+    transform: rotate(45deg) translate(5px, 5px); }
   .nav-toggle.on span:after {
-    -webkit-transform: rotate(-45deg) translate(7px, -8px);
-            transform: rotate(-45deg) translate(7px, -8px); }
+    transform: rotate(-45deg) translate(7px, -8px); }
   @media screen and (min-width: 752px) {
     .nav-toggle {
       display: none; } }
@@ -721,6 +719,10 @@ h4 {
 .panel-grid-width, .page-user .main {
   margin: 0 auto;
   padding: 0 20px; }
+  @media screen and (min-width: 720px) {
+    .panel-grid-width, .page-user .main {
+      max-width: 1020px;
+      margin: 0 auto; } }
   @media screen and (min-width: 1100px) {
     .panel-grid-width, .page-user .main {
       padding: 0; } }
@@ -957,7 +959,7 @@ h4 {
     .blog-post-main-content-title a:active, .panel-node-activity .activity-main-content-title a:active {
       color: #F58345; }
 
-.blog-post-main-content-date, .panel-node-activity .activity-main-content-date {
+.blog-post-main-content-date, .panel-node-activity .activity-main-content-date, .panel-node-activity .activity-main-content-date-wrapper {
   color: #d1d1d1;
   font-size: 1.4rem;
   margin-right: 10px; }
@@ -1625,7 +1627,6 @@ h4 {
     width: 100%;
     height: 130px;
     position: relative;
-    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
     @media screen and (min-width: 500px) {
       .view-projects .project-circle {
@@ -1640,8 +1641,7 @@ h4 {
       width: auto;
       position: relative;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
+      transform: translateY(-50%);
       z-index: 10; }
     .view-projects .project-circle .field-project-url {
       position: absolute;
@@ -1656,8 +1656,7 @@ h4 {
       .view-projects .project-circle .field-project-url a {
         position: relative;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
+        transform: translateY(-50%);
         color: #fff;
         font-size: 1.8rem;
         line-height: 1;

@@ -75,7 +75,8 @@ h4{
   margin: 0 auto;
   padding: 0 20px;
   @include media($tablet) {
-    @extend %grid-width;
+    max-width: $grid-width;
+    margin: 0 auto;
   }
   @include media(1100px) {
     padding: 0;
