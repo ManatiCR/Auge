@@ -243,6 +243,8 @@ input[type="submit"] {
   padding: 8px 25px;
   width: 100%;
   margin-bottom: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   @media screen and (min-width: 767px) {
     input[type="submit"] {
@@ -959,6 +961,29 @@ h4 {
     .blog-post-main-content-title a:active, .panel-node-activity .activity-main-content-title a:active {
       color: #F58345; }
 
+.blog-post-main-content-author-wrapper {
+  display: inline; }
+
+.blog-post-main-content-author .field-author, .pane-content .field-author {
+  display: inline; }
+
+.pane-node-field-author .pane-content {
+  display: inline; }
+
+.blog-post-main-content-author-tag, .pane-node-field-author .pane-title {
+  color: #444547;
+  font-size: 1.5rem; }
+
+.blog-post-main-content-author, .pane-node-field-author {
+  padding-right: 10px; }
+  .blog-post-main-content-author a, .pane-node-field-author a {
+    color: #522e91;
+    text-decoration: underline;
+    font-size: 1.4rem; }
+
+.pane-node-field-author {
+  padding-bottom: 5px; }
+
 .blog-post-main-content-date, .panel-node-activity .activity-main-content-date, .panel-node-activity .activity-main-content-date-wrapper {
   color: #d1d1d1;
   font-size: 1.4rem;
@@ -1627,6 +1652,8 @@ h4 {
     width: 100%;
     height: 130px;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d; }
     @media screen and (min-width: 500px) {
       .view-projects .project-circle {
@@ -1807,4 +1834,5 @@ h4 {
 .pane-menu-menu-social-links li {
   display: inline-block;
   vertical-align: top; }
+
 /*# sourceMappingURL=style.css.map */
