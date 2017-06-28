@@ -1586,6 +1586,36 @@ function auge_pages_nodes_default_page_manager_handlers() {
     $display->content['new-93ebdbd0-d938-4b8b-8690-890c3686b1a5'] = $pane;
     $display->panels['content'][0] = 'new-93ebdbd0-d938-4b8b-8690-890c3686b1a5';
     $pane = new stdClass();
+    $pane->pid = 'new-fbcd5b09-5523-4207-98df-9b315d5240cc';
+    $pane->panel = 'content';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_author';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'taxonomy_term_reference_link',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'argument_entity_id:node_1',
+      'override_title' => 1,
+      'override_title_text' => 'Por: ',
+      'override_title_heading' => 'span',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'fbcd5b09-5523-4207-98df-9b315d5240cc';
+    $display->content['new-fbcd5b09-5523-4207-98df-9b315d5240cc'] = $pane;
+    $display->panels['content'][1] = 'new-fbcd5b09-5523-4207-98df-9b315d5240cc';
+    $pane = new stdClass();
     $pane->pid = 'new-9eb52103-a258-4cb9-82d3-29204306e54c';
     $pane->panel = 'content';
     $pane->type = 'node_created';
@@ -1645,11 +1675,11 @@ function auge_pages_nodes_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = '9eb52103-a258-4cb9-82d3-29204306e54c';
     $display->content['new-9eb52103-a258-4cb9-82d3-29204306e54c'] = $pane;
-    $display->panels['content'][1] = 'new-9eb52103-a258-4cb9-82d3-29204306e54c';
+    $display->panels['content'][2] = 'new-9eb52103-a258-4cb9-82d3-29204306e54c';
     $pane = new stdClass();
     $pane->pid = 'new-e684ba05-b376-4127-9327-0a8a1a1d2f6d';
     $pane->panel = 'content';
@@ -1741,11 +1771,11 @@ function auge_pages_nodes_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'e684ba05-b376-4127-9327-0a8a1a1d2f6d';
     $display->content['new-e684ba05-b376-4127-9327-0a8a1a1d2f6d'] = $pane;
-    $display->panels['content'][2] = 'new-e684ba05-b376-4127-9327-0a8a1a1d2f6d';
+    $display->panels['content'][3] = 'new-e684ba05-b376-4127-9327-0a8a1a1d2f6d';
     $pane = new stdClass();
     $pane->pid = 'new-3b9e5fd7-9920-4880-a974-1081cae27024';
     $pane->panel = 'content';
@@ -1815,11 +1845,11 @@ function auge_pages_nodes_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = '3b9e5fd7-9920-4880-a974-1081cae27024';
     $display->content['new-3b9e5fd7-9920-4880-a974-1081cae27024'] = $pane;
-    $display->panels['content'][3] = 'new-3b9e5fd7-9920-4880-a974-1081cae27024';
+    $display->panels['content'][4] = 'new-3b9e5fd7-9920-4880-a974-1081cae27024';
     $pane = new stdClass();
     $pane->pid = 'new-32f5c8a0-07b0-4c9d-b2e3-45a1ef83979b';
     $pane->panel = 'content';
@@ -1848,11 +1878,11 @@ function auge_pages_nodes_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 5;
     $pane->locks = array();
     $pane->uuid = '32f5c8a0-07b0-4c9d-b2e3-45a1ef83979b';
     $display->content['new-32f5c8a0-07b0-4c9d-b2e3-45a1ef83979b'] = $pane;
-    $display->panels['content'][4] = 'new-32f5c8a0-07b0-4c9d-b2e3-45a1ef83979b';
+    $display->panels['content'][5] = 'new-32f5c8a0-07b0-4c9d-b2e3-45a1ef83979b';
     $pane = new stdClass();
     $pane->pid = 'new-bb7fbe57-f462-4453-807e-53cc8311b517';
     $pane->panel = 'content';
@@ -1878,11 +1908,11 @@ function auge_pages_nodes_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 6;
     $pane->locks = array();
     $pane->uuid = 'bb7fbe57-f462-4453-807e-53cc8311b517';
     $display->content['new-bb7fbe57-f462-4453-807e-53cc8311b517'] = $pane;
-    $display->panels['content'][5] = 'new-bb7fbe57-f462-4453-807e-53cc8311b517';
+    $display->panels['content'][6] = 'new-bb7fbe57-f462-4453-807e-53cc8311b517';
     $pane = new stdClass();
     $pane->pid = 'new-760d355e-bbc3-41a7-a35d-dcfa3ba96d20';
     $pane->panel = 'sidebar';
