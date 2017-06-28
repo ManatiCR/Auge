@@ -30,12 +30,6 @@ function auge_contexts_default_fe_block_settings() {
         'theme' => 'auge',
         'weight' => 3,
       ),
-      'bartik' => array(
-        'region' => 'footer_fourthcolumn',
-        'status' => 1,
-        'theme' => 'bartik',
-        'weight' => -14,
-      ),
       'seven' => array(
         'region' => '',
         'status' => 0,
