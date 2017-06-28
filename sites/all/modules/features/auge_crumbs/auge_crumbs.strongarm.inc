@@ -45,7 +45,6 @@ function auge_crumbs_strongarm() {
   $strongarm->value = array(
     'auge' => 'theme_breadcrumb',
     'seven' => 'theme_breadcrumb',
-    'bartik' => 'theme_breadcrumb',
   );
   $export['crumbs_original_theme_breadcrumb'] = $strongarm;
 
