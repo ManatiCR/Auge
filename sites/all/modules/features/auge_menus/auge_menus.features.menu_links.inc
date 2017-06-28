@@ -168,33 +168,6 @@ function auge_menus_menu_default_menu_links() {
     'language' => 'es',
     'menu_links_customized' => 1,
   );
-  // Exported menu link: main-menu_emprender:/emprender
-  $menu_links['main-menu_emprender:/emprender'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => '/emprender',
-    'router_path' => '',
-    'link_title' => 'Emprender',
-    'options' => array(
-      'alter' => TRUE,
-      'attributes' => array(),
-      'item_attributes' => array(
-        'id' => '',
-        'class' => 'header-main-menu-subitem',
-        'style' => '',
-      ),
-      'identifier' => 'main-menu_emprender:/emprender',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-    'language' => 'es',
-    'menu_links_customized' => 1,
-    'parent_identifier' => 'main-menu_nase:<nolink>',
-  );
   // Exported menu link: main-menu_entrepreneur:/entrepreneur
   $menu_links['main-menu_entrepreneur:/entrepreneur'] = array(
     'menu_name' => 'main-menu',
@@ -377,7 +350,6 @@ function auge_menus_menu_default_menu_links() {
   t('Blog');
   t('Contact');
   t('Contacto');
-  t('Emprender');
   t('Entrepreneur');
   t('Get involved');
   t('Invest');
