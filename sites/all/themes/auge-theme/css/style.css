@@ -1046,6 +1046,12 @@ h4 {
 .pane-node-field-post-category .pane-title {
   display: none; }
 
+.view-taxonomies-blog .blog-post-main-content-title, .view-taxonomies-blog .panel-node-activity .activity-main-content-title, .panel-node-activity .view-taxonomies-blog .activity-main-content-title {
+  margin: 20px 0 0 0; }
+
+.view-taxonomies-blog .views-row-first .blog-post-main-content-title, .view-taxonomies-blog .views-row-first .panel-node-activity .activity-main-content-title, .panel-node-activity .view-taxonomies-blog .views-row-first .activity-main-content-title {
+  margin: 0; }
+
 .panel-node-blog {
   padding-bottom: 110px; }
   .panel-node-blog .pane-node .pane-title {
