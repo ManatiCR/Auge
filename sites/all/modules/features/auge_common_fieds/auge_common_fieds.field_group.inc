@@ -154,8 +154,9 @@ function auge_common_fieds_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_get_involved_category',
-      2 => 'title',
-      3 => 'path',
+      2 => 'field_main_image',
+      3 => 'title',
+      4 => 'path',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
