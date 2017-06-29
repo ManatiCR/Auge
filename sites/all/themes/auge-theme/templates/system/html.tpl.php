@@ -12,15 +12,24 @@
 
   <!-- Flexslider -->
   <?php if (drupal_is_front_page()): ?>
-      <link rel="stylesheet" href="/sites/all/libraries/flexslider/flexslider.css" type="text/css">
-      <script src="/sites/all/libraries/flexslider/jquery.flexslider.js"></script>
-      <script src="/sites/all/libraries/waypoints/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" href="/sites/all/libraries/flexslider/flexslider.css" type="text/css">
+    <script src="/sites/all/libraries/flexslider/jquery.flexslider.js"></script>
+    <script src="/sites/all/libraries/waypoints/jquery.waypoints.min.js"></script>
   <?php endif; ?>
 
   <!-- Typekit -->
   <script src="https://use.typekit.net/ahv5igy.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  </head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+    { (i[r].q=i[r].q||[]).push(arguments)}
+    ,i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-100119967-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
