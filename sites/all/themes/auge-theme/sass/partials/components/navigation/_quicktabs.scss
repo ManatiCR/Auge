@@ -77,12 +77,24 @@
   }
 }
 .page-entrepreneur {
-    .quicktabs-tabs {
-    .first {
+  .quicktabs-tabs {
+    li {
       a {
         background-color: #3c912e;
         &:after{
           border-color: #3c912e transparent transparent transparent;
+        }
+      }
+    }
+    .first {
+      a {
+        background-color: #fcdb0f;
+
+        &:after{
+          border-color: #fcdb0f transparent transparent transparent;
+        }
+        @include media(max-width 530px) {
+          padding: 5px 10px;
         }
       }
     }
