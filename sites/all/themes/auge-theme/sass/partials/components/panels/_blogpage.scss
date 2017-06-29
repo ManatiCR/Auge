@@ -104,3 +104,22 @@
     display: none;
   }
 }
+
+.view-display-id-block_2 {
+  .more-link {
+    a {
+      display: inline-block;
+      padding: 5px 10px;
+      @extend %button;
+      &:hover {
+        text-decoration: none;
+        background-color: $orange;
+        border-color: $orange;
+        color: #fff;
+        &:after {
+          border-color: transparent transparent transparent #fff;
+        }
+      }
+    }
+  }
+}
