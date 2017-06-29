@@ -76,13 +76,22 @@
     }
   }
 }
+
 .page-entrepreneur {
   .quicktabs-tabs {
-    li {
+    li:nth-child(2) {
       a {
         background-color: #3c912e;
-        &:after{
+        &:after {
           border-color: #3c912e transparent transparent transparent;
+        }
+      }
+    }
+    li:nth-child(3) {
+      a {
+        background-color: #bd021c;
+        &:after {
+          border-color: #bd021c transparent transparent transparent;
         }
       }
     }
@@ -90,19 +99,16 @@
       a {
         background-color: #fcdb0f;
 
-        &:after{
+        &:after {
           border-color: #fcdb0f transparent transparent transparent;
-        }
-        @include media(max-width 530px) {
-          padding: 5px 10px;
         }
       }
     }
     .last {
       a {
-        background-color: #bd021c;
-        &:after{
-          border-color: #bd021c transparent transparent transparent;
+        background-color: #EB7A50;
+        &:after {
+          border-color: #EB7A50 transparent transparent transparent;
         }
       }
     }
