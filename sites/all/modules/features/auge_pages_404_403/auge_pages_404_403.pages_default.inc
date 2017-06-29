@@ -129,7 +129,7 @@ function auge_pages_404_403_default_page_manager_pages() {
   $display->title_pane = 'new-4d3ea151-553a-46bb-bba0-c9302e3bddf6';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['page_404'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 
