@@ -297,11 +297,14 @@ function auge_views_stages_views_default_views() {
   $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
   $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
   $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
-  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 0;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
   $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'fases_emprender' => 'fases_emprender',
     'features_extra_test_nodequeue' => 0,
     'fases_aprender' => 0,
-    'fases_emprender' => 0,
+    'consejo_consultivo' => 0,
+    'red_warp' => 0,
+    'equipo' => 0,
   );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Nodequeue: Position */
