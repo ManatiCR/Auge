@@ -16,6 +16,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'admin_menu',
   );
@@ -26,6 +27,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'system',
   );
@@ -57,6 +59,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -111,6 +114,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'user',
   );
@@ -130,6 +134,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -158,6 +163,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'i18n_node',
   );
@@ -168,6 +174,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -187,6 +194,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'ctools_custom_content',
   );
@@ -252,6 +260,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'menu',
   );
@@ -262,6 +271,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'menu_attributes',
   );
@@ -289,6 +299,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'administer nodequeue',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'nodequeue',
   );
@@ -299,6 +310,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -327,6 +339,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -337,6 +350,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -347,6 +361,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'pathauto',
   );
@@ -356,6 +371,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'administer permissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'user',
   );
@@ -412,6 +428,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'taxonomy',
   );
@@ -431,6 +448,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'path',
   );
@@ -440,6 +458,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'administer users',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'user',
   );
@@ -468,6 +487,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -496,6 +516,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -524,6 +545,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'create activity content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -533,6 +555,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'create blog_post content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -542,6 +565,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'create front_page_images content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -551,6 +575,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'create personnel content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -560,6 +585,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'create projects content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -569,6 +595,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'create stages content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -579,6 +606,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'path',
   );
@@ -588,6 +616,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete any activity content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -597,6 +626,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete any blog_post content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -607,6 +637,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'entityform',
   );
@@ -616,6 +647,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete any front_page_images content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -625,6 +657,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete any personnel content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -634,6 +667,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete any projects content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -643,6 +677,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete any stages content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -652,6 +687,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete own activity content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -661,6 +697,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete own blog_post content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -671,6 +708,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'entityform',
   );
@@ -680,6 +718,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete own front_page_images content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -689,6 +728,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete own personnel content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -698,6 +738,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete own projects content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -707,6 +748,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete own stages content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -717,6 +759,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -726,6 +769,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete terms in blog_category',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'taxonomy',
   );
@@ -735,6 +779,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete terms in getinvolved',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'taxonomy',
   );
@@ -744,6 +789,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'delete terms in personnel_area',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'taxonomy',
   );
@@ -762,6 +808,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit any activity content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -771,6 +818,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit any blog_post content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -781,6 +829,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'entityform',
   );
@@ -790,6 +839,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit any front_page_images content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -799,6 +849,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit any personnel content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -808,6 +859,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit any projects content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -817,6 +869,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit any stages content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -826,6 +879,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit own activity content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -835,6 +889,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit own blog_post content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -845,6 +900,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'entityform',
   );
@@ -854,6 +910,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit own front_page_images content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -863,6 +920,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit own personnel content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -872,6 +930,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit own projects content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -881,6 +940,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit own stages content',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -890,6 +950,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit terms in blog_category',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'taxonomy',
   );
@@ -899,6 +960,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit terms in getinvolved',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'taxonomy',
   );
@@ -908,6 +970,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'edit terms in personnel_area',
     'roles' => array(
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'taxonomy',
   );
@@ -954,6 +1017,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'manipulate all queues',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'nodequeue',
   );
@@ -963,6 +1027,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'manipulate queues',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'nodequeue',
   );
@@ -991,6 +1056,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -1028,6 +1094,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'i18n_string',
   );
@@ -1038,6 +1105,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'translation',
   );
@@ -1057,6 +1125,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'i18n_string',
   );
@@ -1085,6 +1154,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -1095,6 +1165,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'page_manager',
   );
@@ -1105,6 +1176,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -1115,6 +1187,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -1125,6 +1198,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -1135,6 +1209,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -1157,6 +1232,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'filter',
   );
@@ -1167,6 +1243,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'filter',
   );
@@ -1177,6 +1254,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'entityform',
   );
@@ -1187,6 +1265,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'entityform',
   );
@@ -1197,6 +1276,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -1207,6 +1287,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'panels',
   );
@@ -1217,6 +1298,7 @@ function auge_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'content admin' => 'content admin',
+      'content creator' => 'content creator',
     ),
     'module' => 'node',
   );
@@ -1226,6 +1308,7 @@ function auge_roles_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'administrator' => 'administrator',
+      'content admin' => 'content admin',
     ),
     'module' => 'system',
   );
