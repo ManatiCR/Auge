@@ -535,6 +535,8 @@ input[type="submit"] {
 .quicktabs-tabs {
   padding-left: 0;
   margin: 0; }
+  .quicktabs-tabs li a {
+    text-decoration: none; }
 
 .quicktabs-tabs {
   padding: 0 20px; }
@@ -962,6 +964,9 @@ h4 {
 
 .panel-sidebar li, .main-footer li, .header li {
   list-style-type: none; }
+
+.register-idea-link a, .more-link a {
+  text-decoration: none; }
 
 .blog-page {
   padding-bottom: 110px !important; }
