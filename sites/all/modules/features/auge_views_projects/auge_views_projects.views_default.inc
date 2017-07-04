@@ -125,8 +125,8 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
-  $handler->display->display_options['use_more_text'] = 'Más empresas';
-  $handler->display->display_options['link_url'] = 'proyectos';
+  $handler->display->display_options['use_more_text'] = 'Ver más';
+  $handler->display->display_options['link_url'] = 'emprendimientos';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Project image */
   $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
@@ -183,7 +183,7 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'See all';
-  $handler->display->display_options['link_url'] = 'projects';
+  $handler->display->display_options['link_url'] = 'emprendimientos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -225,7 +225,7 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'Ver todos';
-  $handler->display->display_options['link_url'] = 'proyectos';
+  $handler->display->display_options['link_url'] = 'emprendimientos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -267,6 +267,7 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'Ver todos';
+  $handler->display->display_options['link_url'] = 'emprendimientos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -308,7 +309,7 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'Ver todos';
-  $handler->display->display_options['link_url'] = 'proyectos';
+  $handler->display->display_options['link_url'] = 'emprendimientos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
@@ -341,7 +342,7 @@ function auge_views_projects_views_default_views() {
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'Más empresas';
-  $handler->display->display_options['link_url'] = 'es/proyectos';
+  $handler->display->display_options['link_url'] = 'es/emprendimientos';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -405,7 +406,7 @@ function auge_views_projects_views_default_views() {
 <div class="project-url-overlay">[field_project_url_1]</div>
 </div>'),
     t('Main Projects'),
-    t('Más empresas'),
+    t('Ver más'),
     t('Projects'),
     t('Learn Projects'),
     t('See all'),
@@ -414,6 +415,7 @@ function auge_views_projects_views_default_views() {
     t('Mentor Projects'),
     t('Invest Projects'),
     t('Main Projects Section'),
+    t('Más empresas'),
   );
   $export['projects'] = $view;
 
