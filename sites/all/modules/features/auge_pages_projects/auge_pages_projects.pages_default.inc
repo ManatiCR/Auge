@@ -13,7 +13,7 @@ function auge_pages_projects_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'projects';
   $page->task = 'page';
-  $page->admin_title = 'Projects';
+  $page->admin_title = 'Ventures';
   $page->admin_description = '';
   $page->path = 'ventures';
   $page->access = array();
@@ -32,7 +32,7 @@ function auge_pages_projects_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Projects',
+    'title' => 'Ventures',
     'no_blocks' => 0,
     'pipeline' => 'ipe',
     'body_classes_to_remove' => '',
@@ -236,7 +236,7 @@ function auge_pages_projects_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'Proyectos';
+  $display->title = 'Emprendimientos';
   $display->uuid = 'a13628f3-32b1-4ae4-8f0a-8075bcfef097';
   $display->content = array();
   $display->panels = array();
@@ -313,10 +313,19 @@ function auge_pages_projects_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'mlpanels' => array(
+        'und' => array(
+          'buttons' => NULL,
+          'custom_page_title_pattern' => 'Emprendimientos | Auge',
+          'form_build_id' => 'form-OYThQHEEGR0hKB8E_E242OIp1DutXhbw1sOwo3Dj8MQ',
+          'form_token' => 'muwpqgRRyOqITkZ5jE2GMMUXRck9dILeHUFc3u8Au6I',
+          'form_id' => 'panels_custom_title_tag_edit_form',
+        ),
+      ),
       'buttons' => NULL,
-      'custom_page_title_pattern' => 'Proyectos | Auge',
-      'form_build_id' => 'form-ZHc8ycaOFDmf-v23D7Q6leiAwqSrSA9cjNiCBSj0j00',
-      'form_token' => '5l-6dgRkIOgk0DQZA9ubA4ippuyoseUVz-b31XpCw0w',
+      'custom_page_title_pattern' => 'Emprendimientos | Auge',
+      'form_build_id' => 'form-OYThQHEEGR0hKB8E_E242OIp1DutXhbw1sOwo3Dj8MQ',
+      'form_token' => 'muwpqgRRyOqITkZ5jE2GMMUXRck9dILeHUFc3u8Au6I',
       'form_id' => 'panels_custom_title_tag_edit_form',
     );
     $pane->cache = array();
@@ -353,7 +362,7 @@ function auge_pages_projects_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['projects'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 
