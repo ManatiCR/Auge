@@ -141,6 +141,17 @@ table {
 th, td {
   padding: 0.5em; }
 
+.pane-content a {
+  color: #522e91;
+  text-decoration: underline; }
+
+.pane-menu a {
+  text-decoration: none;
+  font-weight: normal; }
+
+.pane-menu-menu-get-involved a {
+  color: #fff; }
+
 /*
  * Rules for base drupal elements
  */
@@ -243,6 +254,8 @@ input[type="submit"] {
   padding: 8px 25px;
   width: 100%;
   margin-bottom: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   @media screen and (min-width: 767px) {
     input[type="submit"] {
@@ -955,7 +968,8 @@ h4 {
   text-transform: uppercase;
   font-size: 24px; }
   .blog-post-main-content-title a, .panel-node-activity .activity-main-content-title a {
-    color: #522e91; }
+    color: #522e91;
+    text-decoration: none; }
     .blog-post-main-content-title a:active, .panel-node-activity .activity-main-content-title a:active {
       color: #F58345; }
 
@@ -970,7 +984,12 @@ h4 {
   padding: 4px 6px;
   font-size: 1.4rem; }
   .blog-post-main-content-category a, .panel-node-activity .activity-main-content-category a {
-    color: white; }
+    color: white;
+    text-decoration: none; }
+
+.blog-categories-name-wrapper a {
+  text-decoration: none;
+  color: #2d2f33; }
 
 .blog-post-main-content-image, .panel-node-activity .activity-main-content-image {
   margin-top: 10px; }
@@ -1280,6 +1299,8 @@ h4 {
       .panel-front-page-boxes p {
         max-width: 65%; } }
   .panel-front-page-boxes a {
+    color: #F58345;
+    text-decoration: none;
     transition: 0.4s;
     display: inline-block;
     padding: 10px 15px;
@@ -1291,6 +1312,8 @@ h4 {
       background-color: #F58345;
       border-color: #F58345;
       color: white; }
+  .panel-front-page-boxes.panel-front-page-boxes-proximity a {
+    color: white; }
 
 .change-opacity {
   opacity: 1 !important; }
@@ -1627,6 +1650,8 @@ h4 {
     width: 100%;
     height: 130px;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d; }
     @media screen and (min-width: 500px) {
       .view-projects .project-circle {
@@ -1807,4 +1832,5 @@ h4 {
 .pane-menu-menu-social-links li {
   display: inline-block;
   vertical-align: top; }
+
 /*# sourceMappingURL=style.css.map */
