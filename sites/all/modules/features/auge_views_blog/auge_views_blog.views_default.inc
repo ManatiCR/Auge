@@ -514,8 +514,7 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['max_length'] = '30';
-  $handler->display->display_options['fields']['body']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '55';
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['html'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
@@ -830,12 +829,21 @@ function auge_views_blog_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Categorías';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['relationship'] = 'nid';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Field: Content: Category */
   $handler->display->display_options['fields']['field_post_category']['id'] = 'field_post_category';
   $handler->display->display_options['fields']['field_post_category']['table'] = 'field_data_field_post_category';
   $handler->display->display_options['fields']['field_post_category']['field'] = 'field_post_category';
   $handler->display->display_options['fields']['field_post_category']['relationship'] = 'nid';
   $handler->display->display_options['fields']['field_post_category']['label'] = '';
+  $handler->display->display_options['fields']['field_post_category']['alter']['text'] = '[path]';
   $handler->display->display_options['fields']['field_post_category']['element_type'] = '0';
   $handler->display->display_options['fields']['field_post_category']['element_class'] = 'blog-categories-name';
   $handler->display->display_options['fields']['field_post_category']['element_label_colon'] = FALSE;
@@ -885,6 +893,7 @@ function auge_views_blog_views_default_views() {
     t('Blog'),
     t('Categories (Blog) Spanish'),
     t('Categorías'),
+    t('[path]'),
   );
   $export['categories'] = $view;
 

@@ -24,7 +24,6 @@ function auge_views_activities_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Activities';
   $handler->display->display_options['use_ajax'] = TRUE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['use_more_text'] = 'View all';
   $handler->display->display_options['link_display'] = 'custom_url';
@@ -179,7 +178,9 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'Ver todas las actividades';
-  $handler->display->display_options['link_url'] = '/activities';
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
+  $handler->display->display_options['link_url'] = '/actividades';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -361,7 +362,7 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['use_more_text'] = 'Ver todas las actividades';
   $handler->display->display_options['defaults']['link_display'] = FALSE;
   $handler->display->display_options['link_display'] = 'custom_url';
-  $handler->display->display_options['link_url'] = '/activities';
+  $handler->display->display_options['link_url'] = '/actividades';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -551,12 +552,17 @@ function auge_views_activities_views_default_views() {
   /* Display: Activities full page Spanish */
   $handler = $view->new_display('panel_pane', 'Activities full page Spanish', 'panel_pane_8');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'view-all-activities';
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'View all';
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
+  $handler->display->display_options['link_url'] = '/actividades';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '12';
@@ -572,8 +578,8 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
       'field' => 'field_activity_date_1',
-      'rendered' => 0,
-      'rendered_strip' => 0,
+      'rendered' => 1,
+      'rendered_strip' => 1,
     ),
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -664,6 +670,8 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -769,6 +777,7 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['link_url'] = '/actividades';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -979,6 +988,14 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View all';
+  $handler->display->display_options['link_url'] = '/actividades';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -1189,6 +1206,13 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View all';
+  $handler->display->display_options['link_url'] = '/actividades';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
@@ -1399,6 +1423,13 @@ function auge_views_activities_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'upcoming-event';
   $handler->display->display_options['display_description'] = 'Newest activity pane for get involved pages.';
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'View all';
+  $handler->display->display_options['link_url'] = '/actividades';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';

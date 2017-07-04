@@ -25,6 +25,7 @@ function auge_content_types_front_page_images_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
     ),
     'translatable' => 0,
@@ -46,6 +47,7 @@ function auge_content_types_front_page_images_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
     ),
     'translatable' => 0,
@@ -66,7 +68,9 @@ function auge_content_types_front_page_images_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(),
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
     'translatable' => 0,
     'type' => 'text_with_summary',
   );
@@ -74,7 +78,7 @@ function auge_content_types_front_page_images_field_default_field_bases() {
   // Exported field_base: 'field_main_image'
   $field_bases['field_main_image'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => 8,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_main_image',
@@ -87,6 +91,9 @@ function auge_content_types_front_page_images_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
