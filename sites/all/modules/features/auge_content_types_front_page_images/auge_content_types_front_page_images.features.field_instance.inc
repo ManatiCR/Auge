@@ -38,6 +38,7 @@ function auge_content_types_front_page_images_field_default_field_instances() {
     'label' => 'Front image button',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -92,6 +93,7 @@ function auge_content_types_front_page_images_field_default_field_instances() {
     'label' => 'Front image subtitle',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -147,6 +149,7 @@ function auge_content_types_front_page_images_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -182,32 +185,36 @@ function auge_content_types_front_page_images_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'flexslider_fields',
         'settings' => array(
-          'image_link' => '',
+          'caption' => 0,
           'image_style' => '',
+          'optionset' => 'frontpage_slider',
         ),
-        'type' => 'image',
+        'type' => 'flexslider',
         'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'flexslider_fields',
         'settings' => array(
-          'image_link' => '',
+          'caption' => 0,
           'image_style' => '',
+          'optionset' => 'frontpage_slider',
         ),
-        'type' => 'image',
+        'type' => 'flexslider',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'div',
     'field_name' => 'field_main_image',
     'label' => 'Main image',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -215,18 +222,39 @@ function auge_content_types_front_page_images_field_default_field_instances() {
       'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
+      'wysiwyg_fields' => array(
+        'settings' => array(
+          'advanced' => array(
+            'delete' => 1,
+            'hide' => 1,
+          ),
+          'formatters' => array(),
+          'icon' => '6f7621a02161e347e66d99d8ace540a3',
+          'label' => 'Main image',
+        ),
+        'status' => 0,
+      ),
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'image',
       'settings' => array(
         'insert' => 0,
-        'insert_absolute' => FALSE,
+        'insert_absolute' => 0,
         'insert_class' => '',
-        'insert_default' => array(
-          0 => 'auto',
-        ),
+        'insert_default' => 'auto',
         'insert_styles' => array(
-          0 => 'auto',
+          'auto' => 'auto',
+          'icon_link' => 0,
+          'image' => 0,
+          'image_blog_image_footer' => 0,
+          'image_blog_view_image' => 0,
+          'image_large' => 0,
+          'image_medium' => 0,
+          'image_people_picture' => 0,
+          'image_project_logo' => 0,
+          'image_thumbnail' => 0,
+          'link' => 0,
         ),
         'insert_width' => '',
         'preview_image_style' => 'thumbnail',
