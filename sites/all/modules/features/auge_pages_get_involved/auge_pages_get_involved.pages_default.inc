@@ -15,7 +15,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Entrepreneur';
   $page->admin_description = '';
-  $page->path = 'entrepreneur';
+  $page->path = 'incubarse';
   $page->access = array(
     'plugins' => array(),
     'logic' => 'and',
@@ -330,7 +330,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'ipe',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
+    'body_classes_to_add' => 'page-entrepreneur',
     'css_id' => 'panel-entrepreneur',
     'css' => '',
     'contexts' => array(),
@@ -378,8 +378,8 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => 'Learn title',
-      'title' => 'Emprender',
-      'body' => '<p>¿Decidió&nbsp;dedicarse a su emprendimiento? ¿Tiene un producto o servicio validado y el equipo para gestionar una Empresa Mínima Viable?&nbsp;¡Ingrese a nuestro proceso de incubación en comunidad!</p>',
+      'title' => 'Incubarse',
+      'body' => '<p>¿Decidieron&nbsp;dedicarse a su emprendimiento? ¿Tienen un producto o servicio validado y el equipo para gestionar una Empresa Mínima Viable?&nbsp;¡Ingresen a nuestro proceso de incubación en comunidad!</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -444,7 +444,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>Una vez que se ha identificado un modelo de negocio y se han realizado pruebas con un Producto Mínimo Viable, los equipos pueden solicitar ingreso al proceso de incubación. Este proceso incluye las fases verde y roja y para ingresar, se requiere la validación resultante del proceso de aprender, o aprobar un proceso de evaluación de requisitos. Una vez que se solicita el ingreso, todos los equipos emprendedores pasan por una valoración en dos pasos, con un taller diagnóstico y una triada de especialistas.</p><p>Estos son algunos de los emprendimientos que incubamos:</p>',
+      'body' => '<p>Una vez que se ha identificado un modelo de negocio y se han realizado pruebas con un Producto Mínimo Viable, los emprendimientos pueden solicitar ingreso al proceso de incubación. Este proceso incluye las fases verde y roja y para ingresar, se requiere la validación resultante del proceso de aprender, o aprobar un proceso de evaluación de requisitos, que se inicia cuando completan el formulario de diagnóstico.&nbsp;</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -467,10 +467,19 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'mlpanels' => array(
+        'und' => array(
+          'buttons' => NULL,
+          'custom_page_title_pattern' => 'Incubarse | Auge',
+          'form_build_id' => 'form-Iyw9XZAygIA9m9EWpVxlesYE1RrAN10YSHvVIaIcW9k',
+          'form_token' => 'Y3wbp-e-hAwIp0ntj14sz1m9c2PYTn0jBGmMj9CoT1o',
+          'form_id' => 'panels_custom_title_tag_edit_form',
+        ),
+      ),
       'buttons' => NULL,
-      'custom_page_title_pattern' => 'Emprender | Auge',
-      'form_build_id' => 'form-4dYahWJPkNzLJfM1Sd2sjy_aJWXiOkB7NXTKCZHP7jc',
-      'form_token' => '5l-6dgRkIOgk0DQZA9ubA4ippuyoseUVz-b31XpCw0w',
+      'custom_page_title_pattern' => 'Incubarse | Auge',
+      'form_build_id' => 'form-Iyw9XZAygIA9m9EWpVxlesYE1RrAN10YSHvVIaIcW9k',
+      'form_token' => 'Y3wbp-e-hAwIp0ntj14sz1m9c2PYTn0jBGmMj9CoT1o',
       'form_id' => 'panels_custom_title_tag_edit_form',
     );
     $pane->cache = array();
@@ -560,7 +569,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
       ),
       'admin_title' => '',
       'title' => '',
-      'body' => '<a href="/contacto">Cuéntenos de su emprendimiento</a>',
+      'body' => '<a href="http://auge.cr/formularios/index.php/373637?lang=es&encode=">Postule su emprendimiento</a>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -583,7 +592,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['entrepreneurship'] = $page;
+  $pages[''] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -956,7 +965,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Learn title',
       'title' => 'Impulsar',
-      'body' => '<p>Un emprendimiento prometedor necesita ser impulsado para desarrollar su potencial.</p>',
+      'body' => '<p>¿Quiere participar e impulsar emprendimientos prometedores para que desarrollen todo su potencial? ¡Aporte a nuestras iniciativas!</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1021,7 +1030,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>La generación de una cultura de emprendimiento es clave para el desarrollo económico y social de los países y en nuestro proceso de incubación en comunidad, hemos logrado generar las condiciones para elevar las posibilidades de éxito de emprendimientos por oportunidad que sean creativos, dinámicos y sostenibles. Usted puede ser parte de estos resultados:</p><ul><li>Apoyando financieramente nuestras actividades, mediante nuestro fondo colaborativo.</li><li>Invirtiendo directamente en alguno de los proyectos que incubamos.</li></ul><p>&nbsp;</p><p>Estos son algunos de los emprendimientos&nbsp;que usted puede apoyar:</p><p>&nbsp;</p>',
+      'body' => '<p>Generar una cultura de emprendimiento es clave para el desarrollo económico y social de los países. En nuestro proceso de incubación en comunidad, hemos logrado elevar las posibilidades de éxito de los emprendimientos y usted puede ser parte de estos resultados:</p><ul><li>Aportando al Fondo Propulsa para impulsar el desarrollo de prototipos.</li><li>Apoyando financieramente nuestras actividades.</li><li>Invirtiendo directamente en alguno de los emprendimientos que incubamos.</li></ul><p>&nbsp;</p><p>Estos son algunos de los emprendimientos&nbsp;que usted puede apoyar:</p><p>&nbsp;</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1185,7 +1194,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['invest'] = $page;
+  $pages[''] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -1660,7 +1669,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>La inmersión en el problema o necesidad que se quiere resolver eleva las posibilidades de éxito de cualquier emprendimiento. En nuestras fases azul y amarilla usted descubrirá la esencia del problema y definirá una solución creativa, ajustada a sus motivaciones y capacidades. También puede aprender y experimentar rápidamente en nuestros FlashLab y Sprint.</p><p>Estas son las fases y servicios de la etapa de aprendizaje:</p>',
+      'body' => '<p>La inmersión en el problema o necesidad que se quiere resolver eleva las posibilidades de éxito de cualquier emprendimiento. En nuestras fases azul y amarilla usted descubrirá la esencia del problema y definirá una solución creativa, ajustada a sus motivaciones y capacidades. También puede aprender y experimentar rápidamente con nuestros otros servicios, como&nbsp;FlashLab y Sprint,.</p><p>Estas son las fases y servicios para&nbsp;aprendizaje:</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -1757,7 +1766,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
       ),
       'admin_title' => '',
       'title' => '',
-      'body' => '<a href="/contacto">Cuéntenos de su emprendimiento</a>',
+      'body' => '<a href="http://auge.cr/formularios/index.php/373637?lang=es&encode=">Postule su emprendimiento</a>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -1780,7 +1789,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['learn'] = $page;
+  $pages[''] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -2153,7 +2162,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => 'Mentor title',
       'title' => 'Acompañar',
-      'body' => '<p>Durante el proceso en AUGE, experimentadas personas empresarias, emprendedoras y del sector académico&nbsp;orientan a los equipos emprendedores.</p>',
+      'body' => '<p>¿Tiene usted conocimientos y experiencias para apoyar a nuestros equipos emprendedores? ¡Compártalos dentro de nuestra red de apoyo!</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -2218,7 +2227,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<p>¿Desea ser parte de una red de interacción, experiencias y crecimiento orientada a la innovación? Le invitamos a ser parte de nuestro equipo Warp, para:</p><ul><li>Consolidar el éxito de las iniciativas incubadas en AUGE, mediante la transferencia de conocimientos y consejos de expertos desde sus primeras etapas de desarrollo.</li><li>Enriquecer el proceso de toma de decisiones tanto para emprendedores como mentores, &nbsp;por medio del intercambio de conocimiento entre los miembros de la red.</li><li>Fortalecer en el tejido empresarial costarricense valiéndose de la filosofía de la economía colaborativa como medio para el desarrollo inclusivo y sostenible del país.</li></ul><p>¿Le interesa contribuir? Por favor complete el formulario y pronto nos comunicaremos con usted:</p>',
+      'body' => '<p>¿Desea ser parte de una red de interacción, experiencias y crecimiento orientada a la innovación? Le invitamos a ser parte de nuestra red&nbsp;Warp, para contagiarse del espíritu emprendedor, ser parte de una comunidad vibrante, contribuir con el desarrollo del país, interactuar con&nbsp;nuevos conocimientos y tendencias, identificar oportunidades de inversión y ampliar su red de contactos y capital social.</p><p>Warp es una red de mentoría y asesoría, integrada por profesionales de distintas disciplinas, empresarios y empresarias con experiencia, personas funcionarias de centros de investigación, entre otros perfiles.&nbsp;La creamos con el objetivo de potenciar los emprendimientos en AUGE, complementando el proceso de incubación, con asesorías y mentorías que aporten conocimientos y experiencia a los equipos emprendedores. Colaborando en Warp usted nos ayudará a:</p><ul><li>Fortalecer las competencias actitudinales y conductuales en los equipos de emprendimiento</li><li>Aumentar el desarrollo técnico y científico de los emprendimientos</li><li>Enriquecer procesos de aprendizaje continuo y de toma de decisiones de los equipos de emprendimiento, mentores y asesores</li></ul><p>&nbsp;</p><p>En Warp existen dos perfiles de interacción:</p><ul><li><u>Asesoría:</u>&nbsp;brindada por profesionales&nbsp;en un área determinada de conocimiento, no necesariamente con experiencia emprendedora, que contribuyen con los proyectos en temas específicos de su expertise. Pueden reunirse con los emprendedores periódicamente o una única vez, dependiendo de la necesidad.&nbsp;</li><li><u>Mentoría:</u> brindada por personas&nbsp;con amplia experiencia en puestos de toma de decisiones en el ámbito empresarial y con gran capacidad de escucha, que colaboran con los emprendedores para fortalecer sus competencias e impulsar su emprendimiento. Acompañan al líder o líderes del proyecto en su proceso.</li></ul><p>&nbsp;</p><p>Si usted cumple con alguno de los perfiles, comuníquese con nosotros para que podamos iniciar el proceso de incorporación.</p>',
       'format' => 'manati_texto_formato',
       'substitute' => TRUE,
     );
@@ -2357,9 +2366,9 @@ function auge_pages_get_involved_default_page_manager_pages() {
           'substitute' => TRUE,
         ),
       ),
-      'admin_title' => '',
+      'admin_title' => 'Formulario Warp',
       'title' => '',
-      'body' => '<a href="/contacto">Solicite ingreso a la red Warp</a>',
+      'body' => '<a href="http://bit.ly/warp_auge">Solicite ingreso a la red Warp</a>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -2382,7 +2391,7 @@ function auge_pages_get_involved_default_page_manager_pages() {
   $display->title_pane = 'new-c373420a-adfe-4144-8a5b-661dc64d46b5';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['mentor'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 
