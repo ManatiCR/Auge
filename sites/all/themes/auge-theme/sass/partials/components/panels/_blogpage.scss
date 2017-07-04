@@ -23,6 +23,39 @@
     }
   }
 }
+
+.blog-post-main-content-author-wrapper {
+  display: inline;
+}
+
+.blog-post-main-content-author, .pane-content {
+  .field-author {
+    display: inline;
+  }
+}
+
+.pane-node-field-author .pane-content {
+  display: inline;
+}
+
+.blog-post-main-content-author-tag, .pane-node-field-author .pane-title {
+  color: $darkgray;
+  font-size: 1.5rem;
+}
+
+.blog-post-main-content-author, .pane-node-field-author {
+  a {
+    color: #522e91;
+    text-decoration: underline;
+    font-size: 1.4rem;
+  }
+  padding-right: 10px;
+}
+
+.pane-node-field-author {
+  padding-bottom: 5px;
+}
+
 .blog-post-main-content-date{
   color: $gray;
   font-size: 1.4rem;
@@ -102,5 +135,17 @@
 .pane-node-field-post-category{
   .pane-title{
     display: none;
+  }
+}
+
+.view-taxonomies-blog {
+  .blog-post-main-content-title {
+    margin: 20px 0 0 0;
+  }
+}
+
+.view-taxonomies-blog .views-row-first {
+  .blog-post-main-content-title {
+    margin: 0;
   }
 }
