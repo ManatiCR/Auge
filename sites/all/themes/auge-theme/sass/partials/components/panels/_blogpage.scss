@@ -12,17 +12,18 @@
     }
   }
 }
-.blog-post-main-content-title{
+.blog-post-main-content-title {
   text-transform: uppercase;
-  //
   font-size: 24px;
-  a{
+  a {
     color: $purple;
-    &:active{
+    text-decoration: none;
+    &:active {
       color: $orange;
     }
   }
 }
+
 .blog-post-main-content-date{
   color: $gray;
   font-size: 1.4rem;
@@ -33,13 +34,22 @@
   border-radius: 4px;
   padding: 4px 6px;
   font-size: 1.4rem;
-  a{
+  a {
     color: white;
+    text-decoration: none;
   }
 }
+
+.blog-categories-name-wrapper {
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
 .blog-post-main-content-image{
   margin-top: 10px;
-  a{
+  a {
     display: block;
     width:100%;
     height: auto;
