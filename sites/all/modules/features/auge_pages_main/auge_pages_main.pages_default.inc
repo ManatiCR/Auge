@@ -617,8 +617,8 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->access = array();
     $pane->configuration = array(
       'admin_title' => '',
-      'title' => 'Emprender',
-      'body' => '<p>¿Decidió dedicarse a su emprendimiento? ¿Tiene un producto o servicio validado y el equipo para gestionar una Empresa Mínima Viable? ¡Ingrese a nuestro proceso de incubación en comunidad!</p><a href="/es/emprender">Incube su emprendimiento en AUGE</a><div class="panel-front-page-boxes-entrepreneur-image"></div>',
+      'title' => 'Incubarse',
+      'body' => '<p>¿Decidieron dedicarse a su emprendimiento? ¿Tienen un producto o servicio validado y el equipo para gestionar una Empresa Mínima Viable? ¡Ingresen a nuestro proceso de incubación en comunidad!</p><a href="/es/incubarse">Incube su emprendimiento en AUGE</a><div class="panel-front-page-boxes-entrepreneur-image"></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -683,7 +683,7 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Acompañar',
-      'body' => '<p>Durante todo el proceso en AUGE, personas emprendedoras, empresarias y académicas orientan a los equipos emprendedores.</p><a href="/es/acompanar">Conozca a nuestra red Warp</a><div class="panel-front-page-boxes-mentor-image"></div>',
+      'body' => '<p>¿Tiene usted conocimientos y experiencias para apoyar a nuestros equipos emprendedores? ¡Únase al equipo Warp!</p><a href="/es/acompanar">Conozca más</a><div class="panel-front-page-boxes-mentor-image"></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
     );
@@ -748,8 +748,8 @@ function auge_pages_main_default_page_manager_pages() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => 'Impulsar',
-      'body' => '<p>Una emprendimiento prometedor necesita ser impulsado para desarrollar su potencial.</p>
-<a href="/es/impulsar">Aporte a nuestro Fondo Propulsa o financie nuestras actividades</a>
+      'body' => '<p>¿Quiere participar e impulsar emprendimientos prometedores para que desarrollen todo su potencial? ¡Aporte a nuestras iniciativas!</p>
+<a href="/es/impulsar">Conozca nuestro programa de fondos</a>
 <div class="panel-front-page-boxes-invest-image"></div>',
       'format' => 'full_html',
       'substitute' => TRUE,
@@ -900,7 +900,7 @@ function auge_pages_main_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['main'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 

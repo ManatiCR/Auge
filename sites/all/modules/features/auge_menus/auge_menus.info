@@ -12,7 +12,6 @@ features[menu_links][] = main-menu_blog:/blog
 features[menu_links][] = main-menu_blog:blog
 features[menu_links][] = main-menu_contact:/contact
 features[menu_links][] = main-menu_contacto:/contacto
-features[menu_links][] = main-menu_emprender:/emprender
 features[menu_links][] = main-menu_entrepreneur:/entrepreneur
 features[menu_links][] = main-menu_get-involved:
 features[menu_links][] = main-menu_invest:invest

@@ -586,10 +586,18 @@ input[type="submit"] {
           padding-bottom: 33px;
           bottom: 0px; } }
 
-.page-entrepreneur .quicktabs-tabs .first a {
+.page-entrepreneur .quicktabs-tabs li a {
   background-color: #3c912e; }
-  .page-entrepreneur .quicktabs-tabs .first a:after {
+  .page-entrepreneur .quicktabs-tabs li a:after {
     border-color: #3c912e transparent transparent transparent; }
+
+.page-entrepreneur .quicktabs-tabs .first a {
+  background-color: #fcdb0f; }
+  .page-entrepreneur .quicktabs-tabs .first a:after {
+    border-color: #fcdb0f transparent transparent transparent; }
+  @media screen and (max-width: 530px) {
+    .page-entrepreneur .quicktabs-tabs .first a {
+      padding: 5px 10px; } }
 
 .page-entrepreneur .quicktabs-tabs .last a {
   background-color: #bd021c; }

@@ -37,6 +37,7 @@ function auge_content_types_personnel_field_default_field_instances() {
     'label' => 'Area',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
         'settings' => array(
@@ -87,6 +88,7 @@ function auge_content_types_personnel_field_default_field_instances() {
     'label' => 'Description',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -140,6 +142,7 @@ function auge_content_types_personnel_field_default_field_instances() {
     'label' => 'Occupation',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -206,6 +209,7 @@ function auge_content_types_personnel_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'value',
       'title_label_use_field_label' => 0,
@@ -267,6 +271,7 @@ function auge_content_types_personnel_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -349,6 +354,7 @@ function auge_content_types_personnel_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'value',
       'title_label_use_field_label' => 0,
@@ -403,9 +409,10 @@ function auge_content_types_personnel_field_default_field_instances() {
     'entity_type' => 'node',
     'fences_wrapper' => 'no_wrapper',
     'field_name' => 'field_role',
-    'label' => 'Role',
+    'label' => 'Rol',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
       'wysiwyg_fields' => array(
@@ -442,7 +449,7 @@ function auge_content_types_personnel_field_default_field_instances() {
   t('Personnel LinkedIn');
   t('Personnel photo');
   t('Personnel twitter');
-  t('Role');
+  t('Rol');
 
   return $field_instances;
 }
