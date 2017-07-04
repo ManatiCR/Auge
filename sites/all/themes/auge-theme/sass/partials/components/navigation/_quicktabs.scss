@@ -16,6 +16,11 @@
 .quicktabs-tabs {
   padding-left: 0;
   margin: 0;
+  li {
+    a {
+      text-decoration: none;
+    }
+  }
 }
 .quicktabs-tabs {
   padding: 0 20px;
