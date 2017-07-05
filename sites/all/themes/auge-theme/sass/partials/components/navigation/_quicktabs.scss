@@ -16,6 +16,11 @@
 .quicktabs-tabs {
   padding-left: 0;
   margin: 0;
+  li {
+    a {
+      text-decoration: none;
+    }
+  }
 }
 .quicktabs-tabs {
   padding: 0 20px;
@@ -76,21 +81,39 @@
     }
   }
 }
+
 .page-entrepreneur {
-    .quicktabs-tabs {
-    .first {
+  .quicktabs-tabs {
+    li:nth-child(2) {
       a {
         background-color: #3c912e;
-        &:after{
+        &:after {
           border-color: #3c912e transparent transparent transparent;
+        }
+      }
+    }
+    li:nth-child(3) {
+      a {
+        background-color: #bd021c;
+        &:after {
+          border-color: #bd021c transparent transparent transparent;
+        }
+      }
+    }
+    .first {
+      a {
+        background-color: #fcdb0f;
+
+        &:after {
+          border-color: #fcdb0f transparent transparent transparent;
         }
       }
     }
     .last {
       a {
-        background-color: #bd021c;
-        &:after{
-          border-color: #bd021c transparent transparent transparent;
+        background-color: #EB7A50;
+        &:after {
+          border-color: #EB7A50 transparent transparent transparent;
         }
       }
     }
