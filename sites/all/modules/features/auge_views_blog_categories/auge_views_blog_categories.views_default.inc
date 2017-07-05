@@ -56,6 +56,19 @@ function auge_views_blog_categories_views_default_views() {
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_class'] = 'blog-post-main-content-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author']['id'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['table'] = 'field_data_field_author';
+  $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['label'] = 'Por';
+  $handler->display->display_options['fields']['field_author']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_author']['element_class'] = 'blog-post-main-content-author';
+  $handler->display->display_options['fields']['field_author']['element_label_type'] = 'span';
+  $handler->display->display_options['fields']['field_author']['element_label_class'] = 'blog-post-main-content-author-tag';
+  $handler->display->display_options['fields']['field_author']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_author']['element_wrapper_class'] = 'blog-post-main-content-author-wrapper';
+  $handler->display->display_options['fields']['field_author']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_author']['field_api_classes'] = TRUE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -215,6 +228,7 @@ function auge_views_blog_categories_views_default_views() {
     t('‹'),
     t('›'),
     t('last »'),
+    t('Por'),
     t('All'),
     t('Blog taxonomies Spanish'),
     t('Sin resultados'),
