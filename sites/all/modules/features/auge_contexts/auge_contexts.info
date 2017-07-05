@@ -13,6 +13,7 @@ features[context][] = blog_footer_english
 features[context][] = blog_footer_spanish
 features[context][] = contact_footer_english
 features[context][] = contact_footer_spanish
+features[context][] = footer_logos
 features[context][] = main_menu_contact_english
 features[context][] = main_menu_contact_spanish
 features[context][] = sitewide-blocks
