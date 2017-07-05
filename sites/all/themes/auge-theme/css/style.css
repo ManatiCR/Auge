@@ -47,14 +47,14 @@ html {
   max-width: 1020px;
   margin: 0 auto; }
 
-.panel-panel .upcoming-event .views-field-view-node a, .panel-front-page-boxes a, .node-front-page-images .field-front-image-button, .page-home .view-projects .more-link a {
+.panel-panel .upcoming-event .views-field-view-node a, .view-display-id-block_2 .more-link a, .panel-front-page-boxes a, .node-front-page-images .field-front-image-button, .page-home .view-projects .more-link a {
   font-size: 1.6rem;
   padding-bottom: 30px;
   color: #F58345;
   border: 2px solid #F58345;
   border-radius: 5px;
   text-decoration: none; }
-  .panel-panel .upcoming-event .views-field-view-node a:after, .panel-front-page-boxes a:after, .node-front-page-images .field-front-image-button:after, .page-home .view-projects .more-link a:after {
+  .panel-panel .upcoming-event .views-field-view-node a:after, .view-display-id-block_2 .more-link a:after, .panel-front-page-boxes a:after, .node-front-page-images .field-front-image-button:after, .page-home .view-projects .more-link a:after {
     width: 0;
     height: 0;
     border-style: solid;
@@ -1054,6 +1054,17 @@ h4 {
 
 .pane-node-field-post-category .pane-title {
   display: none; }
+
+.view-display-id-block_2 .more-link a {
+  display: inline-block;
+  padding: 5px 10px; }
+  .view-display-id-block_2 .more-link a:hover {
+    text-decoration: none;
+    background-color: #F58345;
+    border-color: #F58345;
+    color: #fff; }
+    .view-display-id-block_2 .more-link a:hover:after {
+      border-color: transparent transparent transparent #fff; }
 
 .panel-node-blog {
   padding-bottom: 110px; }
