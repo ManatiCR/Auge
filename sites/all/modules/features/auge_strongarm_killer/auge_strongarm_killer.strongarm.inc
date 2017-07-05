@@ -124,6 +124,9 @@ function auge_strongarm_killer_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -378,6 +381,7 @@ function auge_strongarm_killer_strongarm() {
     'logo_upload' => '',
     'default_favicon' => 0,
     'favicon_path' => 'public://favicon.png',
+    'favicon_upload' => '',
     'jquery_update_jquery_version' => '',
     'magic_css_excludes' => 'system/*.css',
     'magic_footer_js' => 0,
@@ -385,7 +389,7 @@ function auge_strongarm_killer_strongarm() {
     'magic_experimental_js' => 0,
     'magic_js_excludes' => '',
     'magic_rebuild_registry' => 0,
-    'magic_viewport_indicator' => 1,
+    'magic_viewport_indicator' => 0,
     'magic_modernizr_debug' => FALSE,
     'favicon_mimetype' => 'image/png',
   );
