@@ -988,7 +988,7 @@ h4 {
     .blog-post-main-content-title a:active, .panel-node-activity .activity-main-content-title a:active {
       color: #F58345; }
 
-.blog-post-main-content-author-wrapper {
+.blog-post-main-content-author-wrapper, .blog-post-main-content-author-wrapper + .views-field-created {
   display: inline; }
 
 .blog-post-main-content-author .field-author, .pane-content .field-author {
