@@ -1586,7 +1586,7 @@ function auge_pages_nodes_default_page_manager_handlers() {
     $display->content['new-93ebdbd0-d938-4b8b-8690-890c3686b1a5'] = $pane;
     $display->panels['content'][0] = 'new-93ebdbd0-d938-4b8b-8690-890c3686b1a5';
     $pane = new stdClass();
-    $pane->pid = 'new-fbcd5b09-5523-4207-98df-9b315d5240cc';
+    $pane->pid = 'new-1b1c497a-c60e-4041-8ed9-7e6ecaae85b7';
     $pane->panel = 'content';
     $pane->type = 'entity_field';
     $pane->subtype = 'node:field_author';
@@ -1612,9 +1612,9 @@ function auge_pages_nodes_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = 'fbcd5b09-5523-4207-98df-9b315d5240cc';
-    $display->content['new-fbcd5b09-5523-4207-98df-9b315d5240cc'] = $pane;
-    $display->panels['content'][1] = 'new-fbcd5b09-5523-4207-98df-9b315d5240cc';
+    $pane->uuid = '1b1c497a-c60e-4041-8ed9-7e6ecaae85b7';
+    $display->content['new-1b1c497a-c60e-4041-8ed9-7e6ecaae85b7'] = $pane;
+    $display->panels['content'][1] = 'new-1b1c497a-c60e-4041-8ed9-7e6ecaae85b7';
     $pane = new stdClass();
     $pane->pid = 'new-9eb52103-a258-4cb9-82d3-29204306e54c';
     $pane->panel = 'content';
