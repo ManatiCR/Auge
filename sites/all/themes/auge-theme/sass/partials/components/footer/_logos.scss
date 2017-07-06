@@ -1,0 +1,77 @@
+// Styles for the footer logos.
+
+.footer-logos--partof-image-logo {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  @include media($first-breakpoint) {
+    flex: 0 0 200px;
+  }
+}
+
+.footer-logos--partof {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  @include media($first-breakpoint) {
+    display: flex;
+  }
+}
+
+.footer-logos--text {
+  font-weight: 700;
+  display: inline;
+}
+
+.footer-logos--text1 {
+  @include font-size(18);
+}
+
+.footer-logos--text2 {
+  color: #818181;
+}
+
+.footer-logos--images, .footer-logos--text {
+  @include media($first-breakpoint) {
+    display: inline;
+  }
+}
+
+.footer-logos--boxes {
+  padding: 10px 0;
+  @include media($first-breakpoint) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-logos--images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  @include media($first-breakpoint) {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-logos--text {
+  @include media($first-breakpoint) {
+    padding-right: 30px;
+  }
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1280px;
+}
+
+.footer-logos--madeby {
+  @include media($first-breakpoint) {
+    margin-left: 20px;
+  }
+}
