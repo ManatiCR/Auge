@@ -52,6 +52,10 @@ function auge_custom_blocks_block_info() {
       'info' => t('Contact information: Spanish.'),
       'cache' => DRUPAL_CACHE_GLOBAL,
     ),
+    'footer_logos' => array(
+      'info' => t('Footer logos'),
+      'cache' => DRUPAL_CACHE_GLOBAL,
+    ),
   );
 }
 
@@ -90,6 +94,31 @@ function auge_custom_blocks_block_view($delta = '') {
         ),
       );
       break;
+      case 'footer_logos':
+        $footer_logos_html = '<div class="footer-logos">
+          <div class="footer-logos--partof footer-logos--boxes">
+            <p class="footer-logos--text footer-logos--text1">Formamos parte de:</p>
+            <div class="footer-logos--images footer-logos--partof-images">
+              <img class="footer-logos--partof-image-logo footer-logos--partof-image-ucr" src="/sites/all/themes/auge-theme/images/AUGE-UCR.png" alt="UCR logo">
+              <img class="footer-logos--partof-image-logo footer-logos--partof-image-fucr" src="/sites/all/themes/auge-theme/images/AUGE-FUCR.png" alt="FUCR logo">
+              <img class="footer-logos--partof-image-logo footer-logos--partof-image-smbubi" src="/sites/all/themes/auge-theme/images/AUGE-SMBUBI.png" alt="SMBUBI logo">
+            </div>
+          </div>
+          <div class="footer-logos--madeby footer-logos--boxes">
+            <p class="footer-logos--text footer-logos--text2">Desarrollo web por:</p>
+            <div class="footer-logos--images footer-logos--madeby-images">
+              <img class="footer-logos--partof-image-logo footer-logos--partof-image-manati" src="/sites/all/themes/auge-theme/images/AUGE-Manati.png" alt="Manati logo">
+            </div>
+          </div>
+        </div>';
+        $block['subject'] = t('');
+        $block['content'] = array(
+          'message' => array(
+            '#type' => 'markup',
+            '#markup' => $footer_logos_html,
+          ),
+        );
+        break;
   }
   return $block;
 }
@@ -101,8 +130,11 @@ function auge_custom_blocks_block_save($delta = '', $edit = array()) {
     case 'contact_information':
       variable_set('text_body_field_contact_contact_english', $edit['text_body_field_contact_contact_english']);
       break;
-  case 'contact_information_spanish':
-    variable_set('text_body_field_contact_contact_spanish', $edit['text_body_field_contact_contact_spanish']);
-    break;
+    case 'contact_information_spanish':
+      variable_set('text_body_field_contact_contact_spanish', $edit['text_body_field_contact_contact_spanish']);
+      break;
+    case 'footer_logos':
+      variable_set('text_body_field_footer_logos');
+      break;
   }
 }

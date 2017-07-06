@@ -181,6 +181,34 @@ function auge_contexts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'footer_logos';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'auge_custom_blocks-footer_logos' => array(
+          'module' => 'auge_custom_blocks',
+          'delta' => 'footer_logos',
+          'region' => 'closure',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['footer_logos'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'main_menu_contact_english';
   $context->description = '';
   $context->tag = '';
