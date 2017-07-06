@@ -988,6 +988,29 @@ h4 {
     .blog-post-main-content-title a:active, .panel-node-activity .activity-main-content-title a:active {
       color: #F58345; }
 
+.blog-post-main-content-author-wrapper, .blog-post-main-content-author-wrapper + .views-field-created {
+  display: inline; }
+
+.blog-post-main-content-author .field-author, .pane-content .field-author {
+  display: inline; }
+
+.pane-node-field-author .pane-content {
+  display: inline; }
+
+.blog-post-main-content-author-tag, .pane-node-field-author .pane-title {
+  color: #444547;
+  font-size: 1.5rem; }
+
+.blog-post-main-content-author, .pane-node-field-author {
+  padding-right: 10px; }
+  .blog-post-main-content-author a, .pane-node-field-author a {
+    color: #522e91;
+    text-decoration: underline;
+    font-size: 1.4rem; }
+
+.pane-node-field-author {
+  padding-bottom: 5px; }
+
 .blog-post-main-content-date, .panel-node-activity .activity-main-content-date, .panel-node-activity .activity-main-content-date-wrapper {
   color: #d1d1d1;
   font-size: 1.4rem;
@@ -1065,6 +1088,12 @@ h4 {
     color: #fff; }
     .view-display-id-block_2 .more-link a:hover:after {
       border-color: transparent transparent transparent #fff; }
+
+.view-taxonomies-blog .blog-post-main-content-title, .view-taxonomies-blog .panel-node-activity .activity-main-content-title, .panel-node-activity .view-taxonomies-blog .activity-main-content-title {
+  margin: 20px 0 0 0; }
+
+.view-taxonomies-blog .views-row-first .blog-post-main-content-title, .view-taxonomies-blog .views-row-first .panel-node-activity .activity-main-content-title, .panel-node-activity .view-taxonomies-blog .views-row-first .activity-main-content-title {
+  margin: 0; }
 
 .panel-node-blog {
   padding-bottom: 110px; }
