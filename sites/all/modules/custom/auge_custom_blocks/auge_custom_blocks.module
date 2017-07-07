@@ -107,7 +107,7 @@ function auge_custom_blocks_block_view($delta = '') {
           <div class="footer-logos--madeby footer-logos--boxes">
             <p class="footer-logos--text footer-logos--text2">Desarrollo web por:</p>
             <div class="footer-logos--images footer-logos--madeby-images">
-              <img class="footer-logos--partof-image-logo footer-logos--partof-image-manati" src="/sites/all/themes/auge-theme/images/AUGE-Manati.png" alt="Manati logo">
+              <img class="footer-logos--partof-image-logo footer-logos--partof-image-manati" src="/sites/all/themes/auge-theme/images/AUGE-MANATI.png" alt="Manati logo">
             </div>
           </div>
         </div>';
